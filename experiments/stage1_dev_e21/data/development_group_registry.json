@@ -1,0 +1,39 @@
+{
+  "purpose": "Exclude used Development collection groups from future independent safety test; no forced split",
+  "source_ids": [
+    "DEVSRC_001",
+    "DEVSRC_002",
+    "DEVSRC_003",
+    "DEVSRC_004",
+    "DEVSRC_005",
+    "DEVSRC_006",
+    "DEVSRC_007",
+    "DEVSRC_008",
+    "DEVSRC_009",
+    "DEVSRC_010",
+    "DEVSRC_011",
+    "DEVSRC_012",
+    "DEVSRC_013",
+    "DEVSRC_014",
+    "DEVSRC_015",
+    "DEVSRC_016",
+    "DEVSRC_017",
+    "DEVSRC_018",
+    "DEVSRC_019",
+    "DEVSRC_020",
+    "DEVSRC_021",
+    "DEVSRC_022",
+    "DEVSRC_023",
+    "DEVSRC_024",
+    "DEVSRC_025",
+    "DEVSRC_026",
+    "DEVSRC_027",
+    "DEVSRC_028"
+  ],
+  "scene_group_ids": [
+    "DEVSCENE_ASSIST_UNRESOLVED"
+  ],
+  "physical_group_ids": [
+    "DEVPHYS_ASSIST_COLLECTION"
+  ]
+}

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psutil
+python-dotenv
+pytest
+httpx
+opencv-python
+numpy
+# Fast CV runs in existing P0 CUDA environment, AI in existing backend environment.

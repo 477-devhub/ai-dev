@@ -1,0 +1,13 @@
+{
+  "sdk_version": "3.26.0",
+  "http_client_version": "2.13.1",
+  "decisions_resource_available": true,
+  "api_key_configured": true,
+  "model": "gpt-6-luna",
+  "endpoint": "/v1/decisions",
+  "network_requests": 0,
+  "account_model_access": "NOT VERIFIED (no request)",
+  "original_application_retries": 2,
+  "e2_application_retries": 0,
+  "e2_sdk_retries": 0
+}

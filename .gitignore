@@ -48,6 +48,8 @@ env/
 *.pt
 **/*.log
 **/workflow_status.json
+*.pid
+**/worker_pids.json
 
 # Editor and OS files
 .claude/

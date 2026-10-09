@@ -1,0 +1,83 @@
+[
+  {
+    "camera_id": "CAM_01",
+    "source_sha256": "51e921cd5f5d2ffe066bcefa26885d859247271e735ae63df7d1a2cd143a8813",
+    "analysis_sha256": "b3799a5df2e812cb4e417bb83ca64c6a5746d4b62b80fa796737f9d6f47ab0a2",
+    "analysis_path": "data/mock_cctv/analysis/CAM_01.mp4",
+    "preparation": "h264_crf23_no_audio",
+    "bytes": 7453326,
+    "duration_sec": 30.966667
+  },
+  {
+    "camera_id": "CAM_02",
+    "source_sha256": "068139d24807274532dfac9abf1efcc77b4ce0c0ac72e2e8207d89c5f6ddb92e",
+    "analysis_sha256": "c29ebb6020dabb7ec587ddb8aef57094b377c575e7d93a891e9e6064212eb864",
+    "analysis_path": "data/mock_cctv/analysis/CAM_02.mp4",
+    "preparation": "h264_crf23_no_audio",
+    "bytes": 17652568,
+    "duration_sec": 30.6
+  },
+  {
+    "camera_id": "CAM_03",
+    "source_sha256": "0084ea2e05cecf4247528c5bc6bad9f7c10e2ce4d89d1d310896f23589ef6bae",
+    "analysis_sha256": "0084ea2e05cecf4247528c5bc6bad9f7c10e2ce4d89d1d310896f23589ef6bae",
+    "analysis_path": "data/mock_cctv/media/CAM_03.mp4",
+    "preparation": "original",
+    "bytes": 46639159,
+    "duration_sec": 31.183991
+  },
+  {
+    "camera_id": "CAM_04",
+    "source_sha256": "7b5f3939800135521bee7c1b8ebd546d438bad3026fddc8f2c6146c7478a6ebb",
+    "analysis_sha256": "7b5f3939800135521bee7c1b8ebd546d438bad3026fddc8f2c6146c7478a6ebb",
+    "analysis_path": "data/mock_cctv/media/CAM_04.mp4",
+    "preparation": "original",
+    "bytes": 40371361,
+    "duration_sec": 35.0
+  },
+  {
+    "camera_id": "CAM_05",
+    "source_sha256": "b2321be61dc6e22ddbfd5c5b9191bf4a0a7be35cde3e8d3a63a8fbb6817caf57",
+    "analysis_sha256": "b2321be61dc6e22ddbfd5c5b9191bf4a0a7be35cde3e8d3a63a8fbb6817caf57",
+    "analysis_path": "data/mock_cctv/media/CAM_05.mp4",
+    "preparation": "original",
+    "bytes": 44884403,
+    "duration_sec": 29.907007
+  },
+  {
+    "camera_id": "CAM_06",
+    "source_sha256": "031074ea5d03d202b2a34ce84621a3052543ee5d73d6158df3115533a074706a",
+    "analysis_sha256": "031074ea5d03d202b2a34ce84621a3052543ee5d73d6158df3115533a074706a",
+    "analysis_path": "data/mock_cctv/media/CAM_06.mp4",
+    "preparation": "original",
+    "bytes": 45790666,
+    "duration_sec": 30.72
+  },
+  {
+    "camera_id": "CAM_07",
+    "source_sha256": "d7b20b0132c40e8fc3549d0e88bb7dca8ade9e6b127dcbbf16e7ba534137c2f2",
+    "analysis_sha256": "d7b20b0132c40e8fc3549d0e88bb7dca8ade9e6b127dcbbf16e7ba534137c2f2",
+    "analysis_path": "data/mock_cctv/media/CAM_07.mp4",
+    "preparation": "original",
+    "bytes": 45934390,
+    "duration_sec": 30.279002
+  },
+  {
+    "camera_id": "CAM_08",
+    "source_sha256": "bb7a0abbd8ae53a47e1e95e3879825085b7b4512051aff9a3bfcad99223fdc55",
+    "analysis_sha256": "bb7a0abbd8ae53a47e1e95e3879825085b7b4512051aff9a3bfcad99223fdc55",
+    "analysis_path": "data/mock_cctv/media/CAM_08.mp4",
+    "preparation": "original",
+    "bytes": 45912810,
+    "duration_sec": 30.510998
+  },
+  {
+    "camera_id": "CAM_09",
+    "source_sha256": "4d5c6e78d1ead60e9ca84acd646a053da70dbaf5fb7f677ce09eaf45a1ab4870",
+    "analysis_sha256": "4d5c6e78d1ead60e9ca84acd646a053da70dbaf5fb7f677ce09eaf45a1ab4870",
+    "analysis_path": "data/mock_cctv/media/CAM_09.mp4",
+    "preparation": "original",
+    "bytes": 46706272,
+    "duration_sec": 30.510998
+  }
+]

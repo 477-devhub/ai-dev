@@ -1,0 +1,489 @@
+{
+  "measurement": "local text sizes/token proxies only; 7 legacy unlabeled inputs, not E2 development GT",
+  "real_api_usage": null,
+  "rows": [
+    {
+      "legacy_unlabeled_sample": "ITEM_01.json",
+      "arms": {
+        "A": {
+          "input_bytes": 2808,
+          "input_tokens_estimated": {
+            "tokens": 720,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2046,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 7
+        },
+        "B": {
+          "input_bytes": 2808,
+          "input_tokens_estimated": {
+            "tokens": 720,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2365,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 8
+        },
+        "C": {
+          "input_bytes": 4837,
+          "input_tokens_estimated": {
+            "tokens": 1406,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2740,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 653,
+            "posture_runs_recovery_unknown": 462,
+            "detection_tracking_quality": 203,
+            "interaction_evidence": 2,
+            "selection_omission": 344
+          },
+          "questions": 7
+        },
+        "D": {
+          "input_bytes": 4837,
+          "input_tokens_estimated": {
+            "tokens": 1406,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 3059,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 653,
+            "posture_runs_recovery_unknown": 462,
+            "detection_tracking_quality": 203,
+            "interaction_evidence": 2,
+            "selection_omission": 344
+          },
+          "questions": 8
+        }
+      }
+    },
+    {
+      "legacy_unlabeled_sample": "ITEM_02.json",
+      "arms": {
+        "A": {
+          "input_bytes": 3626,
+          "input_tokens_estimated": {
+            "tokens": 959,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2290,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 7
+        },
+        "B": {
+          "input_bytes": 3626,
+          "input_tokens_estimated": {
+            "tokens": 959,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2609,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 8
+        },
+        "C": {
+          "input_bytes": 6277,
+          "input_tokens_estimated": {
+            "tokens": 1825,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 3169,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 929,
+            "posture_runs_recovery_unknown": 812,
+            "detection_tracking_quality": 300,
+            "interaction_evidence": 2,
+            "selection_omission": 344
+          },
+          "questions": 7
+        },
+        "D": {
+          "input_bytes": 6277,
+          "input_tokens_estimated": {
+            "tokens": 1825,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 3488,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 929,
+            "posture_runs_recovery_unknown": 812,
+            "detection_tracking_quality": 300,
+            "interaction_evidence": 2,
+            "selection_omission": 344
+          },
+          "questions": 8
+        }
+      }
+    },
+    {
+      "legacy_unlabeled_sample": "ITEM_03.json",
+      "arms": {
+        "A": {
+          "input_bytes": 3649,
+          "input_tokens_estimated": {
+            "tokens": 965,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2296,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 7
+        },
+        "B": {
+          "input_bytes": 3649,
+          "input_tokens_estimated": {
+            "tokens": 965,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2615,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 8
+        },
+        "C": {
+          "input_bytes": 6288,
+          "input_tokens_estimated": {
+            "tokens": 1822,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 3166,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 928,
+            "posture_runs_recovery_unknown": 806,
+            "detection_tracking_quality": 300,
+            "interaction_evidence": 2,
+            "selection_omission": 344
+          },
+          "questions": 7
+        },
+        "D": {
+          "input_bytes": 6288,
+          "input_tokens_estimated": {
+            "tokens": 1822,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 3485,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 928,
+            "posture_runs_recovery_unknown": 806,
+            "detection_tracking_quality": 300,
+            "interaction_evidence": 2,
+            "selection_omission": 344
+          },
+          "questions": 8
+        }
+      }
+    },
+    {
+      "legacy_unlabeled_sample": "ITEM_04.json",
+      "arms": {
+        "A": {
+          "input_bytes": 12676,
+          "input_tokens_estimated": {
+            "tokens": 3529,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 7930,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 22
+        },
+        "B": {
+          "input_bytes": 12676,
+          "input_tokens_estimated": {
+            "tokens": 3529,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 8920,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 25
+        },
+        "C": {
+          "input_bytes": 20875,
+          "input_tokens_estimated": {
+            "tokens": 5946,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 10389,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 2266,
+            "posture_runs_recovery_unknown": 2523,
+            "detection_tracking_quality": 989,
+            "interaction_evidence": 1694,
+            "selection_omission": 1030
+          },
+          "questions": 22
+        },
+        "D": {
+          "input_bytes": 20875,
+          "input_tokens_estimated": {
+            "tokens": 5946,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 11379,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 2266,
+            "posture_runs_recovery_unknown": 2523,
+            "detection_tracking_quality": 989,
+            "interaction_evidence": 1694,
+            "selection_omission": 1030
+          },
+          "questions": 25
+        }
+      }
+    },
+    {
+      "legacy_unlabeled_sample": "ITEM_05.json",
+      "arms": {
+        "A": {
+          "input_bytes": 5234,
+          "input_tokens_estimated": {
+            "tokens": 1428,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 2769,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 7
+        },
+        "B": {
+          "input_bytes": 5234,
+          "input_tokens_estimated": {
+            "tokens": 1428,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 3088,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 8
+        },
+        "C": {
+          "input_bytes": 9006,
+          "input_tokens_estimated": {
+            "tokens": 2620,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 3980,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 1191,
+            "posture_runs_recovery_unknown": 1282,
+            "detection_tracking_quality": 396,
+            "interaction_evidence": 429,
+            "selection_omission": 344
+          },
+          "questions": 7
+        },
+        "D": {
+          "input_bytes": 9006,
+          "input_tokens_estimated": {
+            "tokens": 2620,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 4299,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 1191,
+            "posture_runs_recovery_unknown": 1282,
+            "detection_tracking_quality": 396,
+            "interaction_evidence": 429,
+            "selection_omission": 344
+          },
+          "questions": 8
+        }
+      }
+    },
+    {
+      "legacy_unlabeled_sample": "ITEM_06.json",
+      "arms": {
+        "A": {
+          "input_bytes": 9510,
+          "input_tokens_estimated": {
+            "tokens": 2652,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 4022,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 7
+        },
+        "B": {
+          "input_bytes": 9510,
+          "input_tokens_estimated": {
+            "tokens": 2652,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 4341,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 8
+        },
+        "C": {
+          "input_bytes": 16111,
+          "input_tokens_estimated": {
+            "tokens": 4713,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 6115,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 1735,
+            "posture_runs_recovery_unknown": 2397,
+            "detection_tracking_quality": 586,
+            "interaction_evidence": 1695,
+            "selection_omission": 344
+          },
+          "questions": 7
+        },
+        "D": {
+          "input_bytes": 16111,
+          "input_tokens_estimated": {
+            "tokens": 4713,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 6434,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 1735,
+            "posture_runs_recovery_unknown": 2397,
+            "detection_tracking_quality": 586,
+            "interaction_evidence": 1695,
+            "selection_omission": 344
+          },
+          "questions": 8
+        }
+      }
+    },
+    {
+      "legacy_unlabeled_sample": "ITEM_07.json",
+      "arms": {
+        "A": {
+          "input_bytes": 16557,
+          "input_tokens_estimated": {
+            "tokens": 4749,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 6747,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 10
+        },
+        "B": {
+          "input_bytes": 16557,
+          "input_tokens_estimated": {
+            "tokens": 4749,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 7080,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": null,
+          "questions": 11
+        },
+        "C": {
+          "input_bytes": 27049,
+          "input_tokens_estimated": {
+            "tokens": 7889,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 9945,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 3094,
+            "posture_runs_recovery_unknown": 4091,
+            "detection_tracking_quality": 1174,
+            "interaction_evidence": 2122,
+            "selection_omission": 687
+          },
+          "questions": 10
+        },
+        "D": {
+          "input_bytes": 27049,
+          "input_tokens_estimated": {
+            "tokens": 7889,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "request_tokens_estimated": {
+            "tokens": 10278,
+            "method": "o200k_base proxy; not actual Decisions billing tokens"
+          },
+          "feature_bytes": {
+            "coverage_gap_tail": 3094,
+            "posture_runs_recovery_unknown": 4091,
+            "detection_tracking_quality": 1174,
+            "interaction_evidence": 2122,
+            "selection_omission": 687
+          },
+          "questions": 11
+        }
+      }
+    }
+  ]
+}

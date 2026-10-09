@@ -1,0 +1,77 @@
+{
+  "mode": "synthetic",
+  "gt": null,
+  "model_performance": "NOT EVALUATED",
+  "run_folder": "D:\\projects\\477\\experiments\\stage1_safe_suppress_e2\\results\\offline_demo_67b92278a899",
+  "note": "Mock answers and usage only. No Human GT; no API; do not use mocked scores/timing/cost as measurements.",
+  "arms": [
+    {
+      "arm": "A",
+      "request_hash": "4db972dc431e66832dc24cc2aa744b3bddbb7b965ba6785fbb157d7fa88d2617",
+      "status": "COMPLETE",
+      "input_tokens_estimated": {
+        "tokens": 634,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "request_tokens_estimated": {
+        "tokens": 1959,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "feature_bytes": null
+    },
+    {
+      "arm": "B",
+      "request_hash": "f29e6a7c3e31c3a059f944a1e852930bf27556414d7834d8c8391baf07beeea3",
+      "status": "COMPLETE",
+      "input_tokens_estimated": {
+        "tokens": 634,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "request_tokens_estimated": {
+        "tokens": 2278,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "feature_bytes": null
+    },
+    {
+      "arm": "C",
+      "request_hash": "a582e09de63c5b56663b7a727784670e1cbf18095f667ec9dbd25ff44c6eea7f",
+      "status": "COMPLETE",
+      "input_tokens_estimated": {
+        "tokens": 1313,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "request_tokens_estimated": {
+        "tokens": 2646,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "feature_bytes": {
+        "coverage_gap_tail": 579,
+        "posture_runs_recovery_unknown": 421,
+        "detection_tracking_quality": 197,
+        "interaction_evidence": 2,
+        "selection_omission": 344
+      }
+    },
+    {
+      "arm": "D",
+      "request_hash": "473a147e0928d862ec072ce45dc48203e15b2865033517ca3305c3eb7c872575",
+      "status": "COMPLETE",
+      "input_tokens_estimated": {
+        "tokens": 1313,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "request_tokens_estimated": {
+        "tokens": 2965,
+        "method": "o200k_base proxy; not actual Decisions billing tokens"
+      },
+      "feature_bytes": {
+        "coverage_gap_tail": 579,
+        "posture_runs_recovery_unknown": 421,
+        "detection_tracking_quality": 197,
+        "interaction_evidence": 2,
+        "selection_omission": 344
+      }
+    }
+  ]
+}

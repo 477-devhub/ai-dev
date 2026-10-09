@@ -1,0 +1,170 @@
+[
+  {
+    "item_id": "P001",
+    "source_id": "SRC01",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P002",
+    "source_id": "SRC02",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P003",
+    "source_id": "SRC03",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P004",
+    "source_id": "SRC04",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P005",
+    "source_id": "SRC05",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P006",
+    "source_id": "SRC06",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P007",
+    "source_id": "SRC01",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P007",
+    "source_id": "SRC02",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P008",
+    "source_id": "SRC05",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P008",
+    "source_id": "SRC06",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P009",
+    "source_id": "SRC01",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P009",
+    "source_id": "SRC03",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P009",
+    "source_id": "SRC05",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P010",
+    "source_id": "SRC01",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P010",
+    "source_id": "SRC02",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P010",
+    "source_id": "SRC03",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P010",
+    "source_id": "SRC04",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P011",
+    "source_id": "SRC01",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P011",
+    "source_id": "SRC02",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P011",
+    "source_id": "SRC03",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P011",
+    "source_id": "SRC04",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P011",
+    "source_id": "SRC05",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P012",
+    "source_id": "SRC01",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P012",
+    "source_id": "SRC02",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P012",
+    "source_id": "SRC03",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P012",
+    "source_id": "SRC04",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P012",
+    "source_id": "SRC05",
+    "invoke_vlm": true,
+    "simulation_only": true
+  },
+  {
+    "item_id": "P012",
+    "source_id": "SRC06",
+    "invoke_vlm": true,
+    "simulation_only": true
+  }
+]

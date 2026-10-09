@@ -1,0 +1,1400 @@
+{
+  "audit_date_kst": "2026-10-09",
+  "mode": "fixed-policy artifact diagnostics only",
+  "api_calls": 0,
+  "test_threshold_sweeps": 0,
+  "T_normal": 0.01,
+  "original_final_metrics": {
+    "samples": 22,
+    "normal": 12,
+    "danger": 10,
+    "stage1_normal_suppressed": 0,
+    "stage1_danger_suppressions": 0,
+    "stage1_correct_normal_suppressions": 0,
+    "routed_to_p4": 22,
+    "final_danger_missed": 0,
+    "final_normal_surfaced": 2,
+    "final_operator_queue": 12,
+    "normal_suppression_rate": 0.8333333333333334,
+    "danger_surface_recall": 1.0
+  },
+  "splits": {
+    "calibration": {
+      "groups": {
+        "ANCHORED_DANGER": {
+          "n": 3,
+          "score_summary": {
+            "mean": 0.5033333333333334,
+            "median": 0.63,
+            "min": 0.2,
+            "max": 0.68,
+            "p95_nearest_rank": 0.68
+          },
+          "failed_gates_nonexclusive": {
+            "score": 3,
+            "review": 3,
+            "category": 3,
+            "confidence": 3,
+            "refusal": 0
+          },
+          "suppressed": 0,
+          "p4_surfaced": 3,
+          "category_counts": {
+            "possible_fall_or_person_down": 1,
+            "possible_physical_conflict": 1,
+            "possible_scene_or_boundary_entry": 1
+          }
+        },
+        "CLEAR_NORMAL": {
+          "n": 7,
+          "score_summary": {
+            "mean": 0.17714285714285716,
+            "median": 0.07,
+            "min": 0.0,
+            "max": 0.66,
+            "p95_nearest_rank": 0.66
+          },
+          "failed_gates_nonexclusive": {
+            "score": 5,
+            "review": 3,
+            "category": 5,
+            "confidence": 5,
+            "refusal": 0
+          },
+          "suppressed": 2,
+          "p4_surfaced": 0,
+          "category_counts": {
+            "possible_scene_or_boundary_entry": 3,
+            "no_clear_incident": 2,
+            "possible_fall_or_person_down": 1,
+            "possible_physical_conflict": 1
+          }
+        },
+        "HARD_NEGATIVE_NORMAL": {
+          "n": 5,
+          "score_summary": {
+            "mean": 0.434,
+            "median": 0.45,
+            "min": 0.16,
+            "max": 0.71,
+            "p95_nearest_rank": 0.71
+          },
+          "failed_gates_nonexclusive": {
+            "score": 5,
+            "review": 5,
+            "category": 5,
+            "confidence": 5,
+            "refusal": 0
+          },
+          "suppressed": 0,
+          "p4_surfaced": 3,
+          "category_counts": {
+            "possible_physical_conflict": 4,
+            "possible_fall_or_person_down": 1
+          }
+        }
+      },
+      "fixed_policy_rows": [
+        {
+          "item_id": "TRIAGE_001",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.16,
+          "category": "possible_physical_conflict",
+          "confidence": 0.73,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 3,
+          "tracks_total": 3,
+          "short_tracks": 0,
+          "pair_count": 2,
+          "cv_reliability": 0.8265,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_007",
+          "label": "ANCHORED_DANGER",
+          "score": 0.63,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.78,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 1,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.7637,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_010",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.67,
+          "category": "possible_physical_conflict",
+          "confidence": 0.75,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 4,
+          "tracks_total": 6,
+          "short_tracks": 0,
+          "pair_count": 10,
+          "cv_reliability": 0.7769,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_015",
+          "label": "CLEAR_NORMAL",
+          "score": 0.06,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.72,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 1,
+          "tracks_total": 3,
+          "short_tracks": 2,
+          "pair_count": 0,
+          "cv_reliability": 0.7578,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_017",
+          "label": "CLEAR_NORMAL",
+          "score": 0.0,
+          "category": "no_clear_incident",
+          "confidence": 0.92,
+          "gates": {
+            "score": true,
+            "review": true,
+            "category": true,
+            "confidence": true,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 0,
+          "tracks_total": 0,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": null,
+          "dropout_missing": true
+        },
+        {
+          "item_id": "TRIAGE_022",
+          "label": "CLEAR_NORMAL",
+          "score": 0.66,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.5,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 3,
+          "tracks_total": 5,
+          "short_tracks": 1,
+          "pair_count": 5,
+          "cv_reliability": 0.7928,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_023",
+          "label": "CLEAR_NORMAL",
+          "score": 0.0,
+          "category": "no_clear_incident",
+          "confidence": 0.95,
+          "gates": {
+            "score": true,
+            "review": true,
+            "category": true,
+            "confidence": true,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 0,
+          "tracks_total": 0,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": null,
+          "dropout_missing": true
+        },
+        {
+          "item_id": "TRIAGE_024",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.18,
+          "category": "possible_physical_conflict",
+          "confidence": 0.65,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 1,
+          "cv_reliability": 0.9098,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_027",
+          "label": "CLEAR_NORMAL",
+          "score": 0.33,
+          "category": "possible_physical_conflict",
+          "confidence": 0.515,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 4,
+          "tracks_total": 5,
+          "short_tracks": 1,
+          "pair_count": 6,
+          "cv_reliability": 0.8595,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_028",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.45,
+          "category": "possible_physical_conflict",
+          "confidence": 0.645,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 3,
+          "tracks_total": 4,
+          "short_tracks": 1,
+          "pair_count": 2,
+          "cv_reliability": 0.8383,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_029",
+          "label": "CLEAR_NORMAL",
+          "score": 0.12,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.675,
+          "gates": {
+            "score": false,
+            "review": true,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 1,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.8398,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_031",
+          "label": "CLEAR_NORMAL",
+          "score": 0.07,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.76,
+          "gates": {
+            "score": false,
+            "review": true,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 1,
+          "pair_count": 0,
+          "cv_reliability": 0.788,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_032",
+          "label": "ANCHORED_DANGER",
+          "score": 0.68,
+          "category": "possible_physical_conflict",
+          "confidence": 0.61,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 5,
+          "tracks_total": 5,
+          "short_tracks": 1,
+          "pair_count": 6,
+          "cv_reliability": 0.842,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_034",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.71,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.685,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 4,
+          "tracks_total": 4,
+          "short_tracks": 0,
+          "pair_count": 6,
+          "cv_reliability": 0.9229,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_036",
+          "label": "ANCHORED_DANGER",
+          "score": 0.2,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.66,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 3,
+          "tracks_total": 6,
+          "short_tracks": 1,
+          "pair_count": 3,
+          "cv_reliability": 0.7254,
+          "dropout_missing": false
+        }
+      ],
+      "cost_usd": {
+        "p1": {
+          "mean": 0.00033800666666666666,
+          "median": 0.0003443,
+          "min": 0.00022660000000000003,
+          "max": 0.00047570000000000007,
+          "p95_nearest_rank": 0.00047570000000000007
+        },
+        "p4": {
+          "mean": 0.48718633333333333,
+          "median": 0.487191,
+          "min": 0.481751,
+          "max": 0.49061099999999996,
+          "p95_nearest_rank": 0.49061099999999996
+        }
+      },
+      "usage_tokens": {
+        "p1": {
+          "input": {
+            "mean": 3380.0666666666666,
+            "median": 3443,
+            "min": 2266,
+            "max": 4757,
+            "p95_nearest_rank": 4757
+          },
+          "output": {
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          },
+          "cached": {
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          },
+          "cache_write": {
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          }
+        },
+        "p4": {
+          "input": {
+            "mean": 190081,
+            "median": 190081,
+            "min": 190081,
+            "max": 190081,
+            "p95_nearest_rank": 190081
+          },
+          "output": {
+            "mean": 1198.5333333333333,
+            "median": 1199,
+            "min": 655,
+            "max": 1541,
+            "p95_nearest_rank": 1541
+          },
+          "cached": {
+            "mean": 0,
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          },
+          "cache_write": {
+            "mean": 190078,
+            "median": 190078,
+            "min": 190078,
+            "max": 190078,
+            "p95_nearest_rank": 190078
+          }
+        }
+      },
+      "timing_ms": {
+        "p1": {
+          "api_last_attempt_ms": {
+            "mean": 569.548,
+            "median": 341.44,
+            "min": 238.89,
+            "max": 3107.8,
+            "p95_nearest_rank": 3107.8
+          },
+          "api_total_ms": {
+            "mean": 580.1626666666666,
+            "median": 343.12,
+            "min": 240.5,
+            "max": 3170.93,
+            "p95_nearest_rank": 3170.93
+          },
+          "full_harness_ms": {
+            "mean": 1336.6186666666667,
+            "median": 939.65,
+            "min": 319.99,
+            "max": 3650.57,
+            "p95_nearest_rank": 3650.57
+          }
+        },
+        "p4": {
+          "api_last_attempt_ms": {
+            "mean": 93306.59066666667,
+            "median": 108989.41,
+            "min": 40286.39,
+            "max": 160119.76,
+            "p95_nearest_rank": 160119.76
+          },
+          "api_total_ms": {
+            "mean": 93307.80666666667,
+            "median": 108989.86,
+            "min": 40286.67,
+            "max": 160122.71,
+            "p95_nearest_rank": 160122.71
+          },
+          "full_harness_ms": {
+            "mean": 153741.97333333333,
+            "median": 157681.06,
+            "min": 63246.63,
+            "max": 307361.4,
+            "p95_nearest_rank": 307361.4
+          }
+        }
+      },
+      "cv_component_sum_ms": {
+        "mean": 28412.255633333385,
+        "median": 23270.404299999882,
+        "min": 11698.391500000298,
+        "max": 64909.1576000003,
+        "p95_nearest_rank": 64909.1576000003
+      },
+      "danger_types": {
+        "clear_boundary_crossing": 2,
+        "possible_physical_conflict": 1
+      }
+    },
+    "test": {
+      "groups": {
+        "ANCHORED_DANGER": {
+          "n": 10,
+          "score_summary": {
+            "mean": 0.5529999999999999,
+            "median": 0.635,
+            "min": 0.17,
+            "max": 0.74,
+            "p95_nearest_rank": 0.74
+          },
+          "failed_gates_nonexclusive": {
+            "score": 10,
+            "review": 10,
+            "category": 10,
+            "confidence": 10,
+            "refusal": 0
+          },
+          "suppressed": 0,
+          "p4_surfaced": 10,
+          "category_counts": {
+            "possible_fall_or_person_down": 3,
+            "possible_physical_conflict": 5,
+            "possible_scene_or_boundary_entry": 2
+          }
+        },
+        "CLEAR_NORMAL": {
+          "n": 6,
+          "score_summary": {
+            "mean": 0.17833333333333334,
+            "median": 0.085,
+            "min": 0.05,
+            "max": 0.66,
+            "p95_nearest_rank": 0.66
+          },
+          "failed_gates_nonexclusive": {
+            "score": 6,
+            "review": 2,
+            "category": 4,
+            "confidence": 5,
+            "refusal": 0
+          },
+          "suppressed": 0,
+          "p4_surfaced": 1,
+          "category_counts": {
+            "possible_scene_or_boundary_entry": 3,
+            "no_clear_incident": 2,
+            "possible_fall_or_person_down": 1
+          }
+        },
+        "HARD_NEGATIVE_NORMAL": {
+          "n": 6,
+          "score_summary": {
+            "mean": 0.19666666666666666,
+            "median": 0.21,
+            "min": 0.14,
+            "max": 0.23,
+            "p95_nearest_rank": 0.23
+          },
+          "failed_gates_nonexclusive": {
+            "score": 6,
+            "review": 5,
+            "category": 6,
+            "confidence": 6,
+            "refusal": 0
+          },
+          "suppressed": 0,
+          "p4_surfaced": 1,
+          "category_counts": {
+            "possible_physical_conflict": 4,
+            "possible_fall_or_person_down": 2
+          }
+        }
+      },
+      "fixed_policy_rows": [
+        {
+          "item_id": "TRIAGE_002",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.21,
+          "category": "possible_physical_conflict",
+          "confidence": 0.795,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 1,
+          "cv_reliability": 0.9222,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_003",
+          "label": "ANCHORED_DANGER",
+          "score": 0.73,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.86,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 1,
+          "tracks_total": 1,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.6545,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_004",
+          "label": "CLEAR_NORMAL",
+          "score": 0.07,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.7,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 1,
+          "tracks_total": 2,
+          "short_tracks": 1,
+          "pair_count": 0,
+          "cv_reliability": 0.673,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_005",
+          "label": "ANCHORED_DANGER",
+          "score": 0.38,
+          "category": "possible_physical_conflict",
+          "confidence": 0.47,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 4,
+          "tracks_total": 5,
+          "short_tracks": 2,
+          "pair_count": 3,
+          "cv_reliability": 0.8341,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_006",
+          "label": "CLEAR_NORMAL",
+          "score": 0.05,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.625,
+          "gates": {
+            "score": false,
+            "review": true,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 1,
+          "tracks_total": 1,
+          "short_tracks": 1,
+          "pair_count": 0,
+          "cv_reliability": 0.7906,
+          "dropout_missing": true
+        },
+        {
+          "item_id": "TRIAGE_008",
+          "label": "ANCHORED_DANGER",
+          "score": 0.62,
+          "category": "possible_physical_conflict",
+          "confidence": 0.545,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 3,
+          "tracks_total": 3,
+          "short_tracks": 0,
+          "pair_count": 3,
+          "cv_reliability": 0.7479,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_009",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.23,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.88,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 1,
+          "tracks_total": 1,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.9346,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_011",
+          "label": "ANCHORED_DANGER",
+          "score": 0.71,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.845,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.5699,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_012",
+          "label": "CLEAR_NORMAL",
+          "score": 0.1,
+          "category": "no_clear_incident",
+          "confidence": 0.685,
+          "gates": {
+            "score": false,
+            "review": true,
+            "category": true,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.7806,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_013",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.16,
+          "category": "possible_physical_conflict",
+          "confidence": 0.67,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 1,
+          "cv_reliability": 0.925,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_014",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.14,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.88,
+          "gates": {
+            "score": false,
+            "review": true,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 1,
+          "tracks_total": 1,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.9459,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_016",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.23,
+          "category": "possible_physical_conflict",
+          "confidence": 0.64,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 1,
+          "cv_reliability": 0.9195,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_018",
+          "label": "ANCHORED_DANGER",
+          "score": 0.73,
+          "category": "possible_physical_conflict",
+          "confidence": 0.615,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 4,
+          "tracks_total": 4,
+          "short_tracks": 0,
+          "pair_count": 6,
+          "cv_reliability": 0.7188,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_019",
+          "label": "ANCHORED_DANGER",
+          "score": 0.59,
+          "category": "possible_physical_conflict",
+          "confidence": 0.555,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 3,
+          "tracks_total": 4,
+          "short_tracks": 1,
+          "pair_count": 2,
+          "cv_reliability": 0.8019,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_020",
+          "label": "CLEAR_NORMAL",
+          "score": 0.14,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.69,
+          "gates": {
+            "score": false,
+            "review": true,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 3,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.7549,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_021",
+          "label": "ANCHORED_DANGER",
+          "score": 0.65,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.695,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 3,
+          "tracks_total": 5,
+          "short_tracks": 1,
+          "pair_count": 1,
+          "cv_reliability": 0.4661,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_025",
+          "label": "ANCHORED_DANGER",
+          "score": 0.21,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.565,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 2,
+          "tracks_total": 4,
+          "short_tracks": 1,
+          "pair_count": 1,
+          "cv_reliability": 0.5329,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_026",
+          "label": "ANCHORED_DANGER",
+          "score": 0.74,
+          "category": "possible_physical_conflict",
+          "confidence": 0.725,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 3,
+          "tracks_total": 3,
+          "short_tracks": 1,
+          "pair_count": 1,
+          "cv_reliability": 0.8466,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_030",
+          "label": "CLEAR_NORMAL",
+          "score": 0.05,
+          "category": "no_clear_incident",
+          "confidence": 0.965,
+          "gates": {
+            "score": false,
+            "review": true,
+            "category": true,
+            "confidence": true,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 1,
+          "tracks_total": 1,
+          "short_tracks": 0,
+          "pair_count": 0,
+          "cv_reliability": 0.9502,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_033",
+          "label": "ANCHORED_DANGER",
+          "score": 0.17,
+          "category": "possible_scene_or_boundary_entry",
+          "confidence": 0.665,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": true,
+          "people_max": 2,
+          "tracks_total": 5,
+          "short_tracks": 1,
+          "pair_count": 2,
+          "cv_reliability": 0.4932,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_035",
+          "label": "HARD_NEGATIVE_NORMAL",
+          "score": 0.21,
+          "category": "possible_physical_conflict",
+          "confidence": 0.65,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 2,
+          "short_tracks": 0,
+          "pair_count": 1,
+          "cv_reliability": 0.9337,
+          "dropout_missing": false
+        },
+        {
+          "item_id": "TRIAGE_037",
+          "label": "CLEAR_NORMAL",
+          "score": 0.66,
+          "category": "possible_fall_or_person_down",
+          "confidence": 0.75,
+          "gates": {
+            "score": false,
+            "review": false,
+            "category": false,
+            "confidence": false,
+            "refusal": true
+          },
+          "p4_surface": false,
+          "people_max": 2,
+          "tracks_total": 3,
+          "short_tracks": 1,
+          "pair_count": 0,
+          "cv_reliability": 0.6698,
+          "dropout_missing": false
+        }
+      ],
+      "cost_usd": {
+        "p1": {
+          "mean": 0.0003056636363636364,
+          "median": 0.00029790000000000003,
+          "min": 0.00022760000000000003,
+          "max": 0.00042590000000000005,
+          "p95_nearest_rank": 0.00037890000000000005
+        },
+        "p4": {
+          "mean": 0.4582869090909091,
+          "median": 0.483701,
+          "min": 0.408211,
+          "max": 0.488351,
+          "p95_nearest_rank": 0.48811099999999996
+        }
+      },
+      "usage_tokens": {
+        "p1": {
+          "input": {
+            "mean": 3056.6363636363635,
+            "median": 2979.0,
+            "min": 2276,
+            "max": 4259,
+            "p95_nearest_rank": 3789
+          },
+          "output": {
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          },
+          "cached": {
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          },
+          "cache_write": {
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          }
+        },
+        "p4": {
+          "input": {
+            "mean": 178863.54545454544,
+            "median": 190081.0,
+            "min": 159233,
+            "max": 190081,
+            "p95_nearest_rank": 190081
+          },
+          "output": {
+            "mean": 1112.9545454545455,
+            "median": 1091.5,
+            "min": 758,
+            "max": 1630,
+            "p95_nearest_rank": 1534
+          },
+          "cached": {
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "max": 0,
+            "p95_nearest_rank": 0
+          },
+          "cache_write": {
+            "mean": 178860.54545454544,
+            "median": 190078.0,
+            "min": 159230,
+            "max": 190078,
+            "p95_nearest_rank": 190078
+          }
+        }
+      },
+      "timing_ms": {
+        "p1": {
+          "api_last_attempt_ms": {
+            "mean": 503.75,
+            "median": 386.695,
+            "min": 277.41,
+            "max": 2611.88,
+            "p95_nearest_rank": 678.46
+          },
+          "api_total_ms": {
+            "mean": 508.3272727272727,
+            "median": 388.505,
+            "min": 278.31,
+            "max": 2672.43,
+            "p95_nearest_rank": 679.96
+          },
+          "full_harness_ms": {
+            "mean": 1266.5013636363635,
+            "median": 1137.605,
+            "min": 363.64,
+            "max": 3650.49,
+            "p95_nearest_rank": 3019.24
+          }
+        },
+        "p4": {
+          "api_last_attempt_ms": {
+            "mean": 59796.37772727273,
+            "median": 53709.600000000006,
+            "min": 32772.48,
+            "max": 112767.32,
+            "p95_nearest_rank": 112672.86
+          },
+          "api_total_ms": {
+            "mean": 59796.875,
+            "median": 53709.795,
+            "min": 32773.24,
+            "max": 112767.86,
+            "p95_nearest_rank": 112673.81
+          },
+          "full_harness_ms": {
+            "mean": 94422.6340909091,
+            "median": 81021.655,
+            "min": 52293.37,
+            "max": 200552.14,
+            "p95_nearest_rank": 190674.17
+          }
+        }
+      },
+      "cv_component_sum_ms": {
+        "mean": 17039.60655909102,
+        "median": 16466.921800000364,
+        "min": 5513.019799999256,
+        "max": 33978.846399999835,
+        "p95_nearest_rank": 33645.30509999895
+      },
+      "danger_types": {
+        "possible_fall_or_person_down": 2,
+        "possible_physical_conflict": 8
+      }
+    }
+  },
+  "integrity": {
+    "locks": [
+      {
+        "lock": "experiments\\triage_frozen_v1\\HARNESS_LOCK.json",
+        "checked": 30,
+        "drift": []
+      },
+      {
+        "lock": "benchmark_triage_v1\\BENCHMARK_LOCK.json",
+        "checked": 74,
+        "drift": []
+      },
+      {
+        "lock": "experiments\\p1_decisions\\freeze\\p1_freeze.json",
+        "checked": 11,
+        "drift": []
+      },
+      {
+        "lock": "experiments\\p4_gpt61_sol_vision\\freeze\\p4_freeze.json",
+        "checked": 16,
+        "drift": []
+      },
+      {
+        "lock": "experiments\\common_adapter_v2\\freeze\\common_adapter_v2_freeze.json",
+        "checked": 2,
+        "drift": []
+      }
+    ],
+    "final_report_and_policy_match": true,
+    "test_result_drift": []
+  },
+  "cost_basis": "provider usage x repository frozen rates; not invoice",
+  "split_overlaps": {
+    "scene_group_id": [],
+    "split_group_id": [],
+    "source_video_id": [],
+    "source_sha256": []
+  },
+  "zero_event_one_sided_95_upper_bound_iid_assumption": {
+    "3": 0.6315968501359612,
+    "10": 0.2588655508930523,
+    "13": 0.20581666518655073
+  },
+  "independent_zero_event_sample_target": {
+    "0.01": 299,
+    "0.005": 598,
+    "0.001": 2995
+  },
+  "monthly_scenarios_not_forecasts": [
+    {
+      "cameras": 50,
+      "candidates_per_camera_day": 2,
+      "days": 30,
+      "candidates": 3000,
+      "p4_rate": 1.0,
+      "p1_calls": 3000,
+      "p4_calls": 3000.0,
+      "api_usd": 1375.777718181818
+    },
+    {
+      "cameras": 50,
+      "candidates_per_camera_day": 2,
+      "days": 30,
+      "candidates": 3000,
+      "p4_rate": 0.75,
+      "p1_calls": 3000,
+      "p4_calls": 2250.0,
+      "api_usd": 1032.0625363636364
+    },
+    {
+      "cameras": 50,
+      "candidates_per_camera_day": 2,
+      "days": 30,
+      "candidates": 3000,
+      "p4_rate": 0.5,
+      "p1_calls": 3000,
+      "p4_calls": 1500.0,
+      "api_usd": 688.3473545454546
+    },
+    {
+      "cameras": 50,
+      "candidates_per_camera_day": 2,
+      "days": 30,
+      "candidates": 3000,
+      "p4_rate": 0.25,
+      "p1_calls": 3000,
+      "p4_calls": 750.0,
+      "api_usd": 344.63217272727275
+    },
+    {
+      "cameras": 100,
+      "candidates_per_camera_day": 10,
+      "days": 30,
+      "candidates": 30000,
+      "p4_rate": 1.0,
+      "p1_calls": 30000,
+      "p4_calls": 30000.0,
+      "api_usd": 13757.77718181818
+    },
+    {
+      "cameras": 100,
+      "candidates_per_camera_day": 10,
+      "days": 30,
+      "candidates": 30000,
+      "p4_rate": 0.75,
+      "p1_calls": 30000,
+      "p4_calls": 22500.0,
+      "api_usd": 10320.625363636364
+    },
+    {
+      "cameras": 100,
+      "candidates_per_camera_day": 10,
+      "days": 30,
+      "candidates": 30000,
+      "p4_rate": 0.5,
+      "p1_calls": 30000,
+      "p4_calls": 15000.0,
+      "api_usd": 6883.473545454545
+    },
+    {
+      "cameras": 100,
+      "candidates_per_camera_day": 10,
+      "days": 30,
+      "candidates": 30000,
+      "p4_rate": 0.25,
+      "p1_calls": 30000,
+      "p4_calls": 7500.0,
+      "api_usd": 3446.3217272727275
+    },
+    {
+      "cameras": 500,
+      "candidates_per_camera_day": 20,
+      "days": 30,
+      "candidates": 300000,
+      "p4_rate": 1.0,
+      "p1_calls": 300000,
+      "p4_calls": 300000.0,
+      "api_usd": 137577.77181818182
+    },
+    {
+      "cameras": 500,
+      "candidates_per_camera_day": 20,
+      "days": 30,
+      "candidates": 300000,
+      "p4_rate": 0.75,
+      "p1_calls": 300000,
+      "p4_calls": 225000.0,
+      "api_usd": 103206.25363636365
+    },
+    {
+      "cameras": 500,
+      "candidates_per_camera_day": 20,
+      "days": 30,
+      "candidates": 300000,
+      "p4_rate": 0.5,
+      "p1_calls": 300000,
+      "p4_calls": 150000.0,
+      "api_usd": 68834.73545454546
+    },
+    {
+      "cameras": 500,
+      "candidates_per_camera_day": 20,
+      "days": 30,
+      "candidates": 300000,
+      "p4_rate": 0.25,
+      "p1_calls": 300000,
+      "p4_calls": 75000.0,
+      "api_usd": 34463.21727272727
+    }
+  ],
+  "p4_avoidance_break_even_fraction_vs_p4_only": 0.0006669700362377202
+}

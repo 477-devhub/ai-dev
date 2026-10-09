@@ -1,0 +1,14 @@
+{
+  "validated_at": "2026-10-09T12:12:21+09:00",
+  "successful_results": {
+    "p1": 28,
+    "p4": 28
+  },
+  "cv_frames": 768,
+  "p4_images": 768,
+  "validated_stage_outputs": 36,
+  "model_request_reference_leak_found": false,
+  "all_output_hashes_valid": true,
+  "all_image_roundtrips_equal": true,
+  "threshold_refit": false
+}

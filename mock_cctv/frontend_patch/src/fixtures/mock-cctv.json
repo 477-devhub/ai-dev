@@ -1,0 +1,56 @@
+[
+  {
+    "camera_id": "CAM_01",
+    "clip_ref": "MOCK_CLIP_01",
+    "duration_sec": 30.966667,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_02",
+    "clip_ref": "MOCK_CLIP_02",
+    "duration_sec": 30.6,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_03",
+    "clip_ref": "MOCK_CLIP_03_V2",
+    "duration_sec": 31.183991,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_04",
+    "clip_ref": "MOCK_CLIP_04",
+    "duration_sec": 35.0,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_05",
+    "clip_ref": "MOCK_CLIP_05",
+    "duration_sec": 29.907007,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_06",
+    "clip_ref": "MOCK_CLIP_06",
+    "duration_sec": 30.72,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_07",
+    "clip_ref": "MOCK_CLIP_07",
+    "duration_sec": 30.279002,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_08",
+    "clip_ref": "MOCK_CLIP_08",
+    "duration_sec": 30.510998,
+    "reused_from": null
+  },
+  {
+    "camera_id": "CAM_09",
+    "clip_ref": "MOCK_CLIP_09",
+    "duration_sec": 30.510998,
+    "reused_from": null
+  }
+]

@@ -1,0 +1,251 @@
+{
+  "protocol": "separate frozen-prompt experiment",
+  "vlm": {
+    "status": "ok",
+    "executed": true,
+    "model": "cascade",
+    "output": {
+      "assessments": [
+        {
+          "source_id": "SRC01",
+          "event_type": "fall_ground_posture",
+          "event_confidence": 0.99,
+          "risk_axes": {
+            "severity": 0.65,
+            "imminence": 0.98,
+            "exposure": 0.25,
+            "persistence": 1.0
+          },
+          "evidence_refs": [
+            "SRC01-F000140",
+            "SRC01-F000210",
+            "SRC01-F000280",
+            "SRC01-F000350",
+            "SRC01-F000699",
+            "SRC01-F001049"
+          ],
+          "needs_human_review": true,
+          "uncertainty_reason": "Model uncertainty"
+        },
+        {
+          "source_id": "SRC02",
+          "event_type": "boundary_crossing",
+          "event_confidence": 0.99,
+          "risk_axes": {
+            "severity": 0.3,
+            "imminence": 0.25,
+            "exposure": 0.25,
+            "persistence": 0.5
+          },
+          "evidence_refs": [
+            "SRC02-F000000",
+            "SRC02-F000210",
+            "SRC02-F000280",
+            "SRC02-F000350",
+            "SRC02-F001049"
+          ],
+          "needs_human_review": true,
+          "uncertainty_reason": "Model uncertainty"
+        },
+        {
+          "source_id": "SRC03",
+          "event_type": "boundary_crossing",
+          "event_confidence": 0.96,
+          "risk_axes": {
+            "severity": 0.1,
+            "imminence": 0.2,
+            "exposure": 0.25,
+            "persistence": 0.5
+          },
+          "evidence_refs": [
+            "SRC03-F000000",
+            "SRC03-F000490",
+            "SRC03-F000769",
+            "SRC03-F000839",
+            "SRC03-F000909",
+            "SRC03-F001049"
+          ],
+          "needs_human_review": true,
+          "uncertainty_reason": "Model uncertainty"
+        },
+        {
+          "source_id": "SRC04",
+          "event_type": "physical_conflict",
+          "event_confidence": 0.85,
+          "risk_axes": {
+            "severity": 0.5,
+            "imminence": 0.5,
+            "exposure": 0.75,
+            "persistence": 0.7
+          },
+          "evidence_refs": [
+            "SRC04-F000000",
+            "SRC04-F000629",
+            "SRC04-F000699",
+            "SRC04-F000769",
+            "SRC04-F000909",
+            "SRC04-F001049"
+          ],
+          "needs_human_review": true,
+          "uncertainty_reason": "Model uncertainty"
+        }
+      ]
+    },
+    "active_sources": [
+      "SRC01",
+      "SRC02",
+      "SRC03",
+      "SRC04"
+    ]
+  },
+  "metrics": {
+    "ground_truth_validation": {
+      "valid": true,
+      "errors": [],
+      "review_required": []
+    },
+    "yolo": {
+      "evaluated_frame_count": 12,
+      "evaluated_object_count": 25,
+      "unannotated_frame_count": 48,
+      "partial_annotation_frame_count": 4,
+      "noncanonical_annotation_frame_count": 0,
+      "missing_prediction_frame_count": 12,
+      "true_positives": null,
+      "false_positives": null,
+      "false_negatives": null,
+      "precision": null,
+      "recall": null,
+      "map50": null,
+      "per_class": {},
+      "output_mapping_valid": null,
+      "output_errors": [],
+      "stage_status": "skipped",
+      "event_classification_accuracy": null,
+      "used": false
+    },
+    "clef": {
+      "per_source": {
+        "SRC01": {
+          "expected_invoke_vlm": true,
+          "actual_invoke_vlm": null,
+          "correct": null,
+          "proposed_route": null,
+          "proposed_correct": null,
+          "reviewed": true
+        },
+        "SRC02": {
+          "expected_invoke_vlm": true,
+          "actual_invoke_vlm": null,
+          "correct": null,
+          "proposed_route": null,
+          "proposed_correct": null,
+          "reviewed": true
+        },
+        "SRC03": {
+          "expected_invoke_vlm": true,
+          "actual_invoke_vlm": null,
+          "correct": null,
+          "proposed_route": null,
+          "proposed_correct": null,
+          "reviewed": true
+        },
+        "SRC04": {
+          "expected_invoke_vlm": true,
+          "actual_invoke_vlm": null,
+          "correct": null,
+          "proposed_route": null,
+          "proposed_correct": null,
+          "reviewed": true
+        }
+      },
+      "reviewed_source_count": 4,
+      "available_decision_count": 0,
+      "unavailable_decision_count": 4,
+      "accuracy_including_unavailable": 0.0,
+      "conditional_decision_accuracy": null,
+      "false_negative_calls": 0,
+      "false_positive_calls": 0,
+      "missing_required_calls": 4,
+      "output_format_valid": null,
+      "output_errors": [],
+      "used": false
+    },
+    "vlm": {
+      "per_source": {
+        "SRC01": {
+          "expected_event_type": "fall_ground_posture",
+          "predicted_event_type": "fall_ground_posture",
+          "semantic_correct": true,
+          "executed": true,
+          "output_format_valid": true,
+          "input_reference_valid": true,
+          "evidence_content_accuracy": null,
+          "safety_policy_valid": true,
+          "status": "ok",
+          "omission_cause": null,
+          "omitted_reviewed_source": false
+        },
+        "SRC02": {
+          "expected_event_type": "boundary_crossing",
+          "predicted_event_type": "boundary_crossing",
+          "semantic_correct": true,
+          "executed": true,
+          "output_format_valid": true,
+          "input_reference_valid": true,
+          "evidence_content_accuracy": null,
+          "safety_policy_valid": true,
+          "status": "ok",
+          "omission_cause": null,
+          "omitted_reviewed_source": false
+        },
+        "SRC03": {
+          "expected_event_type": "gate_entry_authorization_unknown",
+          "predicted_event_type": "boundary_crossing",
+          "semantic_correct": false,
+          "executed": true,
+          "output_format_valid": true,
+          "input_reference_valid": true,
+          "evidence_content_accuracy": null,
+          "safety_policy_valid": true,
+          "status": "ok",
+          "omission_cause": null,
+          "omitted_reviewed_source": false
+        },
+        "SRC04": {
+          "expected_event_type": "physical_conflict",
+          "predicted_event_type": "physical_conflict",
+          "semantic_correct": true,
+          "executed": true,
+          "output_format_valid": true,
+          "input_reference_valid": true,
+          "evidence_content_accuracy": null,
+          "safety_policy_valid": true,
+          "status": "ok",
+          "omission_cause": null,
+          "omitted_reviewed_source": false
+        }
+      },
+      "reviewed_source_count": 4,
+      "attempted_reviewed_source_count": 4,
+      "pipeline_event_accuracy_including_omissions": 0.75,
+      "conditional_attempted_event_accuracy": 0.75,
+      "omitted_reviewed_source_count": 0,
+      "output_format_valid": true,
+      "input_reference_valid": true,
+      "evidence_content_accuracy": null,
+      "output_errors": []
+    },
+    "pipeline": {
+      "all_stages_ok": false,
+      "event_accuracy": 0.75,
+      "stage_statuses": {
+        "yolo": "skipped",
+        "clef": "skipped",
+        "vlm": "ok"
+      },
+      "fallback_recorded": false,
+      "semantic_evidence_accuracy": null
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "e21-pool-v1"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "source_id",
+          "scene_group_id",
+          "physical_group_id",
+          "camera_id",
+          "source_video_path",
+          "clip_path",
+          "sampling_config",
+          "cv_config_version",
+          "source_video_sha256",
+          "clip_sha256",
+          "clip_start_sec",
+          "clip_end_sec",
+          "canonical_cv_state_path",
+          "canonical_cv_state_sha256",
+          "cv_status"
+        ],
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scene_group_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "physical_group_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "camera_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_video_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "clip_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sampling_config": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cv_config_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_video_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "clip_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "clip_start_sec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "clip_end_sec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "canonical_cv_state_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "canonical_cv_state_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "cv_status": {
+            "enum": [
+              "PENDING",
+              "READY",
+              "FAILED"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

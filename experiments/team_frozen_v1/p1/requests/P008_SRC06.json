@@ -1,0 +1,188 @@
+{
+  "frame_ids": [
+    "SRC06-F000000",
+    "SRC06-F000031",
+    "SRC06-F000062",
+    "SRC06-F000092",
+    "SRC06-F000123",
+    "SRC06-F000154",
+    "SRC06-F000185",
+    "SRC06-F000215",
+    "SRC06-F000246",
+    "SRC06-F000277",
+    "SRC06-F000308",
+    "SRC06-F000339",
+    "SRC06-F000369",
+    "SRC06-F000400",
+    "SRC06-F000431",
+    "SRC06-F000462",
+    "SRC06-F000492",
+    "SRC06-F000523",
+    "SRC06-F000554",
+    "SRC06-F000585",
+    "SRC06-F000615",
+    "SRC06-F000646",
+    "SRC06-F000677",
+    "SRC06-F000708",
+    "SRC06-F000739",
+    "SRC06-F000769",
+    "SRC06-F000800",
+    "SRC06-F000831",
+    "SRC06-F000862",
+    "SRC06-F000892",
+    "SRC06-F000923",
+    "SRC06-F000954"
+  ],
+  "input_text": "Generic CCTV safety decision support. The JSON below is a compact summary of automatic computer-vision (CV)\nobservations extracted from a small number of uniformly sampled frames per camera (no images are provided).\nTimes are seconds relative to each camera clip; cameras are not synchronized and person identity across cameras\nis unknown. Track refs (T1, T2, ...) are per-camera generic labels. Distances and speeds are in body heights\n(bh) or frame heights (fh), per second of actual sample time. Postures are automatic proxies (standing, crouched,\nlow_posture, horizontal, unknown). Values marked reliability \"limited\" are heuristic proxies and must be treated\nas uncertain evidence. null means unknown or unavailable, not false. Scene semantics such as gates, walls,\nrestricted areas and authorization are not available to this CV system.\n\n{\"cameras\":[{\"camera\":\"CAM_01\",\"interactions\":[{\"approach_events\":1,\"approach_rate_bh_per_sec\":-0.022,\"arm_extension_score\":{\"note\":\"2D keypoint geometry proxy; not an action label\",\"reliability\":\"limited\",\"value\":0.464},\"bbox_overlap_fraction\":0.444,\"close_duration_sec\":16.4,\"close_fraction\":0.944,\"co_observed_end_sec\":19.5,\"co_observed_frames\":18,\"co_observed_start_sec\":1.033,\"contact_proxy\":{\"note\":\"heuristic visual proxy, not confirmed contact\",\"reliability\":\"limited\",\"value\":0.344},\"first_close_sec\":1.033,\"last_close_sec\":19.5,\"mean_distance_bh\":0.492,\"minimum_distance_bh\":0.003,\"rapid_limb_motion_score\":{\"note\":\"wrist displacement between sparse samples; aliasing likely, saturates easily\",\"reliability\":\"limited\",\"value\":1.0},\"relative_motion_when_close_bh_per_sec\":0.259,\"reliability\":0.777,\"tracks\":[\"T2\",\"T4\"]},{\"approach_events\":1,\"approach_rate_bh_per_sec\":-0.209,\"arm_extension_score\":{\"note\":\"2D keypoint geometry proxy; not an action label\",\"reliability\":\"limited\",\"value\":0.778},\"bbox_overlap_fraction\":0.25,\"close_duration_sec\":0.0,\"close_fraction\":0.25,\"co_observed_end_sec\":30.767,\"co_observed_frames\":4,\"co_observed_start_sec\":27.7,\"contact_proxy\":{\"note\":\"heuristic visual proxy, not confirmed contact\",\"reliability\":\"limited\",\"value\":0.297},\"first_close_sec\":27.7,\"last_close_sec\":27.7,\"mean_distance_bh\":1.021,\"minimum_distance_bh\":0.524,\"rapid_limb_motion_score\":{\"note\":\"wrist displacement between sparse samples; aliasing likely, saturates easily\",\"reliability\":\"limited\",\"value\":0.13},\"relative_motion_when_close_bh_per_sec\":0.656,\"reliability\":0.699,\"tracks\":[\"T2\",\"T5\"]},{\"approach_events\":0,\"approach_rate_bh_per_sec\":-0.065,\"arm_extension_score\":{\"note\":\"2D keypoint geometry proxy; not an action label\",\"reliability\":\"limited\",\"value\":null},\"bbox_overlap_fraction\":0.0,\"close_duration_sec\":0.0,\"close_fraction\":0.0,\"co_observed_end_sec\":4.1,\"co_observed_frames\":5,\"co_observed_start_sec\":0.0,\"contact_proxy\":{\"note\":\"heuristic visual proxy, not confirmed contact\",\"reliability\":\"limited\",\"value\":0.0},\"first_close_sec\":null,\"last_close_sec\":null,\"mean_distance_bh\":1.974,\"minimum_distance_bh\":1.648,\"rapid_limb_motion_score\":{\"note\":\"wrist displacement between sparse samples; aliasing likely, saturates easily\",\"reliability\":\"limited\",\"value\":null},\"relative_motion_when_close_bh_per_sec\":null,\"reliability\":0.758,\"tracks\":[\"T2\",\"T3\"]},{\"approach_events\":0,\"approach_rate_bh_per_sec\":-0.3,\"arm_extension_score\":{\"note\":\"2D keypoint geometry proxy; not an action label\",\"reliability\":\"limited\",\"value\":null},\"bbox_overlap_fraction\":0.0,\"close_duration_sec\":0.0,\"close_fraction\":0.0,\"co_observed_end_sec\":4.1,\"co_observed_frames\":3,\"co_observed_start_sec\":1.033,\"contact_proxy\":{\"note\":\"heuristic visual proxy, not confirmed contact\",\"reliability\":\"limited\",\"value\":0.0},\"first_close_sec\":null,\"last_close_sec\":null,\"mean_distance_bh\":2.267,\"minimum_distance_bh\":1.799,\"rapid_limb_motion_score\":{\"note\":\"wrist displacement between sparse samples; aliasing likely, saturates easily\",\"reliability\":\"limited\",\"value\":null},\"relative_motion_when_close_bh_per_sec\":null,\"reliability\":0.758,\"tracks\":[\"T3\",\"T4\"]}],\"observation_window_sec\":31.833,\"people\":{\"count_max\":4,\"count_median\":2.0,\"count_min\":0,\"frames_with_person_fraction\":0.969,\"tracks_included\":5,\"tracks_total\":5},\"quality\":{\"cv_reliability\":0.742,\"cv_reliability_label\":\"high\",\"dark_frame_fraction\":0.031,\"detection_dropout_rate\":0.011,\"occlusion_proxy\":0.467,\"pose_visibility\":0.782,\"small_person_fraction\":0.0,\"track_fragmentation\":0.5},\"sampling\":{\"frame_count\":32,\"max_interval_sec\":1.033,\"median_interval_sec\":1.033},\"scene\":{\"authorization_known\":false,\"boundary_crossing\":null,\"boundary_semantics_available\":false,\"fragment_links\":[],\"large_spatial_transition_observed\":true,\"occlusion_candidate_count\":4,\"person_entry_observed\":true,\"person_exit_observed\":true},\"tracks\":[{\"ambiguous_links\":13,\"appearance\":{\"entered_frame\":false,\"entry\":\"present_at_clip_start\",\"exit\":\"disappears_mid_frame\",\"exited_frame\":true},\"final_posture\":\"standing\",\"first_seen_sec\":0.0,\"initial_posture\":\"low_posture\",\"last_seen_sec\":30.767,\"longest_low_posture_run_sec\":0.0,\"motion\":{\"direction_change_count\":3,\"large_spatial_transition\":false,\"longest_low_motion_interval_sec\":7.167,\"low_motion_fraction\":0.499,\"max_speed_bh_per_sec\":0.719,\"mean_speed_bh_per_sec\":0.25,\"net_displacement_fh\":0.139,\"stationary_fraction\":0.5},\"observed_frames\":31,\"post_transition_low_posture_sec\":0.0,\"posture_distribution\":{\"crouched\":0.0,\"horizontal\":0.032,\"low_posture\":0.065,\"standing\":0.903,\"unknown\":0.0},\"reliability\":0.622,\"reliability_label\":\"medium\",\"strongest_vertical_transition\":{\"confidence\":0.59,\"downward_change_bh\":{\"note\":\"hip drop underestimates body lowering under steep/overhead views\",\"reliability\":\"limited\",\"value\":0.134},\"duration_sec\":2.067,\"end_sec\":23.6,\"from\":\"standing\",\"observed\":true,\"start_sec\":21.533,\"to\":\"low_posture\"},\"track_ref\":\"T2\",\"visible_fraction\":1.0},{\"ambiguous_links\":10,\"appearance\":{\"entered_frame\":true,\"entry\":\"appears_mid_frame\",\"exit\":\"disappears_mid_frame\",\"exited_frame\":true},\"final_posture\":\"horizontal\",\"first_seen_sec\":1.033,\"initial_posture\":\"standing\",\"last_seen_sec\":19.5,\"longest_low_posture_run_sec\":2.067,\"motion\":{\"direction_change_count\":2,\"large_spatial_transition\":true,\"longest_low_motion_interval_sec\":4.1,\"low_motion_fraction\":0.444,\"max_speed_bh_per_sec\":0.752,\"mean_speed_bh_per_sec\":0.262,\"net_displacement_fh\":0.828,\"stationary_fraction\":0.412},\"observed_frames\":18,\"post_transition_low_posture_sec\":1.033,\"posture_distribution\":{\"crouched\":0.056,\"horizontal\":0.056,\"low_posture\":0.056,\"standing\":0.833,\"unknown\":0.0},\"reliability\":0.52,\"reliability_label\":\"medium\",\"strongest_vertical_transition\":{\"confidence\":0.621,\"downward_change_bh\":{\"note\":\"hip drop underestimates body lowering under steep/overhead views\",\"reliability\":\"limited\",\"value\":0.779},\"duration_sec\":2.067,\"end_sec\":18.467,\"from\":\"standing\",\"observed\":true,\"start_sec\":16.4,\"to\":\"crouched\"},\"track_ref\":\"T4\",\"visible_fraction\":0.947},{\"ambiguous_links\":0,\"appearance\":{\"entered_frame\":false,\"entry\":\"present_at_clip_start\",\"exit\":\"edge_exit\",\"exited_frame\":true},\"final_posture\":\"standing\",\"first_seen_sec\":0.0,\"initial_posture\":\"standing\",\"last_seen_sec\":4.1,\"longest_low_posture_run_sec\":0.0,\"motion\":{\"direction_change_count\":0,\"large_spatial_transition\":true,\"longest_low_motion_interval_sec\":0.0,\"low_motion_fraction\":0.0,\"max_speed_bh_per_sec\":0.517,\"mean_speed_bh_per_sec\":0.365,\"net_displacement_fh\":0.51,\"stationary_fraction\":0.0},\"observed_frames\":5,\"post_transition_low_posture_sec\":null,\"posture_distribution\":{\"crouched\":0.0,\"horizontal\":0.0,\"low_posture\":0.0,\"standing\":1.0,\"unknown\":0.0},\"reliability\":0.758,\"reliability_label\":\"high\",\"strongest_vertical_transition\":{\"observed\":false},\"track_ref\":\"T3\",\"visible_fraction\":1.0},{\"ambiguous_links\":3,\"appearance\":{\"entered_frame\":true,\"entry\":\"appears_mid_frame\",\"exit\":\"disappears_mid_frame\",\"exited_frame\":true},\"final_posture\":\"standing\",\"first_seen_sec\":27.7,\"initial_posture\":\"crouched\",\"last_seen_sec\":30.767,\"longest_low_posture_run_sec\":0.0,\"motion\":{\"direction_change_count\":0,\"large_spatial_transition\":true,\"longest_low_motion_interval_sec\":0.0,\"low_motion_fraction\":0.0,\"max_speed_bh_per_sec\":0.914,\"mean_speed_bh_per_sec\":0.547,\"net_displacement_fh\":0.502,\"stationary_fraction\":0.0},\"observed_frames\":4,\"post_transition_low_posture_sec\":null,\"posture_distribution\":{\"crouched\":0.25,\"horizontal\":0.0,\"low_posture\":0.0,\"standing\":0.5,\"unknown\":0.25},\"reliability\":0.349,\"reliability_label\":\"low\",\"strongest_vertical_transition\":{\"observed\":false},\"track_ref\":\"T5\",\"visible_fraction\":1.0},{\"ambiguous_links\":1,\"appearance\":{\"entered_frame\":false,\"entry\":\"present_at_clip_start\",\"exit\":\"disappears_mid_frame\",\"exited_frame\":true},\"final_posture\":\"standing\",\"first_seen_sec\":0.0,\"initial_posture\":\"standing\",\"last_seen_sec\":1.033,\"longest_low_posture_run_sec\":0.0,\"motion\":{\"direction_change_count\":0,\"large_spatial_transition\":false,\"longest_low_motion_interval_sec\":0.0,\"low_motion_fraction\":0.0,\"max_speed_bh_per_sec\":1.051,\"mean_speed_bh_per_sec\":1.051,\"net_displacement_fh\":0.2,\"stationary_fraction\":0.0},\"observed_frames\":2,\"post_transition_low_posture_sec\":null,\"posture_distribution\":{\"crouched\":0.0,\"horizontal\":0.0,\"low_posture\":0.0,\"standing\":1.0,\"unknown\":0.0},\"reliability\":0.194,\"reliability_label\":\"low\",\"strongest_vertical_transition\":{\"observed\":null},\"track_ref\":\"T1\",\"visible_fraction\":1.0}]}],\"cross_camera\":null,\"observation_window_sec\":31.833,\"schema_version\":\"compact-decision-state-v1\",\"task\":\"single\"}",
+  "questions": [
+    {
+      "type": "predicate",
+      "name": "incident",
+      "instructions": "Consider the observations of the single supplied camera. Does the provided CV evidence indicate a safety-relevant incident or condition that should be surfaced to a CCTV operator? Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts."
+    },
+    {
+      "type": "choice",
+      "name": "incident_category",
+      "instructions": "Consider the observations of the single supplied camera. Which generic category best describes the most safety-relevant pattern in the CV observations? Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts.",
+      "choices": [
+        {
+          "value": "no_clear_incident",
+          "description": "Observations show ordinary presence or movement with no safety-relevant pattern."
+        },
+        {
+          "value": "possible_fall_or_person_down",
+          "description": "A person shows a transition to, or prolonged, low or horizontal posture."
+        },
+        {
+          "value": "possible_physical_conflict",
+          "description": "Two or more people show sustained close proximity together with rapid relative movement or limb-motion proxies."
+        },
+        {
+          "value": "possible_scene_or_boundary_entry",
+          "description": "A person enters, appears in, or moves across the scene in a way an operator may want to check; boundary semantics are not known."
+        },
+        {
+          "value": "other_safety_relevant",
+          "description": "Another safety-relevant pattern not covered by the other categories."
+        },
+        {
+          "value": "uncertain",
+          "description": "The observations are too unreliable or ambiguous to choose a category."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "severity",
+      "instructions": "Consider the observations of the single supplied camera. How severe is the potential harm suggested by the observed pattern, if it is what it appears to be? Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts.",
+      "levels": [
+        {
+          "label": "none",
+          "description": "No potential harm suggested."
+        },
+        {
+          "label": "minor",
+          "description": "Minor or unlikely harm."
+        },
+        {
+          "label": "moderate",
+          "description": "Possible injury or harm that warrants attention."
+        },
+        {
+          "label": "serious",
+          "description": "Likely injury or serious harm to a person."
+        },
+        {
+          "label": "critical",
+          "description": "Potentially life-threatening or very serious harm."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "imminence",
+      "instructions": "Consider the observations of the single supplied camera. How urgently does a CCTV operator need to look at this camera now? Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts.",
+      "levels": [
+        {
+          "label": "none",
+          "description": "No operator attention needed."
+        },
+        {
+          "label": "low",
+          "description": "Can be reviewed later."
+        },
+        {
+          "label": "moderate",
+          "description": "Should be checked soon."
+        },
+        {
+          "label": "high",
+          "description": "Should be checked promptly."
+        },
+        {
+          "label": "immediate",
+          "description": "Needs attention right now; the condition is ongoing at the end of the observation."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "exposure",
+      "instructions": "Consider the observations of the single supplied camera. Based on the observable number of people and the extent of the pattern, how many people are involved in or exposed to it? Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts.",
+      "levels": [
+        {
+          "label": "none",
+          "description": "Nobody involved."
+        },
+        {
+          "label": "one",
+          "description": "One person involved."
+        },
+        {
+          "label": "two",
+          "description": "Two people involved."
+        },
+        {
+          "label": "small_group",
+          "description": "Three or four people involved or nearby."
+        },
+        {
+          "label": "many",
+          "description": "Five or more people or a wide area involved."
+        }
+      ]
+    },
+    {
+      "type": "score",
+      "name": "persistence",
+      "instructions": "Consider the observations of the single supplied camera. How long does the observed incident-like pattern persist over the sampled observation window? Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts.",
+      "levels": [
+        {
+          "label": "none",
+          "description": "No incident-like pattern."
+        },
+        {
+          "label": "momentary",
+          "description": "Seen in one or two samples only."
+        },
+        {
+          "label": "short",
+          "description": "Persists for a few seconds."
+        },
+        {
+          "label": "sustained",
+          "description": "Persists for a large part of the remaining observation."
+        },
+        {
+          "label": "ongoing",
+          "description": "Persists until the end of the observation."
+        }
+      ]
+    },
+    {
+      "type": "predicate",
+      "name": "human_review",
+      "instructions": "Consider the observations of the single supplied camera. Should a human CCTV operator review this candidate because of either risk or uncertainty? Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts."
+    }
+  ]
+}

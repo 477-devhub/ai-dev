@@ -1,0 +1,132 @@
+[
+  {
+    "candidate_id": "cand_04d5b20b010b4e8a91fdab390829a6bc",
+    "camera_id": "CAM_04",
+    "reason_codes": [
+      "MOTION_CHANGE"
+    ],
+    "zone": "scene",
+    "status": "REQUIRES_REVIEW",
+    "human_disposition": null,
+    "generation": 0,
+    "first_seen_pts": 3.0,
+    "last_pts": 5.0,
+    "t0": null,
+    "t1": 1791528208.3683958,
+    "t2": 1791528208.3696756,
+    "t3": 1791528208.4234445,
+    "t4": 1791528311.6091397,
+    "t5": 1791528366.9256213,
+    "last_updated": 1791528366.9256942,
+    "merge_count": 4,
+    "stage1": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_04d5b20b010b4e8a91fdab390829a6bc",
+      "camera_id": "CAM_04",
+      "decision": "SUSPICIOUS",
+      "action": "ESCALATE_P4",
+      "reason_codes": [
+        "MOTION_CHANGE"
+      ],
+      "router_version": "runtime-shadow-v1"
+    },
+    "job_status": "completed",
+    "observations": {
+      "motion_fraction": 0.045208333333333336,
+      "person_count": 0
+    },
+    "ai_source": "live",
+    "assessment": {
+      "schema_version": "1.1",
+      "event_type": "uncertain",
+      "event_confidence": 0.97,
+      "risk_axes": {
+        "severity": 0.0,
+        "imminence": 0.0,
+        "exposure": 0.0,
+        "persistence": 0.0
+      },
+      "needs_human_review": true,
+      "uncertainty_reason": "Vehicle occupants and areas obscured by parked vehicles are not clearly visible.; Activity outside the camera view or after the clip ends is unknown.",
+      "evidence_refs": [
+        "F001",
+        "F032",
+        "F061",
+        "F064"
+      ],
+      "ai_opinion": "Over approximately five seconds, a white SUV travels along the roadway, passes through the foreground, and exits at the lower-right edge. The person beside the utility pole remains upright and largely stationary, with no visible fall, physical conflict, boundary crossing, or collision. The sequence shows ordinary vehicle passage and stationary pedestrian presence without a clear safety-relevant pattern.",
+      "recommended_actions": [],
+      "metadata": {
+        "adapter": "cascade_v1",
+        "model": "cheap-cv + gpt-6-luna + gpt-6.1-sol",
+        "is_mock": false,
+        "latency_ms": 55312.103500000376,
+        "input_units": null,
+        "estimated_cost_usd": null,
+        "error_code": null,
+        "prompt_version": "frozen-v1",
+        "stage_trace": [
+          {
+            "stage": "p4",
+            "status": "ok",
+            "latency_ms": 55238.915500001895,
+            "attempts": 1,
+            "input_tokens": null,
+            "output_tokens": null,
+            "estimated_cost_usd": null,
+            "request_id": null
+          }
+        ]
+      },
+      "routing": {
+        "mode": "shadow",
+        "policy_version": "conservative_normal_then_p4-v1",
+        "selected_stage": "p4",
+        "p_incident": null,
+        "frozen_guard_passed": false,
+        "backend_guard_passed": false,
+        "evidence_scope": "cited_frames"
+      },
+      "evidence_descriptions": {
+        "F001": "A person wearing a red cap stands upright beside the utility pole, with hands near waist level.",
+        "F032": "The white SUV is in the left foreground roadway; the person remains upright beside the pole.",
+        "F061": "Only a small portion of the white SUV remains visible at the lower-right edge.",
+        "F064": "The person remains standing beside the utility pole, and the adjacent black gate is closed."
+      }
+    },
+    "error": null,
+    "clock_uncertainty_ms": 0.5,
+    "suppression_applied": false
+  },
+  {
+    "candidate_id": "cand_d8365af9e5c64aaeb921e7b4a3d6ac73",
+    "camera_id": "CAM_04",
+    "reason_codes": [
+      "MOTION_CHANGE"
+    ],
+    "zone": "scene",
+    "status": "REQUIRES_REVIEW",
+    "human_disposition": null,
+    "generation": 0,
+    "first_seen_pts": 25.0,
+    "last_pts": 29.0,
+    "t0": null,
+    "t1": 1791528230.4319706,
+    "t2": 1791528230.4327395,
+    "t3": 1791528230.5434966,
+    "t4": null,
+    "t5": null,
+    "last_updated": 1791528234.3977907,
+    "merge_count": 8,
+    "stage1": null,
+    "job_status": "rejected",
+    "observations": {
+      "motion_fraction": 0.07604166666666666,
+      "person_count": 0
+    },
+    "ai_source": "not_called",
+    "assessment": null,
+    "error": "QUEUE_BACKPRESSURE",
+    "clock_uncertainty_ms": 0.5
+  }
+]

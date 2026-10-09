@@ -1,0 +1,49 @@
+{
+  "experiment_version": "stage1-safe-suppress-e2-v1",
+  "model": "gpt-6-luna",
+  "endpoint": "/v1/decisions",
+  "budget_usd": 2.0,
+  "input_rate_usd_per_1m": 0.1,
+  "pricing_checked_date": "2026-10-09",
+  "pricing_source": "https://developers.openai.com/api/docs/guides/decisions",
+  "long_context_threshold_tokens": 272000,
+  "long_context_multiplier": 2.0,
+  "per_request_reservation_usd": 0.1,
+  "request_byte_ceiling": 100000,
+  "automatic_retries": 0,
+  "arms": {
+    "A": {
+      "state": "v1",
+      "questions": "original.json"
+    },
+    "B": {
+      "state": "v1",
+      "questions": "original_plus_safe.json"
+    },
+    "C": {
+      "state": "v2",
+      "questions": "original.json"
+    },
+    "D": {
+      "state": "v2",
+      "questions": "original_plus_safe.json"
+    }
+  },
+  "shadow_policies": {
+    "baseline_guard": {
+      "incident_max": 0.01,
+      "adapter_confidence_min": 0.9
+    },
+    "safe_guard_095": {
+      "incident_max": 0.01,
+      "adapter_confidence_min": 0.9,
+      "safe_min": 0.95
+    },
+    "safe_guard_099": {
+      "incident_max": 0.01,
+      "adapter_confidence_min": 0.9,
+      "safe_min": 0.99
+    }
+  },
+  "policy_note": "Predeclared diagnostic guards; no optimization, no deployment. Safe policies only B/D. Baseline numeric thresholds preserve published original comparison, not tuned on Frozen data."
+}

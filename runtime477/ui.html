@@ -1,0 +1,48 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>477 · Live Replay</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#10141c;color:#e4eaf5;font:14px system-ui}header{padding:18px 24px;border-bottom:1px solid #354052;display:flex;gap:20px;align-items:center}h1{margin:0;font-size:24px}button,a{color:inherit}button{background:#29364b;border:1px solid #62718a;padding:8px 12px;border-radius:6px;cursor:pointer}button:disabled{opacity:.5}main{display:grid;grid-template-columns:minmax(600px,2fr) minmax(350px,1fr);gap:16px;padding:18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-content:start}.camera{border:2px solid #303b4d;border-radius:8px;overflow:hidden}.camera.attention{border-color:#eeb450}.camera img{display:block;width:100%;aspect-ratio:16/9;background:#05080d}.camera footer{padding:7px;font-size:12px}.note{color:#a6b5cb;line-height:1.6;padding:12px 24px}.card{padding:12px;border:1px solid #52637d;border-radius:7px;margin-bottom:9px}.card p{margin:5px 0;color:#b9c7da}.card img{width:100px;float:right}.danger{border-color:#de7a61}.section{max-height:34vh;overflow:auto}h2{font-size:16px}#metrics{white-space:pre-wrap;background:#1a2230;padding:12px;font:12px monospace}dialog{background:#1c2636;color:#eee;border:1px solid #61728f;width:80vw}dialog video{width:75%;max-height:60vh}.evidence img{max-width:160px}#connection{color:#efbb5e}small{color:#9babbe}@media(max-width:1000px){main{grid-template-columns:1fr}.section{max-height:none}}
+</style>
+<header><h1>477 AI</h1><strong>실시간 후보 관제 · 9 MP4</strong><button id="start">1× 재생 시작</button><span id="phase">연결 중</span><span id="connection"></span></header>
+<div class="note" id="mode"></div><main><div><div class="grid" id="grid"></div><h2>실측 모니터링</h2><div id="metrics">측정 대기</div></div><aside><h2>초기 후보 Preview <small>위험 확정 아님</small></h2><div id="preview" class="section"></div><h2>Human Attention Queue</h2><div id="queue" class="section"></div><h2>관제사 처리 이력</h2><div id="history" class="section"></div></aside></main>
+<dialog id="detail"><button id="close">닫기</button><h2 id="detailTitle"></h2><video controls muted></video><pre id="assessment" style="white-space:pre-wrap"></pre><div class="evidence"></div></dialog>
+<script>
+const $=s=>document.querySelector(s);let state,instance,revision=-1,clockOffset=0,uncertainty=0,clockReady=false;let lastCandidates='';const acked=new Set(),pending=new Set(),tiles=new Map();
+const labels={DETECTED:'관측 후보',SCREENING:'AI 분석 중 · P1 대기',ANALYZING:'AI 분석 중 · P4 대기',REQUIRES_REVIEW:'사람 검토 필요',AI_NORMAL_ESTIMATE:'AI 정상 추정 · 자동 삭제 안 함',AI_DANGER_ESTIMATE:'AI 위험 추정 · 최종 판단은 관제사',ERROR:'분석 오류'};
+const reasons={MOTION_CHANGE:'지속적인 화면 움직임 변화',HORIZONTAL_PERSON_PROXY:'가로 형태 사람 박스 관측'};
+async function syncClock(){let best;for(let i=0;i<5;i++){let a=Date.now();let r=await fetch('/api/time').then(r=>r.json());let b=Date.now();if(!best||b-a<best.rtt)best={rtt:b-a,offset:r.epoch*1000-(a+b)/2};}clockOffset=best.offset;uncertainty=best.rtt/2;clockReady=true;}
+function el(tag,text){let n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;}
+function show(c){
+  $('#detailTitle').textContent=c.camera_id+' · '+labels[c.status];
+  let v=$('#detail video');v.src='/original/'+c.camera_id;
+  v.onloadedmetadata=()=>v.currentTime=Math.max(0,c.first_seen_pts-3);
+  const a=c.recorded_result?.assessment||c.assessment;
+  $('#assessment').textContent=(c.ai_source==='recorded'?'저장 결과 재사용 — 실시간 AI 호출 아님\n':'')+
+    (a?.ai_opinion||c.reason_codes.map(r=>reasons[r]||r).join(', '))+
+    (a?.uncertainty_reason?'\n\n확인 필요: '+a.uncertainty_reason:'')+(c.error?'\n\n분석 상태: '+c.error:'');
+  let e=$('.evidence');e.replaceChildren();
+  for(const ref of c.assessment?.evidence_refs||[]){
+    let figure=el('figure');figure.style.cssText='display:inline-block;max-width:160px;vertical-align:top;margin:8px';
+    let image=el('img');image.src='/evidence/'+c.candidate_id+'/'+ref;image.alt=ref;
+    figure.append(image,el('figcaption',c.assessment.evidence_descriptions?.[ref]||ref));e.append(figure);
+  }
+  $('#detail').showModal();
+}
+function render(s){if(instance!==s.instance){instance=s.instance;revision=-1;acked.clear();}if(s.revision<revision)return;revision=s.revision;state=s;$('#phase').textContent=s.phase;$('#start').disabled=s.phase!=='IDLE';$('#mode').textContent=s.mode+' · '+(s.ai_enabled?'실제 P1/P4 비동기 호출':'AI 실시간 호출 비활성화')+' · 원본에서 만든 640×360 재생본 / 서버 1× 시간축 / 표시 최대 10fps / CV 목표 2fps. Fast CV는 위험 확정이 아닙니다. T0 Human Annotation 전에는 T3−T1만 보고합니다.';
+for(const c of s.cameras){let tile=tiles.get(c.camera_id);if(!tile){tile=el('article');tile.className='camera';let img=el('img');img.alt=c.camera_id;tile.append(img,el('footer'));$('#grid').append(tile);tiles.set(c.camera_id,tile);}if(s.frames[c.camera_id])tile.querySelector('img').src='data:image/jpeg;base64,'+s.frames[c.camera_id];tile.querySelector('footer').textContent=c.camera_id+' · '+c.state+' · '+c.pts.toFixed(2)+'s · CV '+c.sampled;tile.classList.toggle('attention',s.candidates.some(x=>x.camera_id===c.camera_id&&!x.human_disposition&&x.status!=='AI_NORMAL_ESTIMATE'));}
+const signature=JSON.stringify(s.candidates);
+if(signature===lastCandidates&&s.candidates.every(c=>acked.has(c.candidate_id)))return;
+lastCandidates=signature;
+$('#preview').replaceChildren();$('#queue').replaceChildren();$('#history').replaceChildren();
+for(const c of [...s.candidates].sort((a,b)=>(b.status==='AI_DANGER_ESTIMATE')-(a.status==='AI_DANGER_ESTIMATE')||b.t1-a.t1)){let card=el('article');card.className='card'+(c.status==='AI_DANGER_ESTIMATE'?' danger':'');card.dataset.candidate=c.candidate_id;let im=el('img');im.src='/evidence/'+c.candidate_id+'/preview';im.alt='탐지 주변 프레임';card.append(im,el('strong',c.camera_id+' · '+labels[c.status]),el('p',c.reason_codes.map(r=>reasons[r]||r).join(', ')),el('p','영상 '+c.first_seen_pts.toFixed(2)+'s · '+new Date(c.t1*1000).toLocaleTimeString()),el('p','작업: '+c.job_status+' / '+c.ai_source+(c.error?' / '+c.error:'')));
+let open=el('button','원본 / 근거');open.onclick=()=>show(c);card.append(open);for(const [action,label] of [['reviewed','확인 완료'],['dismissed','후보 종결']]){let b=el('button',label);b.onclick=()=>fetch('/api/candidates/'+c.candidate_id+'/human',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action})});card.append(b);}let target=c.human_disposition?'#history':['DETECTED','SCREENING','ANALYZING','AI_NORMAL_ESTIMATE'].includes(c.status)?'#preview':'#queue';$(target).append(card);
+if(!acked.has(c.candidate_id)&&!pending.has(c.candidate_id)&&clockReady&&!document.hidden){pending.add(c.candidate_id);requestAnimationFrame(()=>requestAnimationFrame(async()=>{try{if(document.hidden)return;let r=await fetch('/api/candidates/'+c.candidate_id+'/displayed',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({t3_server_epoch:(Date.now()+clockOffset)/1000,clock_uncertainty_ms:uncertainty})});if(r.ok)acked.add(c.candidate_id);}finally{pending.delete(c.candidate_id);}}));}}
+}
+function connect(){let ws=new WebSocket((location.protocol==='https:'?'wss://':'ws://')+location.host+'/ws');ws.onopen=()=>$('#connection').textContent='연결됨';ws.onmessage=e=>render(JSON.parse(e.data));ws.onclose=()=>{$('#connection').textContent='재연결 중';setTimeout(connect,1000);};}
+$('#start').onclick=async()=>{await syncClock();await fetch('/api/start',{method:'POST'});};$('#close').onclick=()=>{$('#detail video').pause();$('#detail').close();};
+setInterval(async()=>{try{let m=await fetch('/api/metrics').then(r=>r.json());const f=x=>x?`p50 ${x.p50.toFixed(1)} / p95 ${x.p95.toFixed(1)} / max ${x.max.toFixed(1)} ms`:'NOT MEASURED';$('#metrics').textContent=`T3−T0: NOT MEASURED (Human T0 미주석)\nT3−T1: ${f(m.candidate_to_frontend_ms)}\nFast CV batch: ${f(m.fast_cv_batch_ms_per_sample)}\nDecode FPS 합계: ${m.effective_decode_fps_aggregate?.toFixed(1)??'—'} / CV FPS 합계: ${m.effective_cv_fps_aggregate?.toFixed(1)??'—'}\nQueue P1 ${m.queue.p1} / P4 ${m.queue.p4} · 후보 ${m.candidates} · 표시 ${m.frontend_displayed}\nP1 API: ${f(m.ai.p1_api_ms)}\nP4 API: ${f(m.ai.p4_api_ms)}`;}catch{}},2000);
+syncClock().then(connect);setInterval(syncClock,30000);
+</script></html>
+
+
+

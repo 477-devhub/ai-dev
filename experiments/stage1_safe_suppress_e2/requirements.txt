@@ -1,0 +1,7 @@
+# Run with existing experiments/p1_decisions/.venv/Scripts/python.exe.
+# Do not upgrade or alter the pinned P1 environment.
+openai==3.26.0
+jsonschema
+PyYAML
+httpx2
+# optional token proxy: tiktoken; fallback method is recorded if unavailable

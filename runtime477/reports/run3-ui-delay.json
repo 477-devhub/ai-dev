@@ -1,0 +1,246 @@
+{
+  "instance": "51aa202e6ee54666b23db60a21c4b1db",
+  "mode": "LIVE_REPLAY_MODE",
+  "phase": "FINISHED",
+  "time_to_first_alert_ms": null,
+  "t0_annotation": "NOT ANNOTATED; detector first seen is not human T0",
+  "candidate_to_frontend_ms": {
+    "count": 2,
+    "mean": 7580.747604370117,
+    "p50": 7580.747604370117,
+    "p95": 15055.837392807007,
+    "max": 15055.837392807007
+  },
+  "backend_to_frontend_ms": {
+    "count": 2,
+    "mean": 7576.341032981873,
+    "p50": 7576.341032981873,
+    "p95": 15053.323984146118,
+    "max": 15053.323984146118
+  },
+  "t3_clock_uncertainty_ms": {
+    "count": 2,
+    "mean": 5.25,
+    "p50": 5.25,
+    "p95": 8.5,
+    "max": 8.5
+  },
+  "fast_cv_batch_ms_per_sample": {
+    "count": 561,
+    "mean": 146.81646631038146,
+    "p50": 133.13329999800771,
+    "p95": 314.4140000003972,
+    "max": 362.366800000018
+  },
+  "frame_to_observation_ms": {
+    "count": 561,
+    "mean": 183.10992345169677,
+    "p50": 157.80013402303084,
+    "p95": 381.9424788157164,
+    "max": 687.8179232279465
+  },
+  "decode_lag_ms": {
+    "count": 2481,
+    "mean": 3.281363816527005,
+    "p50": 1.0356333322611988,
+    "p95": 7.122599999274115,
+    "max": 208.36289999715518
+  },
+  "effective_decode_fps_aggregate": 239.83821317033156,
+  "effective_cv_fps_aggregate": 16.040681639074393,
+  "late_decode_rate": 0.018240343347639486,
+  "frame_drop_rate": 0.0,
+  "drop_note": "Completed decoded count vs container frame count; intentional CV/display subsampling is excluded.",
+  "cpu_utilization_percent": {
+    "count": 163,
+    "mean": 29.075460122699386,
+    "p50": 24.3,
+    "p95": 59.1,
+    "max": 70.9
+  },
+  "gpu_utilization_percent": {
+    "count": 163,
+    "mean": 3.7300613496932513,
+    "p50": 0.0,
+    "p95": 27.0,
+    "max": 99.0
+  },
+  "gpu_memory_mb": {
+    "count": 163,
+    "mean": 237.49079754601226,
+    "p50": 81.0,
+    "p95": 881.0,
+    "max": 881.0
+  },
+  "gpu_peak_allocated_mb": 100.9560546875,
+  "ai": {
+    "prepare_ms": {
+      "count": 1,
+      "mean": 36315.50690000222,
+      "p50": 36315.50690000222,
+      "p95": 36315.50690000222,
+      "max": 36315.50690000222
+    },
+    "full_cv_ms": {
+      "count": 1,
+      "mean": 52980.7209999999,
+      "p50": 52980.7209999999,
+      "p95": 52980.7209999999,
+      "max": 52980.7209999999
+    },
+    "p1_api_ms": {
+      "count": 1,
+      "mean": 723.75,
+      "p50": 723.75,
+      "p95": 723.75,
+      "max": 723.75
+    },
+    "p4_api_ms": {
+      "count": 1,
+      "mean": 63946.57,
+      "p50": 63946.57,
+      "p95": 63946.57,
+      "max": 63946.57
+    }
+  },
+  "queue": {
+    "p1": 0,
+    "p4": 0,
+    "peak": {
+      "p1": 1,
+      "p4": 1
+    }
+  },
+  "candidates": 2,
+  "frontend_displayed": 2,
+  "deduplication_rate": 0.8571428571428571,
+  "capacity_rejections": 0,
+  "cameras": [
+    {
+      "camera_id": "CAM_01",
+      "state": "ENDED",
+      "pts": 30.933333333333334,
+      "sampled": 62,
+      "type": "camera_end",
+      "lag_ms": 1.6879666664557647,
+      "decoded": 929,
+      "displayed": 275,
+      "late_frames": 15,
+      "source_fps": 30.0,
+      "elapsed": 30.943255499998486,
+      "expected_frames": 929
+    },
+    {
+      "camera_id": "CAM_02",
+      "state": "ENDED",
+      "pts": 30.566666666666666,
+      "sampled": 61,
+      "type": "camera_end",
+      "lag_ms": 3.8070333311530646,
+      "decoded": 918,
+      "displayed": 272,
+      "late_frames": 17,
+      "source_fps": 30.0,
+      "elapsed": 30.58032099999764,
+      "expected_frames": 918
+    },
+    {
+      "camera_id": "CAM_03",
+      "state": "ENDED",
+      "pts": 31.133333333333333,
+      "sampled": 63,
+      "type": "camera_end",
+      "lag_ms": 3.077933330981608,
+      "decoded": 935,
+      "displayed": 276,
+      "late_frames": 17,
+      "source_fps": 30.0,
+      "elapsed": 31.137407499998517,
+      "expected_frames": 935
+    },
+    {
+      "camera_id": "CAM_04",
+      "state": "ENDED",
+      "pts": 34.96666666666667,
+      "sampled": 70,
+      "type": "camera_end",
+      "lag_ms": 1.7455333332065948,
+      "decoded": 1050,
+      "displayed": 308,
+      "late_frames": 17,
+      "source_fps": 30.0,
+      "elapsed": 34.973576099997445,
+      "expected_frames": 1050
+    },
+    {
+      "camera_id": "CAM_05",
+      "state": "ENDED",
+      "pts": 29.866666666666667,
+      "sampled": 60,
+      "type": "camera_end",
+      "lag_ms": 5.148699997516104,
+      "decoded": 897,
+      "displayed": 266,
+      "late_frames": 12,
+      "source_fps": 30.0,
+      "elapsed": 29.87126449999778,
+      "expected_frames": 897
+    },
+    {
+      "camera_id": "CAM_06",
+      "state": "ENDED",
+      "pts": 30.666666666666668,
+      "sampled": 62,
+      "type": "camera_end",
+      "lag_ms": 7.902633330861164,
+      "decoded": 921,
+      "displayed": 273,
+      "late_frames": 19,
+      "source_fps": 30.0,
+      "elapsed": 30.682563699996535,
+      "expected_frames": 921
+    },
+    {
+      "camera_id": "CAM_07",
+      "state": "ENDED",
+      "pts": 30.233333333333334,
+      "sampled": 61,
+      "type": "camera_end",
+      "lag_ms": 4.97833333186648,
+      "decoded": 908,
+      "displayed": 269,
+      "late_frames": 20,
+      "source_fps": 30.0,
+      "elapsed": 30.238266099997418,
+      "expected_frames": 908
+    },
+    {
+      "camera_id": "CAM_08",
+      "state": "ENDED",
+      "pts": 30.466666666666665,
+      "sampled": 61,
+      "type": "camera_end",
+      "lag_ms": 4.098466663950973,
+      "decoded": 915,
+      "displayed": 271,
+      "late_frames": 14,
+      "source_fps": 30.0,
+      "elapsed": 30.467383899998822,
+      "expected_frames": 915
+    },
+    {
+      "camera_id": "CAM_09",
+      "state": "ENDED",
+      "pts": 30.466666666666665,
+      "sampled": 61,
+      "type": "camera_end",
+      "lag_ms": 5.027266664061614,
+      "decoded": 915,
+      "displayed": 271,
+      "late_frames": 22,
+      "source_fps": 30.0,
+      "elapsed": 30.467249999997875,
+      "expected_frames": 915
+    }
+  ]
+}

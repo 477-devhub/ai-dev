@@ -1,0 +1,199 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "e2-development-v1"
+    },
+    "dataset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_id",
+          "source_id",
+          "scene_group_id",
+          "physical_group_id",
+          "original_video_path",
+          "original_video_sha256",
+          "start_sec",
+          "end_sec",
+          "canonical_path",
+          "canonical_sha256",
+          "human_gt",
+          "independence",
+          "cv_provenance"
+        ],
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scene_group_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "physical_group_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_video_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_video_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "start_sec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_sec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "canonical_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "human_gt": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "basis",
+              "reviewer",
+              "reviewed_at",
+              "watched_full_window",
+              "observable_summary"
+            ],
+            "properties": {
+              "label": {
+                "enum": [
+                  "CLEAR_NORMAL",
+                  "HARD_NEGATIVE_NORMAL",
+                  "ANCHORED_DANGER",
+                  "AMBIGUOUS"
+                ]
+              },
+              "basis": {
+                "const": "human_original_video"
+              },
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_at": {
+                "type": "string",
+                "minLength": 1
+              },
+              "watched_full_window": {
+                "const": true
+              },
+              "observable_summary": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "independence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "reviewer",
+              "checked_at",
+              "evidence",
+              "checked_datasets"
+            ],
+            "properties": {
+              "status": {
+                "const": "confirmed"
+              },
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "checked_at": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "string",
+                "minLength": 1
+              },
+              "checked_datasets": {
+                "type": "array",
+                "uniqueItems": true,
+                "minItems": 3,
+                "items": {
+                  "type": "string"
+                },
+                "allOf": [
+                  {
+                    "contains": {
+                      "const": "477-triage-normal-v1"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "477-reasoning-v1"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "new477-total64-v1"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cv_provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "original_video_sha256",
+              "canonical_sha256",
+              "builder_version"
+            ],
+            "properties": {
+              "original_video_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "canonical_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "builder_version": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

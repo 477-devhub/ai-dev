@@ -1,0 +1,1259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://477.local/experiments/compact_decision_state_v2.schema.json",
+  "title": "477 Compact CV State v2",
+  "description": "Observation evidence only. Missing samples are not absence; adjacent spans are not continuous duration. No routing or event judgments.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task",
+    "observation_window_sec",
+    "cameras",
+    "cross_camera",
+    "evidence_semantics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "compact-decision-state-v2"
+    },
+    "task": {
+      "enum": [
+        "single",
+        "attention",
+        "multi_camera"
+      ]
+    },
+    "observation_window_sec": {
+      "type": "number",
+      "minimum": 0
+    },
+    "cameras": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/camera"
+      }
+    },
+    "cross_camera": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/cross"
+        }
+      ]
+    },
+    "evidence_semantics": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "cam": {
+      "enum": [
+        "CAM_01",
+        "CAM_02",
+        "CAM_03"
+      ]
+    },
+    "ref": {
+      "type": "string",
+      "pattern": "^T[0-9]+$"
+    },
+    "num": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "nnum": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "p01": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "posture": {
+      "enum": [
+        "standing",
+        "crouched",
+        "low_posture",
+        "horizontal",
+        "unknown",
+        null
+      ]
+    },
+    "limited": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reliability",
+        "note"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "reliability": {
+          "const": "limited"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "valued": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reliability",
+        "note"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "reliability": {
+          "enum": [
+            "limited",
+            "normal"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "camera": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "camera",
+        "observation_window_sec",
+        "sampling",
+        "quality",
+        "people",
+        "tracks",
+        "interactions",
+        "scene",
+        "selection_coverage"
+      ],
+      "properties": {
+        "camera": {
+          "$ref": "#/$defs/cam"
+        },
+        "observation_window_sec": {
+          "$ref": "#/$defs/nnum"
+        },
+        "sampling": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "frame_count",
+            "median_interval_sec",
+            "max_interval_sec",
+            "timestamps_sec"
+          ],
+          "properties": {
+            "frame_count": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 64
+            },
+            "median_interval_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "max_interval_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "timestamps_sec": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 64,
+              "items": {
+                "type": "number",
+                "minimum": 0
+              },
+              "description": "Canonical sample 시각 배열. run index를 이 배열에 대응; clip-relative seconds."
+            }
+          }
+        },
+        "quality": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "cv_reliability",
+            "cv_reliability_label",
+            "pose_visibility",
+            "track_fragmentation",
+            "occlusion_proxy",
+            "detection_dropout_rate",
+            "small_person_fraction",
+            "dark_frame_fraction",
+            "aggregate_inputs_complete",
+            "mean_brightness",
+            "mean_contrast",
+            "mean_sharpness"
+          ],
+          "properties": {
+            "cv_reliability": {
+              "$ref": "#/$defs/p01"
+            },
+            "cv_reliability_label": {
+              "enum": [
+                "high",
+                "medium",
+                "low",
+                "unknown"
+              ]
+            },
+            "pose_visibility": {
+              "$ref": "#/$defs/p01"
+            },
+            "track_fragmentation": {
+              "$ref": "#/$defs/p01"
+            },
+            "occlusion_proxy": {
+              "$ref": "#/$defs/p01"
+            },
+            "detection_dropout_rate": {
+              "$ref": "#/$defs/p01"
+            },
+            "small_person_fraction": {
+              "$ref": "#/$defs/p01"
+            },
+            "dark_frame_fraction": {
+              "$ref": "#/$defs/p01"
+            },
+            "aggregate_inputs_complete": {
+              "type": "boolean",
+              "description": "종합 CV 신뢰도 구성 요소의 이용 가능 여부; high confidence라는 뜻 아님.",
+              "x-canonical-source": "quality.pose_visibility,detection_dropout_rate,track_fragmentation,occlusion_proxy,small_person_fraction,dark_frame_fraction",
+              "x-units": "boolean",
+              "x-summary": "6개 값 모두 non-null이면 true; false이면 cv_reliability=null 및 label=unknown"
+            },
+            "mean_brightness": {
+              "$ref": "#/$defs/nnum",
+              "description": "평균 영상 밝기.",
+              "x-canonical-source": "quality.mean_brightness",
+              "x-units": "pixel intensity 0..255",
+              "x-summary": "직접 전달"
+            },
+            "mean_contrast": {
+              "$ref": "#/$defs/nnum",
+              "description": "평균 영상 grayscale 표준편차.",
+              "x-canonical-source": "quality.mean_contrast",
+              "x-units": "pixel intensity standard deviation",
+              "x-summary": "직접 전달"
+            },
+            "mean_sharpness": {
+              "$ref": "#/$defs/nnum",
+              "description": "평균 Laplacian variance; 카메라별 검증이 필요한 proxy.",
+              "x-canonical-source": "quality.mean_sharpness",
+              "x-units": "pixel intensity squared",
+              "x-summary": "직접 전달"
+            }
+          }
+        },
+        "people": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "count_min",
+            "count_max",
+            "count_median",
+            "frames_with_person_fraction",
+            "tracks_total",
+            "tracks_included"
+          ],
+          "properties": {
+            "count_min": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "count_max": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "count_median": {
+              "type": "number",
+              "minimum": 0
+            },
+            "frames_with_person_fraction": {
+              "$ref": "#/$defs/p01"
+            },
+            "tracks_total": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "tracks_included": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            }
+          }
+        },
+        "tracks": {
+          "type": "array",
+          "maxItems": 6,
+          "items": {
+            "$ref": "#/$defs/track"
+          }
+        },
+        "interactions": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/interaction"
+          }
+        },
+        "scene": {
+          "$ref": "#/$defs/scene"
+        },
+        "selection_coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "tracks_omitted",
+            "pairs_total",
+            "pairs_included",
+            "pairs_omitted",
+            "fragment_links_total",
+            "fragment_links_included",
+            "fragment_links_omitted",
+            "omitted_tracks_with_low_samples",
+            "omitted_tracks_with_upright_to_low",
+            "omitted_tracks_with_unknown_posture",
+            "omitted_pairs_with_close_samples",
+            "omitted_fragment_posture_changes"
+          ],
+          "properties": {
+            "tracks_omitted": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "원본/포함/제외 집계; min observation filter, track filter 및 cap에 의한 제외 모두 포함.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "pairs_total": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "원본/포함/제외 집계; min observation filter, track filter 및 cap에 의한 제외 모두 포함.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "pairs_included": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "원본/포함/제외 집계; min observation filter, track filter 및 cap에 의한 제외 모두 포함.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "pairs_omitted": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "원본/포함/제외 집계; min observation filter, track filter 및 cap에 의한 제외 모두 포함.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "fragment_links_total": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "원본/포함/제외 집계; min observation filter, track filter 및 cap에 의한 제외 모두 포함.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "fragment_links_included": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "원본/포함/제외 집계; min observation filter, track filter 및 cap에 의한 제외 모두 포함.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "fragment_links_omitted": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "원본/포함/제외 집계; min observation filter, track filter 및 cap에 의한 제외 모두 포함.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "omitted_tracks_with_low_samples": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "선택으로 제외된 관측 신호 개수; 사건/안전 판정이 아님.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "omitted_tracks_with_upright_to_low": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "선택으로 제외된 관측 신호 개수; 사건/안전 판정이 아님.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "omitted_tracks_with_unknown_posture": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "선택으로 제외된 관측 신호 개수; 사건/안전 판정이 아님.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "omitted_pairs_with_close_samples": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "선택으로 제외된 관측 신호 개수; 사건/안전 판정이 아님.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            },
+            "omitted_fragment_posture_changes": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "선택으로 제외된 관측 신호 개수; 사건/안전 판정이 아님.",
+              "x-canonical-source": "tracks, pairwise_interactions, scene_observations.fragment_links (전체 Canonical camera)",
+              "x-units": "count",
+              "x-summary": "Serializer 선택 결과와 원본 차집합; low/transition/unknown/close/posture_change 관측 여부로 개수 집계"
+            }
+          }
+        }
+      }
+    },
+    "track": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "track_ref",
+        "reliability",
+        "reliability_label",
+        "observed_frames",
+        "ambiguous_links",
+        "first_seen_sec",
+        "last_seen_sec",
+        "initial_posture",
+        "posture_distribution",
+        "strongest_vertical_transition",
+        "motion",
+        "appearance",
+        "coverage",
+        "temporal",
+        "mean_detection_confidence",
+        "association_confidence",
+        "fragment_link_candidates"
+      ],
+      "properties": {
+        "track_ref": {
+          "$ref": "#/$defs/ref"
+        },
+        "reliability": {
+          "$ref": "#/$defs/p01"
+        },
+        "reliability_label": {
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "unknown"
+          ]
+        },
+        "observed_frames": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ambiguous_links": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "first_seen_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "last_seen_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "initial_posture": {
+          "$ref": "#/$defs/posture"
+        },
+        "posture_distribution": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "standing",
+            "crouched",
+            "low_posture",
+            "horizontal",
+            "unknown"
+          ],
+          "properties": {
+            "standing": {
+              "$ref": "#/$defs/p01"
+            },
+            "crouched": {
+              "$ref": "#/$defs/p01"
+            },
+            "low_posture": {
+              "$ref": "#/$defs/p01"
+            },
+            "horizontal": {
+              "$ref": "#/$defs/p01"
+            },
+            "unknown": {
+              "$ref": "#/$defs/p01"
+            }
+          }
+        },
+        "strongest_vertical_transition": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "observed"
+          ],
+          "properties": {
+            "observed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "from": {
+              "$ref": "#/$defs/posture"
+            },
+            "to": {
+              "$ref": "#/$defs/posture"
+            },
+            "start_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "end_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "duration_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "downward_change_bh": {
+              "$ref": "#/$defs/valued"
+            },
+            "confidence": {
+              "$ref": "#/$defs/p01"
+            }
+          }
+        },
+        "motion": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mean_speed_bh_per_sec",
+            "max_speed_bh_per_sec",
+            "net_displacement_fh",
+            "direction_change_count",
+            "stationary_fraction",
+            "low_motion_fraction",
+            "longest_low_motion_interval_sec",
+            "large_spatial_transition"
+          ],
+          "properties": {
+            "mean_speed_bh_per_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "max_speed_bh_per_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "net_displacement_fh": {
+              "$ref": "#/$defs/nnum"
+            },
+            "direction_change_count": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "stationary_fraction": {
+              "$ref": "#/$defs/p01"
+            },
+            "low_motion_fraction": {
+              "$ref": "#/$defs/p01"
+            },
+            "longest_low_motion_interval_sec": {
+              "$ref": "#/$defs/nnum"
+            },
+            "large_spatial_transition": {
+              "type": "boolean"
+            }
+          }
+        },
+        "appearance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "entry",
+            "exit",
+            "entered_frame",
+            "exited_frame"
+          ],
+          "properties": {
+            "entry": {
+              "enum": [
+                "present_at_clip_start",
+                "edge_entry",
+                "appears_mid_frame",
+                null
+              ]
+            },
+            "exit": {
+              "enum": [
+                "present_at_clip_end",
+                "edge_exit",
+                "disappears_mid_frame",
+                null
+              ]
+            },
+            "entered_frame": {
+              "type": "boolean"
+            },
+            "exited_frame": {
+              "type": "boolean"
+            }
+          }
+        },
+        "coverage": {
+          "$ref": "#/$defs/coverage",
+          "description": "전체 Clip/Track span의 관측 coverage.",
+          "x-canonical-source": "tracks.observations",
+          "x-units": "object",
+          "x-summary": "coverage 정의 참조"
+        },
+        "temporal": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "runs",
+            "low_observed_samples",
+            "unknown_posture_samples",
+            "low_adjacent_span_sec",
+            "longest_low_adjacent_span_sec",
+            "last_observed_posture",
+            "last_known_posture",
+            "last_known_posture_sec",
+            "last_sample_posture",
+            "low_to_standing_observations"
+          ],
+          "properties": {
+            "runs": {
+              "type": "array",
+              "maxItems": 64,
+              "items": {
+                "type": "array",
+                "minItems": 5,
+                "maxItems": 5,
+                "prefixItems": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "enum": [
+                      "standing",
+                      "crouched",
+                      "low_posture",
+                      "horizontal",
+                      "unknown"
+                    ]
+                  },
+                  {
+                    "$ref": "#/$defs/p01"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                      "enum": [
+                        "keypoints",
+                        "bbox_only",
+                        "insufficient_keypoints",
+                        "low_confidence"
+                      ]
+                    }
+                  }
+                ],
+                "items": false
+              },
+              "description": "동일 자세이며 sample index가 인접한 관측 구간. Tuple=[start_index,end_index,posture,min_confidence,bases].",
+              "x-canonical-source": "frames.detections.posture / tracks.observations",
+              "x-units": "tuple array",
+              "x-summary": "자세 변화 또는 빠진 sample마다 분리; confidence 일부 null이면 min null; bases 정렬 고유값"
+            },
+            "low_observed_samples": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "crouched/low_posture/horizontal 관측 수.",
+              "x-canonical-source": "frames.detections.posture.label",
+              "x-units": "samples",
+              "x-summary": "LOW 집합 label 개수"
+            },
+            "unknown_posture_samples": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "검출되었으나 자세 unresolved인 관측 수.",
+              "x-canonical-source": "frames.detections.posture.label",
+              "x-units": "samples",
+              "x-summary": "unknown label 개수"
+            },
+            "low_adjacent_span_sec": {
+              "$ref": "#/$defs/nnum",
+              "description": "인접 sample 양끝에 low 계열 자세를 관측한 시간차의 합; 실제 지속시간 아님.",
+              "x-canonical-source": "posture / observations / sampling.timestamps_sec",
+              "x-units": "seconds",
+              "x-summary": "low label 간 변화 허용; 미관측 및 unknown은 끊음; singleton 0"
+            },
+            "longest_low_adjacent_span_sec": {
+              "$ref": "#/$defs/nnum",
+              "description": "low 계열 양끝 관측의 최대 인접 sample 시간 span.",
+              "x-canonical-source": "posture / observations / sampling.timestamps_sec",
+              "x-units": "seconds",
+              "x-summary": "low 인접 구간 시간차 누적 최대; singleton 0"
+            },
+            "last_observed_posture": {
+              "$ref": "#/$defs/posture",
+              "description": "마지막 검출 sample의 자세. unknown을 건너뛰지 않음.",
+              "x-canonical-source": "frames.detections.posture.label",
+              "x-units": "posture enum",
+              "x-summary": "마지막 observation label; 관측 없음 null"
+            },
+            "last_known_posture": {
+              "$ref": "#/$defs/posture",
+              "description": "마지막 unknown 이외 자세; 최신 상태로 간주하면 안 됨.",
+              "x-canonical-source": "frames.detections.posture.label",
+              "x-units": "posture enum",
+              "x-summary": "known label 마지막; 전부 unknown이면 null"
+            },
+            "last_known_posture_sec": {
+              "$ref": "#/$defs/nnum",
+              "description": "마지막 known posture의 sample 시각.",
+              "x-canonical-source": "posture / sampling.timestamps_sec",
+              "x-units": "seconds",
+              "x-summary": "known sample 시각; 없으면 null"
+            },
+            "last_sample_posture": {
+              "enum": [
+                "standing",
+                "crouched",
+                "low_posture",
+                "horizontal",
+                "unknown",
+                "not_observed"
+              ],
+              "description": "영상 마지막 sample의 관측 자세; 할당 없음은 not_observed.",
+              "x-canonical-source": "observations / frames.detections.posture",
+              "x-units": "posture or not_observed",
+              "x-summary": "last_index == frame_count-1이면 label, 아니면 not_observed"
+            },
+            "low_to_standing_observations": {
+              "type": "array",
+              "maxItems": 64,
+              "items": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "prefixItems": [
+                  {
+                    "$ref": "#/$defs/nnum"
+                  },
+                  {
+                    "$ref": "#/$defs/nnum"
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                ],
+                "items": false
+              },
+              "description": "low 이후 standing이 다시 관측된 전환 목록. 이전 사건 제거 근거 아님. Tuple=[last_low_sec,standing_sec,missed_samples,unknown_samples_between].",
+              "x-canonical-source": "frames.detections.posture / observations / timestamps",
+              "x-units": "tuple array",
+              "x-summary": "low를 최신값으로 갱신; 다음 standing에서 기록; []는 회복 관측 없음이며 회복 불가능의 증거 아님"
+            }
+          },
+          "description": "자세 proxy의 관측 Timeline, Unknown, 회복 관측.",
+          "x-canonical-source": "frames.detections.posture / tracks.observations",
+          "x-units": "object",
+          "x-summary": "temporal 정의 참조"
+        },
+        "mean_detection_confidence": {
+          "$ref": "#/$defs/p01",
+          "description": "관측 detection confidence의 평균.",
+          "x-canonical-source": "tracks.detection.mean_detection_confidence",
+          "x-units": "score 0..1",
+          "x-summary": "직접 전달; null 보존"
+        },
+        "association_confidence": {
+          "$ref": "#/$defs/p01",
+          "description": "SparseTracker의 링크 affinity 평균; 보정된 identity probability가 아님.",
+          "x-canonical-source": "tracks.reliability.association_confidence",
+          "x-units": "score 0..1",
+          "x-summary": "직접 전달; null이면 track reliability도 null/unknown"
+        },
+        "fragment_link_candidates": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "해당 track을 연결하는 fragment 후보 수; 동일인 확인 아님.",
+          "x-canonical-source": "scene_observations.fragment_links",
+          "x-units": "count",
+          "x-summary": "from/to track 일치 개수"
+        }
+      }
+    },
+    "interaction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tracks",
+        "reliability",
+        "co_observed_frames",
+        "co_observed_start_sec",
+        "co_observed_end_sec",
+        "minimum_distance_bh",
+        "mean_distance_bh",
+        "close_fraction",
+        "first_close_sec",
+        "last_close_sec",
+        "approach_rate_bh_per_sec",
+        "approach_events",
+        "relative_motion_when_close_bh_per_sec",
+        "bbox_overlap_fraction",
+        "contact_proxy",
+        "arm_extension_score",
+        "rapid_limb_motion_score",
+        "coverage",
+        "close_adjacent_span_sec",
+        "distance_change_bh_per_sec",
+        "relative_motion_mean_bh_per_sec",
+        "contact_proxy_terms_available"
+      ],
+      "properties": {
+        "tracks": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        },
+        "reliability": {
+          "$ref": "#/$defs/p01"
+        },
+        "co_observed_frames": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "co_observed_start_sec": {
+          "$ref": "#/$defs/nnum"
+        },
+        "co_observed_end_sec": {
+          "$ref": "#/$defs/nnum"
+        },
+        "minimum_distance_bh": {
+          "$ref": "#/$defs/nnum"
+        },
+        "mean_distance_bh": {
+          "$ref": "#/$defs/nnum"
+        },
+        "close_fraction": {
+          "$ref": "#/$defs/p01"
+        },
+        "first_close_sec": {
+          "$ref": "#/$defs/nnum"
+        },
+        "last_close_sec": {
+          "$ref": "#/$defs/nnum"
+        },
+        "approach_rate_bh_per_sec": {
+          "$ref": "#/$defs/num"
+        },
+        "approach_events": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "relative_motion_when_close_bh_per_sec": {
+          "$ref": "#/$defs/nnum"
+        },
+        "bbox_overlap_fraction": {
+          "$ref": "#/$defs/p01"
+        },
+        "contact_proxy": {
+          "$ref": "#/$defs/limited"
+        },
+        "arm_extension_score": {
+          "$ref": "#/$defs/limited"
+        },
+        "rapid_limb_motion_score": {
+          "$ref": "#/$defs/limited"
+        },
+        "coverage": {
+          "$ref": "#/$defs/coverage",
+          "description": "양쪽 track이 함께 검출된 sample의 coverage.",
+          "x-canonical-source": "intersection(tracks[a].observations, tracks[b].observations)",
+          "x-units": "object",
+          "x-summary": "coverage 정의 참조"
+        },
+        "close_adjacent_span_sec": {
+          "$ref": "#/$defs/nnum",
+          "description": "인접 sample에서 두 번 모두 close인 시간차 합; contact duration 아님.",
+          "x-canonical-source": "pairwise_interactions.distance_series / observations",
+          "x-units": "seconds",
+          "x-summary": "sample index가 인접하고 양끝 close=true인 시간차만 합"
+        },
+        "distance_change_bh_per_sec": {
+          "$ref": "#/$defs/num",
+          "description": "인접 co-observed sample에서 관측한 거리 변화율. 양수=거리 증가; 음수=감소.",
+          "x-canonical-source": "pairwise_interactions.distance_series",
+          "x-units": "body heights / second",
+          "x-summary": "인접 쌍 거리 변화 합 / 해당 시간차 합; 인접 쌍 없음 null"
+        },
+        "relative_motion_mean_bh_per_sec": {
+          "$ref": "#/$defs/nnum",
+          "description": "Canonical 상대 velocity 차이 norm 평균; co-movement/intent 판단 아님.",
+          "x-canonical-source": "pairwise_interactions.relative_motion_intensity",
+          "x-units": "body heights / second",
+          "x-summary": "직접 전달; Canonical tracker max gap 제한 적용된 값, 중간 sample gap 가능"
+        },
+        "contact_proxy_terms_available": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3,
+          "description": "3개 contact proxy 구성 항 중 측정 가능한 항의 수. 일부 항만으로 재가중한 score의 coverage; 실제 contact 확인 아님.",
+          "x-canonical-source": "pairwise_interactions.contact_proxy.terms",
+          "x-units": "count of 3 terms",
+          "x-summary": "close_bbox_distance, pose_overlap, rapid_relative_motion 중 non-null 개수"
+        }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "person_entry_observed",
+        "person_exit_observed",
+        "large_spatial_transition_observed",
+        "occlusion_candidate_count",
+        "fragment_links",
+        "boundary_semantics_available",
+        "boundary_crossing",
+        "authorization_known"
+      ],
+      "properties": {
+        "person_entry_observed": {
+          "type": "boolean"
+        },
+        "person_exit_observed": {
+          "type": "boolean"
+        },
+        "large_spatial_transition_observed": {
+          "type": "boolean"
+        },
+        "occlusion_candidate_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fragment_links": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from_track",
+              "to_track",
+              "gap_sec",
+              "distance_bh",
+              "same_person_confirmed",
+              "posture_change"
+            ],
+            "properties": {
+              "from_track": {
+                "$ref": "#/$defs/ref"
+              },
+              "to_track": {
+                "$ref": "#/$defs/ref"
+              },
+              "gap_sec": {
+                "$ref": "#/$defs/nnum"
+              },
+              "distance_bh": {
+                "$ref": "#/$defs/nnum"
+              },
+              "same_person_confirmed": {
+                "const": false
+              },
+              "posture_change": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "from",
+                      "to",
+                      "confidence",
+                      "downward_change_bh"
+                    ],
+                    "properties": {
+                      "from": {
+                        "$ref": "#/$defs/posture"
+                      },
+                      "to": {
+                        "$ref": "#/$defs/posture"
+                      },
+                      "confidence": {
+                        "$ref": "#/$defs/p01"
+                      },
+                      "downward_change_bh": {
+                        "$ref": "#/$defs/valued"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "boundary_semantics_available": {
+          "const": false
+        },
+        "boundary_crossing": {
+          "type": "null"
+        },
+        "authorization_known": {
+          "const": false
+        }
+      }
+    },
+    "cross": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "camera_a",
+        "camera_b",
+        "sync_confirmed",
+        "identity_link_confirmed",
+        "alignment",
+        "person_count_similarity",
+        "temporal_pattern_similarity",
+        "motion_peak_similarity",
+        "posture_transition_similarity",
+        "visibility_complementarity",
+        "camera_a_visibility_drop_observed",
+        "camera_b_visibility_drop_observed",
+        "camera_b_has_observations_during_a_low_visibility_phase",
+        "camera_a_has_observations_during_b_low_visibility_phase",
+        "camera_a_low_visibility_phases",
+        "camera_b_low_visibility_phases"
+      ],
+      "properties": {
+        "camera_a": {
+          "$ref": "#/$defs/cam"
+        },
+        "camera_b": {
+          "$ref": "#/$defs/cam"
+        },
+        "sync_confirmed": {
+          "const": false
+        },
+        "identity_link_confirmed": {
+          "const": false
+        },
+        "alignment": {
+          "type": "string"
+        },
+        "person_count_similarity": {
+          "$ref": "#/$defs/limited"
+        },
+        "temporal_pattern_similarity": {
+          "$ref": "#/$defs/limited"
+        },
+        "motion_peak_similarity": {
+          "$ref": "#/$defs/limited"
+        },
+        "posture_transition_similarity": {
+          "$ref": "#/$defs/limited"
+        },
+        "visibility_complementarity": {
+          "$ref": "#/$defs/p01"
+        },
+        "camera_a_visibility_drop_observed": {
+          "type": "boolean"
+        },
+        "camera_b_visibility_drop_observed": {
+          "type": "boolean"
+        },
+        "camera_b_has_observations_during_a_low_visibility_phase": {
+          "type": "boolean"
+        },
+        "camera_a_has_observations_during_b_low_visibility_phase": {
+          "type": "boolean"
+        },
+        "camera_a_low_visibility_phases": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "camera_b_low_visibility_phases": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "person_count_by_phase": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/cam"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "clip_sample_fraction",
+        "span_sample_fraction",
+        "missing_inside_span_samples",
+        "max_missing_run_samples",
+        "max_gap_bracket_sec",
+        "max_observation_interval_sec",
+        "tail_unobserved_samples",
+        "last_sample_age_sec",
+        "leading_unobserved_samples"
+      ],
+      "properties": {
+        "clip_sample_fraction": {
+          "$ref": "#/$defs/p01",
+          "description": "Clip 전체 샘플 중 이 Track 또는 Pair를 관측한 비율. 영상 시간 점유율이 아님.",
+          "x-canonical-source": "tracks.observations / sampling.timestamps_sec",
+          "x-units": "ratio 0..1",
+          "x-summary": "고유 관측 sample index 수 / 전체 sample 수"
+        },
+        "span_sample_fraction": {
+          "$ref": "#/$defs/p01",
+          "description": "첫~마지막 관측 sample index 사이의 관측 비율.",
+          "x-canonical-source": "tracks.observations",
+          "x-units": "ratio 0..1",
+          "x-summary": "N / (last_index-first_index+1); 관측 0개이면 null"
+        },
+        "missing_inside_span_samples": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "첫~마지막 관측 사이 할당되지 않은 샘플 수. 존재하지 않음의 증거가 아님.",
+          "x-canonical-source": "tracks.observations",
+          "x-units": "samples",
+          "x-summary": "연속 관측 index 차이에서 1을 뺀 값의 합"
+        },
+        "max_missing_run_samples": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Clip 전체에서 연속 할당되지 않은 최대 샘플 수; 시작과 끝 포함.",
+          "x-canonical-source": "tracks.observations / frame_count",
+          "x-units": "samples",
+          "x-summary": "내부 gap, leading, tail의 최댓값"
+        },
+        "max_gap_bracket_sec": {
+          "$ref": "#/$defs/nnum",
+          "description": "내부 미관측 샘플을 둘러싼 관측 시각 간 최대 간격; 실제 부재 기간 아님.",
+          "x-canonical-source": "observations / sampling.timestamps_sec",
+          "x-units": "seconds",
+          "x-summary": "index gap>1인 양끝 sample 시간차 최대; gap 없음 0"
+        },
+        "max_observation_interval_sec": {
+          "$ref": "#/$defs/nnum",
+          "description": "연속 관측 시각 간 최대 시간차; 정상 sampling interval도 포함.",
+          "x-canonical-source": "observations / sampling.timestamps_sec",
+          "x-units": "seconds",
+          "x-summary": "연속 관측 시간차 최대; 2개 미만 null"
+        },
+        "tail_unobserved_samples": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "마지막 관측 이후 끝까지 미관측 sample 수.",
+          "x-canonical-source": "observations / frame_count",
+          "x-units": "samples",
+          "x-summary": "frame_count-1-last_index"
+        },
+        "last_sample_age_sec": {
+          "$ref": "#/$defs/nnum",
+          "description": "영상 마지막 sample 기준 마지막 관측의 나이; clip duration 기준이 아님.",
+          "x-canonical-source": "sampling.timestamps_sec / observations",
+          "x-units": "seconds",
+          "x-summary": "last_sample_time-last_observed_time; 관측 없음 null"
+        },
+        "leading_unobserved_samples": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "첫 관측 앞의 미관측 샘플 수.",
+          "x-canonical-source": "tracks.observations",
+          "x-units": "samples",
+          "x-summary": "첫 index; 관측 없음이면 frame_count"
+        }
+      }
+    }
+  }
+}

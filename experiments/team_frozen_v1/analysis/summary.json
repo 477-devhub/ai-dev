@@ -1,0 +1,405 @@
+{
+  "completed_at": "2026-10-09T12:11:18+09:00",
+  "experiment": "frozen_p1_p4_on_team_inputs_v1",
+  "reference_quality": "AI-reviewed demo reference, not independent human gold",
+  "common_prompt_comparison_eligible": false,
+  "threshold_refit": false,
+  "routing_policy_sha256": "f5d5f5a8a09be862b8c7aa0be1a0cdd8f7c4a72e2eaf67164022e95d833d2238",
+  "human_labels_generated": false,
+  "reference_sent_to_api": false,
+  "unique_sources": 6,
+  "repeated_source_occurrences": 28,
+  "model_calls": {
+    "p1": 28,
+    "p4": 28
+  },
+  "models": {
+    "p1": {
+      "single_source_primary": {
+        "correct": 2,
+        "denominator": 6,
+        "accuracy": 0.3333333333333333,
+        "all_sources_correct_items": 2,
+        "items": 6,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 1
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "fall_ground_posture",
+            "count": 1
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "fall_ground_posture",
+            "count": 1
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 1
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "fall_ground_posture",
+            "count": 2
+          }
+        ]
+      },
+      "repeated_bundles": {
+        "correct": 7,
+        "denominator": 22,
+        "accuracy": 0.3181818181818182,
+        "all_sources_correct_items": 0,
+        "items": 6,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 4
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "fall_ground_posture",
+            "count": 3
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "fall_ground_posture",
+            "count": 2
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "fall_ground_posture",
+            "count": 3
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "boundary_crossing",
+            "count": 2
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 2
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "normal",
+            "count": 2
+          },
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "uncertain",
+            "count": 1
+          }
+        ]
+      },
+      "all_items_descriptive": {
+        "correct": 9,
+        "denominator": 28,
+        "accuracy": 0.32142857142857145,
+        "all_sources_correct_items": 2,
+        "items": 12,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 5
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "fall_ground_posture",
+            "count": 4
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "fall_ground_posture",
+            "count": 4
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 3
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "fall_ground_posture",
+            "count": 4
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "boundary_crossing",
+            "count": 2
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "normal",
+            "count": 2
+          },
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "uncertain",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "p4": {
+      "single_source_primary": {
+        "correct": 5,
+        "denominator": 6,
+        "accuracy": 0.8333333333333334,
+        "all_sources_correct_items": 5,
+        "items": 6,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 1
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 3
+          }
+        ]
+      },
+      "repeated_bundles": {
+        "correct": 17,
+        "denominator": 22,
+        "accuracy": 0.7727272727272727,
+        "all_sources_correct_items": 2,
+        "items": 6,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 5
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 4
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 8
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 4
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "normal",
+            "count": 1
+          }
+        ]
+      },
+      "all_items_descriptive": {
+        "correct": 22,
+        "denominator": 28,
+        "accuracy": 0.7857142857142857,
+        "all_sources_correct_items": 7,
+        "items": 12,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 6
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 5
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 5
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 11
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "normal",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "cascade": {
+      "single_source_primary": {
+        "correct": 5,
+        "denominator": 6,
+        "accuracy": 0.8333333333333334,
+        "all_sources_correct_items": 5,
+        "items": 6,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 1
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 1
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 3
+          }
+        ]
+      },
+      "repeated_bundles": {
+        "correct": 17,
+        "denominator": 22,
+        "accuracy": 0.7727272727272727,
+        "all_sources_correct_items": 2,
+        "items": 6,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 5
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 4
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 8
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 4
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "normal",
+            "count": 1
+          }
+        ]
+      },
+      "all_items_descriptive": {
+        "correct": 22,
+        "denominator": 28,
+        "accuracy": 0.7857142857142857,
+        "all_sources_correct_items": 7,
+        "items": 12,
+        "confusion": [
+          {
+            "expected": "fall_ground_posture",
+            "predicted": "fall_ground_posture",
+            "count": 6
+          },
+          {
+            "expected": "boundary_crossing",
+            "predicted": "boundary_crossing",
+            "count": 5
+          },
+          {
+            "expected": "gate_entry_authorization_unknown",
+            "predicted": "boundary_crossing",
+            "count": 5
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "physical_conflict",
+            "count": 11
+          },
+          {
+            "expected": "physical_conflict",
+            "predicted": "normal",
+            "count": 1
+          }
+        ]
+      }
+    }
+  },
+  "execution": {
+    "p1": {
+      "success": 28,
+      "retry_count": 0,
+      "api_error_fallback_count": 0,
+      "refusal_jobs": 0,
+      "estimated_api_cost_usd": 0.0082115,
+      "measured_full_harness_ms_sum": 127092.41
+    },
+    "p4": {
+      "success": 28,
+      "retry_count": 0,
+      "api_error_fallback_count": 0,
+      "refusal_jobs": 0,
+      "estimated_api_cost_usd": 5.162378,
+      "measured_full_harness_ms_sum": 1539040.72
+    }
+  },
+  "cascade_simulation": {
+    "would_route_to_p4": 28,
+    "would_suppress": 0,
+    "actual_p4_calls": 28,
+    "measured_api_call_savings": null,
+    "note": "Offline replay; latency and savings not measured as a live cascade"
+  }
+}

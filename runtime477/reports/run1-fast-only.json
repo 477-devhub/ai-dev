@@ -1,0 +1,213 @@
+{
+  "instance": "81d8f71342784020add27b491a6969fc",
+  "mode": "LIVE_REPLAY_MODE",
+  "phase": "FINISHED",
+  "time_to_first_alert_ms": null,
+  "t0_annotation": "NOT ANNOTATED; detector first seen is not human T0",
+  "candidate_to_frontend_ms": {
+    "count": 2,
+    "mean": 90.09718894958496,
+    "p50": 90.09718894958496,
+    "p95": 106.09102249145508,
+    "max": 106.09102249145508
+  },
+  "backend_to_frontend_ms": {
+    "count": 2,
+    "mean": 87.0739221572876,
+    "p50": 87.0739221572876,
+    "p95": 101.34243965148926,
+    "max": 101.34243965148926
+  },
+  "t3_clock_uncertainty_ms": {
+    "count": 2,
+    "mean": 1.0,
+    "p50": 1.0,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "fast_cv_batch_ms_per_sample": {
+    "count": 555,
+    "mean": 137.18992108106823,
+    "p50": 74.14889999927254,
+    "p95": 232.81849999693804,
+    "max": 2122.997499998746
+  },
+  "frame_to_observation_ms": {
+    "count": 555,
+    "mean": 171.4178483693817,
+    "p50": 94.79042689005723,
+    "p95": 250.58743158976426,
+    "max": 4141.077454884848
+  },
+  "decode_lag_ms": {
+    "count": 2481,
+    "mean": 1.6856073089595023,
+    "p50": 0.6576333338070839,
+    "p95": 2.003933334830066,
+    "max": 219.36840000125812
+  },
+  "effective_decode_fps_aggregate": 239.8755035841422,
+  "effective_cv_fps_aggregate": 15.871590902384229,
+  "late_decode_rate": 0.004887935145445875,
+  "frame_drop_rate": null,
+  "drop_note": "Decode counts and source metadata must be compared; intentional CV/display subsampling is not a decode drop.",
+  "cpu_utilization_percent": {
+    "count": 45,
+    "mean": 27.486666666666665,
+    "p50": 24.3,
+    "p95": 51.6,
+    "max": 66.8
+  },
+  "gpu_utilization_percent": {
+    "count": 45,
+    "mean": 15.933333333333334,
+    "p50": 5.0,
+    "p95": 89.0,
+    "max": 100.0
+  },
+  "gpu_memory_mb": {
+    "count": 45,
+    "mean": 218.66666666666666,
+    "p50": 253.0,
+    "p95": 253.0,
+    "max": 255.0
+  },
+  "gpu_peak_allocated_mb": 100.9560546875,
+  "ai": {
+    "prepare_ms": null,
+    "full_cv_ms": null,
+    "p1_api_ms": null,
+    "p4_api_ms": null
+  },
+  "queue": {
+    "p1": 0,
+    "p4": 0,
+    "peak": {
+      "p1": 0,
+      "p4": 0
+    }
+  },
+  "candidates": 2,
+  "frontend_displayed": 2,
+  "deduplication_rate": 0.8571428571428571,
+  "capacity_rejections": 0,
+  "cameras": [
+    {
+      "camera_id": "CAM_01",
+      "state": "ENDED",
+      "pts": 30.933333333333334,
+      "sampled": 62,
+      "type": "camera_end",
+      "lag_ms": 0.6130666670891571,
+      "decoded": 929,
+      "displayed": 275,
+      "late_frames": 3,
+      "source_fps": 30.0,
+      "elapsed": 30.935833499999717
+    },
+    {
+      "camera_id": "CAM_02",
+      "state": "ENDED",
+      "pts": 30.566666666666666,
+      "sampled": 62,
+      "type": "camera_end",
+      "lag_ms": 0.5973333344932996,
+      "decoded": 918,
+      "displayed": 272,
+      "late_frames": 4,
+      "source_fps": 30.0,
+      "elapsed": 30.571062700000766
+    },
+    {
+      "camera_id": "CAM_03",
+      "state": "ENDED",
+      "pts": 31.133333333333333,
+      "sampled": 62,
+      "type": "camera_end",
+      "lag_ms": 0.6401333329755232,
+      "decoded": 935,
+      "displayed": 276,
+      "late_frames": 5,
+      "source_fps": 30.0,
+      "elapsed": 31.13380640000105
+    },
+    {
+      "camera_id": "CAM_04",
+      "state": "ENDED",
+      "pts": 34.96666666666667,
+      "sampled": 64,
+      "type": "camera_end",
+      "lag_ms": 0.4532333337294858,
+      "decoded": 1050,
+      "displayed": 308,
+      "late_frames": 3,
+      "source_fps": 30.0,
+      "elapsed": 34.968139199998404
+    },
+    {
+      "camera_id": "CAM_05",
+      "state": "ENDED",
+      "pts": 29.866666666666667,
+      "sampled": 60,
+      "type": "camera_end",
+      "lag_ms": 0.44239999915518524,
+      "decoded": 897,
+      "displayed": 266,
+      "late_frames": 6,
+      "source_fps": 30.0,
+      "elapsed": 29.867592800001148
+    },
+    {
+      "camera_id": "CAM_06",
+      "state": "ENDED",
+      "pts": 30.666666666666668,
+      "sampled": 62,
+      "type": "camera_end",
+      "lag_ms": 0.6508333329584559,
+      "decoded": 921,
+      "displayed": 273,
+      "late_frames": 4,
+      "source_fps": 30.0,
+      "elapsed": 30.66961060000176
+    },
+    {
+      "camera_id": "CAM_07",
+      "state": "ENDED",
+      "pts": 30.233333333333334,
+      "sampled": 61,
+      "type": "camera_end",
+      "lag_ms": 0.9185333340901991,
+      "decoded": 908,
+      "displayed": 269,
+      "late_frames": 5,
+      "source_fps": 30.0,
+      "elapsed": 30.23430169999847
+    },
+    {
+      "camera_id": "CAM_08",
+      "state": "ENDED",
+      "pts": 30.466666666666665,
+      "sampled": 61,
+      "type": "camera_end",
+      "lag_ms": 0.3643666651136357,
+      "decoded": 915,
+      "displayed": 271,
+      "late_frames": 5,
+      "source_fps": 30.0,
+      "elapsed": 30.467454099998577
+    },
+    {
+      "camera_id": "CAM_09",
+      "state": "ENDED",
+      "pts": 30.466666666666665,
+      "sampled": 61,
+      "type": "camera_end",
+      "lag_ms": 0.531966668010142,
+      "decoded": 915,
+      "displayed": 271,
+      "late_frames": 6,
+      "source_fps": 30.0,
+      "elapsed": 30.467291600001772
+    }
+  ]
+}

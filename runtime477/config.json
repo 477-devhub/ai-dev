@@ -1,0 +1,19 @@
+{
+  "sample_fps": 2,
+  "display_fps": 10,
+  "imgsz": 640,
+  "confidence": 0.3,
+  "motion_fraction": 0.015,
+  "motion_pixel_delta": 25,
+  "horizontal_ratio": 1.25,
+  "sustain_samples": 4,
+  "merge_gap_sec": 3,
+  "queue_size": 2,
+  "max_ai_jobs": 3,
+  "max_candidates": 500,
+  "post_roll_sec": 2,
+  "ai_timeout_sec": 900,
+  "mode": "LIVE_REPLAY_MODE",
+  "ai_enabled": false,
+  "recorded_results": null
+}

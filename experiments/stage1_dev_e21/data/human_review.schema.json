@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "reviews",
+    "adjudication",
+    "finalization"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^DEV_[0-9]{3}_[0-9]{2}$"
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "reviewer",
+          "label",
+          "observable_summary",
+          "watched_full_window",
+          "watched_original_context",
+          "reviewed_at",
+          "basis"
+        ],
+        "properties": {
+          "reviewer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "enum": [
+              "CLEAR_NORMAL",
+              "HARD_NEGATIVE_NORMAL",
+              "ANCHORED_DANGER",
+              "AMBIGUOUS"
+            ]
+          },
+          "observable_summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uncertainty_reason": {
+            "type": "string"
+          },
+          "watched_full_window": {
+            "const": true
+          },
+          "watched_original_context": {
+            "const": true
+          },
+          "reviewed_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "const": "human_original_video"
+          },
+          "observation_tags": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "observed_person_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "posture_transition_present": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "recovery_observed": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "close_interaction_present": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "occlusion_present": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "low_quality": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "important_observation_gap": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            }
+          },
+          "interpretation_tags": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "boundary_context_required": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "operator_review_reason": {
+                "type": "string"
+              },
+              "uncertainty_reason": {
+                "type": "string"
+              }
+            }
+          },
+          "playback_evidence": {
+            "type": "object"
+          },
+          "review_media_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "adjudication": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "finalization": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "samples": "7 legacy unlabeled Canonical states, not Frozen calibration/test; no labels or predictions read",
+  "token_method": "tiktoken o200k_base proxy estimate; not verified GPT-6 Luna / Decisions billing tokenizer; no questions or API envelope included",
+  "timing": "warm cached serialize + canonical JSON + unchanged preamble; excludes validation, IO, CV, API and queue; 10 warmups per sample/version",
+  "iterations": 100,
+  "rows": [
+    {
+      "sample": "ITEM_01.json",
+      "v1": {
+        "json_bytes": 1964,
+        "estimated_json_tokens": 551,
+        "estimated_input_text_tokens": 720,
+        "serialization_median_ms": 0.0902
+      },
+      "v2": {
+        "json_bytes": 3993,
+        "estimated_json_tokens": 1237,
+        "estimated_input_text_tokens": 1406,
+        "serialization_median_ms": 0.3478
+      }
+    },
+    {
+      "sample": "ITEM_02.json",
+      "v1": {
+        "json_bytes": 2782,
+        "estimated_json_tokens": 790,
+        "estimated_input_text_tokens": 959,
+        "serialization_median_ms": 0.1186
+      },
+      "v2": {
+        "json_bytes": 5433,
+        "estimated_json_tokens": 1656,
+        "estimated_input_text_tokens": 1825,
+        "serialization_median_ms": 0.3755
+      }
+    },
+    {
+      "sample": "ITEM_03.json",
+      "v1": {
+        "json_bytes": 2805,
+        "estimated_json_tokens": 796,
+        "estimated_input_text_tokens": 965,
+        "serialization_median_ms": 0.1212
+      },
+      "v2": {
+        "json_bytes": 5444,
+        "estimated_json_tokens": 1653,
+        "estimated_input_text_tokens": 1822,
+        "serialization_median_ms": 0.435
+      }
+    },
+    {
+      "sample": "ITEM_04.json",
+      "v1": {
+        "json_bytes": 11832,
+        "estimated_json_tokens": 3360,
+        "estimated_input_text_tokens": 3529,
+        "serialization_median_ms": 0.4884
+      },
+      "v2": {
+        "json_bytes": 20031,
+        "estimated_json_tokens": 5777,
+        "estimated_input_text_tokens": 5946,
+        "serialization_median_ms": 1.3664
+      }
+    },
+    {
+      "sample": "ITEM_05.json",
+      "v1": {
+        "json_bytes": 4390,
+        "estimated_json_tokens": 1259,
+        "estimated_input_text_tokens": 1428,
+        "serialization_median_ms": 0.1774
+      },
+      "v2": {
+        "json_bytes": 8162,
+        "estimated_json_tokens": 2451,
+        "estimated_input_text_tokens": 2620,
+        "serialization_median_ms": 0.5234
+      }
+    },
+    {
+      "sample": "ITEM_06.json",
+      "v1": {
+        "json_bytes": 8666,
+        "estimated_json_tokens": 2483,
+        "estimated_input_text_tokens": 2652,
+        "serialization_median_ms": 0.3383
+      },
+      "v2": {
+        "json_bytes": 15267,
+        "estimated_json_tokens": 4544,
+        "estimated_input_text_tokens": 4713,
+        "serialization_median_ms": 1.2161
+      }
+    },
+    {
+      "sample": "ITEM_07.json",
+      "v1": {
+        "json_bytes": 15713,
+        "estimated_json_tokens": 4580,
+        "estimated_input_text_tokens": 4749,
+        "serialization_median_ms": 0.7419
+      },
+      "v2": {
+        "json_bytes": 26205,
+        "estimated_json_tokens": 7720,
+        "estimated_input_text_tokens": 7889,
+        "serialization_median_ms": 3.0499
+      }
+    }
+  ],
+  "mean": {
+    "v1": {
+      "json_bytes": 6878.8571,
+      "estimated_json_tokens": 1974.1429,
+      "estimated_input_text_tokens": 2143.1429,
+      "serialization_median_ms": 0.2966
+    },
+    "v2": {
+      "json_bytes": 12076.4286,
+      "estimated_json_tokens": 3576.8571,
+      "estimated_input_text_tokens": 3745.8571,
+      "serialization_median_ms": 1.0449
+    }
+  },
+  "estimated_incremental_input_cost_usd": 0.000160271,
+  "cost_assumption": "Repository frozen Decisions input rate $0.10 / 1M tokens, assumed unchanged, no current price verification; estimate only"
+}

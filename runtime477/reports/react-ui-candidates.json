@@ -1,0 +1,202 @@
+[
+  {
+    "candidate_id": "cand_507ae17a39a44d70a53a2d3bfafcf8a7",
+    "camera_id": "CAM_04",
+    "reason_codes": [
+      "MOTION_CHANGE"
+    ],
+    "zone": "scene",
+    "status": "REQUIRES_REVIEW",
+    "human_disposition": "reviewed",
+    "generation": 1,
+    "first_seen_pts": 3.0,
+    "last_pts": 5.0,
+    "t0": null,
+    "t1": 1791529614.5613058,
+    "t2": 1791529614.5628335,
+    "t3": 1791529614.6966066,
+    "t4": 1791529760.8253276,
+    "t5": 1791529819.8474247,
+    "last_updated": 1791529826.2778049,
+    "merge_count": 4,
+    "stage1": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_507ae17a39a44d70a53a2d3bfafcf8a7",
+      "camera_id": "CAM_04",
+      "decision": "SUSPICIOUS",
+      "action": "ESCALATE_P4",
+      "reason_codes": [
+        "MOTION_CHANGE"
+      ],
+      "router_version": "runtime-shadow-v1"
+    },
+    "job_status": "completed",
+    "observations": {
+      "motion_fraction": 0.045208333333333336,
+      "person_count": 0
+    },
+    "ai_source": "live",
+    "assessment": {
+      "schema_version": "1.1",
+      "event_type": "uncertain",
+      "event_confidence": 0.97,
+      "risk_axes": {
+        "severity": 0.0,
+        "imminence": 0.0,
+        "exposure": 0.0,
+        "persistence": 0.0
+      },
+      "needs_human_review": true,
+      "uncertainty_reason": "The short observation window does not establish activity before or after the clip.; Vehicle occupants and distant background details are not clearly resolved.",
+      "evidence_refs": [
+        "F001",
+        "F032",
+        "F064"
+      ],
+      "ai_opinion": "Over approximately five seconds, a silver vehicle advances along the street, passes through the foreground, and exits at the lower-right edge. The person beside the utility pole stays upright in the same location, with no visible fall, conflict, boundary crossing, or unsafe interaction. The sequence shows ordinary vehicle passage and stationary pedestrian presence without a clear safety-relevant pattern.",
+      "recommended_actions": [],
+      "metadata": {
+        "adapter": "cascade_v1",
+        "model": "cheap-cv + gpt-6-luna + gpt-6.1-sol",
+        "is_mock": false,
+        "latency_ms": 59017.9610999985,
+        "input_units": null,
+        "estimated_cost_usd": null,
+        "error_code": null,
+        "prompt_version": "frozen-v1",
+        "stage_trace": [
+          {
+            "stage": "p4",
+            "status": "ok",
+            "latency_ms": 59011.90409999981,
+            "attempts": 1,
+            "input_tokens": null,
+            "output_tokens": null,
+            "estimated_cost_usd": null,
+            "request_id": null
+          }
+        ]
+      },
+      "routing": {
+        "mode": "shadow",
+        "policy_version": "conservative_normal_then_p4-v1",
+        "selected_stage": "p4",
+        "p_incident": null,
+        "frozen_guard_passed": false,
+        "backend_guard_passed": false,
+        "evidence_scope": "cited_frames"
+      },
+      "evidence_descriptions": {
+        "F001": "A person wearing a red cap stands upright beside a utility pole at the edge of the roadway.",
+        "F032": "A silver vehicle occupies the left foreground roadway, while the person beside the pole is upright and separated from it.",
+        "F064": "The person in the red cap stands beside the pole; the silver vehicle is no longer visible in the foreground."
+      }
+    },
+    "error": null,
+    "clock_uncertainty_ms": 2.89990234375,
+    "suppression_applied": false
+  },
+  {
+    "candidate_id": "cand_fd81c0c5ea1a47128835e2894804c702",
+    "camera_id": "CAM_04",
+    "reason_codes": [
+      "MOTION_CHANGE"
+    ],
+    "zone": "scene",
+    "status": "AI_DANGER_ESTIMATE",
+    "human_disposition": null,
+    "generation": 0,
+    "first_seen_pts": 25.0,
+    "last_pts": 29.0,
+    "t0": null,
+    "t1": 1791529636.7649398,
+    "t2": 1791529636.828036,
+    "t3": 1791529637.0353782,
+    "t4": 1791529840.9644988,
+    "t5": 1791529919.983021,
+    "last_updated": 1791529919.983088,
+    "merge_count": 8,
+    "stage1": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_fd81c0c5ea1a47128835e2894804c702",
+      "camera_id": "CAM_04",
+      "decision": "SUSPICIOUS",
+      "action": "ESCALATE_P4",
+      "reason_codes": [
+        "MOTION_CHANGE"
+      ],
+      "router_version": "runtime-shadow-v1"
+    },
+    "job_status": "completed",
+    "observations": {
+      "motion_fraction": 0.07604166666666666,
+      "person_count": 0
+    },
+    "ai_source": "live",
+    "assessment": {
+      "schema_version": "1.1",
+      "event_type": "uncertain",
+      "event_confidence": 0.88,
+      "risk_axes": {
+        "severity": 0.1,
+        "imminence": 0.2,
+        "exposure": 0.25,
+        "persistence": 0.5
+      },
+      "needs_human_review": true,
+      "uncertainty_reason": "The purpose of the entry and whether it is authorized cannot be determined visually.; The wall and building obscure the interior passage and subsequent activity.; No accompanying fall, physical conflict, or immediate danger is visible in the sampled frames.",
+      "evidence_refs": [
+        "F001",
+        "F029",
+        "F052",
+        "F055",
+        "F057",
+        "F064"
+      ],
+      "ai_opinion": "The person initially stands beside the pole, then walks into the roadway, pauses, and returns toward the gate. Around 28–31 seconds, the person opens the gate, crosses into the walled passage, and closes it. They then move farther along the passage and disappear from view by the final frame. A clear gate boundary crossing can be surfaced for low-priority review, without evidence of accompanying harm or immediate danger.",
+      "recommended_actions": [],
+      "metadata": {
+        "adapter": "cascade_v1",
+        "model": "cheap-cv + gpt-6-luna + gpt-6.1-sol",
+        "is_mock": false,
+        "latency_ms": 79010.3119000014,
+        "input_units": null,
+        "estimated_cost_usd": null,
+        "error_code": null,
+        "prompt_version": "frozen-v1",
+        "stage_trace": [
+          {
+            "stage": "p4",
+            "status": "ok",
+            "latency_ms": 78971.3531999987,
+            "attempts": 1,
+            "input_tokens": null,
+            "output_tokens": null,
+            "estimated_cost_usd": null,
+            "request_id": null
+          }
+        ]
+      },
+      "routing": {
+        "mode": "shadow",
+        "policy_version": "conservative_normal_then_p4-v1",
+        "selected_stage": "p4",
+        "p_incident": null,
+        "frozen_guard_passed": false,
+        "backend_guard_passed": false,
+        "evidence_scope": "cited_frames"
+      },
+      "evidence_descriptions": {
+        "F001": "A person stands beside a utility pole on the street side of a brick wall; the nearby metal gate is closed.",
+        "F029": "The person is upright in the roadway near a circular cover, carrying a black shoulder bag.",
+        "F052": "The gate is swung partly open, with the person standing outside and holding its upper edge.",
+        "F055": "The person's upper body is visible on the interior side of the open gate, with a hand on the gate.",
+        "F057": "The gate is closed and the person stands behind it within the walled passage.",
+        "F064": "The gate remains closed, and the person is no longer visible."
+      }
+    },
+    "error": null,
+    "clock_uncertainty_ms": 9.1500244140625,
+    "suppression_applied": false
+  }
+]

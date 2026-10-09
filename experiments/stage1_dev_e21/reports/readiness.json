@@ -1,0 +1,180 @@
+{
+  "candidate_count": 28,
+  "source_count": 28,
+  "physical_group_count": 1,
+  "scene_group_count": 1,
+  "cv_status": {
+    "READY": 28
+  },
+  "review_status": {
+    "UNREVIEWED": 28
+  },
+  "human_gt": {
+    "CLEAR_NORMAL": {
+      "reviewed": 0,
+      "finalized": 0
+    },
+    "HARD_NEGATIVE_NORMAL": {
+      "reviewed": 0,
+      "finalized": 0
+    },
+    "ANCHORED_DANGER": {
+      "reviewed": 0,
+      "finalized": 0
+    },
+    "AMBIGUOUS": {
+      "reviewed": 0,
+      "finalized": 0
+    }
+  },
+  "finalized_eligible": 0,
+  "abcd_prepared": 28,
+  "api_calls": 0,
+  "paid_pilot_ready": false,
+  "integrity_or_admission_issues": {
+    "DEV_001_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_002_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_003_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_004_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_005_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_006_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_007_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_008_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_009_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_010_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_011_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_012_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_013_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_014_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_015_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_016_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_017_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_018_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_019_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_020_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_021_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_022_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_023_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_024_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_025_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_026_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_027_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ],
+    "DEV_028_01": [
+      "INDEPENDENCE_UNVERIFIED",
+      "NOT_FINALIZED"
+    ]
+  },
+  "registry_hash": "efab77467582fff4d5200969b76f2bee3f9826bd32f15230da9f89b72dff5fd8",
+  "single_reviewer_included_by_explicit_option": false,
+  "source_candidate_counts": {
+    "DEVSRC_001": 1,
+    "DEVSRC_002": 1,
+    "DEVSRC_003": 1,
+    "DEVSRC_004": 1,
+    "DEVSRC_005": 1,
+    "DEVSRC_006": 1,
+    "DEVSRC_007": 1,
+    "DEVSRC_008": 1,
+    "DEVSRC_009": 1,
+    "DEVSRC_010": 1,
+    "DEVSRC_011": 1,
+    "DEVSRC_012": 1,
+    "DEVSRC_013": 1,
+    "DEVSRC_014": 1,
+    "DEVSRC_015": 1,
+    "DEVSRC_016": 1,
+    "DEVSRC_017": 1,
+    "DEVSRC_018": 1,
+    "DEVSRC_019": 1,
+    "DEVSRC_020": 1,
+    "DEVSRC_021": 1,
+    "DEVSRC_022": 1,
+    "DEVSRC_023": 1,
+    "DEVSRC_024": 1,
+    "DEVSRC_025": 1,
+    "DEVSRC_026": 1,
+    "DEVSRC_027": 1,
+    "DEVSRC_028": 1
+  }
+}

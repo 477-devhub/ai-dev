@@ -1,0 +1,320 @@
+{
+  "cv_success": 28,
+  "cv_failure": 0,
+  "no_person_detections": 0,
+  "reliability_labels": {
+    "high": 26,
+    "medium": 2
+  },
+  "rows": [
+    {
+      "candidate_id": "DEV_001_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.7812,
+      "total_detections": 66,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.6693,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_002_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 129,
+      "tracks": 3,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.6968,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 46
+    },
+    {
+      "candidate_id": "DEV_003_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.9531,
+      "total_detections": 111,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.629,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 2
+    },
+    {
+      "candidate_id": "DEV_004_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 128,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.5032,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_005_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.7188,
+      "total_detections": 58,
+      "tracks": 4,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.6704,
+      "track_fragmentation": 0.3333,
+      "association_ambiguous_links": 2
+    },
+    {
+      "candidate_id": "DEV_006_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 106,
+      "tracks": 3,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.687,
+      "track_fragmentation": 0.1667,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_007_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 119,
+      "tracks": 3,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.8883,
+      "track_fragmentation": 0.1667,
+      "association_ambiguous_links": 3
+    },
+    {
+      "candidate_id": "DEV_008_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.8906,
+      "total_detections": 64,
+      "tracks": 3,
+      "cv_reliability_label": "medium",
+      "pose_visibility": 0.4504,
+      "track_fragmentation": 0.6667,
+      "association_ambiguous_links": 5
+    },
+    {
+      "candidate_id": "DEV_009_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.8906,
+      "total_detections": 88,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.6758,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_010_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.8594,
+      "total_detections": 64,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.4798,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_011_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.9375,
+      "total_detections": 99,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7493,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_012_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 64,
+      "tracks": 1,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.8805,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_013_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 129,
+      "tracks": 3,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.772,
+      "track_fragmentation": 0.1667,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_014_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 116,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7799,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_015_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 109,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.8759,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_016_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.7344,
+      "total_detections": 67,
+      "tracks": 4,
+      "cv_reliability_label": "medium",
+      "pose_visibility": 0.4109,
+      "track_fragmentation": 0.3333,
+      "association_ambiguous_links": 20
+    },
+    {
+      "candidate_id": "DEV_017_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 119,
+      "tracks": 3,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7059,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 5
+    },
+    {
+      "candidate_id": "DEV_018_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 128,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.6425,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_019_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 124,
+      "tracks": 3,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.5512,
+      "track_fragmentation": 0.1667,
+      "association_ambiguous_links": 39
+    },
+    {
+      "candidate_id": "DEV_020_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.9844,
+      "total_detections": 76,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.5967,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_021_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 128,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7707,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_022_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 130,
+      "tracks": 4,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.8353,
+      "track_fragmentation": 0.1667,
+      "association_ambiguous_links": 5
+    },
+    {
+      "candidate_id": "DEV_023_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 128,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7247,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_024_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.7812,
+      "total_detections": 81,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7553,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_025_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 0.9688,
+      "total_detections": 62,
+      "tracks": 1,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7135,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    },
+    {
+      "candidate_id": "DEV_026_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 105,
+      "tracks": 5,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.6437,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 2
+    },
+    {
+      "candidate_id": "DEV_027_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 85,
+      "tracks": 3,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.6623,
+      "track_fragmentation": 0.1667,
+      "association_ambiguous_links": 39
+    },
+    {
+      "candidate_id": "DEV_028_01",
+      "sample_count": 64,
+      "detected_person_samples_fraction": 1.0,
+      "total_detections": 128,
+      "tracks": 2,
+      "cv_reliability_label": "high",
+      "pose_visibility": 0.7215,
+      "track_fragmentation": 0.0,
+      "association_ambiguous_links": 0
+    }
+  ],
+  "note": "CV observations only; no label or normal/danger claims. Real Stage0 recall/distribution not evaluated."
+}

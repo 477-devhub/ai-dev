@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "scope": "8 real MP4 + 1 deliberately missing camera; not latency benchmark",
+  "events": [
+    {
+      "type": "camera_error",
+      "camera_id": "CAM_09",
+      "error": "ValueError"
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_05",
+      "pts": 29.866666666666667,
+      "decoded": 897,
+      "late_frames": 3,
+      "displayed": 266,
+      "elapsed": 29.86714850000135,
+      "source_fps": 30.0,
+      "expected_frames": 897
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_07",
+      "pts": 30.233333333333334,
+      "decoded": 908,
+      "late_frames": 4,
+      "displayed": 269,
+      "elapsed": 30.2341078999998,
+      "source_fps": 30.0,
+      "expected_frames": 908
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_08",
+      "pts": 30.466666666666665,
+      "decoded": 915,
+      "late_frames": 4,
+      "displayed": 271,
+      "elapsed": 30.467541100002563,
+      "source_fps": 30.0,
+      "expected_frames": 915
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_02",
+      "pts": 30.566666666666666,
+      "decoded": 918,
+      "late_frames": 5,
+      "displayed": 272,
+      "elapsed": 30.575828200002434,
+      "source_fps": 30.0,
+      "expected_frames": 918
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_06",
+      "pts": 30.666666666666668,
+      "decoded": 921,
+      "late_frames": 3,
+      "displayed": 273,
+      "elapsed": 30.67245230000117,
+      "source_fps": 30.0,
+      "expected_frames": 921
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_01",
+      "pts": 30.933333333333334,
+      "decoded": 929,
+      "late_frames": 5,
+      "displayed": 275,
+      "elapsed": 30.93724790000124,
+      "source_fps": 30.0,
+      "expected_frames": 929
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_03",
+      "pts": 31.133333333333333,
+      "decoded": 935,
+      "late_frames": 3,
+      "displayed": 276,
+      "elapsed": 31.13502250000238,
+      "source_fps": 30.0,
+      "expected_frames": 935
+    },
+    {
+      "type": "camera_end",
+      "camera_id": "CAM_04",
+      "pts": 34.96666666666667,
+      "decoded": 1050,
+      "late_frames": 4,
+      "displayed": 308,
+      "elapsed": 34.97053060000326,
+      "source_fps": 30.0,
+      "expected_frames": 1050
+    },
+    {
+      "type": "finished",
+      "elapsed": 35.13638180000271
+    }
+  ]
+}

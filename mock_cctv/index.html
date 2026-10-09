@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>477 CCTV 목업 영상</title>
+<style>
+body{margin:0;background:#10151e;color:#eef3fa;font:15px system-ui,sans-serif}header{padding:24px}h1{margin:0 0 12px;font-size:24px}p{color:#a9b8cd}button{padding:9px 16px;margin-right:8px;cursor:pointer;background:#293a53;color:white;border:1px solid #50647f;border-radius:6px}main{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:0 24px 24px}article{background:#1d2736;border-radius:8px;overflow:hidden}video{width:100%;aspect-ratio:16/9;background:#000;display:block}h2{font-size:15px;margin:12px}small{display:block;color:#a9b8cd;margin:12px}.error{color:#ffb6b6}@media(max-width:900px){main{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){main{grid-template-columns:1fr}}
+</style>
+<header><h1>477 · CCTV 목업 영상 9개</h1><p>녹화 영상 반복 재생 · 서로 다른 원본 9개 · AI 분석 미실행</p><button id="play">전체 재생</button><button id="pause">전체 일시정지</button><button id="reset">처음부터</button><p id="status" role="status">영상 목록을 불러오는 중입니다.</p></header>
+<main id="grid"></main>
+<script type="module">
+const status = document.querySelector('#status');
+try {
+  const response = await fetch('./manifest.json');
+  if (!response.ok) throw new Error(`목록 조회 실패: ${response.status}`);
+  const manifest = await response.json();
+  for (const camera of manifest.cameras) {
+    const card = document.createElement('article');
+    const video = document.createElement('video');
+    video.src = '../' + camera.video_path;
+    video.controls = true; video.muted = true; video.loop = true; video.playsInline = true; video.preload = 'metadata';
+    const heading = document.createElement('h2');
+    heading.textContent = `${camera.camera_id} · ${camera.title}`;
+    const caption = document.createElement('small');
+    caption.textContent = `${camera.width} × ${camera.height} · ${camera.duration_sec.toFixed(1)}초` + (camera.reused_from ? ` · ${camera.reused_from}과 동일 영상` : '');
+    video.addEventListener('error', () => {caption.className = 'error'; caption.textContent = '영상 로드 실패 · 서버 실행 경로를 확인하세요.'});
+    card.append(video, heading, caption); document.querySelector('#grid').append(card);
+  }
+  status.textContent = '재생 버튼을 누르면 9개 영상을 시작합니다. 다각도 영상의 사건 시점은 동기화되지 않았습니다.';
+} catch (error) { status.textContent = error.message; status.className = 'error'; }
+document.querySelector('#play').onclick = async () => {
+  const results = await Promise.allSettled([...document.querySelectorAll('video')].map(v => v.play()));
+  status.textContent = results.some(r => r.status === 'rejected') ? '일부 영상 재생이 실패했습니다. 각 화면의 재생 버튼으로 확인하세요.' : '9개 목업 화면을 재생 중입니다.';
+};
+document.querySelector('#pause').onclick = () => document.querySelectorAll('video').forEach(v => v.pause());
+document.querySelector('#reset').onclick = () => document.querySelectorAll('video').forEach(v => {v.currentTime = 0});
+</script>
+</html>

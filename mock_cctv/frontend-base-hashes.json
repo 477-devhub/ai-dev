@@ -1,0 +1,42 @@
+[
+  {
+    "relative": "tests\\monitoring.test.ts",
+    "sha256": null
+  },
+  {
+    "relative": "src\\styles.css",
+    "sha256": "5DB9104CA5A336D73598B1C53D87103D990DE16C6B77E4EC278C86A8B576197D"
+  },
+  {
+    "relative": "scripts\\test-local.mjs",
+    "sha256": "F457F145797BA8F0D5DC81DF9D6F1364A2773D16F38633940020A025A63E7016"
+  },
+  {
+    "relative": "src\\App.tsx",
+    "sha256": "C84664FE93F69521E8CF035F5AAC6F9C3A9772A6B813AF88556CD53142B5D53B"
+  },
+  {
+    "relative": "src\\scenario\\playback.tsx",
+    "sha256": "A0562B132C7E5C2D2271F4DECD10F6A0FE6C3E09B966FCB9CC58A72021FB4E24"
+  },
+  {
+    "relative": "src\\scenario\\engine.ts",
+    "sha256": null
+  },
+  {
+    "relative": "src\\scenario\\analysisCycle.ts",
+    "sha256": null
+  },
+  {
+    "relative": "src\\components\\Media.tsx",
+    "sha256": "29DC1B0BDE5A020D3CDF240C1C5B3174BA082E23FF486FA27AC2DF5CD08979E4"
+  },
+  {
+    "relative": "src\\components\\CctvWall.tsx",
+    "sha256": "1CAA2A7B22D3EE7544A0222FBC7593F6250EA9814085D34A7541BC0EC879800F"
+  },
+  {
+    "relative": "src\\fixtures\\mock-cctv.json",
+    "sha256": null
+  }
+]

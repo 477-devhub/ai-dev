@@ -1,0 +1,230 @@
+{
+  "schema_version": "compact-decision-state-v2",
+  "task": "single",
+  "observation_window_sec": 63.033,
+  "cameras": [
+    {
+      "camera": "CAM_01",
+      "observation_window_sec": 63.033,
+      "sampling": {
+        "frame_count": 64,
+        "median_interval_sec": 1.0,
+        "max_interval_sec": 1.0,
+        "timestamps_sec": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          16.0,
+          17.0,
+          18.0,
+          19.0,
+          20.0,
+          21.0,
+          22.0,
+          23.0,
+          24.0,
+          25.0,
+          26.0,
+          27.0,
+          28.0,
+          29.0,
+          30.0,
+          31.0,
+          32.0,
+          33.0,
+          34.0,
+          35.0,
+          36.0,
+          37.0,
+          38.0,
+          39.0,
+          40.0,
+          41.0,
+          42.0,
+          43.0,
+          44.0,
+          45.0,
+          46.0,
+          47.0,
+          48.0,
+          49.0,
+          50.0,
+          51.0,
+          52.0,
+          53.0,
+          54.0,
+          55.0,
+          56.0,
+          57.0,
+          58.0,
+          59.0,
+          60.0,
+          61.0,
+          62.0,
+          63.0
+        ]
+      },
+      "quality": {
+        "cv_reliability": null,
+        "cv_reliability_label": "unknown",
+        "pose_visibility": 0.834,
+        "track_fragmentation": 0.083,
+        "occlusion_proxy": 0.42,
+        "detection_dropout_rate": null,
+        "small_person_fraction": 0.0,
+        "dark_frame_fraction": 0.0,
+        "aggregate_inputs_complete": false,
+        "mean_brightness": 81.9,
+        "mean_contrast": 15.22,
+        "mean_sharpness": 59.27
+      },
+      "people": {
+        "count_min": 0,
+        "count_max": 1,
+        "count_median": 0.0,
+        "frames_with_person_fraction": 0.047,
+        "tracks_total": 1,
+        "tracks_included": 1
+      },
+      "tracks": [
+        {
+          "track_ref": "T1",
+          "reliability": 0.8,
+          "reliability_label": "high",
+          "observed_frames": 3,
+          "ambiguous_links": 0,
+          "first_seen_sec": 61.0,
+          "last_seen_sec": 63.0,
+          "initial_posture": "standing",
+          "posture_distribution": {
+            "standing": 0.667,
+            "crouched": 0.0,
+            "low_posture": 0.0,
+            "horizontal": 0.333,
+            "unknown": 0.0
+          },
+          "strongest_vertical_transition": {
+            "observed": null
+          },
+          "motion": {
+            "mean_speed_bh_per_sec": null,
+            "max_speed_bh_per_sec": null,
+            "net_displacement_fh": null,
+            "direction_change_count": null,
+            "stationary_fraction": null,
+            "low_motion_fraction": null,
+            "longest_low_motion_interval_sec": null,
+            "large_spatial_transition": false
+          },
+          "appearance": {
+            "entry": "appears_mid_frame",
+            "exit": "present_at_clip_end",
+            "entered_frame": true,
+            "exited_frame": false
+          },
+          "coverage": {
+            "clip_sample_fraction": 0.047,
+            "span_sample_fraction": 1.0,
+            "missing_inside_span_samples": 0,
+            "max_missing_run_samples": 61,
+            "leading_unobserved_samples": 61,
+            "max_gap_bracket_sec": 0.0,
+            "max_observation_interval_sec": 1.0,
+            "tail_unobserved_samples": 0,
+            "last_sample_age_sec": 0.0
+          },
+          "temporal": {
+            "runs": [
+              [
+                61,
+                61,
+                "standing",
+                0.8,
+                [
+                  "keypoints"
+                ]
+              ],
+              [
+                62,
+                62,
+                "horizontal",
+                0.8,
+                [
+                  "keypoints"
+                ]
+              ],
+              [
+                63,
+                63,
+                "standing",
+                0.8,
+                [
+                  "keypoints"
+                ]
+              ]
+            ],
+            "low_observed_samples": 1,
+            "unknown_posture_samples": 0,
+            "low_adjacent_span_sec": 0.0,
+            "longest_low_adjacent_span_sec": 0.0,
+            "last_observed_posture": "standing",
+            "last_known_posture": "standing",
+            "last_known_posture_sec": 63.0,
+            "last_sample_posture": "standing",
+            "low_to_standing_observations": [
+              [
+                62.0,
+                63.0,
+                0,
+                0
+              ]
+            ]
+          },
+          "mean_detection_confidence": 0.8,
+          "association_confidence": 0.8,
+          "fragment_link_candidates": 0
+        }
+      ],
+      "interactions": [],
+      "scene": {
+        "person_entry_observed": true,
+        "person_exit_observed": false,
+        "large_spatial_transition_observed": false,
+        "occlusion_candidate_count": 0,
+        "fragment_links": [],
+        "boundary_semantics_available": false,
+        "boundary_crossing": null,
+        "authorization_known": false
+      },
+      "selection_coverage": {
+        "tracks_omitted": 0,
+        "pairs_total": 0,
+        "pairs_included": 0,
+        "pairs_omitted": 0,
+        "fragment_links_total": 0,
+        "fragment_links_included": 0,
+        "fragment_links_omitted": 0,
+        "omitted_tracks_with_low_samples": 0,
+        "omitted_tracks_with_upright_to_low": 0,
+        "omitted_tracks_with_unknown_posture": 0,
+        "omitted_pairs_with_close_samples": 0,
+        "omitted_fragment_posture_changes": 0
+      }
+    }
+  ],
+  "cross_camera": null,
+  "evidence_semantics": "Sample observations only; missing is not absence. Runs and adjacent spans do not prove continuity. Recovery does not erase earlier low posture. Motion summaries may bridge missed samples. Proximity/contact proxies do not establish collision, assault or intent. null=measurement unavailable; unknown=detected but posture unresolved; not_observed=no detection assigned at that sample. No normal/abnormal event verdicts."
+}

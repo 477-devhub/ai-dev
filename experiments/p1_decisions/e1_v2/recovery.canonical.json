@@ -1,0 +1,1586 @@
+{
+  "state_version": "cv-state-v1",
+  "generator": {
+    "layer": "shared_cheap_cv",
+    "cv_model": {
+      "name": "yolo26n-pose",
+      "task": "pose",
+      "weights_file": "yolo26n-pose.pt",
+      "weights_sha256": "eb3bb8268828aeaf515cec23a4bfafd793944a86fe9af94ba7823609c14522a9",
+      "library": "ultralytics",
+      "library_version": "8.4.52",
+      "precision": "fp16",
+      "input_size": 1280,
+      "conf_threshold": 0.25,
+      "iou_threshold": 0.7,
+      "pretrained_only": true
+    },
+    "cv_config_sha256": "efe509eb7a2b803416d4eb7f4dbe927fb0995189a256264057f8c759d144d173",
+    "cv_code_sha256": "93bb2811c24384681b12c5cef82456e4df0e02add112b866e5f72f2a7db6f205",
+    "external_api_calls": 0,
+    "llm_or_vlm_used": false
+  },
+  "input": {
+    "item_id": "ITEM_01",
+    "task": "single",
+    "frame_protocol": "uniform_total64_v1",
+    "input_fingerprint": "14d94b3ef1df62861698e92b2351d65f83907e7d8c769e505700c55c2df94824",
+    "benchmark_input_fingerprint": {
+      "prompt_sha256": "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146",
+      "prediction_schema_sha256": "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d",
+      "media_sha256": {
+        "CAM_01": "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea"
+      },
+      "sampling_protocol_id": "uniform_total64_v1",
+      "frame_numbers": {
+        "CAM_01": [
+          0,
+          17,
+          33,
+          50,
+          67,
+          83,
+          100,
+          117,
+          133,
+          150,
+          167,
+          183,
+          200,
+          216,
+          233,
+          250,
+          266,
+          283,
+          300,
+          316,
+          333,
+          350,
+          366,
+          383,
+          400,
+          416,
+          433,
+          450,
+          466,
+          483,
+          500,
+          516,
+          533,
+          549,
+          566,
+          583,
+          599,
+          616,
+          633,
+          649,
+          666,
+          683,
+          699,
+          716,
+          733,
+          749,
+          766,
+          783,
+          799,
+          816,
+          833,
+          849,
+          866,
+          882,
+          899,
+          916,
+          932,
+          949,
+          966,
+          982,
+          999,
+          1016,
+          1032,
+          1049
+        ]
+      }
+    },
+    "total_frames": 64,
+    "camera_ids": [
+      "CAM_01"
+    ],
+    "frames_per_camera": {
+      "CAM_01": 64
+    },
+    "time_reference": "clip-relative seconds per camera; no cross-camera synchronization"
+  },
+  "cameras": [
+    {
+      "camera_id": "CAM_01",
+      "image_size": [
+        1920,
+        1080
+      ],
+      "frame_count": 64,
+      "duration_sec": 63.033,
+      "sampling": {
+        "timestamps_sec": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "median_interval_sec": 1.0,
+        "max_interval_sec": 1.0,
+        "note": "synthetic"
+      },
+      "frames": [
+        {
+          "index": 0,
+          "timestamp_sec": 0.0,
+          "frame_number": 0,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 1,
+          "timestamp_sec": 1.0,
+          "frame_number": 1,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 2,
+          "timestamp_sec": 2.0,
+          "frame_number": 2,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 3,
+          "timestamp_sec": 3.0,
+          "frame_number": 3,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 4,
+          "timestamp_sec": 4.0,
+          "frame_number": 4,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 5,
+          "timestamp_sec": 5.0,
+          "frame_number": 5,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 6,
+          "timestamp_sec": 6.0,
+          "frame_number": 6,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 7,
+          "timestamp_sec": 7.0,
+          "frame_number": 7,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 8,
+          "timestamp_sec": 8.0,
+          "frame_number": 8,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 9,
+          "timestamp_sec": 9.0,
+          "frame_number": 9,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 10,
+          "timestamp_sec": 10.0,
+          "frame_number": 10,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 11,
+          "timestamp_sec": 11.0,
+          "frame_number": 11,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 12,
+          "timestamp_sec": 12.0,
+          "frame_number": 12,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 13,
+          "timestamp_sec": 13.0,
+          "frame_number": 13,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 14,
+          "timestamp_sec": 14.0,
+          "frame_number": 14,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 15,
+          "timestamp_sec": 15.0,
+          "frame_number": 15,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 16,
+          "timestamp_sec": 16.0,
+          "frame_number": 16,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 17,
+          "timestamp_sec": 17.0,
+          "frame_number": 17,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 18,
+          "timestamp_sec": 18.0,
+          "frame_number": 18,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 19,
+          "timestamp_sec": 19.0,
+          "frame_number": 19,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 20,
+          "timestamp_sec": 20.0,
+          "frame_number": 20,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 21,
+          "timestamp_sec": 21.0,
+          "frame_number": 21,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 22,
+          "timestamp_sec": 22.0,
+          "frame_number": 22,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 23,
+          "timestamp_sec": 23.0,
+          "frame_number": 23,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 24,
+          "timestamp_sec": 24.0,
+          "frame_number": 24,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 25,
+          "timestamp_sec": 25.0,
+          "frame_number": 25,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 26,
+          "timestamp_sec": 26.0,
+          "frame_number": 26,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 27,
+          "timestamp_sec": 27.0,
+          "frame_number": 27,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 28,
+          "timestamp_sec": 28.0,
+          "frame_number": 28,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 29,
+          "timestamp_sec": 29.0,
+          "frame_number": 29,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 30,
+          "timestamp_sec": 30.0,
+          "frame_number": 30,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 31,
+          "timestamp_sec": 31.0,
+          "frame_number": 31,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 32,
+          "timestamp_sec": 32.0,
+          "frame_number": 32,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 33,
+          "timestamp_sec": 33.0,
+          "frame_number": 33,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 34,
+          "timestamp_sec": 34.0,
+          "frame_number": 34,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 35,
+          "timestamp_sec": 35.0,
+          "frame_number": 35,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 36,
+          "timestamp_sec": 36.0,
+          "frame_number": 36,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 37,
+          "timestamp_sec": 37.0,
+          "frame_number": 37,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 38,
+          "timestamp_sec": 38.0,
+          "frame_number": 38,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 39,
+          "timestamp_sec": 39.0,
+          "frame_number": 39,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 40,
+          "timestamp_sec": 40.0,
+          "frame_number": 40,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 41,
+          "timestamp_sec": 41.0,
+          "frame_number": 41,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 42,
+          "timestamp_sec": 42.0,
+          "frame_number": 42,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 43,
+          "timestamp_sec": 43.0,
+          "frame_number": 43,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 44,
+          "timestamp_sec": 44.0,
+          "frame_number": 44,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 45,
+          "timestamp_sec": 45.0,
+          "frame_number": 45,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 46,
+          "timestamp_sec": 46.0,
+          "frame_number": 46,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 47,
+          "timestamp_sec": 47.0,
+          "frame_number": 47,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 48,
+          "timestamp_sec": 48.0,
+          "frame_number": 48,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 49,
+          "timestamp_sec": 49.0,
+          "frame_number": 49,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 50,
+          "timestamp_sec": 50.0,
+          "frame_number": 50,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 51,
+          "timestamp_sec": 51.0,
+          "frame_number": 51,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 52,
+          "timestamp_sec": 52.0,
+          "frame_number": 52,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 53,
+          "timestamp_sec": 53.0,
+          "frame_number": 53,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 54,
+          "timestamp_sec": 54.0,
+          "frame_number": 54,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 55,
+          "timestamp_sec": 55.0,
+          "frame_number": 55,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 56,
+          "timestamp_sec": 56.0,
+          "frame_number": 56,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 57,
+          "timestamp_sec": 57.0,
+          "frame_number": 57,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 58,
+          "timestamp_sec": 58.0,
+          "frame_number": 58,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 59,
+          "timestamp_sec": 59.0,
+          "frame_number": 59,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 60,
+          "timestamp_sec": 60.0,
+          "frame_number": 60,
+          "person_count": 0,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": []
+        },
+        {
+          "index": 61,
+          "timestamp_sec": 61.0,
+          "frame_number": 61,
+          "person_count": 1,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": [
+            {
+              "det_index": 0,
+              "track_id": "T01",
+              "bbox_norm": [
+                0.6383,
+                0.4295,
+                0.6887,
+                0.6701
+              ],
+              "confidence": 0.8809,
+              "keypoints_norm": [
+                [
+                  0.6832,
+                  0.4573,
+                  0.431
+                ],
+                [
+                  0.6813,
+                  0.4514,
+                  0.035
+                ],
+                [
+                  0.682,
+                  0.4538,
+                  0.487
+                ],
+                [
+                  0.6687,
+                  0.45,
+                  0.082
+                ],
+                [
+                  0.677,
+                  0.4569,
+                  0.934
+                ],
+                [
+                  0.6625,
+                  0.4667,
+                  0.954
+                ],
+                [
+                  0.673,
+                  0.4868,
+                  0.991
+                ],
+                [
+                  0.6605,
+                  0.4903,
+                  0.273
+                ],
+                [
+                  0.6707,
+                  0.5299,
+                  0.914
+                ],
+                [
+                  0.6719,
+                  0.5118,
+                  0.142
+                ],
+                [
+                  0.6723,
+                  0.5552,
+                  0.807
+                ],
+                [
+                  0.6566,
+                  0.5417,
+                  0.984
+                ],
+                [
+                  0.666,
+                  0.5497,
+                  0.992
+                ],
+                [
+                  0.6535,
+                  0.5913,
+                  0.987
+                ],
+                [
+                  0.6652,
+                  0.599,
+                  0.988
+                ],
+                [
+                  0.6438,
+                  0.6403,
+                  0.994
+                ],
+                [
+                  0.6547,
+                  0.6535,
+                  0.988
+                ]
+              ],
+              "link": null,
+              "posture": {
+                "label": "standing",
+                "confidence": 0.8,
+                "basis": "keypoints",
+                "torso_angle_deg": 9.44,
+                "body_orientation_angle_deg": 11.68,
+                "hip_height_normalized": 0.5173,
+                "shoulder_height_normalized": 0.8038,
+                "leg_extension_ratio": 1.4486,
+                "body_height_ratio": 0.9352,
+                "aspect_ratio": 2.686,
+                "keypoint_visibility": 0.6471,
+                "upright_score": 0.979,
+                "horizontal_score": 0.0068,
+                "crouched_score": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "index": 62,
+          "timestamp_sec": 62.0,
+          "frame_number": 62,
+          "person_count": 1,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": [
+            {
+              "det_index": 0,
+              "track_id": "T01",
+              "bbox_norm": [
+                0.6383,
+                0.4295,
+                0.6887,
+                0.6701
+              ],
+              "confidence": 0.8809,
+              "keypoints_norm": [
+                [
+                  0.6832,
+                  0.4573,
+                  0.431
+                ],
+                [
+                  0.6813,
+                  0.4514,
+                  0.035
+                ],
+                [
+                  0.682,
+                  0.4538,
+                  0.487
+                ],
+                [
+                  0.6687,
+                  0.45,
+                  0.082
+                ],
+                [
+                  0.677,
+                  0.4569,
+                  0.934
+                ],
+                [
+                  0.6625,
+                  0.4667,
+                  0.954
+                ],
+                [
+                  0.673,
+                  0.4868,
+                  0.991
+                ],
+                [
+                  0.6605,
+                  0.4903,
+                  0.273
+                ],
+                [
+                  0.6707,
+                  0.5299,
+                  0.914
+                ],
+                [
+                  0.6719,
+                  0.5118,
+                  0.142
+                ],
+                [
+                  0.6723,
+                  0.5552,
+                  0.807
+                ],
+                [
+                  0.6566,
+                  0.5417,
+                  0.984
+                ],
+                [
+                  0.666,
+                  0.5497,
+                  0.992
+                ],
+                [
+                  0.6535,
+                  0.5913,
+                  0.987
+                ],
+                [
+                  0.6652,
+                  0.599,
+                  0.988
+                ],
+                [
+                  0.6438,
+                  0.6403,
+                  0.994
+                ],
+                [
+                  0.6547,
+                  0.6535,
+                  0.988
+                ]
+              ],
+              "link": null,
+              "posture": {
+                "label": "horizontal",
+                "confidence": 0.8,
+                "basis": "keypoints",
+                "torso_angle_deg": 9.44,
+                "body_orientation_angle_deg": 11.68,
+                "hip_height_normalized": 0.5173,
+                "shoulder_height_normalized": 0.8038,
+                "leg_extension_ratio": 1.4486,
+                "body_height_ratio": 0.9352,
+                "aspect_ratio": 2.686,
+                "keypoint_visibility": 0.6471,
+                "upright_score": 0.979,
+                "horizontal_score": 0.0068,
+                "crouched_score": 0.0
+              }
+            }
+          ]
+        },
+        {
+          "index": 63,
+          "timestamp_sec": 63.0,
+          "frame_number": 63,
+          "person_count": 1,
+          "image_stats": {
+            "brightness": 81.73,
+            "contrast": 15.13,
+            "sharpness": 58.46
+          },
+          "detections": [
+            {
+              "det_index": 0,
+              "track_id": "T01",
+              "bbox_norm": [
+                0.6383,
+                0.4295,
+                0.6887,
+                0.6701
+              ],
+              "confidence": 0.8809,
+              "keypoints_norm": [
+                [
+                  0.6832,
+                  0.4573,
+                  0.431
+                ],
+                [
+                  0.6813,
+                  0.4514,
+                  0.035
+                ],
+                [
+                  0.682,
+                  0.4538,
+                  0.487
+                ],
+                [
+                  0.6687,
+                  0.45,
+                  0.082
+                ],
+                [
+                  0.677,
+                  0.4569,
+                  0.934
+                ],
+                [
+                  0.6625,
+                  0.4667,
+                  0.954
+                ],
+                [
+                  0.673,
+                  0.4868,
+                  0.991
+                ],
+                [
+                  0.6605,
+                  0.4903,
+                  0.273
+                ],
+                [
+                  0.6707,
+                  0.5299,
+                  0.914
+                ],
+                [
+                  0.6719,
+                  0.5118,
+                  0.142
+                ],
+                [
+                  0.6723,
+                  0.5552,
+                  0.807
+                ],
+                [
+                  0.6566,
+                  0.5417,
+                  0.984
+                ],
+                [
+                  0.666,
+                  0.5497,
+                  0.992
+                ],
+                [
+                  0.6535,
+                  0.5913,
+                  0.987
+                ],
+                [
+                  0.6652,
+                  0.599,
+                  0.988
+                ],
+                [
+                  0.6438,
+                  0.6403,
+                  0.994
+                ],
+                [
+                  0.6547,
+                  0.6535,
+                  0.988
+                ]
+              ],
+              "link": null,
+              "posture": {
+                "label": "standing",
+                "confidence": 0.8,
+                "basis": "keypoints",
+                "torso_angle_deg": 9.44,
+                "body_orientation_angle_deg": 11.68,
+                "hip_height_normalized": 0.5173,
+                "shoulder_height_normalized": 0.8038,
+                "leg_extension_ratio": 1.4486,
+                "body_height_ratio": 0.9352,
+                "aspect_ratio": 2.686,
+                "keypoint_visibility": 0.6471,
+                "upright_score": 0.979,
+                "horizontal_score": 0.0068,
+                "crouched_score": 0.0
+              }
+            }
+          ]
+        }
+      ],
+      "detection_summary": {
+        "person_count_min": 0,
+        "person_count_max": 1,
+        "person_count_median": 0,
+        "person_count_mean": 3.9048,
+        "frames_with_person_fraction": 0.046875,
+        "total_detections": 82,
+        "mean_detection_confidence": 0.861
+      },
+      "tracks": [
+        {
+          "track_id": "T01",
+          "reliability": {
+            "association_confidence": 0.8,
+            "observed_frames": 3,
+            "visible_fraction": 1.0,
+            "max_gap_sec": 1.7667,
+            "ambiguous_links": 0,
+            "reliability_score": 0.8,
+            "reliability_label": "high"
+          },
+          "detection": {
+            "first_seen_sec": 61.0,
+            "last_seen_sec": 63.0,
+            "observed_frames": 3,
+            "visible_fraction": 1.0,
+            "visible_fraction_of_clip": 0.046875,
+            "mean_detection_confidence": 0.8
+          },
+          "observations": [
+            [
+              61,
+              0
+            ],
+            [
+              62,
+              0
+            ],
+            [
+              63,
+              0
+            ]
+          ],
+          "geometry": {
+            "bbox_center_x": 0.6874,
+            "bbox_center_y": 0.5741,
+            "bbox_width": 0.0624,
+            "bbox_height": 0.255,
+            "bbox_area_ratio": 0.0159,
+            "reference_height": 0.2653,
+            "center_path": [
+              [
+                0.0,
+                0.6635,
+                0.5498
+              ],
+              [
+                1.7333,
+                0.6627,
+                0.5623
+              ],
+              [
+                3.5,
+                0.6586,
+                0.5613
+              ],
+              [
+                5.2333,
+                0.6314,
+                0.5569
+              ],
+              [
+                7.0,
+                0.6125,
+                0.5543
+              ],
+              [
+                8.7333,
+                0.6111,
+                0.5538
+              ],
+              [
+                10.5,
+                0.6121,
+                0.5535
+              ],
+              [
+                12.2333,
+                0.6109,
+                0.5528
+              ],
+              [
+                14.0,
+                0.6008,
+                0.5656
+              ],
+              [
+                15.7333,
+                0.6002,
+                0.5651
+              ],
+              [
+                17.5,
+                0.6059,
+                0.5615
+              ],
+              [
+                19.2333,
+                0.6104,
+                0.5566
+              ],
+              [
+                20.9667,
+                0.6119,
+                0.5618
+              ],
+              [
+                22.7333,
+                0.7479,
+                0.5944
+              ],
+              [
+                24.4667,
+                0.7523,
+                0.6191
+              ],
+              [
+                26.2333,
+                0.7982,
+                0.616
+              ],
+              [
+                27.9667,
+                0.8318,
+                0.6165
+              ],
+              [
+                29.7333,
+                0.8535,
+                0.6125
+              ],
+              [
+                31.4667,
+                0.8531,
+                0.6104
+              ],
+              [
+                33.2333,
+                0.8197,
+                0.5934
+              ],
+              [
+                34.9667,
+                0.6875,
+                0.5391
+              ]
+            ],
+            "bbox_area_change": 0.4798,
+            "vertical_position_change": -0.0108
+          },
+          "motion": {
+            "units": "fh = frame heights; bh = body heights; per second of actual sample-time delta",
+            "normalized_speed_mean": null,
+            "normalized_speed_max": null,
+            "body_height_speed_mean": null,
+            "body_height_speed_max": null,
+            "displacement_total": null,
+            "net_displacement": null,
+            "direction_change_count": null,
+            "stationary_fraction": null
+          },
+          "posture": {
+            "pose_observed_fraction": 1.0,
+            "known_posture_observations": 21,
+            "posture_counts": {
+              "standing": 21,
+              "crouched": 0,
+              "low_posture": 0,
+              "horizontal": 0,
+              "unknown": 0
+            },
+            "low_or_horizontal_fraction": 0.0,
+            "mean_torso_angle_deg": 15.3305,
+            "mean_body_orientation_angle_deg": 14.1687,
+            "mean_upright_score": 0.913,
+            "mean_horizontal_score": 0.0222,
+            "mean_crouched_score": 0.0003,
+            "timeline": [
+              [
+                61.0,
+                "standing",
+                0.8
+              ],
+              [
+                62.0,
+                "horizontal",
+                0.8
+              ],
+              [
+                63.0,
+                "standing",
+                0.8
+              ]
+            ]
+          },
+          "vertical_transition": {
+            "upright_to_low_transition": null,
+            "upright_to_horizontal_transition": null,
+            "max_downward_change": null,
+            "downward_change_basis": null,
+            "transition_start_sec": null,
+            "transition_end_sec": null,
+            "transition_duration_sec": null,
+            "from_posture": null,
+            "to_posture": null,
+            "confidence": null,
+            "temporal_resolution_sec": 1.0
+          },
+          "low_motion": {
+            "semantics": "low sampled displacement between sparse samples; not a claim of motionlessness",
+            "low_motion_fraction": null,
+            "longest_low_motion_interval_sec": null,
+            "post_transition_low_motion_sec": null,
+            "post_transition_low_posture_sec": null,
+            "post_transition_observed_sec": null
+          }
+        }
+      ],
+      "pairwise_interactions": [],
+      "scene_observations": {
+        "track_entries": [
+          {
+            "track_id": "T01",
+            "time_sec": 61.0,
+            "type": "appears_mid_frame"
+          }
+        ],
+        "track_exits": [
+          {
+            "track_id": "T01",
+            "time_sec": 63.0,
+            "type": "present_at_clip_end"
+          }
+        ],
+        "large_spatial_transitions": [],
+        "occlusion_candidates": [],
+        "fragment_links": [],
+        "boundary_crossing": null,
+        "boundary_crossing_reliability": "unavailable",
+        "scene_semantics": {
+          "zones": null,
+          "reliability": "unavailable",
+          "note": "Generic CV layer has no gate/wall/restricted-area knowledge; no per-scene ROIs are configured."
+        }
+      },
+      "quality": {
+        "mean_brightness": 81.9,
+        "mean_contrast": 15.22,
+        "mean_sharpness": 59.27,
+        "dark_frame_fraction": 0.0,
+        "temporal_resolution_sec": 1.7333,
+        "mean_person_box_area_ratio": 0.01564,
+        "small_person_fraction": 0.0,
+        "pose_visibility": 0.8343,
+        "detection_dropout_rate": null,
+        "track_fragmentation": 0.0833,
+        "track_fragmentation_ratio": 1.25,
+        "occlusion_proxy": 0.4199,
+        "overall_cv_reliability": 0.8497,
+        "overall_cv_reliability_label": "high"
+      },
+      "frame_fingerprint_sha256": "021a3437e5a4573a6052f821be2ae1d0ae215c0b1370acc9104b8b009fd4da18"
+    }
+  ],
+  "cross_camera": null
+}

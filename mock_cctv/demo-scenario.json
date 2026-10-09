@@ -1,0 +1,79 @@
+{
+  "schema_version": "demo-scenario-1",
+  "decision_source": "scripted_not_ai",
+  "cameras": [
+    {
+      "id": "CAM_01",
+      "region": "사건2 · 다른 시점",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_01.mp4"
+    },
+    {
+      "id": "CAM_02",
+      "region": "사건2 · 원본",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_02.mp4"
+    },
+    {
+      "id": "CAM_03",
+      "region": "대로 일상",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_03.mp4"
+    },
+    {
+      "id": "CAM_04",
+      "region": "사건1",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_04.mp4"
+    },
+    {
+      "id": "CAM_05",
+      "region": "일상 도로",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_05.mp4"
+    },
+    {
+      "id": "CAM_06",
+      "region": "비둘기 일상",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_06.mp4"
+    },
+    {
+      "id": "CAM_07",
+      "region": "자전거 일상",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_07.mp4"
+    },
+    {
+      "id": "CAM_08",
+      "region": "큰 교차로 일상",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_08.mp4"
+    },
+    {
+      "id": "CAM_09",
+      "region": "학교 일상",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_09.mp4"
+    }
+  ],
+  "incidents": []
+}

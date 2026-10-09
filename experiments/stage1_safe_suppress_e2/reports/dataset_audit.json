@@ -1,0 +1,32 @@
+{
+  "source_count": 128,
+  "candidate_pool_windows": 709,
+  "review_queue_count": 115,
+  "existing_reviewed_count": 43,
+  "frozen_primary_count": 37,
+  "challenge_count": 6,
+  "independent_human_gt_count": 0,
+  "eligible_gt_distribution": {},
+  "blocked_physical_groups": [
+    "SPG_01",
+    "SPG_02",
+    "SPG_03",
+    "SPG_04",
+    "SPG_05",
+    "SPG_06",
+    "SPG_07",
+    "SPG_08",
+    "SPG_09"
+  ],
+  "blocked_scene_count": 20,
+  "pool_eligible_by_known_groups": 0,
+  "limitations": [
+    "Grouped local candidate pool audit, not proof that all raw downloads are exhausted.",
+    "Evaluation-selection agent visual reviews and source XML are not Human GT.",
+    "Other team frozen media must be checked by future human independence review; current eligible count zero."
+  ],
+  "status": "NO_ELIGIBLE_HUMAN_GT",
+  "registry_hash": "efab77467582fff4d5200969b76f2bee3f9826bd32f15230da9f89b72dff5fd8",
+  "additional_previous_team_items": 12,
+  "team_source_identity_limit": "Generic SRCxx IDs; no verified raw scene/physical source mapping in public items.json. Future Human independence audit must include this dataset."
+}

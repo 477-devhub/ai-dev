@@ -1,0 +1,88 @@
+{
+  "schema_version": "compact-decision-state-v1",
+  "task": "single",
+  "observation_window_sec": 63.033,
+  "cameras": [
+    {
+      "camera": "CAM_01",
+      "observation_window_sec": 63.033,
+      "sampling": {
+        "frame_count": 64,
+        "median_interval_sec": 1.0,
+        "max_interval_sec": 1.0
+      },
+      "quality": {
+        "cv_reliability": 0.85,
+        "cv_reliability_label": "high",
+        "pose_visibility": 0.834,
+        "track_fragmentation": 0.083,
+        "occlusion_proxy": 0.42,
+        "detection_dropout_rate": null,
+        "small_person_fraction": 0.0,
+        "dark_frame_fraction": 0.0
+      },
+      "people": {
+        "count_min": 0,
+        "count_max": 1,
+        "count_median": 0.0,
+        "frames_with_person_fraction": 0.047,
+        "tracks_total": 1,
+        "tracks_included": 1
+      },
+      "tracks": [
+        {
+          "track_ref": "T1",
+          "reliability": 0.8,
+          "reliability_label": "high",
+          "observed_frames": 3,
+          "visible_fraction": 1.0,
+          "ambiguous_links": 0,
+          "first_seen_sec": 61.0,
+          "last_seen_sec": 63.0,
+          "initial_posture": "standing",
+          "final_posture": "standing",
+          "posture_distribution": {
+            "standing": 0.667,
+            "crouched": 0.0,
+            "low_posture": 0.0,
+            "horizontal": 0.333,
+            "unknown": 0.0
+          },
+          "strongest_vertical_transition": {
+            "observed": null
+          },
+          "longest_low_posture_run_sec": 0.0,
+          "post_transition_low_posture_sec": null,
+          "motion": {
+            "mean_speed_bh_per_sec": null,
+            "max_speed_bh_per_sec": null,
+            "net_displacement_fh": null,
+            "direction_change_count": null,
+            "stationary_fraction": null,
+            "low_motion_fraction": null,
+            "longest_low_motion_interval_sec": null,
+            "large_spatial_transition": false
+          },
+          "appearance": {
+            "entry": "appears_mid_frame",
+            "exit": "present_at_clip_end",
+            "entered_frame": true,
+            "exited_frame": false
+          }
+        }
+      ],
+      "interactions": [],
+      "scene": {
+        "person_entry_observed": true,
+        "person_exit_observed": false,
+        "large_spatial_transition_observed": false,
+        "occlusion_candidate_count": 0,
+        "fragment_links": [],
+        "boundary_semantics_available": false,
+        "boundary_crossing": null,
+        "authorization_known": false
+      }
+    }
+  ],
+  "cross_camera": null
+}

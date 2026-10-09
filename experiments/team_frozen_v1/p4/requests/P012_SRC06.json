@@ -1,0 +1,194 @@
+{
+  "frame_ids": [
+    "SRC06-F000000",
+    "SRC06-F000106",
+    "SRC06-F000212",
+    "SRC06-F000318",
+    "SRC06-F000424",
+    "SRC06-F000530",
+    "SRC06-F000636",
+    "SRC06-F000742",
+    "SRC06-F000848",
+    "SRC06-F000954"
+  ],
+  "input_text": "You are evaluating an ordered sequence of CCTV frames for safety monitoring.\n\nUse only what is visually supported by the supplied frames and their camera labels and relative timestamps.\n\nAnalyze the event across time, not as independent still images.\n\nDo not infer facts that are not visually supported.\n\nDo not infer:\n- medical diagnosis,\n- consciousness state,\n- criminal intent,\n- authorization or lack of authorization,\n- personal identity,\n- weapons,\n- cross-camera identity,\nunless directly supported by the visual evidence.\n\nA person crossing a wall, gate, doorway, or other visible boundary may be described as an observed boundary crossing or scene entry.\nDo not call it illegal, unauthorized, or criminal unless that fact is directly supported.\n\nFor multiple cameras:\n- do not assume precise synchronization,\n- do not assume two tracks are the same person,\n- distinguish visual complementarity from confirmed identity.\n\nRisk and confidence are separate.\n\nUse the ordered frame sequence to reason about:\n1. whether a safety-relevant incident is present,\n2. incident category,\n3. temporal development,\n4. severity,\n5. imminence,\n6. exposure,\n7. persistence,\n8. uncertainty,\n9. whether human review is warranted.\n\nReturn only the required structured output.\n\nDecision policy (applies to every decision): Use only the supplied frames. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by the visual evidence. Treat anything not visible as unknown, not false. Treat unclear, small, dark or partly occluded content as uncertain evidence. Confidence and risk are separate concepts.\n\nTask: one camera. Consider the observations of the single supplied camera.\nDecisions (top-level fields):\n- incident.probability: probability in [0,1] that the answer is yes. Question: Does the provided visual evidence indicate a safety-relevant incident or condition that should be surfaced to a CCTV operator?\n- incident_category: choose exactly one value and give your confidence in [0,1]. Question: Which generic category best describes the most safety-relevant pattern in the frames?\n    * no_clear_incident: Observations show ordinary presence or movement with no safety-relevant pattern.\n    * possible_fall_or_person_down: A person shows a transition to, or prolonged, low or horizontal posture.\n    * possible_physical_conflict: Two or more people show sustained close proximity together with rapid relative movement or limb motion.\n    * possible_scene_or_boundary_entry: A person enters, appears in, or moves across the scene in a way an operator may want to check, including crossing a visible wall, gate, doorway or other boundary; authorization is not known.\n    * other_safety_relevant: Another safety-relevant pattern not covered by the other categories.\n    * uncertain: The observations are too unreliable or ambiguous to choose a category.\n- severity.score: a value in [0,1]; anchors below, intermediate values allowed. Question: How severe is the potential harm suggested by the observed pattern, if it is what it appears to be?\n    * 0.00 = none: No potential harm suggested.\n    * 0.25 = minor: Minor or unlikely harm.\n    * 0.50 = moderate: Possible injury or harm that warrants attention.\n    * 0.75 = serious: Likely injury or serious harm to a person.\n    * 1.00 = critical: Potentially life-threatening or very serious harm.\n- imminence.score: a value in [0,1]; anchors below, intermediate values allowed. Question: How urgently does a CCTV operator need to look at this camera now?\n    * 0.00 = none: No operator attention needed.\n    * 0.25 = low: Can be reviewed later.\n    * 0.50 = moderate: Should be checked soon.\n    * 0.75 = high: Should be checked promptly.\n    * 1.00 = immediate: Needs attention right now; the condition is ongoing at the end of the observation.\n- exposure.score: a value in [0,1]; anchors below, intermediate values allowed. Question: Based on the observable number of people and the extent of the pattern, how many people are involved in or exposed to it?\n    * 0.00 = none: Nobody involved.\n    * 0.25 = one: One person involved.\n    * 0.50 = two: Two people involved.\n    * 0.75 = small_group: Three or four people involved or nearby.\n    * 1.00 = many: Five or more people or a wide area involved.\n- persistence.score: a value in [0,1]; anchors below, intermediate values allowed. Question: How long does the observed incident-like pattern persist over the sampled observation window?\n    * 0.00 = none: No incident-like pattern.\n    * 0.25 = momentary: Seen in one or two samples only.\n    * 0.50 = short: Persists for a few seconds.\n    * 0.75 = sustained: Persists for a large part of the remaining observation.\n    * 1.00 = ongoing: Persists until the end of the observation.\n- human_review.probability: probability in [0,1] that the answer is yes. Question: Should a human CCTV operator review this candidate because of either risk or uncertainty?\n\nOutput guidance:\n- evidence: 1 to 6 items. Each item names one supplied frame_ref and states only an observable visual fact seen in that frame (no diagnosis, intent, authorization or identity). If evidence is weak, still cite what is visible and state the limitation in uncertainties.\n- temporal_summary: 1-3 sentences describing how the scene develops over the ordered frames.\n- uncertainties: short statements of what cannot be determined from the frames.\n- reason: one brief operator-facing rationale (no step-by-step reasoning).\n\nFrames follow in order. Each frame is preceded by a label: frame_ref | camera | relative time within that camera clip.\nF001 | CAM_01 | t=0.000s\nF002 | CAM_01 | t=3.533s\nF003 | CAM_01 | t=7.067s\nF004 | CAM_01 | t=10.600s\nF005 | CAM_01 | t=14.133s\nF006 | CAM_01 | t=17.667s\nF007 | CAM_01 | t=21.200s\nF008 | CAM_01 | t=24.733s\nF009 | CAM_01 | t=28.267s\nF010 | CAM_01 | t=31.800s",
+  "text_format": {
+    "type": "json_schema",
+    "name": "p4_visual_single",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "incident",
+        "incident_category",
+        "severity",
+        "imminence",
+        "exposure",
+        "persistence",
+        "human_review",
+        "evidence",
+        "temporal_summary",
+        "uncertainties",
+        "reason"
+      ],
+      "properties": {
+        "incident": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "probability"
+          ],
+          "properties": {
+            "probability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "incident_category": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "confidence"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "no_clear_incident",
+                "possible_fall_or_person_down",
+                "possible_physical_conflict",
+                "possible_scene_or_boundary_entry",
+                "other_safety_relevant",
+                "uncertain"
+              ]
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "severity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "score"
+          ],
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "imminence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "score"
+          ],
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "exposure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "score"
+          ],
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "persistence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "score"
+          ],
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "human_review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "probability"
+          ],
+          "properties": {
+            "probability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "frame_ref",
+              "description"
+            ],
+            "properties": {
+              "frame_ref": {
+                "type": "string",
+                "enum": [
+                  "F001",
+                  "F002",
+                  "F003",
+                  "F004",
+                  "F005",
+                  "F006",
+                  "F007",
+                  "F008",
+                  "F009",
+                  "F010"
+                ]
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "temporal_summary": {
+          "type": "string"
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

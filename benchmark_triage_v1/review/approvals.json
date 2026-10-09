@@ -1,0 +1,25 @@
+{
+  "class_counts_approved_by": "human_user",
+  "split_approved_by": "human_user",
+  "approved_at": "2026-10-09T09:23:06+09:00",
+  "approval_source": "Explicit user approval in this Codex chat on 2026-10-09 (Asia/Seoul)",
+  "approved_counts": {
+    "HARD_NEGATIVE_NORMAL": 11,
+    "ANCHORED_DANGER": 13,
+    "CLEAR_NORMAL": 13,
+    "AMBIGUOUS": 6
+  },
+  "approved_split_counts": {
+    "calibration": {
+      "HARD_NEGATIVE_NORMAL": 5,
+      "ANCHORED_DANGER": 3,
+      "CLEAR_NORMAL": 7
+    },
+    "test": {
+      "HARD_NEGATIVE_NORMAL": 6,
+      "ANCHORED_DANGER": 10,
+      "CLEAR_NORMAL": 6
+    }
+  },
+  "notes": "User approved current configuration unchanged; no additional human video review required."
+}

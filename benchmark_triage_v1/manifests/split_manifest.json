@@ -1,0 +1,123 @@
+{
+  "human_gt_policy": "priority_minimal_v1",
+  "unit": "split_group_id (stronger than scene; includes shared sites/actors/takes)",
+  "calibration_fraction_target": 0.4,
+  "split_groups": {
+    "SPG_01": "calibration",
+    "SPG_02": "calibration",
+    "SPG_03": "calibration",
+    "SPG_04": "test",
+    "SPG_05": "test",
+    "SPG_06": "test",
+    "SPG_07": "test",
+    "SPG_08": "test"
+  },
+  "scene_groups": {
+    "SCN_01": "calibration",
+    "SCN_02": "calibration",
+    "SCN_03": "calibration",
+    "SCN_04": "calibration",
+    "SCN_05": "calibration",
+    "SCN_06": "calibration",
+    "SCN_07": "calibration",
+    "SCN_08": "test",
+    "SCN_09": "test",
+    "SCN_10": "test",
+    "SCN_11": "test",
+    "SCN_12": "test",
+    "SCN_13": "test",
+    "SCN_14": "test",
+    "SCN_15": "test",
+    "SCN_16": "test",
+    "SCN_17": "test",
+    "SCN_18": "test"
+  },
+  "primary_candidate_ids": [
+    "CAND_0004",
+    "CAND_0010",
+    "CAND_0015",
+    "CAND_0020",
+    "CAND_0027",
+    "CAND_0028",
+    "CAND_0035",
+    "CAND_0037",
+    "CAND_0049",
+    "CAND_0055",
+    "CAND_0058",
+    "CAND_0066",
+    "CAND_0068",
+    "CAND_0069",
+    "CAND_0073",
+    "CAND_0075",
+    "CAND_0076",
+    "CAND_0077",
+    "CAND_0079",
+    "CAND_0082",
+    "CAND_0083",
+    "CAND_0084",
+    "CAND_0085",
+    "CAND_0087",
+    "CAND_0088",
+    "CAND_0095",
+    "CAND_0097",
+    "CAND_0103",
+    "CAND_0106",
+    "CAND_0108",
+    "CAND_0109",
+    "CAND_0110",
+    "CAND_0111",
+    "CAND_0112",
+    "CAND_0113",
+    "CAND_0114",
+    "CAND_0115"
+  ],
+  "ambiguous_candidate_ids": [
+    "CAND_0007",
+    "CAND_0016",
+    "CAND_0031",
+    "CAND_0044",
+    "CAND_0048",
+    "CAND_0060"
+  ],
+  "counts": {
+    "calibration": {
+      "ANCHORED_DANGER": 3,
+      "HARD_NEGATIVE_NORMAL": 5,
+      "CLEAR_NORMAL": 7
+    },
+    "test": {
+      "HARD_NEGATIVE_NORMAL": 6,
+      "ANCHORED_DANGER": 10,
+      "CLEAR_NORMAL": 6
+    }
+  },
+  "split_search": {
+    "objective_order": [
+      "class presence in both splits",
+      "sample count distance from 40% calibration",
+      "related-in-test plus independent-in-calibration sample count",
+      "class fraction distance",
+      "sorted group bits"
+    ],
+    "score": [
+      0,
+      0.2,
+      6,
+      0.36223776
+    ],
+    "related_groups": [
+      "SPG_01",
+      "SPG_02",
+      "SPG_03",
+      "SPG_05"
+    ]
+  },
+  "related_to_reasoning_v1_groups_in_test": [
+    "SPG_05"
+  ],
+  "scene_leakage": 0,
+  "finalized": true,
+  "finalize_by": "Approve generated class counts and split manifest, then freeze_benchmark.py (no video re-review)",
+  "approved_by": "human_user",
+  "approved_at": "2026-10-09T09:23:06+09:00"
+}

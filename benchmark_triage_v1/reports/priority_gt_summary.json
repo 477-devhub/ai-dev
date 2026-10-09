@@ -1,0 +1,62 @@
+{
+  "human_reviewed": 43,
+  "label_counts": {
+    "HARD_NEGATIVE_NORMAL": 11,
+    "ANCHORED_DANGER": 13,
+    "CLEAR_NORMAL": 13,
+    "AMBIGUOUS": 6
+  },
+  "primary_size": 37,
+  "calibration": 15,
+  "test": 22,
+  "challenge": 6,
+  "primary_scenes": 18,
+  "all_scenes": 18,
+  "independent_test_scenes": [
+    "SCN_08",
+    "SCN_09",
+    "SCN_10",
+    "SCN_13",
+    "SCN_14",
+    "SCN_15",
+    "SCN_16",
+    "SCN_17",
+    "SCN_18"
+  ],
+  "related_scenes": [
+    "SCN_01",
+    "SCN_02",
+    "SCN_03",
+    "SCN_04",
+    "SCN_05",
+    "SCN_06",
+    "SCN_07",
+    "SCN_11",
+    "SCN_12"
+  ],
+  "split_counts": {
+    "calibration": {
+      "HARD_NEGATIVE_NORMAL": 5,
+      "ANCHORED_DANGER": 3,
+      "CLEAR_NORMAL": 7
+    },
+    "test": {
+      "HARD_NEGATIVE_NORMAL": 6,
+      "ANCHORED_DANGER": 10,
+      "CLEAR_NORMAL": 6
+    }
+  },
+  "scene_leakage": 0,
+  "auxiliary_missing": {
+    "review_confidence": 1,
+    "observable_summary": 21,
+    "normal_subtype": 30,
+    "hard_negative_type_if_any": 32,
+    "danger_type_if_any": 30,
+    "ambiguous_reason": 40,
+    "reviewed_at": 0,
+    "applicable_subtype_missing": 3
+  },
+  "ready_to_freeze": true,
+  "additional_human_review_required": false
+}

@@ -1,0 +1,273 @@
+{
+  "benchmark_version": "477-reasoning-v1",
+  "pipeline": "cv_llm",
+  "run_id": "p2_clef_flash-v1+common-adapter-v2",
+  "item_id": "ITEM_02",
+  "model_id": "p2_clef_flash:@cf/cloudflare/clef-flash@v1",
+  "runtime_config": {
+    "pipeline_actual": "p2_clef_flash",
+    "pipeline_schema_value_note": "result.schema.json enum allows only vlm_only/cv_llm; this is the P2 Clef-Flash pipeline.",
+    "provider": "cloudflare_workers_ai",
+    "decision_model": "@cf/cloudflare/clef-flash",
+    "model_input_selector": "clef-flash",
+    "decision_model_returned": "clef-flash",
+    "decision_endpoint": "POST https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/cloudflare/clef-flash",
+    "ai_gateway": false,
+    "input_modality": "text only (compact CV state string); no images",
+    "compact_state_version": "compact-decision-state-v1",
+    "compact_state_sha256": "d5fa17f4a4049cc449f8edb519e737de74e7baf65d7a343b042eb9f83be0d702",
+    "state_text_sha256": "ea0421c7c7e027a83d8733f95eb4a3b073f941a320dc7b0ae606fed0aedbeeaf",
+    "compact_state_source": "experiments/p1_decisions/compact_states/ITEM_02.json (P1 frozen bytes, read-only; CV not re-run)",
+    "decision_questions_version": "decisions-v1",
+    "clef_questions_version": "clef-questions-v1",
+    "question_count": 7,
+    "requests_for_item": 1,
+    "usage": {
+      "input_tokens": 2878,
+      "output_tokens": 0,
+      "raw_usage_object": {
+        "input_tokens": 2878,
+        "output_tokens": 0
+      }
+    },
+    "neurons_derived_from_published_rate": 23.5478,
+    "external_api_cost_usd": 0.00025902,
+    "theoretical_unit_cost_usd": 0.00025902,
+    "actual_billed_cost_usd": null,
+    "actual_billed_cost_note": "not observable per request (Workers AI daily free Neuron allocation / account plan); not mixed with theoretical cost",
+    "pricing": {
+      "model": "@cf/cloudflare/clef-flash",
+      "input_usd_per_1m_tokens": 0.09,
+      "output_usd_per_1m_tokens": 0.0,
+      "neurons_per_1m_input_tokens": 8182,
+      "usd_per_1000_neurons_beyond_free": 0.011,
+      "free_allocation_neurons_per_day": 10000,
+      "billing_rule": "input tokens only (no output-token price listed for Clef models)",
+      "pricing_source": "https://developers.cloudflare.com/workers-ai/platform/pricing/ ('Other model pricing': @cf/cloudflare/clef-flash $0.090 per M input tokens / 8182 neurons per M input tokens); live cross-check: GET /accounts/{ACCOUNT_ID}/ai/models/search catalog property price=0.09 USD per M input tokens (logs/cloudflare_schema_snapshot.json)",
+      "pricing_checked_at": "2026-10-07",
+      "pricing_unit": "USD per 1M input tokens"
+    },
+    "latency": {
+      "definition": "cached-state timing only (frozen compact state reused); NOT full end-to-end; result latency_ms left null",
+      "state_load_ms": 8.218,
+      "request_total_ms": 282.87,
+      "decision_api_latency_ms": 282.87,
+      "decision_api_total_including_retries_ms": 283.01,
+      "provider_timing": null,
+      "adapter_ms": 0.221,
+      "cached_state_pipeline_ms": 291.45
+    },
+    "retry_count": 0,
+    "invalid_or_missing_answer_count": 0,
+    "answer_issues": [],
+    "response_schema_issues": [],
+    "cf_ray": "a46dae934ec7308b-ICN",
+    "adapter_provenance": {
+      "decision_adapter": "experiments/p1_decisions/src/decision_adapter.py (frozen bytes)",
+      "decision_adapter_sha256": "c6d951fa1689787d00e1a1a2f8a9cf38b4895baad273379f7a4d5c23161b712e",
+      "templates": {
+        "p1_source_sha256": "e222cc878b6f7f33b9b431c73a002f5dc896cea5567fdf55df36e9c9a80f3ead",
+        "substituted_source_sha256": "c3006ce72ca51d4832a03cf2c52ff1551ad19d6f2a8d7d15e31b8aae9331356b",
+        "substitutions": [
+          [
+            "was refused by the Decisions API and treated as unknown",
+            "was missing or invalid in the Clef-Flash response and treated as unknown"
+          ],
+          [
+            "OpenAI Decisions API ({model}) typed answers",
+            "Cloudflare Workers AI Clef-Flash ({model}) typed answers"
+          ],
+          [
+            "(Decisions API scores)",
+            "(Clef-Flash scores)"
+          ],
+          [
+            "Decisions API same-incident probability",
+            "Clef-Flash same-incident probability"
+          ],
+          [
+            "Decisions API: second view adds",
+            "Clef-Flash: second view adds"
+          ]
+        ]
+      },
+      "category_reconciliation": "none (P1-v1 behaviour preserved)"
+    },
+    "decision_summary": {
+      "p_incident": 0.1552,
+      "is_incident": false,
+      "category": "possible_scene_or_boundary_entry",
+      "category_confidence": 0.3233,
+      "risk": {
+        "severity": 0.1486,
+        "imminence": 0.3174,
+        "exposure": 0.3352,
+        "persistence": 0.3014
+      },
+      "priority_score": 0.2595,
+      "confidence": 0.584,
+      "p_human_review": 0.2433,
+      "human_review_required": false,
+      "refused_questions": []
+    },
+    "raw_api_file": "experiments/p2_clef_flash/raw_api/ITEM_02.json",
+    "llm_free_text_generation": false,
+    "access_audit": {
+      "files_opened": 3,
+      "forbidden_paths_opened": [],
+      "pass": true
+    },
+    "common_adapter_v2": {
+      "adapter_version": "common-adapter-v2",
+      "incident_threshold": 0.5,
+      "event_type_changes": 1,
+      "assessments": [
+        {
+          "raw_decision": {
+            "incident_probability": 0.1552,
+            "incident_category": "possible_scene_or_boundary_entry",
+            "incident_category_confidence": 0.3233
+          },
+          "normalized_decision": {
+            "is_incident": false,
+            "event_type": "no clear incident"
+          },
+          "rule": "R1",
+          "assessment": "single",
+          "v1_event_type": "possible scene or boundary entry (boundary semantics unknown)",
+          "event_type_changed": true
+        }
+      ],
+      "source_v1_result": "benchmark_v1/results/p2_clef_flash/run_ITEM_02.json",
+      "source_v1_result_sha256": "8ae304226e9bc16cd9766443dd830f549f0dff3aff74e04cea983bce506116bb",
+      "source_raw_api": "experiments/p2_clef_flash/raw_api/ITEM_02.json",
+      "source_raw_api_sha256": "d3ec271dc7aceef2c269e1a0c6d1aab741a4c9c585aac684eecc750f92183684",
+      "offline_rebuild_equals_v1": true,
+      "api_calls": 0,
+      "note": "v1 result is the official raw experiment record; this file is the normalized common-adapter-v2 presentation"
+    }
+  },
+  "input_fingerprint": {
+    "prompt_sha256": "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146",
+    "prediction_schema_sha256": "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d",
+    "media_sha256": {
+      "CAM_01": "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99"
+    },
+    "sampling_protocol_id": "uniform_total64_v1",
+    "frame_numbers": {
+      "CAM_01": [
+        0,
+        17,
+        33,
+        50,
+        67,
+        83,
+        100,
+        117,
+        133,
+        150,
+        167,
+        183,
+        200,
+        216,
+        233,
+        250,
+        266,
+        283,
+        300,
+        316,
+        333,
+        350,
+        366,
+        383,
+        400,
+        416,
+        433,
+        450,
+        466,
+        483,
+        500,
+        516,
+        533,
+        549,
+        566,
+        583,
+        599,
+        616,
+        633,
+        649,
+        666,
+        683,
+        699,
+        716,
+        733,
+        749,
+        766,
+        783,
+        799,
+        816,
+        833,
+        849,
+        866,
+        882,
+        899,
+        916,
+        932,
+        949,
+        966,
+        982,
+        999,
+        1016,
+        1032,
+        1049
+      ]
+    }
+  },
+  "prediction": {
+    "event_type": "no clear incident",
+    "is_incident": false,
+    "observations": [
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 0.0,
+        "description": "0-2 person(s) detected per sampled frame (median 0); persons present in 36% of 64 samples about 0.57s apart; CV reliability 0.81."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 2.23,
+        "description": "T2 first appears away from the frame edge at 2.2s."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 2.23,
+        "description": "T2 moves about 0.65 frame heights across the image between 2.2s and 12.2s."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 6.67,
+        "description": "T2: standing posture proxy at 6.7s and low posture posture proxy at 8.3s (transition confidence 0.58; downward change 0.25 body heights, reliability limited)."
+      }
+    ],
+    "temporal_summary": "CAM_01: 64 samples over 35.0s; up to 2 person(s). T2 observed 2.2-12.2s (standing -> standing), standing-to-low posture change 6.7-8.3s. T1 observed 0.0-2.2s (standing -> standing).",
+    "risk": {
+      "severity": 0.1486,
+      "imminence": 0.3174,
+      "exposure": 0.3352,
+      "persistence": 0.3014
+    },
+    "confidence": 0.584,
+    "uncertainties": [
+      "Sparse sampling (about 0.57s between frames); brief actions between samples may be missed.",
+      "Boundary semantics (gates, walls, restricted areas) are unavailable; authorization cannot be determined.",
+      "Track association reliability is limited (fragmented or ambiguous tracks).",
+      "Posture labels are automatic proxies; the cause of a posture change and any medical condition cannot be determined."
+    ],
+    "reason": "Cloudflare Workers AI Clef-Flash (clef-flash) typed answers over the compact CV observation state (text only, no images): incident probability 0.16; category 'possible_scene_or_boundary_entry' (confidence 0.32); severity 0.15, imminence 0.32, exposure 0.34, persistence 0.30 (0-1); human-review probability 0.24. Observation texts are generated deterministically from CV features, not by the model.",
+    "human_review_required": false
+  },
+  "human_grading": null,
+  "latency_ms": null,
+  "estimated_cost_usd": null,
+  "input_tokens": 2878,
+  "output_tokens": 0
+}

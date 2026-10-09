@@ -1,0 +1,7 @@
+{
+  "verified_at": "2026-10-09T09:29:02+09:00",
+  "all_pass": true,
+  "locked_files": 74,
+  "benchmark_lock_sha256": "f32659e9aa7d4b8fbcc5b8654c9e5e11ab5f2bf50d765faa17fb02d37d3b41a7",
+  "note": "Underlying frozen validator checks all pass. Original CLI has a list-detail formatting bug after freeze; this wrapper does not change any frozen byte."
+}

@@ -1,0 +1,2976 @@
+[
+  {
+    "pair_id": "MV05",
+    "incident_id": "ph_e2069",
+    "event_type": "신체적 충돌을 동반한 싸움",
+    "cameras": {
+      "c1": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2069/ph_e2069_c1.mp4",
+        "zip_member": "ph_e2069/ph_e2069_c1.mp4",
+        "file_size": 74834701,
+        "zip_crc": 1083345632,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2069/ph_e2069.json",
+        "metadata": {
+          "filename": "ph_e2069_c1.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-07-31",
+          "time": "12:28:20",
+          "length": 30.63,
+          "cctv_distribution": "P3",
+          "cctv_camera": "CDO-TP237IRXF",
+          "cctv_angle": "A90",
+          "source": "or",
+          "view": "c1"
+        },
+        "source_evidence_frame_range": [
+          267,
+          914
+        ],
+        "evidence_keyframes": [
+          267,
+          492,
+          889
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "방지턱 위에서 사람1이 사람2의 어깨를 밀치며 신체적 충돌을 동반함",
+          "2단계": "방지턱 위에서 사람2가 발로 사람1을 가격하고 있음",
+          "3단계": "방지턱 위에서 물리적 접촉이 중단되며 사람2는 화면 하단 방향으로 이동하며 사람1도 사람2와 동일한 방향으로 이동 중임"
+        },
+        "fps": 30.0,
+        "event_start": 8.9,
+        "event_end": 30.466666666666665,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2069\\ph_e2069_c1.mp4",
+        "frames": 919,
+        "duration": 30.633333333333333,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 21.566666666666666,
+        "suggested_clip_start": 1.9000000000000004,
+        "suggested_clip_end": 30.6,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV05_cam_a.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 3.9,
+            "frame_zero_based": 117,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.9,
+            "frame_zero_based": 237,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.9,
+            "frame_zero_based": 267,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.133333333333333,
+            "frame_zero_based": 364,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.433333333333334,
+            "frame_zero_based": 493,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.766666666666666,
+            "frame_zero_based": 623,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.066666666666666,
+            "frame_zero_based": 752,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.466666666666665,
+            "frame_zero_based": 914,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.6,
+            "frame_zero_based": 918,
+            "phase": "AFTER"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV05_cam_a_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [
+            918
+          ],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.6
+        }
+      },
+      "c2": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2069/ph_e2069_c2.mp4",
+        "zip_member": "ph_e2069/ph_e2069_c2.mp4",
+        "file_size": 75412559,
+        "zip_crc": 547113357,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2069/ph_e2069.json",
+        "metadata": {
+          "filename": "ph_e2069_c2.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-07-31",
+          "time": "12:28:17",
+          "length": 31.83,
+          "cctv_distribution": "P3",
+          "cctv_camera": "CDO-P236XEA1",
+          "cctv_angle": "A90",
+          "source": "or",
+          "view": "c2"
+        },
+        "source_evidence_frame_range": [
+          280,
+          922
+        ],
+        "evidence_keyframes": [
+          280,
+          587,
+          862
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "방지턱 위에서 사람1이 사람2를 밀며 신체적 충돌을 동반함",
+          "2단계": "방지턱 위에 사람2는 사람1을 바라보고 있고 사람1은 쓰러져있음",
+          "3단계": "방지턱 위에서 사람2가 싸움을 멈추고 이동하고 사람1도 같은 방향으로 뒤따라 이동하고 있음"
+        },
+        "fps": 30.0,
+        "event_start": 9.333333333333334,
+        "event_end": 30.733333333333334,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2069\\ph_e2069_c2.mp4",
+        "frames": 955,
+        "duration": 31.833333333333332,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 21.4,
+        "suggested_clip_start": 2.333333333333334,
+        "suggested_clip_end": 31.8,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV05_cam_b.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 4.333333333333333,
+            "frame_zero_based": 130,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.333333333333334,
+            "frame_zero_based": 250,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.333333333333334,
+            "frame_zero_based": 280,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.533333333333333,
+            "frame_zero_based": 376,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.833333333333332,
+            "frame_zero_based": 505,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.1,
+            "frame_zero_based": 633,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.4,
+            "frame_zero_based": 762,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.733333333333334,
+            "frame_zero_based": 922,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 31.8,
+            "frame_zero_based": 954,
+            "phase": "AFTER"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV05_cam_b_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 31.0,
+            "frame_zero_based": 930,
+            "phase": "AFTER"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [
+            954
+          ],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 31.8
+        }
+      }
+    },
+    "estimated_time_offset": 0.43333333333333357,
+    "offset_basis": "difference of prose evidence tracking-start frames / actual FPS; event-phase estimate, NOT sync",
+    "timestamp_derived_offset_b_minus_a": 3.0,
+    "sync_status": "no_explicit_sync_metadata",
+    "source_actions_private": {
+      "c1": {
+        "1단계": "방지턱 위에서 사람1이 사람2의 어깨를 밀치며 신체적 충돌을 동반함",
+        "2단계": "방지턱 위에서 사람2가 발로 사람1을 가격하고 있음",
+        "3단계": "방지턱 위에서 물리적 접촉이 중단되며 사람2는 화면 하단 방향으로 이동하며 사람1도 사람2와 동일한 방향으로 이동 중임"
+      },
+      "c2": {
+        "1단계": "방지턱 위에서 사람1이 사람2를 밀며 신체적 충돌을 동반함",
+        "2단계": "방지턱 위에 사람2는 사람1을 바라보고 있고 사람1은 쓰러져있음",
+        "3단계": "방지턱 위에서 사람2가 싸움을 멈추고 이동하고 사람1도 같은 방향으로 뒤따라 이동하고 있음"
+      }
+    },
+    "number_of_people_annotation": {
+      "c1": 2,
+      "c2": 2
+    },
+    "annotation_reason_for_candidate": "Source JSON co-lists two views and supplies different view-specific stage descriptions/evidence; all five local incidents reviewed because fewer than requested 15–20 are available.",
+    "pair_contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV05_pair.jpg",
+    "multi_view_gain": 4.8,
+    "gain_role": "subjective selection heuristic, not official GT or model performance",
+    "scores": {
+      "cam_a_event_visibility": 2,
+      "cam_b_event_visibility": 5,
+      "view_difference": 5,
+      "complementarity": 5,
+      "occlusion_recovery": 5,
+      "temporal_value": 5,
+      "participant_clarity_gain": 4,
+      "demo_suitability": 5,
+      "single_view_ambiguity": 5
+    },
+    "score_reasons": {
+      "cam_a_event_visibility": "수관이 접촉 이후 주요 구간을 가린다.",
+      "cam_b_event_visibility": "도로 쪽 카메라는 접촉·낮은 자세·이후 이동을 잘 보여준다.",
+      "view_difference": "공원 통로와 도로를 크게 다른 방향에서 본다.",
+      "complementarity": "가려진 동안의 사건 진행과 이후 이동을 추가한다.",
+      "occlusion_recovery": "수목 때문에 사라진 참여자와 자세를 반대 시점이 복원한다.",
+      "temporal_value": "사라짐 이후에도 사건이 진행됨을 순서로 확인한다.",
+      "participant_clarity_gain": "가려진 두 사람의 위치와 자세를 도로 시점에서 보완한다.",
+      "demo_suitability": "가려진 화면과 진행되는 사건의 대비가 직관적이다.",
+      "single_view_ambiguity": "CAM A 단독에서는 사건 종료와 가림을 구별하기 매우 어렵다."
+    },
+    "status": "priority_candidate",
+    "selection_reason": "나무 뒤로 사라진 사건을 다른 카메라에서 계속 관찰할 수 있는 가림 복원 사례다.",
+    "cam_a_observation": "두 사람이 공원 통로에서 도로 쪽으로 이동한다. 접촉 이후 수목/수관 뒤에 가려 약 18~29초에는 참여자와 동작을 읽기 어렵다.",
+    "cam_b_observation": "도로의 노란 표시 부근에서 접근·신체 접촉을 볼 수 있다. 약 20~26초에 검은 옷 사람이 낮게 쓰러진 자세를 보이고 흰 옷 사람이 주변에 있으며 약 29~31초에 이동한다.",
+    "why_multiview_helps": "CAM A에서 인물이 보이지 않는 동안 CAM B는 도로 위 자세 변화와 이후 이동을 보여준다. 화면에서 사라짐과 사건 종료를 구별하는 근거를 제공한다.",
+    "limitations": "의학적 실신, 부상 정도, 의도는 영상으로 확정할 수 없다. CAM B 단독도 매우 명확하므로 AB가 B보다 나은지는 별도 평가가 필요하다. 일부 마지막 프레임은 검은 화면이다.",
+    "review_method": "full duration 1 Hz decoded temporal sheets + 9 evidence-centered keyframes per camera; qualitative visual review, not continuous playback",
+    "reviewer": "Codex candidate-selection visual review; human final confirmation pending",
+    "official_ground_truth": false,
+    "recommendation_rank": 1
+  },
+  {
+    "pair_id": "MV02",
+    "incident_id": "ph_e2044",
+    "event_type": "신체적 충돌을 동반한 싸움",
+    "cameras": {
+      "c1": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2044/ph_e2044_c1.mp4",
+        "zip_member": "ph_e2044/ph_e2044_c1.mp4",
+        "file_size": 72442413,
+        "zip_crc": 2414467645,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2044/ph_e2044.json",
+        "metadata": {
+          "filename": "ph_e2044_c1.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-08-28",
+          "time": "12:29:28",
+          "length": 30.63,
+          "cctv_distribution": "P1",
+          "cctv_camera": "CDO-P236XEA1",
+          "cctv_angle": "A180",
+          "source": "or",
+          "view": "c1"
+        },
+        "source_evidence_frame_range": [
+          367,
+          907
+        ],
+        "evidence_keyframes": [
+          367,
+          500,
+          844
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "사람2가 도로에서 사람1의 뒤에서 몸을 감싸고 있는 모습이 포착됨",
+          "2단계": "도로에서 사람2가 사람1을 공격하여 사람1이 몸을 구부리고 있음",
+          "3단계": "사람2가 도로에서 사람1쪽으로 팔을 휘두르는 동작을 하고 있음"
+        },
+        "fps": 30.0,
+        "event_start": 12.233333333333333,
+        "event_end": 30.233333333333334,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2044\\ph_e2044_c1.mp4",
+        "frames": 919,
+        "duration": 30.633333333333333,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 18.0,
+        "suggested_clip_start": 5.2333333333333325,
+        "suggested_clip_end": 30.633333333333333,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV02_cam_a.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 7.233333333333333,
+            "frame_zero_based": 217,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.233333333333333,
+            "frame_zero_based": 337,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.233333333333333,
+            "frame_zero_based": 367,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.933333333333334,
+            "frame_zero_based": 448,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.533333333333335,
+            "frame_zero_based": 556,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.133333333333333,
+            "frame_zero_based": 664,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.733333333333334,
+            "frame_zero_based": 772,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.233333333333334,
+            "frame_zero_based": 907,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.6,
+            "frame_zero_based": 918,
+            "phase": "AFTER"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV02_cam_a_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.633333333333333
+        }
+      },
+      "c2": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2044/ph_e2044_c2.mp4",
+        "zip_member": "ph_e2044/ph_e2044_c2.mp4",
+        "file_size": 73151531,
+        "zip_crc": 511269326,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2044/ph_e2044.json",
+        "metadata": {
+          "filename": "ph_e2044_c2.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-08-28",
+          "time": "12:29:29",
+          "length": 30.97,
+          "cctv_distribution": "P1",
+          "cctv_camera": "CDO-TP237IRXF",
+          "cctv_angle": "A180",
+          "source": "or",
+          "view": "c2"
+        },
+        "source_evidence_frame_range": [
+          383,
+          929
+        ],
+        "evidence_keyframes": [
+          383,
+          704,
+          863
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "사람1이 도로에서 뒤에서 공격하는 사람2를 피해 몸을 움츠리고 있음",
+          "2단계": "도로에서 사람1이 사람2의 공격을 피해 몸을 숙이고 있음",
+          "3단계": "사람2가 도로에서 사람1을 향해 팔을 휘두르는 동작을 취하고 있음"
+        },
+        "fps": 30.0,
+        "event_start": 12.766666666666667,
+        "event_end": 30.966666666666665,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2044\\ph_e2044_c2.mp4",
+        "frames": 929,
+        "duration": 30.966666666666665,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 18.2,
+        "suggested_clip_start": 5.7666666666666675,
+        "suggested_clip_end": 30.966666666666665,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV02_cam_b.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 7.766666666666667,
+            "frame_zero_based": 233,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.766666666666667,
+            "frame_zero_based": 353,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.766666666666667,
+            "frame_zero_based": 383,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.5,
+            "frame_zero_based": 465,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.133333333333333,
+            "frame_zero_based": 574,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.766666666666666,
+            "frame_zero_based": 683,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.4,
+            "frame_zero_based": 792,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.933333333333334,
+            "frame_zero_based": 928,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.933333333333334,
+            "frame_zero_based": 928,
+            "phase": "EVENT"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV02_cam_b_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.966666666666665
+        }
+      }
+    },
+    "estimated_time_offset": 0.533333333333335,
+    "offset_basis": "difference of prose evidence tracking-start frames / actual FPS; event-phase estimate, NOT sync",
+    "timestamp_derived_offset_b_minus_a": -1.0,
+    "sync_status": "no_explicit_sync_metadata",
+    "source_actions_private": {
+      "c1": {
+        "1단계": "사람2가 도로에서 사람1의 뒤에서 몸을 감싸고 있는 모습이 포착됨",
+        "2단계": "도로에서 사람2가 사람1을 공격하여 사람1이 몸을 구부리고 있음",
+        "3단계": "사람2가 도로에서 사람1쪽으로 팔을 휘두르는 동작을 하고 있음"
+      },
+      "c2": {
+        "1단계": "사람1이 도로에서 뒤에서 공격하는 사람2를 피해 몸을 움츠리고 있음",
+        "2단계": "도로에서 사람1이 사람2의 공격을 피해 몸을 숙이고 있음",
+        "3단계": "사람2가 도로에서 사람1을 향해 팔을 휘두르는 동작을 취하고 있음"
+      }
+    },
+    "number_of_people_annotation": {
+      "c1": 2,
+      "c2": 2
+    },
+    "annotation_reason_for_candidate": "Source JSON co-lists two views and supplies different view-specific stage descriptions/evidence; all five local incidents reviewed because fewer than requested 15–20 are available.",
+    "pair_contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV02_pair.jpg",
+    "multi_view_gain": 4.45,
+    "gain_role": "subjective selection heuristic, not official GT or model performance",
+    "scores": {
+      "cam_a_event_visibility": 2,
+      "cam_b_event_visibility": 4,
+      "view_difference": 5,
+      "complementarity": 4,
+      "occlusion_recovery": 5,
+      "temporal_value": 4,
+      "participant_clarity_gain": 4,
+      "demo_suitability": 5,
+      "single_view_ambiguity": 4
+    },
+    "score_reasons": {
+      "cam_a_event_visibility": "거리와 차량 때문에 몸 접촉을 읽기 어렵다.",
+      "cam_b_event_visibility": "CAM B에서는 팔 동작과 재접근이 상대적으로 선명하다.",
+      "view_difference": "서로 반대 방향에서 차량과 인물의 배치를 본다.",
+      "complementarity": "CAM A의 가려진 접촉 정보를 CAM B가 추가한다.",
+      "occlusion_recovery": "차량 및 인물 겹침의 상당 부분을 반대 시점에서 확인한다.",
+      "temporal_value": "접근·접촉·분리·재접근의 순서가 유용하다.",
+      "participant_clarity_gain": "두 몸이 겹칠 때 각 사람의 위치와 자세를 보완한다.",
+      "demo_suitability": "차량 가림과 다른 시점의 접촉을 비교하기 쉽다.",
+      "single_view_ambiguity": "CAM A 단독에서는 가까이 서 있음과 접촉을 구분하기 어렵다."
+    },
+    "status": "priority_candidate",
+    "selection_reason": "차량 및 신체 겹침을 반대 시점이 보완한다.",
+    "cam_a_observation": "주차 차량과 이동하는 흰색 차량이 있는 골목에서 참여자가 멀고 일부 몸이 가려진다. 가까이 붙는 동작만으로 접촉의 형태를 판단하기 어렵다.",
+    "cam_b_observation": "약 13~27초에 팔을 뻗거나 몸을 붙이는 동작, 두 사람의 분리와 재접근이 상대적으로 잘 보인다.",
+    "why_multiview_helps": "CAM A에서 차량·몸 겹침으로 빠진 신체 동작을 CAM B로 확인한다. 배경 이동과 두 사람의 관계를 함께 설명할 수 있다.",
+    "limitations": "차량의 가림은 구간에 따라 변한다. CAM B 단독 대비 실제 추가 성능은 아직 검증하지 않았다. 마지막까지 접촉이 이어져 사건 이후 맥락이 부족하다.",
+    "review_method": "full duration 1 Hz decoded temporal sheets + 9 evidence-centered keyframes per camera; qualitative visual review, not continuous playback",
+    "reviewer": "Codex candidate-selection visual review; human final confirmation pending",
+    "official_ground_truth": false,
+    "recommendation_rank": 2
+  },
+  {
+    "pair_id": "MV01",
+    "incident_id": "ph_e2038",
+    "event_type": "신체적 충돌을 동반한 싸움",
+    "cameras": {
+      "c1": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2038/ph_e2038_c1.mp4",
+        "zip_member": "ph_e2038/ph_e2038_c1.mp4",
+        "file_size": 72261694,
+        "zip_crc": 4236168340,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2038/ph_e2038.json",
+        "metadata": {
+          "filename": "ph_e2038_c1.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-08-28",
+          "time": "14:44:47",
+          "length": 30.6,
+          "cctv_distribution": "P1",
+          "cctv_camera": "CDO-P236XEA1",
+          "cctv_angle": "A180",
+          "source": "or",
+          "view": "c1"
+        },
+        "source_evidence_frame_range": [
+          523,
+          917
+        ],
+        "evidence_keyframes": [
+          523,
+          667,
+          863
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "도로에서 사람1이 사람2를 향해 팔을 휘두르고 있음",
+          "2단계": "사람2가 도로에서 사람1을 피해 화면 우측 방향으로 몸이 기울어짐",
+          "3단계": "사람2가 도로에서 사람1과 떨어져 몸이 쓰러짐"
+        },
+        "fps": 30.0,
+        "event_start": 17.433333333333334,
+        "event_end": 30.566666666666666,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2038\\ph_e2038_c1.mp4",
+        "frames": 918,
+        "duration": 30.6,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 13.133333333333333,
+        "suggested_clip_start": 10.433333333333334,
+        "suggested_clip_end": 30.6,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV01_cam_a.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 12.433333333333334,
+            "frame_zero_based": 373,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 16.433333333333334,
+            "frame_zero_based": 493,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 17.433333333333334,
+            "frame_zero_based": 523,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.4,
+            "frame_zero_based": 582,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.033333333333335,
+            "frame_zero_based": 661,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.666666666666668,
+            "frame_zero_based": 740,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.3,
+            "frame_zero_based": 819,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.566666666666666,
+            "frame_zero_based": 917,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.566666666666666,
+            "frame_zero_based": 917,
+            "phase": "EVENT"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV01_cam_a_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.6
+        }
+      },
+      "c2": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2038/ph_e2038_c2.mp4",
+        "zip_member": "ph_e2038/ph_e2038_c2.mp4",
+        "file_size": 73156545,
+        "zip_crc": 3047963064,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2038/ph_e2038.json",
+        "metadata": {
+          "filename": "ph_e2038_c2.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-08-28",
+          "time": "14:44:46",
+          "length": 30.97,
+          "cctv_distribution": "P1",
+          "cctv_camera": "CDO-TP237IRXF",
+          "cctv_angle": "A180",
+          "source": "or",
+          "view": "c2"
+        },
+        "source_evidence_frame_range": [
+          542,
+          929
+        ],
+        "evidence_keyframes": [
+          541,
+          677,
+          865
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "도로에서 사람1이 사람2의 뒤쪽에서 팔을 뻗고 있음",
+          "2단계": "사람2가 주차 입간판쪽으로  팔을 기대며 사람1에게 발로 차는 동작을 하고 있음",
+          "3단계": "사람2가 주차 입간판 근처에서 사람1에게 팔을 휘두르는 동작을 하고 있음"
+        },
+        "fps": 30.0,
+        "event_start": 18.066666666666666,
+        "event_end": 30.966666666666665,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2038\\ph_e2038_c2.mp4",
+        "frames": 929,
+        "duration": 30.966666666666665,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 12.9,
+        "suggested_clip_start": 11.066666666666666,
+        "suggested_clip_end": 30.966666666666665,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV01_cam_b.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 13.066666666666666,
+            "frame_zero_based": 392,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 17.066666666666666,
+            "frame_zero_based": 512,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 18.066666666666666,
+            "frame_zero_based": 542,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.566666666666666,
+            "frame_zero_based": 677,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.166666666666668,
+            "frame_zero_based": 755,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.733333333333334,
+            "frame_zero_based": 832,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.933333333333334,
+            "frame_zero_based": 928,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.933333333333334,
+            "frame_zero_based": 928,
+            "phase": "EVENT"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV01_cam_b_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.966666666666665
+        }
+      }
+    },
+    "estimated_time_offset": 0.6333333333333329,
+    "offset_basis": "difference of prose evidence tracking-start frames / actual FPS; event-phase estimate, NOT sync",
+    "timestamp_derived_offset_b_minus_a": 1.0,
+    "sync_status": "no_explicit_sync_metadata",
+    "source_actions_private": {
+      "c1": {
+        "1단계": "도로에서 사람1이 사람2를 향해 팔을 휘두르고 있음",
+        "2단계": "사람2가 도로에서 사람1을 피해 화면 우측 방향으로 몸이 기울어짐",
+        "3단계": "사람2가 도로에서 사람1과 떨어져 몸이 쓰러짐"
+      },
+      "c2": {
+        "1단계": "도로에서 사람1이 사람2의 뒤쪽에서 팔을 뻗고 있음",
+        "2단계": "사람2가 주차 입간판쪽으로  팔을 기대며 사람1에게 발로 차는 동작을 하고 있음",
+        "3단계": "사람2가 주차 입간판 근처에서 사람1에게 팔을 휘두르는 동작을 하고 있음"
+      }
+    },
+    "number_of_people_annotation": {
+      "c1": 2,
+      "c2": 2
+    },
+    "annotation_reason_for_candidate": "Source JSON co-lists two views and supplies different view-specific stage descriptions/evidence; all five local incidents reviewed because fewer than requested 15–20 are available.",
+    "pair_contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV01_pair.jpg",
+    "multi_view_gain": 3.75,
+    "gain_role": "subjective selection heuristic, not official GT or model performance",
+    "scores": {
+      "cam_a_event_visibility": 3,
+      "cam_b_event_visibility": 4,
+      "view_difference": 5,
+      "complementarity": 4,
+      "occlusion_recovery": 3,
+      "temporal_value": 4,
+      "participant_clarity_gain": 3,
+      "demo_suitability": 4,
+      "single_view_ambiguity": 4
+    },
+    "score_reasons": {
+      "cam_a_event_visibility": "거리와 몸 겹침이 팔다리 판단을 제한한다.",
+      "cam_b_event_visibility": "반대 시점에서 팔과 다리 움직임이 더 크고 잘 보인다.",
+      "view_difference": "같은 골목을 반대 방향으로 관찰한다.",
+      "complementarity": "겹친 팔다리를 교차 확인할 수 있다.",
+      "occlusion_recovery": "일부 몸 겹침을 반대 시점으로 보완한다.",
+      "temporal_value": "접근부터 연속 접촉까지 흐름을 확인한다.",
+      "participant_clarity_gain": "두 참여자의 자세를 보완하지만 참여자 수는 양쪽에서 읽힌다.",
+      "demo_suitability": "크기 차이와 자세 해석을 발표에서 비교하기 좋다.",
+      "single_view_ambiguity": "CAM A의 몸 굽힘과 겹침만으로는 동작 성격이 애매하다."
+    },
+    "status": "priority_candidate",
+    "selection_reason": "골목 반대 방향에서 본 신체 접촉·팔/다리 동작을 비교하기 좋다.",
+    "cam_a_observation": "멀리 있는 두 사람의 몸이 겹친다. 약 24~26초의 몸 굽힘은 한쪽 화면만으로 자세 변화의 성격을 구별하기 어렵다.",
+    "cam_b_observation": "더 큰 인물과 다른 방향의 팔·다리 움직임을 볼 수 있다. 약 25초에 두 사람의 자세와 접촉을 구별하기 쉽다.",
+    "why_multiview_helps": "한쪽에서 겹친 팔다리와 몸 굽힘을 반대 시점으로 교차 확인할 수 있다.",
+    "limitations": "CAM B만으로도 사건이 비교적 명확하다. 넘어짐이라는 caption 표현을 영상만으로 단정하지 않는다. 사건 후 충분한 여유 구간이 없다.",
+    "review_method": "full duration 1 Hz decoded temporal sheets + 9 evidence-centered keyframes per camera; qualitative visual review, not continuous playback",
+    "reviewer": "Codex candidate-selection visual review; human final confirmation pending",
+    "official_ground_truth": false,
+    "recommendation_rank": 3
+  },
+  {
+    "pair_id": "MV03",
+    "incident_id": "ph_e2047",
+    "event_type": "신체적 충돌을 동반한 싸움",
+    "cameras": {
+      "c1": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2047/ph_e2047_c1.mp4",
+        "zip_member": "ph_e2047/ph_e2047_c1.mp4",
+        "file_size": 77831245,
+        "zip_crc": 3453567253,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2047/ph_e2047.json",
+        "metadata": {
+          "filename": "ph_e2047_c1.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-09-03",
+          "time": "12:44:59",
+          "length": 30.97,
+          "cctv_distribution": "P18",
+          "cctv_camera": "CDO-P236XEA1",
+          "cctv_angle": "A180",
+          "source": "or",
+          "view": "c1"
+        },
+        "source_evidence_frame_range": [
+          369,
+          777
+        ],
+        "evidence_keyframes": [
+          369,
+          532,
+          716
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "도로에서 사람2가 발로 사람1을 차려는 동작으로 보임",
+          "2단계": "도로에서 사람1이 사람2의 얼굴을 주먹으로 가격하고 있음",
+          "3단계": "도로에서 사람1과 사람2가 다른 방향으로 걸어가고 있음"
+        },
+        "fps": 30.0,
+        "event_start": 12.3,
+        "event_end": 25.9,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2047\\ph_e2047_c1.mp4",
+        "frames": 929,
+        "duration": 30.966666666666665,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 13.6,
+        "suggested_clip_start": 5.300000000000001,
+        "suggested_clip_end": 30.966666666666665,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV03_cam_a.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 7.3,
+            "frame_zero_based": 219,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.3,
+            "frame_zero_based": 339,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.3,
+            "frame_zero_based": 369,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.333333333333334,
+            "frame_zero_based": 430,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.066666666666666,
+            "frame_zero_based": 512,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.766666666666666,
+            "frame_zero_based": 593,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.5,
+            "frame_zero_based": 675,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.9,
+            "frame_zero_based": 777,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.9,
+            "frame_zero_based": 927,
+            "phase": "AFTER"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV03_cam_a_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "AFTER"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "AFTER"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "AFTER"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "AFTER"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "AFTER"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.966666666666665
+        }
+      },
+      "c2": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2047/ph_e2047_c2.mp4",
+        "zip_member": "ph_e2047/ph_e2047_c2.mp4",
+        "file_size": 78353565,
+        "zip_crc": 2958715556,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2047/ph_e2047.json",
+        "metadata": {
+          "filename": "ph_e2047_c2.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-09-03",
+          "time": "12:44:57",
+          "length": 30.9,
+          "cctv_distribution": "P18",
+          "cctv_camera": "CDO-TP237IRXF",
+          "cctv_angle": "A180",
+          "source": "or",
+          "view": "c2"
+        },
+        "source_evidence_frame_range": [
+          300,
+          793
+        ],
+        "evidence_keyframes": [
+          300,
+          529,
+          733
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "도로에서 사람2가 손으로 사람1을 건드리는 장면이 포착됨",
+          "2단계": "도로에서 사람1이 손으로 사람2를 붙잡고 있음",
+          "3단계": "도로에서 사람1과 사람2가 다른 방향으로 이동하고 있음"
+        },
+        "fps": 30.0,
+        "event_start": 10.0,
+        "event_end": 26.433333333333334,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2047\\ph_e2047_c2.mp4",
+        "frames": 927,
+        "duration": 30.9,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 16.433333333333334,
+        "suggested_clip_start": 3.0,
+        "suggested_clip_end": 30.9,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV03_cam_b.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.466666666666667,
+            "frame_zero_based": 374,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.766666666666667,
+            "frame_zero_based": 473,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.033333333333335,
+            "frame_zero_based": 571,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.333333333333332,
+            "frame_zero_based": 670,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.433333333333334,
+            "frame_zero_based": 793,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.866666666666667,
+            "frame_zero_based": 926,
+            "phase": "AFTER"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV03_cam_b_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "AFTER"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "AFTER"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "AFTER"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "AFTER"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.9
+        }
+      }
+    },
+    "estimated_time_offset": -2.3000000000000007,
+    "offset_basis": "difference of prose evidence tracking-start frames / actual FPS; event-phase estimate, NOT sync",
+    "timestamp_derived_offset_b_minus_a": 2.0,
+    "sync_status": "no_explicit_sync_metadata",
+    "source_actions_private": {
+      "c1": {
+        "1단계": "도로에서 사람2가 발로 사람1을 차려는 동작으로 보임",
+        "2단계": "도로에서 사람1이 사람2의 얼굴을 주먹으로 가격하고 있음",
+        "3단계": "도로에서 사람1과 사람2가 다른 방향으로 걸어가고 있음"
+      },
+      "c2": {
+        "1단계": "도로에서 사람2가 손으로 사람1을 건드리는 장면이 포착됨",
+        "2단계": "도로에서 사람1이 손으로 사람2를 붙잡고 있음",
+        "3단계": "도로에서 사람1과 사람2가 다른 방향으로 이동하고 있음"
+      }
+    },
+    "number_of_people_annotation": {
+      "c1": 2,
+      "c2": 2
+    },
+    "annotation_reason_for_candidate": "Source JSON co-lists two views and supplies different view-specific stage descriptions/evidence; all five local incidents reviewed because fewer than requested 15–20 are available.",
+    "pair_contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV03_pair.jpg",
+    "multi_view_gain": 3.2,
+    "gain_role": "subjective selection heuristic, not official GT or model performance",
+    "scores": {
+      "cam_a_event_visibility": 4,
+      "cam_b_event_visibility": 4,
+      "view_difference": 4,
+      "complementarity": 3,
+      "occlusion_recovery": 3,
+      "temporal_value": 4,
+      "participant_clarity_gain": 3,
+      "demo_suitability": 4,
+      "single_view_ambiguity": 2
+    },
+    "score_reasons": {
+      "cam_a_event_visibility": "양쪽 참여자와 신체 동작이 비교적 크게 보인다.",
+      "cam_b_event_visibility": "반대 시점에서도 신체 접촉과 분리가 보인다.",
+      "view_difference": "반대 방향으로 앞뒤와 팔다리를 관찰한다.",
+      "complementarity": "추가 각도는 있으나 사건 분류는 단독에서도 쉽다.",
+      "occlusion_recovery": "국소 몸 겹침만 보완하고 큰 가림은 적다.",
+      "temporal_value": "접근·접촉·이탈이 있어 시간 흐름이 유용하다.",
+      "participant_clarity_gain": "이미 양쪽에서 두 참여자를 구별하기 쉽다.",
+      "demo_suitability": "싸움 시연은 명확하지만 multi-view 증분 스토리는 약하다.",
+      "single_view_ambiguity": "불확실성이 낮은 단독 시점 비교군이다."
+    },
+    "status": "lower_gain_comparison",
+    "selection_reason": "두 시점 모두 비교적 명확한 사건으로 추가 시점의 효과가 작은 대조군에 적합하다.",
+    "cam_a_observation": "흰 옷과 검은 옷의 두 사람이 골목에서 접근하고 약 12~23초에 팔·다리를 움직이며 접촉한 뒤 떨어진다.",
+    "cam_b_observation": "반대 방향에서 몸 겹침과 다리·팔 움직임을 볼 수 있다. 약 10~26초의 진행과 이후 이동을 확인한다.",
+    "why_multiview_helps": "서로 다른 신체 방향을 확인하지만 양쪽 모두 이미 사건이 잘 보여 증분 정보는 제한적이다.",
+    "limitations": "single-view에서는 애매하지만 multi-view에서는 명확이라는 대표 스토리에 약하다. 기록 시각과 evidence 시작 차이가 크게 맞지 않아 동기화 추정에 특히 주의한다.",
+    "review_method": "full duration 1 Hz decoded temporal sheets + 9 evidence-centered keyframes per camera; qualitative visual review, not continuous playback",
+    "reviewer": "Codex candidate-selection visual review; human final confirmation pending",
+    "official_ground_truth": false,
+    "recommendation_rank": 4
+  },
+  {
+    "pair_id": "MV04",
+    "incident_id": "ph_e2058",
+    "event_type": "신체적 충돌을 동반한 싸움",
+    "cameras": {
+      "c1": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2058/ph_e2058_c1.mp4",
+        "zip_member": "ph_e2058/ph_e2058_c1.mp4",
+        "file_size": 73210703,
+        "zip_crc": 1384659964,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2058/ph_e2058.json",
+        "metadata": {
+          "filename": "ph_e2058_c1.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-08-04",
+          "time": "10:40:24",
+          "length": 30.4,
+          "cctv_distribution": "P4",
+          "cctv_camera": "CDO-DB200IRX",
+          "cctv_angle": "A180",
+          "source": "re",
+          "view": "c1"
+        },
+        "source_evidence_frame_range": [
+          196,
+          906
+        ],
+        "evidence_keyframes": [
+          194,
+          458,
+          857
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "사람1이 사람2에게 도로 위에서 맞고 있음",
+          "2단계": "사람1이 사람2를 도로 위에서 때리고 있음",
+          "3단계": "사람1과 사람2가 신체적 접촉이 없는 상태로 화면 오른쪽에서 왼쪽 방향으로 이동 중임"
+        },
+        "fps": 30.0,
+        "event_start": 6.533333333333333,
+        "event_end": 30.2,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2058\\ph_e2058_c1.mp4",
+        "frames": 912,
+        "duration": 30.4,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 23.666666666666668,
+        "suggested_clip_start": 0.13333333333333333,
+        "suggested_clip_end": 30.333333333333332,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV04_cam_a.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 1.5333333333333334,
+            "frame_zero_based": 46,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.533333333333333,
+            "frame_zero_based": 166,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.533333333333333,
+            "frame_zero_based": 196,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 10.066666666666666,
+            "frame_zero_based": 302,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.8,
+            "frame_zero_based": 444,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.533333333333335,
+            "frame_zero_based": 586,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.3,
+            "frame_zero_based": 729,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.2,
+            "frame_zero_based": 906,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.366666666666667,
+            "frame_zero_based": 911,
+            "phase": "AFTER"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV04_cam_a_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            910,
+            911
+          ],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.13333333333333333,
+          "last_nonblack_boundary_end": 30.333333333333332
+        }
+      },
+      "c2": {
+        "source_video": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip::ph_e2058/ph_e2058_c2.mp4",
+        "zip_member": "ph_e2058/ph_e2058_c2.mp4",
+        "file_size": 72400336,
+        "zip_crc": 4186916725,
+        "source_annotation": "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip::ph_e2058/ph_e2058.json",
+        "metadata": {
+          "filename": "ph_e2058_c2.mp4",
+          "width": 1920,
+          "height": 1080,
+          "date": "2025-08-04",
+          "time": "10:40:22",
+          "length": 30.63,
+          "cctv_distribution": "P4",
+          "cctv_camera": "CDO-P236XEA1",
+          "cctv_angle": "A180",
+          "source": "re",
+          "view": "c2"
+        },
+        "source_evidence_frame_range": [
+          203,
+          923
+        ],
+        "evidence_keyframes": [
+          203,
+          548,
+          851
+        ],
+        "source_object_ids": [
+          "1",
+          "2"
+        ],
+        "number_of_annotated_people": 2,
+        "camera_description_private": {
+          "1단계": "화면 중앙에서 사람2가 사람1을 주먹으로 가격하고 있음",
+          "2단계": "화면 중앙에서 사람1이 사람2를 타격하고 있음",
+          "3단계": "화면 중앙에서 사람1이 사람2의 발에 의해 타격을 받고 있음"
+        },
+        "fps": 30.0,
+        "event_start": 6.766666666666667,
+        "event_end": 30.766666666666666,
+        "event_interval_basis": "evidence_text tracking range; not an explicit numeric event interval",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2058\\ph_e2058_c2.mp4",
+        "frames": 919,
+        "duration": 30.633333333333333,
+        "width": 1920,
+        "height": 1080,
+        "event_duration_estimate": 24.0,
+        "suggested_clip_start": 0,
+        "suggested_clip_end": 30.566666666666666,
+        "clip_limitation": "source ends near evidence range end; requested post-event context may be absent",
+        "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV04_cam_b.jpg",
+        "contact_frames": [
+          {
+            "time_seconds": 1.7666666666666666,
+            "frame_zero_based": 53,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.766666666666667,
+            "frame_zero_based": 173,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.766666666666667,
+            "frame_zero_based": 203,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 10.366666666666667,
+            "frame_zero_based": 311,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.166666666666666,
+            "frame_zero_based": 455,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.966666666666665,
+            "frame_zero_based": 599,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.766666666666666,
+            "frame_zero_based": 743,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.6,
+            "frame_zero_based": 918,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.6,
+            "frame_zero_based": 918,
+            "phase": "EVENT"
+          }
+        ],
+        "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV04_cam_b_temporal.jpg",
+        "temporal_frames": [
+          {
+            "time_seconds": 0.0,
+            "frame_zero_based": 0,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 1.0,
+            "frame_zero_based": 30,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 2.0,
+            "frame_zero_based": 60,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 3.0,
+            "frame_zero_based": 90,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 4.0,
+            "frame_zero_based": 120,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 5.0,
+            "frame_zero_based": 150,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 6.0,
+            "frame_zero_based": 180,
+            "phase": "BEFORE"
+          },
+          {
+            "time_seconds": 7.0,
+            "frame_zero_based": 210,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 8.0,
+            "frame_zero_based": 240,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 9.0,
+            "frame_zero_based": 270,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 10.0,
+            "frame_zero_based": 300,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 11.0,
+            "frame_zero_based": 330,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 12.0,
+            "frame_zero_based": 360,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 13.0,
+            "frame_zero_based": 390,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 14.0,
+            "frame_zero_based": 420,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 15.0,
+            "frame_zero_based": 450,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 16.0,
+            "frame_zero_based": 480,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 17.0,
+            "frame_zero_based": 510,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 18.0,
+            "frame_zero_based": 540,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 19.0,
+            "frame_zero_based": 570,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 20.0,
+            "frame_zero_based": 600,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 21.0,
+            "frame_zero_based": 630,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 22.0,
+            "frame_zero_based": 660,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 23.0,
+            "frame_zero_based": 690,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 24.0,
+            "frame_zero_based": 720,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 25.0,
+            "frame_zero_based": 750,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 26.0,
+            "frame_zero_based": 780,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 27.0,
+            "frame_zero_based": 810,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 28.0,
+            "frame_zero_based": 840,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 29.0,
+            "frame_zero_based": 870,
+            "phase": "EVENT"
+          },
+          {
+            "time_seconds": 30.0,
+            "frame_zero_based": 900,
+            "phase": "EVENT"
+          }
+        ],
+        "boundary_quality": {
+          "near_black_boundary_frames_zero_based": [
+            917,
+            918
+          ],
+          "rule": "mean < 1 and max < 8; first/last 30 frames only",
+          "first_nonblack_boundary_time": 0.0,
+          "last_nonblack_boundary_end": 30.566666666666666
+        }
+      }
+    },
+    "estimated_time_offset": 0.2333333333333334,
+    "offset_basis": "difference of prose evidence tracking-start frames / actual FPS; event-phase estimate, NOT sync",
+    "timestamp_derived_offset_b_minus_a": 2.0,
+    "sync_status": "no_explicit_sync_metadata",
+    "source_actions_private": {
+      "c1": {
+        "1단계": "사람1이 사람2에게 도로 위에서 맞고 있음",
+        "2단계": "사람1이 사람2를 도로 위에서 때리고 있음",
+        "3단계": "사람1과 사람2가 신체적 접촉이 없는 상태로 화면 오른쪽에서 왼쪽 방향으로 이동 중임"
+      },
+      "c2": {
+        "1단계": "화면 중앙에서 사람2가 사람1을 주먹으로 가격하고 있음",
+        "2단계": "화면 중앙에서 사람1이 사람2를 타격하고 있음",
+        "3단계": "화면 중앙에서 사람1이 사람2의 발에 의해 타격을 받고 있음"
+      }
+    },
+    "number_of_people_annotation": {
+      "c1": 2,
+      "c2": 2
+    },
+    "annotation_reason_for_candidate": "Source JSON co-lists two views and supplies different view-specific stage descriptions/evidence; all five local incidents reviewed because fewer than requested 15–20 are available.",
+    "pair_contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\multiview\\contact_sheets\\MV04_pair.jpg",
+    "multi_view_gain": 2.4,
+    "gain_role": "subjective selection heuristic, not official GT or model performance",
+    "scores": {
+      "cam_a_event_visibility": 2,
+      "cam_b_event_visibility": 2,
+      "view_difference": 4,
+      "complementarity": 2,
+      "occlusion_recovery": 2,
+      "temporal_value": 3,
+      "participant_clarity_gain": 2,
+      "demo_suitability": 2,
+      "single_view_ambiguity": 4
+    },
+    "score_reasons": {
+      "cam_a_event_visibility": "먼 거리의 작은 인물이라 접촉을 읽기 어렵다.",
+      "cam_b_event_visibility": "다른 시점도 사람 크기가 작아 세부 동작이 제한된다.",
+      "view_difference": "방향과 카메라 높이는 다르다.",
+      "complementarity": "다른 시점에서도 거리 제약이 남는다.",
+      "occlusion_recovery": "일부 위치 확인 외 신체 가림 복원은 제한적이다.",
+      "temporal_value": "움직임 순서는 보이나 접촉 세부는 제한된다.",
+      "participant_clarity_gain": "두 사람이 작아 참여자 자세 구별 향상이 적다.",
+      "demo_suitability": "멀리 있는 사람과 끝 검은 화면이 데모 직관성을 낮춘다.",
+      "single_view_ambiguity": "몸 움직임만으로 신체 충돌을 확신하기 어렵다."
+    },
+    "status": "lower_gain_comparison",
+    "selection_reason": "양쪽 모두 먼 사건이므로 다각도가 항상 정보 증가를 보장하지 않는 비교 사례다.",
+    "cam_a_observation": "넓은 도로/골목 교차부에서 두 사람이 작게 보인다. 몸 움직임은 있으나 팔·손 접촉을 분명히 읽기 어렵다.",
+    "cam_b_observation": "다른 방향과 높이에서 같은 공간을 보지만 사람은 여전히 작고 주차 차량 주변의 자세를 세밀하게 구별하기 어렵다.",
+    "why_multiview_helps": "방향 정보는 추가되나 양쪽의 거리 제약이 남아 접촉·참여자 판단 향상이 작다.",
+    "limitations": "카메라 구도가 동일한 pair는 아니다. 서로 다른 구도지만 유효 정보가 적다. 짧은 시작/끝 검은 화면이 있어 데모 구간 검토가 필요하다.",
+    "review_method": "full duration 1 Hz decoded temporal sheets + 9 evidence-centered keyframes per camera; qualitative visual review, not continuous playback",
+    "reviewer": "Codex candidate-selection visual review; human final confirmation pending",
+    "official_ground_truth": false,
+    "recommendation_rank": 5
+  }
+]

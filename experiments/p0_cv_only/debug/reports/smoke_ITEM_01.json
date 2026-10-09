@@ -1,0 +1,37 @@
+{
+  "item_id": "ITEM_01",
+  "passed": true,
+  "checks_passed": 11,
+  "checks_total": 11,
+  "access_audit": {
+    "files_opened": 13,
+    "private_or_label_paths_opened": [],
+    "mp4_opened_directly_by_python": [],
+    "ffmpeg_decode_processes": 1,
+    "ffmpeg_processes_not_using_canonical_select": 0,
+    "other_subprocesses": [],
+    "pass": true
+  },
+  "timings_ms": {
+    "decode_ms": 1760.5621999991854,
+    "cv_inference_ms": 3548.4190999995917,
+    "tracking_ms": 142.6909000001615,
+    "feature_extraction_ms": 31.33579999939684,
+    "cross_camera_ms": 0.001100000190490391,
+    "state_assembly_ms": 0.047000000449770596,
+    "rule_engine_ms": 0.4542999995464925,
+    "serialization_ms": 0.07349999941652641,
+    "total_ms": 5525.929199999155,
+    "vram_peak_mb": 470.4951171875,
+    "frames_per_sec": 11.58176257488239
+  },
+  "frames": {
+    "frames_consumed": 64,
+    "per_camera": {
+      "CAM_01": 64
+    },
+    "cache_hits": [],
+    "frame_source": "load_model_input.iter_model_frames"
+  },
+  "event_type": "low or horizontal posture observed (onset not observed)"
+}

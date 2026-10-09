@@ -1,0 +1,50 @@
+{
+  "p2_version": "p2-v1",
+  "model": "@cf/cloudflare/clef-flash",
+  "provider": "cloudflare_workers_ai",
+  "compact_state_version": "compact-decision-state-v1",
+  "decision_questions_version": "decisions-v1",
+  "frozen": true,
+  "frozen_at": "2026-10-07T23:43:33+09:00",
+  "hashes": {
+    "configs/clef_questions_v1.json": "be8c6f42406e9d3709cbeea481bf6798927f2d28d2ed1366ee566859c72ddec2",
+    "configs/p2_v1.json": "5ef81cf1d983b28031058b9773480d9cf14a935cfb7e5b95acd9fd04ba7c288c",
+    "src/question_adapter.py": "93f6f5cb084e3b36dc51513b2c4621844176d5a9d279a014dcdb459c2fb96b06",
+    "src/clef_adapter.py": "373a5ede65fd8145e21d58b05fd0032853da717edafcd87fcdf55f4063263a74",
+    "src/prediction_adapter.py": "06ce6d292e89b6d7c95c6082d027f96e9fc05a1ae12c7fa5af188103709d54ad",
+    "src/cloudflare_client.py": "8437a73de4f04e11debfa50172c2b32489033f9d0f020024842ee12f698bad7d",
+    "src/p2_pipeline.py": "0c8ae16989a781c3f80ea5743ee4f75c357391b70579b621134c29acbec1bcae",
+    "src/compact_state_loader.py": "4a3b6832a53e310db7179a1539c5354ad556e8bd066a9d015950a9834a483dbe",
+    "src/cost.py": "73c43fc19c77b76cb13b00b3602d3cf0361f093b5764e34f50a86d72fb8868f3",
+    "src/utils.py": "228ae3902acbdd0897c98d415f8df09a219549f1c1d43b3d216041974a5bef5c",
+    "src/access_audit.py": "be669d1d257652ac6a0a88f8d7dd002bb6ea92f0cfdde446cbd793144c23aec9",
+    "schemas/clef_response.schema.json": "3b071a32cf604f8d3de16510d591171b285f7f50f5796137ab8a6a9e0d18adb4"
+  },
+  "p1_freeze_verified": {
+    "p1_frozen_at": "2026-10-07T18:15:39+09:00",
+    "p1_hashes_checked": 11,
+    "compact_state_sha256": {
+      "ITEM_01": "37d36bcfa9fd617aea3653b7a97799015b6120a3e51ddd722489f5bf0f90248a",
+      "ITEM_02": "d5fa17f4a4049cc449f8edb519e737de74e7baf65d7a343b042eb9f83be0d702",
+      "ITEM_03": "0cad333c34224f9f27abb59bf7cffc42fe65825dcec89e0b635e3802c111b51b",
+      "ITEM_04": "585f6a8b0b7294324536d5bb11613e42adaf54d3cffee62d7cf6b08302d5799f",
+      "ITEM_05": "34923012335eeb00c7b77fe07c9c4081abada9efacaecaf8dbec098c2353d243",
+      "ITEM_06": "6961df13b1fbbe696a70b93fbde1e1460236aad27559db838aff34da137daf90",
+      "ITEM_07": "845a79314d701a5f5fa2ed851c4c645d3610caf4258ebb067a421f75b973fd17"
+    }
+  },
+  "schema_snapshot_sha256": "fa93b87f7b6a81b4718d4ec0edfaf454b4bff666ce84559b7c9ee45753cc4817",
+  "smoke_test": {
+    "passed": true,
+    "at": "2026-10-07T23:43:18+09:00",
+    "state": "synthetic-smoke-v1",
+    "usage": {
+      "input_tokens": 418,
+      "output_tokens": 0
+    },
+    "benchmark_items_used": []
+  },
+  "benchmark_responses_seen_before_freeze": false,
+  "semantic_changes_after_benchmark_output": [],
+  "note": "Frozen before any benchmark item was sent to Clef-Flash. Any later change to questions, choices, levels, adapter thresholds, confidence formula, state or category reconciliation must be released as p2-v2."
+}

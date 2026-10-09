@@ -1,0 +1,104 @@
+{
+  "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\01.원천데이터\\VS_싸움_신체적충돌을동반한싸움.zip": {
+    "size": 731642461,
+    "sha256": "e010406ad459e9eca18e7c3e858420df8f1dc00c9ed20ffc9bef1a38bc87ea78",
+    "members": [
+      {
+        "name": "ph_e2038/ph_e2038_c1.mp4",
+        "size": 72261694,
+        "compressed_size": 71078550,
+        "crc": 4236168340
+      },
+      {
+        "name": "ph_e2038/ph_e2038_c2.mp4",
+        "size": 73156545,
+        "compressed_size": 71123234,
+        "crc": 3047963064
+      },
+      {
+        "name": "ph_e2044/ph_e2044_c1.mp4",
+        "size": 72442413,
+        "compressed_size": 71258369,
+        "crc": 2414467645
+      },
+      {
+        "name": "ph_e2044/ph_e2044_c2.mp4",
+        "size": 73151531,
+        "compressed_size": 71076766,
+        "crc": 511269326
+      },
+      {
+        "name": "ph_e2047/ph_e2047_c1.mp4",
+        "size": 77831245,
+        "compressed_size": 77850428,
+        "crc": 3453567253
+      },
+      {
+        "name": "ph_e2047/ph_e2047_c2.mp4",
+        "size": 78353565,
+        "compressed_size": 78358465,
+        "crc": 2958715556
+      },
+      {
+        "name": "ph_e2058/ph_e2058_c1.mp4",
+        "size": 73210703,
+        "compressed_size": 72027873,
+        "crc": 1384659964
+      },
+      {
+        "name": "ph_e2058/ph_e2058_c2.mp4",
+        "size": 72400336,
+        "compressed_size": 71213417,
+        "crc": 4186916725
+      },
+      {
+        "name": "ph_e2069/ph_e2069_c1.mp4",
+        "size": 74834701,
+        "compressed_size": 73488473,
+        "crc": 1083345632
+      },
+      {
+        "name": "ph_e2069/ph_e2069_c2.mp4",
+        "size": 75412559,
+        "compressed_size": 74165624,
+        "crc": 547113357
+      }
+    ]
+  },
+  "D:\\projects\\477\\downloads\\multiview_fight\\21.다각도_CCTV_생활안전_데이터\\3.개방데이터\\2.데이터(NIA)\\Validation\\02.라벨링데이터\\VL_싸움_신체적충돌을동반한싸움.zip": {
+    "size": 6167,
+    "sha256": "3a493dce0504be6a841d5c6109354102100f6ae243959edb2ee3aca244482ac8",
+    "members": [
+      {
+        "name": "ph_e2038/ph_e2038.json",
+        "size": 3811,
+        "compressed_size": 1128,
+        "crc": 3351800791
+      },
+      {
+        "name": "ph_e2044/ph_e2044.json",
+        "size": 3832,
+        "compressed_size": 1109,
+        "crc": 993683763
+      },
+      {
+        "name": "ph_e2047/ph_e2047.json",
+        "size": 3755,
+        "compressed_size": 1084,
+        "crc": 728668972
+      },
+      {
+        "name": "ph_e2058/ph_e2058.json",
+        "size": 3737,
+        "compressed_size": 1092,
+        "crc": 1402357662
+      },
+      {
+        "name": "ph_e2069/ph_e2069.json",
+        "size": 3921,
+        "compressed_size": 1132,
+        "crc": 2609546043
+      }
+    ]
+  }
+}

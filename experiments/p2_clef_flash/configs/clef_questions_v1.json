@@ -1,0 +1,28 @@
+{
+  "clef_questions_version": "clef-questions-v1",
+  "note": "API-representation adapter only. All semantic content (question keys, instructions, scope sentences, policy sentence, choice values+descriptions, score level labels+descriptions, order) is read at runtime from the frozen P1 file below. Nothing here adds, removes or rewords a question, choice or level. Written before any Clef call on benchmark items.",
+  "semantic_source": {
+    "file": "experiments/p1_decisions/configs/decisions_questions_v1.json",
+    "decision_questions_version": "decisions-v1",
+    "sha256_must_equal_p1_freeze": true
+  },
+  "type_map": {
+    "predicate": "noul",
+    "choice": "choice",
+    "score": "score"
+  },
+  "representation": {
+    "question_id": "identical to the P1 question name (single: <key>; attention: cam01_<key>, cam02_<key>, cam03_<key>, attention_first; multi_camera: <key>) - all satisfy the Clef id rule [A-Za-z0-9_.-]{1,100}",
+    "question_order": "identical to the P1 question list order (JSON object insertion order)",
+    "instructions": "identical string to P1: '<scope sentence> <question instructions> <policy>' stripped",
+    "noul": "P1 predicate had no yes/no descriptions; Clef optional 'criteria' is omitted",
+    "choice": "P1 choices [{value, description}] -> Clef criteria object {value: description}, same order; attention_first choices filtered to supplied cameras + no_clear_priority exactly as in P1",
+    "score": "P1 levels [{label, description}] -> Clef criteria array [{label, description}], same order, lowest first (index 0 = first P1 level)"
+  },
+  "answer_normalization": {
+    "noul": "{type:'noul', noul:p} -> {type:'predicate', name, probability:p}",
+    "choice": "{type:'choice', choice, probabilities:{value:p}, confidence} -> {type:'choice', name, choice, confidence, probabilities:[{value, probability}] in criteria order}",
+    "score": "{type:'score', score, legend, probabilities:{level_key:p}, confidence} -> {type:'score', name, score, confidence, probabilities:[{label, value:index, probability}] in level order}",
+    "missing_or_invalid": "an absent or schema-invalid answer becomes {type:'refusal', name} so that the frozen P1 refusal path (unknown decision, lowered confidence, forced human review) applies unchanged; Clef defines no refusal answer type"
+  }
+}

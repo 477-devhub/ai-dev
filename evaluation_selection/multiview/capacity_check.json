@@ -1,0 +1,6 @@
+{
+  "free_bytes_before": 616656187392,
+  "planned_extraction_bytes": 743055292,
+  "method": "shutil.disk_usage, Windows equivalent of df -h /mnt/d/projects/477",
+  "only_annotation_shortlisted_members": true
+}

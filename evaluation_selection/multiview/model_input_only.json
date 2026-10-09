@@ -1,0 +1,107 @@
+[
+  {
+    "pair_id": "MV01",
+    "model_input": {
+      "cam_a_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2038\\ph_e2038_c1.mp4",
+      "cam_b_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2038\\ph_e2038_c2.mp4",
+      "conditions": {
+        "single_a": [
+          "cam_a"
+        ],
+        "single_b": [
+          "cam_b"
+        ],
+        "multi_ab": [
+          "cam_a",
+          "cam_b"
+        ]
+      },
+      "fixed_general_prompt": "제공된 영상에서 관찰되는 행동과 변화, 참여자 간 상호작용, 판단 근거와 불확실성을 설명하세요. 여러 영상이 있으면 시점별 관찰과 공통 사건 가능성을 비교하세요. 영상의 시작 시점이 같다고 가정하지 마세요. 보이지 않는 사실은 단정하지 마세요.",
+      "media_policy": "original decoded pixels only; generic CAM A/B labels; full source video or uniform frames using the same predeclared schedule for all conditions; do not send review sheets, source filenames, annotation-selected sampling, annotations or scores"
+    }
+  },
+  {
+    "pair_id": "MV02",
+    "model_input": {
+      "cam_a_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2044\\ph_e2044_c1.mp4",
+      "cam_b_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2044\\ph_e2044_c2.mp4",
+      "conditions": {
+        "single_a": [
+          "cam_a"
+        ],
+        "single_b": [
+          "cam_b"
+        ],
+        "multi_ab": [
+          "cam_a",
+          "cam_b"
+        ]
+      },
+      "fixed_general_prompt": "제공된 영상에서 관찰되는 행동과 변화, 참여자 간 상호작용, 판단 근거와 불확실성을 설명하세요. 여러 영상이 있으면 시점별 관찰과 공통 사건 가능성을 비교하세요. 영상의 시작 시점이 같다고 가정하지 마세요. 보이지 않는 사실은 단정하지 마세요.",
+      "media_policy": "original decoded pixels only; generic CAM A/B labels; full source video or uniform frames using the same predeclared schedule for all conditions; do not send review sheets, source filenames, annotation-selected sampling, annotations or scores"
+    }
+  },
+  {
+    "pair_id": "MV03",
+    "model_input": {
+      "cam_a_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2047\\ph_e2047_c1.mp4",
+      "cam_b_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2047\\ph_e2047_c2.mp4",
+      "conditions": {
+        "single_a": [
+          "cam_a"
+        ],
+        "single_b": [
+          "cam_b"
+        ],
+        "multi_ab": [
+          "cam_a",
+          "cam_b"
+        ]
+      },
+      "fixed_general_prompt": "제공된 영상에서 관찰되는 행동과 변화, 참여자 간 상호작용, 판단 근거와 불확실성을 설명하세요. 여러 영상이 있으면 시점별 관찰과 공통 사건 가능성을 비교하세요. 영상의 시작 시점이 같다고 가정하지 마세요. 보이지 않는 사실은 단정하지 마세요.",
+      "media_policy": "original decoded pixels only; generic CAM A/B labels; full source video or uniform frames using the same predeclared schedule for all conditions; do not send review sheets, source filenames, annotation-selected sampling, annotations or scores"
+    }
+  },
+  {
+    "pair_id": "MV04",
+    "model_input": {
+      "cam_a_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2058\\ph_e2058_c1.mp4",
+      "cam_b_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2058\\ph_e2058_c2.mp4",
+      "conditions": {
+        "single_a": [
+          "cam_a"
+        ],
+        "single_b": [
+          "cam_b"
+        ],
+        "multi_ab": [
+          "cam_a",
+          "cam_b"
+        ]
+      },
+      "fixed_general_prompt": "제공된 영상에서 관찰되는 행동과 변화, 참여자 간 상호작용, 판단 근거와 불확실성을 설명하세요. 여러 영상이 있으면 시점별 관찰과 공통 사건 가능성을 비교하세요. 영상의 시작 시점이 같다고 가정하지 마세요. 보이지 않는 사실은 단정하지 마세요.",
+      "media_policy": "original decoded pixels only; generic CAM A/B labels; full source video or uniform frames using the same predeclared schedule for all conditions; do not send review sheets, source filenames, annotation-selected sampling, annotations or scores"
+    }
+  },
+  {
+    "pair_id": "MV05",
+    "model_input": {
+      "cam_a_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2069\\ph_e2069_c1.mp4",
+      "cam_b_video": "D:\\projects\\477\\evaluation_selection\\multiview\\tmp\\ph_e2069\\ph_e2069_c2.mp4",
+      "conditions": {
+        "single_a": [
+          "cam_a"
+        ],
+        "single_b": [
+          "cam_b"
+        ],
+        "multi_ab": [
+          "cam_a",
+          "cam_b"
+        ]
+      },
+      "fixed_general_prompt": "제공된 영상에서 관찰되는 행동과 변화, 참여자 간 상호작용, 판단 근거와 불확실성을 설명하세요. 여러 영상이 있으면 시점별 관찰과 공통 사건 가능성을 비교하세요. 영상의 시작 시점이 같다고 가정하지 마세요. 보이지 않는 사실은 단정하지 마세요.",
+      "media_policy": "original decoded pixels only; generic CAM A/B labels; full source video or uniform frames using the same predeclared schedule for all conditions; do not send review sheets, source filenames, annotation-selected sampling, annotations or scores"
+    }
+  }
+]

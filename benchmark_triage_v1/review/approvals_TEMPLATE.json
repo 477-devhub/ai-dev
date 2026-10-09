@@ -1,0 +1,7 @@
+{
+  "_instructions": "Copy to review/approvals.json ONLY after a person approves the class counts and split summary in reports/priority_gt_report.md and manifests/split_manifest.json. No additional human video review or auxiliary annotation is required for the priority protocol. A person fills approval provenance; freeze_benchmark.py refuses without it.",
+  "class_counts_approved_by": "",
+  "split_approved_by": "",
+  "approved_at": "",
+  "notes": ""
+}

@@ -1,0 +1,390 @@
+{
+  "definition": {
+    "scene_group_id": "camera view = (dataset, category, place, camera) header group, visually corrected by median-background edge-map correlation (see reassigned_sources); max 3 final clips per scene_group",
+    "split_group_id": "connected component of scene views + staged takes (same actors / same recording session). The calibration/test split unit.",
+    "note": "Header 'place'/'cam' labels were NOT trusted for identity: e.g. swoon cam01 and cam02 are different physical places, and 710-3 cam01 summer matches the cam02 night view visually."
+  },
+  "scene_groups": {
+    "SCN_01": {
+      "split_group_id": "SPG_01",
+      "n_sources": 12,
+      "categories": [
+        "trespass01"
+      ],
+      "cameras": [
+        "cam01"
+      ],
+      "takes": [
+        "145-1",
+        "145-2",
+        "145-3",
+        "145-4",
+        "145-5",
+        "145-6"
+      ],
+      "related_to_reasoning_v1": true,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/145-1_cam01_trespass01_place01_day_spring.jpg"
+    },
+    "SCN_02": {
+      "split_group_id": "SPG_01",
+      "n_sources": 12,
+      "categories": [
+        "trespass01"
+      ],
+      "cameras": [
+        "cam02"
+      ],
+      "takes": [
+        "145-1",
+        "145-2",
+        "145-3",
+        "145-4",
+        "145-5",
+        "145-6"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/145-1_cam02_trespass01_place01_day_spring.jpg"
+    },
+    "SCN_03": {
+      "split_group_id": "SPG_02",
+      "n_sources": 10,
+      "categories": [
+        "trespass03"
+      ],
+      "cameras": [
+        "cam01"
+      ],
+      "takes": [
+        "146-1",
+        "146-2",
+        "146-3",
+        "146-4",
+        "146-5"
+      ],
+      "related_to_reasoning_v1": true,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/146-1_cam01_trespass03_place01_day_spring.jpg"
+    },
+    "SCN_04": {
+      "split_group_id": "SPG_02",
+      "n_sources": 10,
+      "categories": [
+        "trespass03"
+      ],
+      "cameras": [
+        "cam02"
+      ],
+      "takes": [
+        "146-1",
+        "146-2",
+        "146-3",
+        "146-4",
+        "146-5"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/146-1_cam02_trespass03_place01_day_spring.jpg"
+    },
+    "SCN_05": {
+      "split_group_id": "SPG_03",
+      "n_sources": 15,
+      "categories": [
+        "fight01"
+      ],
+      "cameras": [
+        "cam01"
+      ],
+      "takes": [
+        "435-2",
+        "435-3",
+        "435-4",
+        "435-5",
+        "435-6"
+      ],
+      "related_to_reasoning_v1": true,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/435-2_cam01_fight01_place09_night_spring.jpg"
+    },
+    "SCN_06": {
+      "split_group_id": "SPG_03",
+      "n_sources": 15,
+      "categories": [
+        "fight01"
+      ],
+      "cameras": [
+        "cam02"
+      ],
+      "takes": [
+        "435-2",
+        "435-3",
+        "435-4",
+        "435-5",
+        "435-6"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/435-2_cam02_fight01_place09_night_spring.jpg"
+    },
+    "SCN_07": {
+      "split_group_id": "SPG_03",
+      "n_sources": 15,
+      "categories": [
+        "fight01"
+      ],
+      "cameras": [
+        "cam03"
+      ],
+      "takes": [
+        "435-2",
+        "435-3",
+        "435-4",
+        "435-5",
+        "435-6"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/435-2_cam03_fight01_place09_night_spring.jpg"
+    },
+    "SCN_08": {
+      "split_group_id": "SPG_04",
+      "n_sources": 3,
+      "categories": [
+        "fight01"
+      ],
+      "cameras": [
+        "cam01"
+      ],
+      "takes": [
+        "439-1"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/439-1_cam01_fight01_place03_day_spring.jpg"
+    },
+    "SCN_09": {
+      "split_group_id": "SPG_04",
+      "n_sources": 3,
+      "categories": [
+        "fight01"
+      ],
+      "cameras": [
+        "cam02"
+      ],
+      "takes": [
+        "439-1"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/439-1_cam02_fight01_place03_day_spring.jpg"
+    },
+    "SCN_10": {
+      "split_group_id": "SPG_04",
+      "n_sources": 3,
+      "categories": [
+        "fight01"
+      ],
+      "cameras": [
+        "cam03"
+      ],
+      "takes": [
+        "439-1"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/439-1_cam03_fight01_place03_day_spring.jpg"
+    },
+    "SCN_11": {
+      "split_group_id": "SPG_05",
+      "n_sources": 9,
+      "categories": [
+        "swoon01"
+      ],
+      "cameras": [
+        "cam01"
+      ],
+      "takes": [
+        "710-2",
+        "710-3",
+        "710-4",
+        "710-5",
+        "710-6"
+      ],
+      "related_to_reasoning_v1": true,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/710-2_cam01_swoon01_place01_day_spring.jpg"
+    },
+    "SCN_12": {
+      "split_group_id": "SPG_05",
+      "n_sources": 11,
+      "categories": [
+        "swoon01"
+      ],
+      "cameras": [
+        "cam01",
+        "cam02"
+      ],
+      "takes": [
+        "710-2",
+        "710-3",
+        "710-4",
+        "710-5",
+        "710-6"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/710-2_cam02_swoon01_place01_day_spring.jpg"
+    },
+    "SCN_13": {
+      "split_group_id": "SPG_06",
+      "n_sources": 2,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c1"
+      ],
+      "takes": [
+        "ph_e2038",
+        "ph_e2044"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2038_c1.jpg"
+    },
+    "SCN_14": {
+      "split_group_id": "SPG_06",
+      "n_sources": 2,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c2"
+      ],
+      "takes": [
+        "ph_e2038",
+        "ph_e2044"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2038_c2.jpg"
+    },
+    "SCN_15": {
+      "split_group_id": "SPG_07",
+      "n_sources": 1,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c1"
+      ],
+      "takes": [
+        "ph_e2047"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2047_c1.jpg"
+    },
+    "SCN_16": {
+      "split_group_id": "SPG_07",
+      "n_sources": 1,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c2"
+      ],
+      "takes": [
+        "ph_e2047"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2047_c2.jpg"
+    },
+    "SCN_17": {
+      "split_group_id": "SPG_08",
+      "n_sources": 1,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c1"
+      ],
+      "takes": [
+        "ph_e2058"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2058_c1.jpg"
+    },
+    "SCN_18": {
+      "split_group_id": "SPG_08",
+      "n_sources": 1,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c2"
+      ],
+      "takes": [
+        "ph_e2058"
+      ],
+      "related_to_reasoning_v1": false,
+      "split_group_related_to_reasoning_v1": false,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2058_c2.jpg"
+    },
+    "SCN_19": {
+      "split_group_id": "SPG_09",
+      "n_sources": 1,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c1"
+      ],
+      "takes": [
+        "ph_e2069"
+      ],
+      "related_to_reasoning_v1": true,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2069_c1.jpg"
+    },
+    "SCN_20": {
+      "split_group_id": "SPG_09",
+      "n_sources": 1,
+      "categories": [
+        "fight_mv"
+      ],
+      "cameras": [
+        "c2"
+      ],
+      "takes": [
+        "ph_e2069"
+      ],
+      "related_to_reasoning_v1": true,
+      "split_group_related_to_reasoning_v1": true,
+      "example_thumbnail": "candidate_pool/source_thumbs/ph_e2069_c2.jpg"
+    }
+  },
+  "split_groups": [
+    "SPG_01",
+    "SPG_02",
+    "SPG_03",
+    "SPG_04",
+    "SPG_05",
+    "SPG_06",
+    "SPG_07",
+    "SPG_08",
+    "SPG_09"
+  ],
+  "reassigned_sources": [
+    {
+      "source_id": "710-3_cam01_swoon01_place01_day_summer",
+      "header_view": "swoon01/place01/cam01",
+      "visual_view": "swoon01/place01/cam02",
+      "mean_corr_own": 0.091,
+      "mean_corr_matched": 0.228
+    }
+  ]
+}

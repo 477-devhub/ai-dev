@@ -1,0 +1,1879 @@
+{
+  "version": "auto-eval-v1 (P2 evaluator reused unchanged)",
+  "evaluated_at": "2026-10-08T00:20:57+09:00",
+  "p2_evaluator_file": "experiments/p2_clef_flash/scripts/run_auto_eval.py",
+  "p2_evaluator_sha256": "f2c220c7876911819b51325acbbb2445fa92ebcf046a7dd8cae7307da59b8aea",
+  "ground_truth": "experiments/p2_clef_flash/evaluation/normalized_ground_truth_v1.json",
+  "ground_truth_sha256": "ee96e1a0a4408251c09f63126c742f395516be9676917c789dd6db4131d1de92",
+  "result_dirs": {
+    "p0": "benchmark_v1/results/p0_cv_only",
+    "p1": "benchmark_v1/results/p1_decisions",
+    "p2": "benchmark_v1/results/p2_clef_flash",
+    "p1v2": "experiments/common_adapter_v2/normalized/p1",
+    "p2v2": "experiments/common_adapter_v2/normalized/p2",
+    "p3": "benchmark_v1/results/p3_gpt61_sol_state"
+  },
+  "result_files_unchanged_by_evaluator": true,
+  "summary": {
+    "p0": {
+      "category_match": "5/9",
+      "category_match_items": [
+        "ITEM_01",
+        "ITEM_02",
+        "ITEM_03",
+        "ITEM_04/CAM_01",
+        "ITEM_04/CAM_03"
+      ],
+      "incident_decision_scored": "0/2",
+      "incident_decision_not_scored": 7,
+      "attention_top1_correct": true,
+      "attention_full_order_correct": true,
+      "same_incident_correct": true,
+      "AB_A_B_category_correct": [
+        false,
+        false,
+        false
+      ],
+      "AB_uncertainty_improved": false,
+      "temporal_hit_ITEM_03": false,
+      "internal_contradiction_count": 2,
+      "suspected_overclaim_count": 0,
+      "very_low_confidence_count": 0,
+      "human_review_required_count": "4/9"
+    },
+    "p1": {
+      "category_match": "2/9",
+      "category_match_items": [
+        "ITEM_01",
+        "ITEM_04/CAM_01"
+      ],
+      "incident_decision_scored": "2/2",
+      "incident_decision_not_scored": 7,
+      "attention_top1_correct": true,
+      "attention_full_order_correct": true,
+      "same_incident_correct": true,
+      "AB_A_B_category_correct": [
+        false,
+        false,
+        false
+      ],
+      "AB_uncertainty_improved": true,
+      "temporal_hit_ITEM_03": true,
+      "internal_contradiction_count": 2,
+      "suspected_overclaim_count": 0,
+      "very_low_confidence_count": 0,
+      "human_review_required_count": "9/9"
+    },
+    "p2": {
+      "category_match": "5/9",
+      "category_match_items": [
+        "ITEM_01",
+        "ITEM_02",
+        "ITEM_04/CAM_01",
+        "ITEM_04/CAM_02",
+        "ITEM_06"
+      ],
+      "incident_decision_scored": "0/2",
+      "incident_decision_not_scored": 7,
+      "attention_top1_correct": true,
+      "attention_full_order_correct": true,
+      "same_incident_correct": false,
+      "AB_A_B_category_correct": [
+        false,
+        false,
+        true
+      ],
+      "AB_uncertainty_improved": true,
+      "temporal_hit_ITEM_03": true,
+      "internal_contradiction_count": 4,
+      "suspected_overclaim_count": 0,
+      "very_low_confidence_count": 3,
+      "human_review_required_count": "5/9"
+    },
+    "p1v2": {
+      "category_match": "2/9",
+      "category_match_items": [
+        "ITEM_01",
+        "ITEM_04/CAM_01"
+      ],
+      "incident_decision_scored": "2/2",
+      "incident_decision_not_scored": 7,
+      "attention_top1_correct": true,
+      "attention_full_order_correct": true,
+      "same_incident_correct": true,
+      "AB_A_B_category_correct": [
+        false,
+        false,
+        false
+      ],
+      "AB_uncertainty_improved": true,
+      "temporal_hit_ITEM_03": true,
+      "internal_contradiction_count": 0,
+      "suspected_overclaim_count": 0,
+      "very_low_confidence_count": 0,
+      "human_review_required_count": "9/9"
+    },
+    "p2v2": {
+      "category_match": "0/9",
+      "category_match_items": [],
+      "incident_decision_scored": "0/2",
+      "incident_decision_not_scored": 7,
+      "attention_top1_correct": true,
+      "attention_full_order_correct": true,
+      "same_incident_correct": false,
+      "AB_A_B_category_correct": [
+        false,
+        false,
+        false
+      ],
+      "AB_uncertainty_improved": true,
+      "temporal_hit_ITEM_03": true,
+      "internal_contradiction_count": 0,
+      "suspected_overclaim_count": 0,
+      "very_low_confidence_count": 3,
+      "human_review_required_count": "5/9"
+    },
+    "p3": {
+      "category_match": "4/9",
+      "category_match_items": [
+        "ITEM_01",
+        "ITEM_04/CAM_01",
+        "ITEM_06",
+        "ITEM_07"
+      ],
+      "incident_decision_scored": "2/2",
+      "incident_decision_not_scored": 7,
+      "attention_top1_correct": true,
+      "attention_full_order_correct": false,
+      "same_incident_correct": false,
+      "AB_A_B_category_correct": [
+        true,
+        false,
+        true
+      ],
+      "AB_uncertainty_improved": true,
+      "temporal_hit_ITEM_03": true,
+      "internal_contradiction_count": 0,
+      "suspected_overclaim_count": 0,
+      "very_low_confidence_count": 0,
+      "human_review_required_count": "8/9"
+    }
+  },
+  "raw_category_view": {
+    "p1": {
+      "rows": {
+        "ITEM_01": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_fall_or_person_down",
+          "raw_category_match": true,
+          "p_incident": 0.85,
+          "is_incident": true,
+          "category_confidence": 1.0
+        },
+        "ITEM_02": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.35,
+          "is_incident": false,
+          "category_confidence": 0.72
+        },
+        "ITEM_03": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.3,
+          "is_incident": false,
+          "category_confidence": 0.71
+        },
+        "ITEM_04/CAM_01": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_fall_or_person_down",
+          "raw_category_match": true,
+          "p_incident": 0.92,
+          "is_incident": true,
+          "category_confidence": 1.0
+        },
+        "ITEM_04/CAM_02": {
+          "raw_category": "no_clear_incident",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.21,
+          "is_incident": false,
+          "category_confidence": 0.51
+        },
+        "ITEM_04/CAM_03": {
+          "raw_category": "no_clear_incident",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.4,
+          "is_incident": false,
+          "category_confidence": 0.28
+        },
+        "ITEM_05": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.59,
+          "is_incident": true,
+          "category_confidence": 0.29
+        },
+        "ITEM_06": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.72,
+          "is_incident": true,
+          "category_confidence": 0.53
+        },
+        "ITEM_07": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.79,
+          "is_incident": true,
+          "category_confidence": 0.82
+        }
+      },
+      "raw_category_match": "2/9"
+    },
+    "p2": {
+      "rows": {
+        "ITEM_01": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_fall_or_person_down",
+          "raw_category_match": true,
+          "p_incident": 0.479,
+          "is_incident": false,
+          "category_confidence": 0.7965
+        },
+        "ITEM_02": {
+          "raw_category": "possible_scene_or_boundary_entry",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": true,
+          "p_incident": 0.1552,
+          "is_incident": false,
+          "category_confidence": 0.3233
+        },
+        "ITEM_03": {
+          "raw_category": "no_clear_incident",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.164,
+          "is_incident": false,
+          "category_confidence": 0.2125
+        },
+        "ITEM_04/CAM_01": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_fall_or_person_down",
+          "raw_category_match": true,
+          "p_incident": 0.4431,
+          "is_incident": false,
+          "category_confidence": 0.8358
+        },
+        "ITEM_04/CAM_02": {
+          "raw_category": "possible_physical_conflict",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": true,
+          "p_incident": 0.2605,
+          "is_incident": false,
+          "category_confidence": 0.1514
+        },
+        "ITEM_04/CAM_03": {
+          "raw_category": "no_clear_incident",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.2694,
+          "is_incident": false,
+          "category_confidence": 0.1774
+        },
+        "ITEM_05": {
+          "raw_category": "no_clear_incident",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.2977,
+          "is_incident": false,
+          "category_confidence": 0.0578
+        },
+        "ITEM_06": {
+          "raw_category": "possible_physical_conflict",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": true,
+          "p_incident": 0.3788,
+          "is_incident": false,
+          "category_confidence": 0.1242
+        },
+        "ITEM_07": {
+          "raw_category": "no_clear_incident",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.3145,
+          "is_incident": false,
+          "category_confidence": 0.0979
+        }
+      },
+      "raw_category_match": "5/9"
+    },
+    "p3": {
+      "rows": {
+        "ITEM_01": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_fall_or_person_down",
+          "raw_category_match": true,
+          "p_incident": 0.97,
+          "is_incident": true,
+          "category_confidence": 0.98
+        },
+        "ITEM_02": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.58,
+          "is_incident": true,
+          "category_confidence": 0.6
+        },
+        "ITEM_03": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.7,
+          "is_incident": true,
+          "category_confidence": 0.8
+        },
+        "ITEM_04/CAM_01": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_fall_or_person_down",
+          "raw_category_match": true,
+          "p_incident": 0.97,
+          "is_incident": true,
+          "category_confidence": 0.97
+        },
+        "ITEM_04/CAM_02": {
+          "raw_category": "no_clear_incident",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.14,
+          "is_incident": false,
+          "category_confidence": 0.87
+        },
+        "ITEM_04/CAM_03": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_scene_or_boundary_entry",
+          "raw_category_match": false,
+          "p_incident": 0.51,
+          "is_incident": true,
+          "category_confidence": 0.62
+        },
+        "ITEM_05": {
+          "raw_category": "possible_fall_or_person_down",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": false,
+          "p_incident": 0.64,
+          "is_incident": true,
+          "category_confidence": 0.7
+        },
+        "ITEM_06": {
+          "raw_category": "possible_physical_conflict",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": true,
+          "p_incident": 0.74,
+          "is_incident": true,
+          "category_confidence": 0.71
+        },
+        "ITEM_07": {
+          "raw_category": "possible_physical_conflict",
+          "expected": "possible_physical_conflict",
+          "raw_category_match": true,
+          "p_incident": 0.84,
+          "is_incident": true,
+          "category_confidence": 0.67
+        }
+      },
+      "raw_category_match": "4/9"
+    }
+  },
+  "per_item": {
+    "p0": {
+      "ITEM_01": {
+        "event_type": "low or horizontal posture observed (onset not observed)",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_fall_or_person_down",
+        "category_match": true,
+        "is_incident": false,
+        "incident_decision": "incorrect",
+        "confidence": 0.744,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [
+          "is_incident=false but event_type='low or horizontal posture observed (onset not observed)'"
+        ],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 4,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_02": {
+        "event_type": "person movement / scene entry observed",
+        "predicted_category": "possible_scene_or_boundary_entry",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": true,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.804,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 4,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_03": {
+        "event_type": "person movement / scene entry observed",
+        "predicted_category": "possible_scene_or_boundary_entry",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": true,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.782,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 4,
+        "temporal": {
+          "status": "scored",
+          "temporal_hit": false,
+          "hit_timestamps": [],
+          "observation_timestamps": [
+            22.77
+          ],
+          "reference_interval_sec": [
+            29.0,
+            30.0
+          ],
+          "tolerance_sec": 1.0
+        },
+        "ambiguous_case": true,
+        "task": "single"
+      },
+      "ITEM_04": {
+        "task": "attention",
+        "per_camera": {
+          "CAM_01": {
+            "event_type": "low or horizontal posture observed (onset not observed)",
+            "predicted_category": "possible_fall_or_person_down",
+            "expected_category": "possible_fall_or_person_down",
+            "category_match": true,
+            "is_incident": false,
+            "incident_decision": "incorrect",
+            "confidence": 0.738,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [
+              "is_incident=false but event_type='low or horizontal posture observed (onset not observed)'"
+            ],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 4
+          },
+          "CAM_02": {
+            "event_type": "no incident-like pattern detected",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_physical_conflict",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.51,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 4
+          },
+          "CAM_03": {
+            "event_type": "person movement / scene entry observed",
+            "predicted_category": "possible_scene_or_boundary_entry",
+            "expected_category": "possible_scene_or_boundary_entry",
+            "category_match": true,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.898,
+            "very_low_confidence": false,
+            "human_review_required": false,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 2
+          }
+        },
+        "attention_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_provenance": "477 project-defined human reference (NOT AI Hub ground truth)",
+        "top1_correct": true,
+        "full_order_correct": true
+      },
+      "ITEM_05": {
+        "event_type": "person movement / scene entry observed",
+        "predicted_category": "possible_scene_or_boundary_entry",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.627,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 4,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_06": {
+        "event_type": "person movement / scene entry observed",
+        "predicted_category": "possible_scene_or_boundary_entry",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.806,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 4,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_07": {
+        "event_type": "person movement / scene entry observed",
+        "predicted_category": "possible_scene_or_boundary_entry",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.779,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 9,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "multi_camera",
+        "multi_camera": {
+          "same_incident_predicted": true,
+          "same_incident_reference": true,
+          "same_incident_correct": true,
+          "camera_count_ok": true,
+          "second_view_evidence_present": true,
+          "additional_information_from_second_view_present": true,
+          "cross_camera_sync_or_identity_assertions": [],
+          "AB_category_correct": false,
+          "A_category_correct": false,
+          "B_category_correct": false,
+          "AB_confidence_minus_best_single": -0.027,
+          "AB_uncertainty_improved": false,
+          "AB_uncertainty_improved_definition": "model-reported confidence(AB) > max(confidence(A), confidence(B)); a confidence statement, not correctness",
+          "multiview_increment_rubric": "not auto-generated (requires 0-8 human rubric)"
+        }
+      }
+    },
+    "p1": {
+      "ITEM_01": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_fall_or_person_down",
+        "category_match": true,
+        "is_incident": true,
+        "incident_decision": "correct",
+        "confidence": 0.925,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_02": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.685,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [
+          "is_incident=false but event_type='possible fall or person-down event'"
+        ],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_03": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.705,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [
+          "is_incident=false but event_type='possible fall or person-down event'"
+        ],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "scored",
+          "temporal_hit": true,
+          "hit_timestamps": [
+            29.4,
+            29.97
+          ],
+          "observation_timestamps": [
+            0.0,
+            22.77,
+            29.4,
+            29.97
+          ],
+          "reference_interval_sec": [
+            29.0,
+            30.0
+          ],
+          "tolerance_sec": 1.0
+        },
+        "ambiguous_case": true,
+        "task": "single"
+      },
+      "ITEM_04": {
+        "task": "attention",
+        "per_camera": {
+          "CAM_01": {
+            "event_type": "possible fall or person-down event",
+            "predicted_category": "possible_fall_or_person_down",
+            "expected_category": "possible_fall_or_person_down",
+            "category_match": true,
+            "is_incident": true,
+            "incident_decision": "correct",
+            "confidence": 0.96,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_02": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_physical_conflict",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.65,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_03": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_scene_or_boundary_entry",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.44,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          }
+        },
+        "attention_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_provenance": "477 project-defined human reference (NOT AI Hub ground truth)",
+        "top1_correct": true,
+        "full_order_correct": true
+      },
+      "ITEM_05": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.44,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_06": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.625,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_07": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.805,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 7,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "multi_camera",
+        "multi_camera": {
+          "same_incident_predicted": true,
+          "same_incident_reference": true,
+          "same_incident_correct": true,
+          "camera_count_ok": true,
+          "second_view_evidence_present": true,
+          "additional_information_from_second_view_present": true,
+          "cross_camera_sync_or_identity_assertions": [],
+          "AB_category_correct": false,
+          "A_category_correct": false,
+          "B_category_correct": false,
+          "AB_confidence_minus_best_single": 0.18,
+          "AB_uncertainty_improved": true,
+          "AB_uncertainty_improved_definition": "model-reported confidence(AB) > max(confidence(A), confidence(B)); a confidence statement, not correctness",
+          "multiview_increment_rubric": "not auto-generated (requires 0-8 human rubric)"
+        }
+      }
+    },
+    "p2": {
+      "ITEM_01": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_fall_or_person_down",
+        "category_match": true,
+        "is_incident": false,
+        "incident_decision": "incorrect",
+        "confidence": 0.6587,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [
+          "is_incident=false but event_type='possible fall or person-down event'"
+        ],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_02": {
+        "event_type": "possible scene or boundary entry (boundary semantics unknown)",
+        "predicted_category": "possible_scene_or_boundary_entry",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": true,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.584,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_03": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.5242,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "scored",
+          "temporal_hit": true,
+          "hit_timestamps": [
+            29.4,
+            29.97
+          ],
+          "observation_timestamps": [
+            0.0,
+            22.77,
+            29.4,
+            29.97
+          ],
+          "reference_interval_sec": [
+            29.0,
+            30.0
+          ],
+          "tolerance_sec": 1.0
+        },
+        "ambiguous_case": true,
+        "task": "single"
+      },
+      "ITEM_04": {
+        "task": "attention",
+        "per_camera": {
+          "CAM_01": {
+            "event_type": "possible fall or person-down event",
+            "predicted_category": "possible_fall_or_person_down",
+            "expected_category": "possible_fall_or_person_down",
+            "category_match": true,
+            "is_incident": false,
+            "incident_decision": "incorrect",
+            "confidence": 0.6964,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [
+              "is_incident=false but event_type='possible fall or person-down event'"
+            ],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_02": {
+            "event_type": "possible physical conflict",
+            "predicted_category": "possible_physical_conflict",
+            "expected_category": "possible_physical_conflict",
+            "category_match": true,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.4455,
+            "very_low_confidence": false,
+            "human_review_required": false,
+            "internal_contradictions": [
+              "is_incident=false but event_type='possible physical conflict'"
+            ],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_03": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_scene_or_boundary_entry",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.454,
+            "very_low_confidence": false,
+            "human_review_required": false,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          }
+        },
+        "attention_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_provenance": "477 project-defined human reference (NOT AI Hub ground truth)",
+        "top1_correct": true,
+        "full_order_correct": true
+      },
+      "ITEM_05": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.38,
+        "very_low_confidence": true,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_06": {
+        "event_type": "possible physical conflict",
+        "predicted_category": "possible_physical_conflict",
+        "expected_category": "possible_physical_conflict",
+        "category_match": true,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.3727,
+        "very_low_confidence": true,
+        "human_review_required": true,
+        "internal_contradictions": [
+          "is_incident=false but event_type='possible physical conflict'"
+        ],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_07": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.3917,
+        "very_low_confidence": true,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 7,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "multi_camera",
+        "multi_camera": {
+          "same_incident_predicted": false,
+          "same_incident_reference": true,
+          "same_incident_correct": false,
+          "camera_count_ok": true,
+          "second_view_evidence_present": true,
+          "additional_information_from_second_view_present": true,
+          "cross_camera_sync_or_identity_assertions": [],
+          "AB_category_correct": false,
+          "A_category_correct": false,
+          "B_category_correct": true,
+          "AB_confidence_minus_best_single": 0.0117,
+          "AB_uncertainty_improved": true,
+          "AB_uncertainty_improved_definition": "model-reported confidence(AB) > max(confidence(A), confidence(B)); a confidence statement, not correctness",
+          "multiview_increment_rubric": "not auto-generated (requires 0-8 human rubric)"
+        }
+      }
+    },
+    "p1v2": {
+      "ITEM_01": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_fall_or_person_down",
+        "category_match": true,
+        "is_incident": true,
+        "incident_decision": "correct",
+        "confidence": 0.925,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_02": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.685,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_03": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.705,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "scored",
+          "temporal_hit": true,
+          "hit_timestamps": [
+            29.4,
+            29.97
+          ],
+          "observation_timestamps": [
+            0.0,
+            22.77,
+            29.4,
+            29.97
+          ],
+          "reference_interval_sec": [
+            29.0,
+            30.0
+          ],
+          "tolerance_sec": 1.0
+        },
+        "ambiguous_case": true,
+        "task": "single"
+      },
+      "ITEM_04": {
+        "task": "attention",
+        "per_camera": {
+          "CAM_01": {
+            "event_type": "possible fall or person-down event",
+            "predicted_category": "possible_fall_or_person_down",
+            "expected_category": "possible_fall_or_person_down",
+            "category_match": true,
+            "is_incident": true,
+            "incident_decision": "correct",
+            "confidence": 0.96,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_02": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_physical_conflict",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.65,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_03": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_scene_or_boundary_entry",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.44,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          }
+        },
+        "attention_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_provenance": "477 project-defined human reference (NOT AI Hub ground truth)",
+        "top1_correct": true,
+        "full_order_correct": true
+      },
+      "ITEM_05": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.44,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_06": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.625,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_07": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.805,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 7,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "multi_camera",
+        "multi_camera": {
+          "same_incident_predicted": true,
+          "same_incident_reference": true,
+          "same_incident_correct": true,
+          "camera_count_ok": true,
+          "second_view_evidence_present": true,
+          "additional_information_from_second_view_present": true,
+          "cross_camera_sync_or_identity_assertions": [],
+          "AB_category_correct": false,
+          "A_category_correct": false,
+          "B_category_correct": false,
+          "AB_confidence_minus_best_single": 0.18,
+          "AB_uncertainty_improved": true,
+          "AB_uncertainty_improved_definition": "model-reported confidence(AB) > max(confidence(A), confidence(B)); a confidence statement, not correctness",
+          "multiview_increment_rubric": "not auto-generated (requires 0-8 human rubric)"
+        }
+      }
+    },
+    "p2v2": {
+      "ITEM_01": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_fall_or_person_down",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "incorrect",
+        "confidence": 0.6587,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_02": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.584,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_03": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.5242,
+        "very_low_confidence": false,
+        "human_review_required": false,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "scored",
+          "temporal_hit": true,
+          "hit_timestamps": [
+            29.4,
+            29.97
+          ],
+          "observation_timestamps": [
+            0.0,
+            22.77,
+            29.4,
+            29.97
+          ],
+          "reference_interval_sec": [
+            29.0,
+            30.0
+          ],
+          "tolerance_sec": 1.0
+        },
+        "ambiguous_case": true,
+        "task": "single"
+      },
+      "ITEM_04": {
+        "task": "attention",
+        "per_camera": {
+          "CAM_01": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_fall_or_person_down",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "incorrect",
+            "confidence": 0.6964,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_02": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_physical_conflict",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.4455,
+            "very_low_confidence": false,
+            "human_review_required": false,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_03": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_scene_or_boundary_entry",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.454,
+            "very_low_confidence": false,
+            "human_review_required": false,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          }
+        },
+        "attention_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_provenance": "477 project-defined human reference (NOT AI Hub ground truth)",
+        "top1_correct": true,
+        "full_order_correct": true
+      },
+      "ITEM_05": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.38,
+        "very_low_confidence": true,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_06": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.3727,
+        "very_low_confidence": true,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_07": {
+        "event_type": "no clear incident",
+        "predicted_category": "no_clear_incident",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": false,
+        "incident_decision": "not_scored",
+        "confidence": 0.3917,
+        "very_low_confidence": true,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 7,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "multi_camera",
+        "multi_camera": {
+          "same_incident_predicted": false,
+          "same_incident_reference": true,
+          "same_incident_correct": false,
+          "camera_count_ok": true,
+          "second_view_evidence_present": true,
+          "additional_information_from_second_view_present": true,
+          "cross_camera_sync_or_identity_assertions": [],
+          "AB_category_correct": false,
+          "A_category_correct": false,
+          "B_category_correct": false,
+          "AB_confidence_minus_best_single": 0.0117,
+          "AB_uncertainty_improved": true,
+          "AB_uncertainty_improved_definition": "model-reported confidence(AB) > max(confidence(A), confidence(B)); a confidence statement, not correctness",
+          "multiview_increment_rubric": "not auto-generated (requires 0-8 human rubric)"
+        }
+      }
+    },
+    "p3": {
+      "ITEM_01": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_fall_or_person_down",
+        "category_match": true,
+        "is_incident": true,
+        "incident_decision": "correct",
+        "confidence": 0.975,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_02": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.59,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_03": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_scene_or_boundary_entry",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.75,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "scored",
+          "temporal_hit": true,
+          "hit_timestamps": [
+            29.4,
+            29.97
+          ],
+          "observation_timestamps": [
+            0.0,
+            22.77,
+            29.4,
+            29.97
+          ],
+          "reference_interval_sec": [
+            29.0,
+            30.0
+          ],
+          "tolerance_sec": 1.0
+        },
+        "ambiguous_case": true,
+        "task": "single"
+      },
+      "ITEM_04": {
+        "task": "attention",
+        "per_camera": {
+          "CAM_01": {
+            "event_type": "possible fall or person-down event",
+            "predicted_category": "possible_fall_or_person_down",
+            "expected_category": "possible_fall_or_person_down",
+            "category_match": true,
+            "is_incident": true,
+            "incident_decision": "correct",
+            "confidence": 0.97,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_02": {
+            "event_type": "no clear incident",
+            "predicted_category": "no_clear_incident",
+            "expected_category": "possible_physical_conflict",
+            "category_match": false,
+            "is_incident": false,
+            "incident_decision": "not_scored",
+            "confidence": 0.865,
+            "very_low_confidence": false,
+            "human_review_required": false,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          },
+          "CAM_03": {
+            "event_type": "possible fall or person-down event",
+            "predicted_category": "possible_fall_or_person_down",
+            "expected_category": "possible_scene_or_boundary_entry",
+            "category_match": false,
+            "is_incident": true,
+            "incident_decision": "not_scored",
+            "confidence": 0.565,
+            "very_low_confidence": false,
+            "human_review_required": true,
+            "internal_contradictions": [],
+            "suspected_overclaims": [],
+            "negated_keyword_mentions": 1
+          }
+        },
+        "attention_order": [
+          "CAM_01",
+          "CAM_03",
+          "CAM_02"
+        ],
+        "reference_order": [
+          "CAM_01",
+          "CAM_02",
+          "CAM_03"
+        ],
+        "reference_provenance": "477 project-defined human reference (NOT AI Hub ground truth)",
+        "top1_correct": true,
+        "full_order_correct": false
+      },
+      "ITEM_05": {
+        "event_type": "possible fall or person-down event",
+        "predicted_category": "possible_fall_or_person_down",
+        "expected_category": "possible_physical_conflict",
+        "category_match": false,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.67,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_06": {
+        "event_type": "possible physical conflict",
+        "predicted_category": "possible_physical_conflict",
+        "expected_category": "possible_physical_conflict",
+        "category_match": true,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.725,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 1,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "single"
+      },
+      "ITEM_07": {
+        "event_type": "possible physical conflict",
+        "predicted_category": "possible_physical_conflict",
+        "expected_category": "possible_physical_conflict",
+        "category_match": true,
+        "is_incident": true,
+        "incident_decision": "not_scored",
+        "confidence": 0.755,
+        "very_low_confidence": false,
+        "human_review_required": true,
+        "internal_contradictions": [],
+        "suspected_overclaims": [],
+        "negated_keyword_mentions": 7,
+        "temporal": {
+          "status": "requires_human_audit"
+        },
+        "ambiguous_case": false,
+        "task": "multi_camera",
+        "multi_camera": {
+          "same_incident_predicted": false,
+          "same_incident_reference": true,
+          "same_incident_correct": false,
+          "camera_count_ok": true,
+          "second_view_evidence_present": true,
+          "additional_information_from_second_view_present": true,
+          "cross_camera_sync_or_identity_assertions": [],
+          "AB_category_correct": true,
+          "A_category_correct": false,
+          "B_category_correct": true,
+          "AB_confidence_minus_best_single": 0.03,
+          "AB_uncertainty_improved": true,
+          "AB_uncertainty_improved_definition": "model-reported confidence(AB) > max(confidence(A), confidence(B)); a confidence statement, not correctness",
+          "multiview_increment_rubric": "not auto-generated (requires 0-8 human rubric)"
+        }
+      }
+    }
+  },
+  "calibration_vs_human": {
+    "rows": [
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_01",
+        "auto_category_match": true,
+        "human_event_understanding": 1,
+        "relation": "partial (human 1)"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_02",
+        "auto_category_match": true,
+        "human_event_understanding": 0,
+        "relation": "OPPOSITE"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_03",
+        "auto_category_match": true,
+        "human_event_understanding": 2,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_04/CAM_01",
+        "auto_category_match": true,
+        "human_event_understanding": 1,
+        "relation": "partial (human 1)"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_04/CAM_02",
+        "auto_category_match": false,
+        "human_event_understanding": 0,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_04/CAM_03",
+        "auto_category_match": true,
+        "human_event_understanding": 0,
+        "relation": "OPPOSITE"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_05",
+        "auto_category_match": false,
+        "human_event_understanding": 0,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_06",
+        "auto_category_match": false,
+        "human_event_understanding": 0,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p0",
+        "assessment": "ITEM_07",
+        "auto_category_match": false,
+        "human_event_understanding": 0,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_01",
+        "auto_category_match": true,
+        "human_event_understanding": 2,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_02",
+        "auto_category_match": false,
+        "human_event_understanding": 0,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_03",
+        "auto_category_match": false,
+        "human_event_understanding": 0,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_04/CAM_01",
+        "auto_category_match": true,
+        "human_event_understanding": 2,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_04/CAM_02",
+        "auto_category_match": false,
+        "human_event_understanding": 0,
+        "relation": "agree"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_04/CAM_03",
+        "auto_category_match": false,
+        "human_event_understanding": 1,
+        "relation": "partial (human 1)"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_05",
+        "auto_category_match": false,
+        "human_event_understanding": 1,
+        "relation": "partial (human 1)"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_06",
+        "auto_category_match": false,
+        "human_event_understanding": 1,
+        "relation": "partial (human 1)"
+      },
+      {
+        "pipeline": "p1",
+        "assessment": "ITEM_07",
+        "auto_category_match": false,
+        "human_event_understanding": 2,
+        "relation": "OPPOSITE"
+      }
+    ],
+    "ranking": [
+      {
+        "pipeline": "p0",
+        "auto_top1": true,
+        "human_top1": "yes",
+        "auto_full": true,
+        "human_full": "yes"
+      },
+      {
+        "pipeline": "p1",
+        "auto_top1": true,
+        "human_top1": "yes",
+        "auto_full": true,
+        "human_full": "yes"
+      }
+    ],
+    "ranking_auto_human_agree": true,
+    "opposite": 3,
+    "decisive_comparisons": 13,
+    "partial": 5,
+    "verdict": "BORDERLINE: below the opposite-case threshold but close to it; diagnostic use only, not an official quality metric",
+    "rule": "agree: match&human=2 or mismatch&human=0; OPPOSITE: match&human=0 or mismatch&human=2; human=1 is partial. Verdict threshold: OPPOSITE > 25% of decisive comparisons => not official."
+  },
+  "p3_audit_queue": [
+    {
+      "item": "ITEM_02",
+      "pipeline": "p3",
+      "why": [
+        "normalized category mismatch (final event_type)",
+        "P1/P2/P3 major disagreement (raw category P1=possible_fall_or_person_down, P2=possible_scene_or_boundary_entry, P3=possible_fall_or_person_down; is_incident P1=False, P2=False, P3=True)"
+      ],
+      "prediction": "possible fall or person-down event · raw=possible_fall_or_person_down (0.6) · p(inc)=0.58 · conf=0.59",
+      "expected": "possible_scene_or_boundary_entry",
+      "quote": "-",
+      "full_video_review": true
+    },
+    {
+      "item": "ITEM_03",
+      "pipeline": "p3",
+      "why": [
+        "ambiguous benchmark case",
+        "normalized category mismatch (final event_type)",
+        "P1/P2/P3 major disagreement (raw category P1=possible_fall_or_person_down, P2=no_clear_incident, P3=possible_fall_or_person_down; is_incident P1=False, P2=False, P3=True)"
+      ],
+      "prediction": "possible fall or person-down event · raw=possible_fall_or_person_down (0.8) · p(inc)=0.7 · conf=0.75",
+      "expected": "possible_scene_or_boundary_entry (observable only; authorization/intent not GT)",
+      "quote": "-",
+      "full_video_review": true
+    },
+    {
+      "item": "ITEM_04/CAM_02",
+      "pipeline": "p3",
+      "why": [
+        "normalized category mismatch (final event_type)"
+      ],
+      "prediction": "no clear incident · raw=no_clear_incident (0.87) · p(inc)=0.14 · conf=0.865",
+      "expected": "possible_physical_conflict",
+      "quote": "-",
+      "full_video_review": true
+    },
+    {
+      "item": "ITEM_04/CAM_03",
+      "pipeline": "p3",
+      "why": [
+        "normalized category mismatch (final event_type)",
+        "P1/P2/P3 major disagreement (raw category P1=no_clear_incident, P2=no_clear_incident, P3=possible_fall_or_person_down; is_incident P1=False, P2=False, P3=True)"
+      ],
+      "prediction": "possible fall or person-down event · raw=possible_fall_or_person_down (0.62) · p(inc)=0.51 · conf=0.565",
+      "expected": "possible_scene_or_boundary_entry",
+      "quote": "-",
+      "full_video_review": true
+    },
+    {
+      "item": "ITEM_05",
+      "pipeline": "p3",
+      "why": [
+        "normalized category mismatch (final event_type)"
+      ],
+      "prediction": "possible fall or person-down event · raw=possible_fall_or_person_down (0.7) · p(inc)=0.64 · conf=0.67",
+      "expected": "possible_physical_conflict",
+      "quote": "-",
+      "full_video_review": true
+    },
+    {
+      "item": "ITEM_07",
+      "pipeline": "p3",
+      "why": [
+        "P1/P2/P3 major disagreement (raw category P1=possible_fall_or_person_down, P2=no_clear_incident, P3=possible_physical_conflict; is_incident P1=True, P2=False, P3=True)"
+      ],
+      "prediction": "possible physical conflict · raw=possible_physical_conflict (0.67) · p(inc)=0.84 · conf=0.755",
+      "expected": "possible_physical_conflict",
+      "quote": "-",
+      "full_video_review": false
+    }
+  ]
+}

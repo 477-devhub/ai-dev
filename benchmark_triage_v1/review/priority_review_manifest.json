@@ -1,0 +1,91 @@
+{
+  "human_gt_policy": "priority_minimal_v1",
+  "source_candidate_count": 115,
+  "priority_selected": 43,
+  "human_reviewed": 43,
+  "unreviewed": 72,
+  "priority_candidate_ids": [
+    "CAND_0004",
+    "CAND_0007",
+    "CAND_0010",
+    "CAND_0015",
+    "CAND_0016",
+    "CAND_0020",
+    "CAND_0027",
+    "CAND_0028",
+    "CAND_0031",
+    "CAND_0035",
+    "CAND_0037",
+    "CAND_0044",
+    "CAND_0048",
+    "CAND_0049",
+    "CAND_0055",
+    "CAND_0058",
+    "CAND_0060",
+    "CAND_0066",
+    "CAND_0068",
+    "CAND_0069",
+    "CAND_0073",
+    "CAND_0075",
+    "CAND_0076",
+    "CAND_0077",
+    "CAND_0079",
+    "CAND_0082",
+    "CAND_0083",
+    "CAND_0084",
+    "CAND_0085",
+    "CAND_0087",
+    "CAND_0088",
+    "CAND_0095",
+    "CAND_0097",
+    "CAND_0103",
+    "CAND_0106",
+    "CAND_0108",
+    "CAND_0109",
+    "CAND_0110",
+    "CAND_0111",
+    "CAND_0112",
+    "CAND_0113",
+    "CAND_0114",
+    "CAND_0115"
+  ],
+  "label_counts": {
+    "HARD_NEGATIVE_NORMAL": 11,
+    "ANCHORED_DANGER": 13,
+    "CLEAR_NORMAL": 13,
+    "AMBIGUOUS": 6
+  },
+  "human_label_sha256": "8bd911f619f2c558bc34695fbaf286d536a8f457674b6052acc7ad1f72a26e11",
+  "human_review_protocol": "Manual video review of priority subset",
+  "auxiliary_metadata_policy": "Optional; not used for primary evaluation",
+  "required_human_fields": [
+    "candidate_id",
+    "review_label"
+  ],
+  "reviewer_provenance": "User confirmed a single actual human reviewer; fill blank metadata with reviewer_01 only",
+  "reviewer_metadata_rows_filled": {
+    "human_review_priority.csv": 43,
+    "human_review_queue.csv": 43
+  },
+  "annotation_batch_timestamp": "2026-10-09T07:49:42.043965+09:00",
+  "annotation_batch_timestamp_basis": "priority CSV modification time before reviewer metadata update; not per-item review time",
+  "confidence_note": "Human labels were manually assigned, but per-item confidence was not collected consistently.",
+  "derived_mapping": {
+    "CLEAR_NORMAL": {
+      "reference_binary": "NORMAL",
+      "must_surface_to_operator": false
+    },
+    "HARD_NEGATIVE_NORMAL": {
+      "reference_binary": "NORMAL",
+      "must_surface_to_operator": false
+    },
+    "ANCHORED_DANGER": {
+      "reference_binary": "DANGER",
+      "must_surface_to_operator": true
+    },
+    "AMBIGUOUS": {
+      "reference_binary": "AMBIGUOUS",
+      "must_surface_to_operator": null
+    }
+  }
+}

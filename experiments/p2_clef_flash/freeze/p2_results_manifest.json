@@ -1,0 +1,56 @@
+{
+  "frozen_at": "2026-10-07T23:45:23+09:00",
+  "p2_version": "p2-v1",
+  "ground_truth_accessed_before_freeze": false,
+  "prediction_validation": {
+    "ITEM_01": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_02": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_03": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_04": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_05": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_06": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_07": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    }
+  },
+  "sha256": {
+    "results/p2_clef_flash/run_ITEM_01.json": "6aa5c468d4df4744472d280a8f7d15fddd22df50667d559493de0b27a2706088",
+    "results/p2_clef_flash/run_ITEM_02.json": "8ae304226e9bc16cd9766443dd830f549f0dff3aff74e04cea983bce506116bb",
+    "results/p2_clef_flash/run_ITEM_03.json": "732af56a8730c14535a1c35265ae34db2d703f6ced396766fb8336c8b3f68069",
+    "results/p2_clef_flash/run_ITEM_04.json": "82774db284018772cdfac01e375c0f9891f3fd61076a7ae9df86294c57362401",
+    "results/p2_clef_flash/run_ITEM_05.json": "78b18d0901a10231e237603cd2b53b878f742fcdc0cbed67b18b071f5cab8e34",
+    "results/p2_clef_flash/run_ITEM_06.json": "0e5e8378fa273a3c40c9659cd690e34458f4e52ec55f50a7a880d6199909dc68",
+    "results/p2_clef_flash/run_ITEM_07.json": "c47f3f7720b4c73e31e9df337f7651d7bbadfb62d5481aa0c9f304115208487f",
+    "raw_api/ITEM_01.json": "0678c58bef570559b30381477e1a9973b48557c97fdff4c7c992bf843299b10a",
+    "raw_api/ITEM_02.json": "d3ec271dc7aceef2c269e1a0c6d1aab741a4c9c585aac684eecc750f92183684",
+    "raw_api/ITEM_03.json": "d78196b0c58c7b47ca8981223ae9ff6c037a33c36aec36bf22a5cdd10b7178ba",
+    "raw_api/ITEM_04.json": "2af2f37cd50444d2e4f172af6faefd6c41fea0a597de4c7faf54292abc50dff0",
+    "raw_api/ITEM_05.json": "81fc7019854554a90f241612e44b1814a4fb132ef075827f96451d1ab2071ff2",
+    "raw_api/ITEM_06.json": "edb0b56f1cc57d4ba92ceb1f41f80278bd18067e51174937821a4bbcc2863610",
+    "raw_api/ITEM_07.json": "ad87330a50896990a4ea947bed9d6031c377f75bfd4cbe4f189df0f8bae03024",
+    "logs/run_summary.json": "368631af0b60aff799f2d1e2b9cbe23c81f71537a6447f378b367f554a8e9afe",
+    "logs/leakage_audit.json": "68ef2f25b0976e0a47528c9d3779606224644764777c0f8fb7affd14ab150942",
+    "runtime_config.json": "431fe889762f5f32995cb91f736fefcfca9f2b130c0a6ede04db4fa9ced80440",
+    "freeze/p2_freeze.json": "f879b7b25dfd5af4826f69e02a928f0cd297b3b8f528aa7f6295167a3d8412d2"
+  },
+  "note": "Automatic evaluation may read these files but must never modify them; run_auto_eval verifies this manifest first."
+}

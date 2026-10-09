@@ -1,0 +1,8 @@
+# Isolated venv experiments/p1_decisions/.venv (CPython 3.12.6). P0 venv and global Anaconda untouched.
+openai==3.26.0        # official SDK; client.decisions.create supported natively (no raw HTTPS fallback needed)
+httpx2==2.13.1        # SDK HTTP client
+pydantic==2.13.5
+jsonschema==4.26.0
+referencing==0.37.0
+pyyaml==6.0.3
+tiktoken==0.14.0      # local token estimate only; API usage is authoritative

@@ -1,0 +1,451 @@
+{
+  "version": "normalized-ground-truth-v1",
+  "built_at": "2026-10-07T23:47:09+09:00",
+  "access": "evaluator only; built after freeze/p2_results_manifest.json; never read by any model-execution path",
+  "sources": {
+    "private_ground_truth/set01.json": "d7afaa5f3711ed32f0e3f50276bf384fdd5c423a91bf58f334537b56c73ae667",
+    "private_ground_truth/set02.json": "0b7acc44cffb1102b413c86162673a3688c94ea4872b623d2124bb676f6957b8",
+    "private_ground_truth/set03.json": "3871a5252eddb609308a06951037f723fd82e0a2312cde107d55dda9680c0487",
+    "private_ground_truth/set04.json": "f7abceca2f4f00042c57c1aeb84ed47dd62630c28bdd8038bb170d5c32331741",
+    "private_ground_truth/set05.json": "bfb98d9fb4d03a4d7bbc35f52f75896be1ac6ab7c141edfe31d1b42c983c1fc7"
+  },
+  "label_normalization": {
+    "swoon": {
+      "target": "possible_fall_or_person_down",
+      "does_not_mean": [
+        "medical fainting",
+        "unconsciousness",
+        "diagnosis"
+      ]
+    },
+    "falldown": {
+      "target": "possible_fall_or_person_down",
+      "does_not_mean": [
+        "medical cause",
+        "injury"
+      ]
+    },
+    "fight": {
+      "target": "possible_physical_conflict",
+      "does_not_mean": [
+        "criminal assault",
+        "intent",
+        "culpability"
+      ]
+    },
+    "신체적 충돌을 동반한 싸움": {
+      "target": "possible_physical_conflict",
+      "does_not_mean": [
+        "criminal assault",
+        "intent",
+        "culpability"
+      ]
+    },
+    "trespass": {
+      "target": "possible_scene_or_boundary_entry",
+      "does_not_mean": [
+        "unauthorized",
+        "illegal",
+        "criminal"
+      ]
+    },
+    "climbwall": {
+      "target": "possible_scene_or_boundary_entry",
+      "does_not_mean": [
+        "unauthorized",
+        "illegal",
+        "criminal"
+      ]
+    },
+    "entry": {
+      "target": "possible_scene_or_boundary_entry",
+      "does_not_mean": [
+        "unauthorized",
+        "illegal",
+        "criminal"
+      ]
+    }
+  },
+  "category_vocabulary": [
+    "no_clear_incident",
+    "possible_fall_or_person_down",
+    "possible_physical_conflict",
+    "possible_scene_or_boundary_entry",
+    "other_safety_relevant",
+    "uncertain"
+  ],
+  "items": {
+    "ITEM_01": {
+      "item_id": "ITEM_01",
+      "set": "SET01",
+      "task": "single",
+      "cameras": [
+        "CAM_01"
+      ],
+      "source_label": "swoon",
+      "normalized_event_target": "possible_fall_or_person_down",
+      "acceptable_categories": [
+        "possible_fall_or_person_down"
+      ],
+      "normalization_does_not_mean": [
+        "medical fainting",
+        "unconsciousness",
+        "diagnosis"
+      ],
+      "human_verified_observation": {
+        "normal_movement_then_fall": true,
+        "remains_in_ground_posture_afterward": true
+      },
+      "project_reference": {
+        "core_observable_sequence": [
+          "normal movement",
+          "fall",
+          "continued ground posture"
+        ],
+        "expected_uncertainty": [
+          "medical cause and injury severity cannot be established from the video"
+        ]
+      },
+      "must_remain_unknown": {
+        "medical_diagnosis": true,
+        "injury_severity": true,
+        "identity": true
+      },
+      "incident_presence_anchor": {
+        "value": true,
+        "provenance": "human_verified_observation: normal_movement_then_fall + remains_in_ground_posture_afterward",
+        "meaning": "a person-down condition an operator should see; not a medical claim"
+      },
+      "temporal_reference": {
+        "status": "requires_human_audit",
+        "reason": "no human-verified clip-relative event interval in the private benchmark; AI Hub action frames are not treated as exact visual truth"
+      },
+      "ambiguous_case": false,
+      "human_audit_required_for_final_quality": false,
+      "notes": []
+    },
+    "ITEM_02": {
+      "item_id": "ITEM_02",
+      "set": "SET02",
+      "task": "single",
+      "cameras": [
+        "CAM_01"
+      ],
+      "source_label": "trespass",
+      "normalized_event_target": "possible_scene_or_boundary_entry",
+      "acceptable_categories": [
+        "possible_scene_or_boundary_entry"
+      ],
+      "normalization_does_not_mean": [
+        "unauthorized",
+        "illegal",
+        "criminal"
+      ],
+      "human_verified_observation": {
+        "starts_outside_wall": true,
+        "crosses_over_wall": true,
+        "moves_inside": true
+      },
+      "project_reference": {
+        "core_observable_sequence": [
+          "outside physical boundary",
+          "climbs/crosses wall",
+          "moves inside"
+        ],
+        "expected_uncertainty": [
+          "authorization and legal status are not established by visible boundary crossing"
+        ]
+      },
+      "must_remain_unknown": {
+        "authorization": true,
+        "criminal_intent": true,
+        "identity": true
+      },
+      "incident_presence_anchor": {
+        "value": null,
+        "status": "not_scored",
+        "reason": "no human-verified incident-presence anchor; source-positive label alone is not used"
+      },
+      "temporal_reference": {
+        "status": "requires_human_audit",
+        "reason": "no human-verified clip-relative event interval in the private benchmark; AI Hub action frames are not treated as exact visual truth"
+      },
+      "ambiguous_case": false,
+      "human_audit_required_for_final_quality": false,
+      "notes": []
+    },
+    "ITEM_03": {
+      "item_id": "ITEM_03",
+      "set": "SET03",
+      "task": "single",
+      "cameras": [
+        "CAM_01"
+      ],
+      "source_label": "trespass",
+      "normalized_event_target": "possible_scene_or_boundary_entry",
+      "acceptable_categories": [
+        "possible_scene_or_boundary_entry"
+      ],
+      "normalization_does_not_mean": [
+        "unauthorized",
+        "illegal",
+        "criminal"
+      ],
+      "human_verified_observation": {
+        "observed_gate_entry": true,
+        "looks_around_before_entry": true,
+        "authorization_visible": false,
+        "criminal_intent_visible": false
+      },
+      "project_reference": {
+        "core_observable_sequence": [
+          "gate-side direction changes",
+          "final re-approach",
+          "gate opening and entry"
+        ],
+        "expected_uncertainty": [
+          "authorization cannot be determined from video",
+          "intent cannot be determined from video"
+        ]
+      },
+      "must_remain_unknown": {
+        "authorization": true,
+        "criminal_intent": true,
+        "identity": true
+      },
+      "incident_presence_anchor": {
+        "value": null,
+        "status": "not_scored",
+        "reason": "no human-verified incident-presence anchor; source-positive label alone is not used"
+      },
+      "temporal_reference": {
+        "status": "scorable",
+        "provenance": "project_defined_reference.clip_selection (visual source inspection, user-approved), not XML",
+        "key_transition": "crossing the open gate",
+        "clip_interval_sec": [
+          29.0,
+          30.0
+        ],
+        "tolerance_sec": 1.0,
+        "rule": "temporal_hit if any prediction observation timestamp lies within the interval +/- tolerance"
+      },
+      "ambiguous_case": true,
+      "human_audit_required_for_final_quality": true,
+      "notes": [
+        "ambiguous: only the observable entry category is auto-evaluated; authorization and criminal intent are not GT",
+        "neutral entry through a gate; not required to claim unlawful entry"
+      ]
+    },
+    "ITEM_04": {
+      "item_id": "ITEM_04",
+      "set": "SET04",
+      "task": "attention",
+      "cameras": [
+        "CAM_01",
+        "CAM_02",
+        "CAM_03"
+      ],
+      "per_camera": {
+        "CAM_01": {
+          "source_label": "swoon",
+          "normalized_event_target": "possible_fall_or_person_down",
+          "acceptable_categories": [
+            "possible_fall_or_person_down"
+          ],
+          "must_remain_unknown": {
+            "medical_diagnosis": true,
+            "injury_severity": true,
+            "identity": true
+          },
+          "incident_presence_anchor": {
+            "value": true,
+            "provenance": "human_verified_observation: normal_movement_then_fall + remains_in_ground_posture_afterward",
+            "meaning": "a person-down condition an operator should see; not a medical claim"
+          }
+        },
+        "CAM_02": {
+          "source_label": "fight",
+          "normalized_event_target": "possible_physical_conflict",
+          "acceptable_categories": [
+            "possible_physical_conflict"
+          ],
+          "must_remain_unknown": {
+            "criminal_intent": true,
+            "weapon_unless_visible": true,
+            "identity": true
+          },
+          "incident_presence_anchor": {
+            "value": null,
+            "status": "not_scored",
+            "reason": "no human-verified incident-presence anchor; source-positive label alone is not used"
+          }
+        },
+        "CAM_03": {
+          "source_label": "trespass",
+          "normalized_event_target": "possible_scene_or_boundary_entry",
+          "acceptable_categories": [
+            "possible_scene_or_boundary_entry"
+          ],
+          "must_remain_unknown": {
+            "authorization": true,
+            "criminal_intent": true,
+            "identity": true
+          },
+          "incident_presence_anchor": {
+            "value": null,
+            "status": "not_scored",
+            "reason": "no human-verified incident-presence anchor; source-positive label alone is not used"
+          }
+        }
+      },
+      "per_camera_label_source": "set04 source cameras (S14 swoon = SET01 clip, F01 fight, T06 trespass = SET02 clip); CAM_01 anchor inherits SET01 human verification (byte-identical clip)",
+      "source_candidates": {
+        "CAM_01": "S14",
+        "CAM_02": "F01",
+        "CAM_03": "T06"
+      },
+      "reference_order": [
+        "CAM_01",
+        "CAM_02",
+        "CAM_03"
+      ],
+      "reference_provenance": "477 project-defined human reference (NOT AI Hub ground truth)",
+      "reference_rationale": [
+        "person falls and remains down",
+        "sustained physical conflict",
+        "person crosses physical boundary"
+      ],
+      "ambiguous_case": false,
+      "human_audit_required_for_final_quality": false
+    },
+    "ITEM_05": {
+      "item_id": "ITEM_05",
+      "set": "SET05",
+      "condition": "MV05_A",
+      "task": "single",
+      "cameras": [
+        "CAM_01"
+      ],
+      "source_label": "신체적 충돌을 동반한 싸움",
+      "normalized_event_target": "possible_physical_conflict",
+      "acceptable_categories": [
+        "possible_physical_conflict"
+      ],
+      "normalization_does_not_mean": [
+        "criminal assault",
+        "intent",
+        "culpability"
+      ],
+      "must_remain_unknown": {
+        "criminal_intent": true,
+        "weapon_unless_visible": true,
+        "identity": true
+      },
+      "incident_presence_anchor": {
+        "value": null,
+        "status": "not_scored",
+        "reason": "no human-verified incident-presence anchor; source-positive label alone is not used"
+      },
+      "temporal_reference": {
+        "status": "requires_human_audit",
+        "reason": "no human-verified clip-relative interval; no official frame synchronization"
+      },
+      "ambiguous_case": false,
+      "human_audit_required_for_final_quality": false,
+      "notes": [
+        "CAM_01 foliage obscures much of later interaction; CAM_02 provides road-side interaction, low body posture and later movement. No medical diagnosis or person identity certainty implied."
+      ]
+    },
+    "ITEM_06": {
+      "item_id": "ITEM_06",
+      "set": "SET05",
+      "condition": "MV05_B",
+      "task": "single",
+      "cameras": [
+        "CAM_02"
+      ],
+      "source_label": "신체적 충돌을 동반한 싸움",
+      "normalized_event_target": "possible_physical_conflict",
+      "acceptable_categories": [
+        "possible_physical_conflict"
+      ],
+      "normalization_does_not_mean": [
+        "criminal assault",
+        "intent",
+        "culpability"
+      ],
+      "must_remain_unknown": {
+        "criminal_intent": true,
+        "weapon_unless_visible": true,
+        "identity": true
+      },
+      "incident_presence_anchor": {
+        "value": null,
+        "status": "not_scored",
+        "reason": "no human-verified incident-presence anchor; source-positive label alone is not used"
+      },
+      "temporal_reference": {
+        "status": "requires_human_audit",
+        "reason": "no human-verified clip-relative interval; no official frame synchronization"
+      },
+      "ambiguous_case": false,
+      "human_audit_required_for_final_quality": false,
+      "notes": [
+        "CAM_01 foliage obscures much of later interaction; CAM_02 provides road-side interaction, low body posture and later movement. No medical diagnosis or person identity certainty implied."
+      ]
+    },
+    "ITEM_07": {
+      "item_id": "ITEM_07",
+      "set": "SET05",
+      "condition": "MV05_AB",
+      "task": "multi_camera",
+      "cameras": [
+        "CAM_01",
+        "CAM_02"
+      ],
+      "source_label": "신체적 충돌을 동반한 싸움",
+      "normalized_event_target": "possible_physical_conflict",
+      "acceptable_categories": [
+        "possible_physical_conflict"
+      ],
+      "normalization_does_not_mean": [
+        "criminal assault",
+        "intent",
+        "culpability"
+      ],
+      "must_remain_unknown": {
+        "criminal_intent": true,
+        "weapon_unless_visible": true,
+        "identity": true,
+        "cross_camera_identity": true,
+        "synchronization": true
+      },
+      "incident_presence_anchor": {
+        "value": null,
+        "status": "not_scored",
+        "reason": "no human-verified incident-presence anchor; source-positive label alone is not used"
+      },
+      "temporal_reference": {
+        "status": "requires_human_audit",
+        "reason": "no human-verified clip-relative interval; no official frame synchronization"
+      },
+      "ambiguous_case": false,
+      "human_audit_required_for_final_quality": false,
+      "notes": [
+        "CAM_01 foliage obscures much of later interaction; CAM_02 provides road-side interaction, low body posture and later movement. No medical diagnosis or person identity certainty implied.",
+        "B-only is strong; AB>A alone is insufficient",
+        "each clip has independent time origin",
+        "same person correspondence requires evidence; no universal re-identification ground truth",
+        "whole clips preserve short final black source frames"
+      ],
+      "same_incident_reference": true,
+      "same_incident_basis": "source JSON co-listing plus human-approved source pair; no exact frame mapping supplied",
+      "expected_camera_count": 2,
+      "single_view_items": {
+        "A": "ITEM_05",
+        "B": "ITEM_06"
+      },
+      "multiview_increment_rubric": "NOT auto-generated (0-8 human rubric only)"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "free_bytes_before": 619678769152,
+  "planned_extract_bytes": 2259130926,
+  "method": "shutil.disk_usage (Windows equivalent of df -h)",
+  "requested_linux_command": "df -h /mnt/d/projects/477"
+}

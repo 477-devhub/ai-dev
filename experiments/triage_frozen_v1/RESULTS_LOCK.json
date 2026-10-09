@@ -1,0 +1,6 @@
+{
+  "locked_at": "2026-10-09T10:45:39+09:00",
+  "final_test_report_sha256": "ddb011a8b73db6f0d90f3be4d780c7b9093a018b7f4167699da8c460669f0da1",
+  "routing_policy_sha256": "f5d5f5a8a09be862b8c7aa0be1a0cdd8f7c4a72e2eaf67164022e95d833d2238",
+  "policy": "Final 22-item test is complete; no threshold changes or new inference runs"
+}

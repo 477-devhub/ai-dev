@@ -1,0 +1,831 @@
+{
+  "review_method": "Agent visual review of temporal sampled sequences + original XML; subjective 1–5 scores are selection assessments, not ground truth. Continuous playback was not performed.",
+  "reviews": {
+    "F01": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 4,
+        "demo_suitability": 4,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "02:09–03:32 접촉과 자세 변화가 보인다.",
+        "event_clarity": "밀기와 가격에 대응하는 동작 및 XML punching/pushing이 일치한다.",
+        "temporal_value": "대치와 바닥 자세까지 순서에 따라 의미가 달라진다.",
+        "visual_quality": "인물은 식별되며 순간적으로 몸이 겹친다.",
+        "reasoning_value": "4명 중 접촉하는 인물과 주변 인물을 구분해야 한다.",
+        "demo_suitability": "초기 약 35초 구간에 대치와 접촉이 함께 보인다.",
+        "ambiguity": "행동은 비교적 명확하나 스튜디오 연기에서 의도를 단정할 수 없다."
+      },
+      "selection_reason": "대치→반복 접촉→일부 인물의 바닥 자세가 보이는 전후 흐름으로 Fight 기본 이해를 검토한다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          4,
+          4
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "F02": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 4,
+        "demo_suitability": 4,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "02:13 이후 두 인물의 팔 접촉과 밀기가 보인다.",
+        "event_clarity": "순차 장면의 접촉이 XML punching/pushing과 대응한다.",
+        "temporal_value": "대치→접촉→구도 변화가 이어진다.",
+        "visual_quality": "녹색 배경과 밝은 의상으로 사람을 구분할 수 있다.",
+        "reasoning_value": "사건 참여자와 관찰자를 시간에 따라 구분해야 한다.",
+        "demo_suitability": "02:07 이후 35초 구간을 제안한다.",
+        "ambiguity": "접촉 의도에는 연출의 애매함이 남는다."
+      },
+      "selection_reason": "두 쌍의 인물이 있는 장면에서 접촉 주체와 행동 진행을 구분하는 데 유용하다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          4,
+          4
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "F03": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 4,
+        "temporal_value": 4,
+        "visual_quality": 3,
+        "reasoning_value": 4,
+        "demo_suitability": 3,
+        "ambiguity": 3
+      },
+      "score_reasons": {
+        "event_visibility": "02:20 후경 접촉은 보이지만 전경 인물은 잘린다.",
+        "event_clarity": "후경 신체 충돌이 XML과 대응한다.",
+        "temporal_value": "대치와 접촉 이후 두 쌍의 위치가 달라진다.",
+        "visual_quality": "카메라 가까운 몸 일부가 프레임 밖에 있다.",
+        "reasoning_value": "가까운 사람보다 후경 사건을 주목해야 한다.",
+        "demo_suitability": "전체 구도 설명이 필요하여 발표에서는 후순위다.",
+        "ambiguity": "후경 거리와 전경 잘림 때문에 순간 해석이 어렵다."
+      },
+      "selection_reason": "전경 인물의 부분 잘림과 후경 싸움의 거리 차이가 있는 비교 후보이며 D에서도 사용한다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          3,
+          4
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "F04": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 4,
+        "visual_quality": 4,
+        "reasoning_value": 3,
+        "demo_suitability": 3,
+        "ambiguity": 3
+      },
+      "score_reasons": {
+        "event_visibility": "02:33 및 03:26 신체 접촉이 보인다.",
+        "event_clarity": "반복되는 밀기와 가격 동작이 보인다.",
+        "temporal_value": "긴 반복 행동의 전후를 비교할 수 있다.",
+        "visual_quality": "두 인물이 비교적 분리되지만 접촉 시 겹친다.",
+        "reasoning_value": "XML 경계와 화면의 지속 행동을 구분해야 한다.",
+        "demo_suitability": "전체 사건이 길고 종료 경계가 불명확하여 후순위다.",
+        "ambiguity": "04:59에도 접촉이 보여 종료 판단이 애매하다."
+      },
+      "selection_reason": "반복 접촉은 보이나 XML 종료 직후에도 접촉이 있어 경계 재검토가 필요한 후보다.",
+      "review_status": "boundary_review_required",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          2,
+          3
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "F05": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 4,
+        "demo_suitability": 4,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "00:56–01:26 팔 접촉이 보인다.",
+        "event_clarity": "punching/pushing 및 이후 kicking XML이 존재한다.",
+        "temporal_value": "두 명에서 여러 명으로 사건이 진행한다.",
+        "visual_quality": "초기 인물은 잘 분리되고 이후 겹침이 증가한다.",
+        "reasoning_value": "인원 변화와 접촉 확대를 설명할 수 있다.",
+        "demo_suitability": "00:49 이후 초기 충돌 35초가 발표에 적합하다.",
+        "ambiguity": "초기 충돌은 명확하나 연출 의도는 확정할 수 없다."
+      },
+      "selection_reason": "초기 두 명의 대치가 접촉으로 변하고 이후 추가 인물이 등장하는 단계가 보인다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          2,
+          4
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "F06": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 4,
+        "temporal_value": 4,
+        "visual_quality": 3,
+        "reasoning_value": 3,
+        "demo_suitability": 3,
+        "ambiguity": 3
+      },
+      "score_reasons": {
+        "event_visibility": "00:43 이후 접촉을 볼 수 있으나 인물이 작다.",
+        "event_clarity": "시간순 팔 동작과 XML punching/pushing이 대응한다.",
+        "temporal_value": "접근→접촉→이탈이 보인다.",
+        "visual_quality": "높은 시점의 넓은 구도에서 신체 세부가 작다.",
+        "reasoning_value": "팔 접촉과 단순 접근을 구분해야 한다.",
+        "demo_suitability": "큰 발표 화면 또는 확대 검토가 필요하다.",
+        "ambiguity": "단일 작은 프레임의 팔 동작은 장난처럼 해석될 수 있다."
+      },
+      "selection_reason": "두 인물의 접근과 반복 접촉이 있으나 화면 내 사람 크기가 작아 보조 후보다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          2,
+          2
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S06": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 4,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "04:11 보행에서 04:13–04:14 넘어짐을 거쳐 04:17 이후 바닥 자세가 유지된다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "04:11 보행에서 04:13–04:14 넘어짐을 거쳐 04:17 이후 바닥 자세가 유지된다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": true,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S14": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 4,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "03:50 보행→03:53 넘어짐→04:18까지 누운 자세가 확인된다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "03:50 보행→03:53 넘어짐→04:18까지 누운 자세가 확인된다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": true,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S15": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 3,
+        "reasoning_value": 5,
+        "demo_suitability": 4,
+        "ambiguity": 3
+      },
+      "score_reasons": {
+        "event_visibility": "04:22 보행에서 04:27 앉는 듯한 중간 자세를 거쳐 04:32 이후 눕는다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "04:22 보행에서 04:27 앉는 듯한 중간 자세를 거쳐 04:32 이후 눕는다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": true,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S16": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 4,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "04:01 보행에서 04:04–04:07 넘어지고 이후 바닥 자세가 유지된다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "04:01 보행에서 04:04–04:07 넘어지고 이후 바닥 자세가 유지된다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": true,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S02": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 3,
+        "reasoning_value": 5,
+        "demo_suitability": 2,
+        "ambiguity": 3
+      },
+      "score_reasons": {
+        "event_visibility": "04:31 보행→04:34 넘어짐은 보이나 몸 일부가 차량에 가려진다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "04:31 보행→04:34 넘어짐은 보이나 몸 일부가 차량에 가려진다.",
+      "review_status": "conditional_occlusion",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": null,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S04": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 3,
+        "reasoning_value": 5,
+        "demo_suitability": 2,
+        "ambiguity": 3
+      },
+      "score_reasons": {
+        "event_visibility": "04:13 이후 넘어지는 과정은 보이나 바닥 자세 대부분이 차량 뒤에 가려진다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "04:13 이후 넘어지는 과정은 보이나 바닥 자세 대부분이 차량 뒤에 가려진다.",
+      "review_status": "conditional_occlusion",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": null,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S01": {
+      "scores": {
+        "event_visibility": 2,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 3,
+        "reasoning_value": 5,
+        "demo_suitability": 2,
+        "ambiguity": 4
+      },
+      "score_reasons": {
+        "event_visibility": "04:02–04:06 넘어짐 이후 몸이 차량 뒤에 가려져 상태 판단에 제한이 있다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "04:02–04:06 넘어짐 이후 몸이 차량 뒤에 가려져 상태 판단에 제한이 있다.",
+      "review_status": "conditional_occlusion",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": null,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "S03": {
+      "scores": {
+        "event_visibility": 2,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 3,
+        "reasoning_value": 5,
+        "demo_suitability": 2,
+        "ambiguity": 4
+      },
+      "score_reasons": {
+        "event_visibility": "04:04–04:06 낮아지는 자세 이후 차량 가림이 커서 앉기와 쓰러짐 구분에 시간이 필요하다.",
+        "event_clarity": "보행에서 바닥 자세로 변하는 흐름과 XML falldown이 대응한다.",
+        "temporal_value": "보행·자세 전환·낮은 움직임의 후속 장면을 함께 봐야 한다.",
+        "visual_quality": "차량이 신체 일부를 가리므로 완전한 자세 관찰에는 제한이 있다.",
+        "reasoning_value": "넘어짐과 누운 상태의 지속을 구분하되 의학적 실신 원인은 영상만으로 단정하지 않는다.",
+        "demo_suitability": "여름 시점은 전후 흐름을 보여주며 가림이 큰 봄 시점은 후순위다.",
+        "ambiguity": "짧은 정지 이미지의 낮은 자세는 앉기와 구분하기 어려우므로 시간순 확인이 필요하다."
+      },
+      "selection_reason": "04:04–04:06 낮아지는 자세 이후 차량 가림이 커서 앉기와 쓰러짐 구분에 시간이 필요하다.",
+      "review_status": "conditional_occlusion",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": null,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T01": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 3,
+        "ambiguity": 4
+      },
+      "score_reasons": {
+        "event_visibility": "대문 주변의 짧은 조작과 왕복 이동이 보이지만 무단 진입은 영상만으로 확정할 수 없다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "대문 주변의 짧은 조작과 왕복 이동이 보이지만 무단 진입은 영상만으로 확정할 수 없다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          3
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T02": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 3,
+        "ambiguity": 4
+      },
+      "score_reasons": {
+        "event_visibility": "03:40 대문 접근→03:55 이후 낮은 자세 유지→04:43 문 주변 변화가 보인다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "03:40 대문 접근→03:55 이후 낮은 자세 유지→04:43 문 주변 변화가 보인다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          2
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T03": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 2,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 2,
+        "ambiguity": 5
+      },
+      "score_reasons": {
+        "event_visibility": "대문 옆 정지·조작과 일반 통행이 섞여 단일 프레임은 평범한 보행처럼 보인다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "대문 옆 정지·조작과 일반 통행이 섞여 단일 프레임은 평범한 보행처럼 보인다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          2
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T04": {
+      "scores": {
+        "event_visibility": 3,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 3,
+        "ambiguity": 4
+      },
+      "score_reasons": {
+        "event_visibility": "여러 번 대문 부근 접근과 이탈이 반복되어 이동 궤적을 비교해야 한다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "여러 번 대문 부근 접근과 이탈이 반복되어 이동 궤적을 비교해야 한다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          3
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T05": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 4,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 5,
+        "demo_suitability": 4,
+        "ambiguity": 3
+      },
+      "score_reasons": {
+        "event_visibility": "04:40 대문으로 접근하여 04:43–04:46 문 경계를 넘어 사라지는 과정이 보인다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "04:40 대문으로 접근하여 04:43–04:46 문 경계를 넘어 사라지는 과정이 보인다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          2
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": true,
+        "restricted_area_status": "not_provided_by_annotation",
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T06": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 5,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 4,
+        "demo_suitability": 5,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "04:18–04:23 담장 외측에서 내측으로 넘어가 이동하는 순서가 보인다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "04:18–04:23 담장 외측에서 내측으로 넘어가 이동하는 순서가 보인다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          2
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": true,
+        "restricted_area_status": "not_provided_by_annotation",
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T07": {
+      "scores": {
+        "event_visibility": 2,
+        "event_clarity": 3,
+        "temporal_value": 5,
+        "visual_quality": 3,
+        "reasoning_value": 5,
+        "demo_suitability": 2,
+        "ambiguity": 4
+      },
+      "score_reasons": {
+        "event_visibility": "약 1.4초 담장 넘기가 후경에서 발생하여 짧은 행동과 촬영 거리의 영향을 검토한다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "약 1.4초 담장 넘기가 후경에서 발생하여 짧은 행동과 촬영 거리의 영향을 검토한다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          3
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": true,
+        "restricted_area_status": "not_provided_by_annotation",
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "T08": {
+      "scores": {
+        "event_visibility": 4,
+        "event_clarity": 5,
+        "temporal_value": 5,
+        "visual_quality": 4,
+        "reasoning_value": 4,
+        "demo_suitability": 5,
+        "ambiguity": 2
+      },
+      "score_reasons": {
+        "event_visibility": "04:21–04:24 접근 후 담장을 넘어 내측으로 내려가며 단일 보행 이미지와 비교하기 좋다.",
+        "event_clarity": "XML trespass label은 존재하며 출입 권한은 제공되지 않는다.",
+        "temporal_value": "접근 위치와 이동 전후를 비교해야 경계 통과 또는 조작을 이해한다.",
+        "visual_quality": "주간 주택가 구도는 식별 가능하나 사람은 화면 일부를 차지한다.",
+        "reasoning_value": "정상 출입 가능성과 관찰된 이동을 분리하여 설명해야 한다.",
+        "demo_suitability": "담장 넘기 표본은 짧게 보여주기 좋고 대문 조작 표본은 맥락 설명이 필요하다.",
+        "ambiguity": "접근 권한과 제한구역 정보가 없어 불법성 판단에는 불확실성이 남는다."
+      },
+      "selection_reason": "04:21–04:24 접근 후 담장을 넘어 내측으로 내려가며 단일 보행 이미지와 비교하기 좋다.",
+      "review_status": "review_candidate",
+      "visual_observations": {
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          3
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": true,
+        "restricted_area_status": "not_provided_by_annotation",
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    }
+  },
+  "scenarios": {
+    "A": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06"
+    ],
+    "B": [
+      "S06",
+      "S14",
+      "S15",
+      "S16",
+      "S02",
+      "S04"
+    ],
+    "C": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T08"
+    ],
+    "D": [
+      "F03",
+      "F06",
+      "S01",
+      "S03",
+      "T03",
+      "T07"
+    ]
+  },
+  "top3": {
+    "A": [
+      "F01",
+      "F02",
+      "F05"
+    ],
+    "B": [
+      "S14",
+      "S16",
+      "S06"
+    ],
+    "C": [
+      "T05",
+      "T02",
+      "T01"
+    ],
+    "D": [
+      "T03",
+      "S03",
+      "T07"
+    ],
+    "E": [
+      "R01",
+      "R02",
+      "R03"
+    ]
+  },
+  "ranking": [
+    {
+      "combination_id": "R01",
+      "cameras": {
+        "CAM A": "S14",
+        "CAM B": "F01",
+        "CAM C": "T06"
+      },
+      "reason": "쓰러진 뒤 자세 지속, 여러 인물의 접촉, 담장 통과를 비교하며 서로 다른 관찰 근거로 우선 확인을 설명할 수 있다."
+    },
+    {
+      "combination_id": "R02",
+      "cameras": {
+        "CAM A": "S06",
+        "CAM B": "F02",
+        "CAM C": "T08"
+      },
+      "reason": "짧은 담장 통과와 반복 신체 접촉, 바닥 자세 지속의 서로 다른 시간 특성을 비교한다."
+    },
+    {
+      "combination_id": "R03",
+      "cameras": {
+        "CAM A": "S16",
+        "CAM B": "F05",
+        "CAM C": "T06"
+      },
+      "reason": "초기 두 사람 충돌과 이후 확대 가능성을 쓰러짐 및 담장 통과와 비교하며 R01과 일부 영상을 공유하는 대안이다."
+    }
+  ],
+  "excluded": {
+    "S07": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "S08": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "S09": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "S10": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "S11": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "S12": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "S13": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark."
+  }
+}

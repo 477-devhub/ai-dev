@@ -1,0 +1,90 @@
+# P0-v1 deterministic rule engine configuration.
+# Written before any P0 prediction was produced; frozen afterwards (SHA256 recorded in
+# runtime_config.json and experiment_report.md). Generic heuristics only: no item IDs,
+# no camera-specific branches, no scene ROIs, no private references.
+# Any later change must be a new file (p0_v2.yaml) and a new experiment.
+rule_version: p0_v1
+
+fall_like:                                # upright -> low posture + downward change + low sampled movement after
+  min_transition_confidence: 0.45         # T1
+  min_downward_change_body_heights: 0.25  # T2
+  min_post_transition_low_motion_sec: 2.0 # T3 (low sampled displacement after the transition)
+  min_post_transition_low_posture_sec: 2.0  # alternative T3: low/horizontal posture proxy persists
+  fragment_link_confidence_factor: 0.6    # same evidence across two track fragments (identity unconfirmed)
+  fragment_min_low_fraction: 0.5
+
+low_posture_persistent:                   # low/horizontal posture without an observed onset
+  min_known_posture_obs: 5
+  min_low_fraction: 0.6
+  min_duration_sec: 5.0
+
+conflict_like:                            # proximity alone is never enough
+  min_persons: 2
+  min_pair_reliability: 0.4
+  min_close_duration_sec: 1.5
+  min_close_proximity_fraction: 0.3
+  min_contact_proxy: 0.5
+  min_supporting_cues: 2
+  cues:
+    relative_motion_when_close_body_heights_per_sec: 0.5
+    repeated_approach_count: 2
+    rapid_limb_motion_score: 0.5
+    arm_extension_toward_other_score: 0.3
+
+movement:                                 # generic trajectory evidence only (no boundary semantics)
+  entry_types: [edge_entry, appears_mid_frame]
+  min_track_observations: 3
+
+uncertain:
+  min_cv_reliability_for_negative: 0.5    # below: "uncertain" instead of "no incident-like pattern"
+
+event_types:
+  fall: possible fall
+  conflict: possible physical conflict
+  low_posture: low or horizontal posture observed (onset not observed)
+  movement: person movement / scene entry observed
+  none: no incident-like pattern detected
+  no_person: no person detected in sampled frames
+  uncertain: uncertain
+
+is_incident:
+  fall: true
+  conflict: true
+  low_posture: false
+  movement: false
+  none: false
+  no_person: false
+  uncertain: false
+
+risk:
+  severity_base: {fall: 0.70, conflict: 0.75, low_posture: 0.40, movement: 0.15, none: 0.05, no_person: 0.0, uncertain: 0.20}
+  severity_bonus:
+    fall_post_low_motion_per_10s: 0.20    # prolonged low posture / low sampled movement
+    conflict_contact_proxy: 0.15
+  late_phase_start: 0.75                  # last quarter of the clip for imminence
+  incident_imminence_floor: 0.30
+  non_incident_imminence_scale: {movement: 0.15, low_posture: 0.5, none: 0.05, no_person: 0.0, uncertain: 0.2}
+  exposure_ref_persons: 4
+  non_incident_exposure_scale: 0.5
+  non_incident_persistence: {movement: 0.10, none: 0.0, no_person: 0.0, uncertain: 0.1}
+
+priority_weights: {severity: 0.35, imminence: 0.30, exposure: 0.20, persistence: 0.15}
+
+confidence:
+  max: 0.90                               # sparse 64-frame sampling cap
+  no_person_scale: 0.5
+  none_scale: 0.6
+
+human_review:
+  confidence_below: 0.6
+
+attention:
+  tie_break: [priority_score_desc, severity_desc, confidence_desc, input_camera_order_asc]
+
+multi_camera:
+  same_incident_threshold: 0.60
+  min_track_observations_each_camera: 3
+  risk_combination: elementwise_max
+
+observations:
+  max_per_camera: 8

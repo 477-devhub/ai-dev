@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://477.local/experiments/compact_decision_state.schema.json",
+  "title": "477 Compact Decision State (compact-decision-state-v1)",
+  "description": "Deterministic compact summary of a cv-state-v1 Canonical CV State, used as text input for decision layers (P1 Decisions API, P2, P3). Observations only: no harness metadata, no P0 rule conclusions, no labels. null = unknown.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task", "observation_window_sec", "cameras", "cross_camera"],
+  "properties": {
+    "schema_version": {"const": "compact-decision-state-v1"},
+    "task": {"enum": ["single", "attention", "multi_camera"]},
+    "observation_window_sec": {"type": "number", "minimum": 0},
+    "cameras": {"type": "array", "minItems": 1, "maxItems": 3, "items": {"$ref": "#/$defs/camera"}},
+    "cross_camera": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/cross"}]}
+  },
+  "$defs": {
+    "cam": {"enum": ["CAM_01", "CAM_02", "CAM_03"]},
+    "ref": {"type": "string", "pattern": "^T[0-9]+$"},
+    "num": {"type": ["number", "null"]},
+    "nnum": {"type": ["number", "null"], "minimum": 0},
+    "p01": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "posture": {"enum": ["standing", "crouched", "low_posture", "horizontal", "unknown", null]},
+    "limited": {
+      "type": "object", "additionalProperties": false, "required": ["value", "reliability", "note"],
+      "properties": {"value": {"type": ["number", "null"]}, "reliability": {"const": "limited"}, "note": {"type": "string"}}
+    },
+    "valued": {
+      "type": "object", "additionalProperties": false, "required": ["value", "reliability", "note"],
+      "properties": {"value": {"type": ["number", "null"]}, "reliability": {"enum": ["limited", "normal"]}, "note": {"type": "string"}}
+    },
+    "camera": {
+      "type": "object", "additionalProperties": false,
+      "required": ["camera", "observation_window_sec", "sampling", "quality", "people", "tracks", "interactions", "scene"],
+      "properties": {
+        "camera": {"$ref": "#/$defs/cam"},
+        "observation_window_sec": {"$ref": "#/$defs/nnum"},
+        "sampling": {
+          "type": "object", "additionalProperties": false, "required": ["frame_count", "median_interval_sec", "max_interval_sec"],
+          "properties": {"frame_count": {"type": "integer", "minimum": 1, "maximum": 64}, "median_interval_sec": {"$ref": "#/$defs/nnum"}, "max_interval_sec": {"$ref": "#/$defs/nnum"}}
+        },
+        "quality": {
+          "type": "object", "additionalProperties": false,
+          "required": ["cv_reliability", "cv_reliability_label", "pose_visibility", "track_fragmentation", "occlusion_proxy", "detection_dropout_rate", "small_person_fraction", "dark_frame_fraction"],
+          "properties": {
+            "cv_reliability": {"$ref": "#/$defs/p01"}, "cv_reliability_label": {"enum": ["high", "medium", "low", "unknown"]},
+            "pose_visibility": {"$ref": "#/$defs/p01"}, "track_fragmentation": {"$ref": "#/$defs/p01"},
+            "occlusion_proxy": {"$ref": "#/$defs/p01"}, "detection_dropout_rate": {"$ref": "#/$defs/p01"},
+            "small_person_fraction": {"$ref": "#/$defs/p01"}, "dark_frame_fraction": {"$ref": "#/$defs/p01"}
+          }
+        },
+        "people": {
+          "type": "object", "additionalProperties": false,
+          "required": ["count_min", "count_max", "count_median", "frames_with_person_fraction", "tracks_total", "tracks_included"],
+          "properties": {
+            "count_min": {"type": "integer", "minimum": 0}, "count_max": {"type": "integer", "minimum": 0},
+            "count_median": {"type": "number", "minimum": 0}, "frames_with_person_fraction": {"$ref": "#/$defs/p01"},
+            "tracks_total": {"type": "integer", "minimum": 0}, "tracks_included": {"type": "integer", "minimum": 0, "maximum": 6}
+          }
+        },
+        "tracks": {"type": "array", "maxItems": 6, "items": {"$ref": "#/$defs/track"}},
+        "interactions": {"type": "array", "maxItems": 4, "items": {"$ref": "#/$defs/interaction"}},
+        "scene": {"$ref": "#/$defs/scene"}
+      }
+    },
+    "track": {
+      "type": "object", "additionalProperties": false,
+      "required": ["track_ref", "reliability", "reliability_label", "observed_frames", "visible_fraction", "ambiguous_links", "first_seen_sec", "last_seen_sec", "initial_posture", "final_posture", "posture_distribution", "strongest_vertical_transition", "longest_low_posture_run_sec", "post_transition_low_posture_sec", "motion", "appearance"],
+      "properties": {
+        "track_ref": {"$ref": "#/$defs/ref"},
+        "reliability": {"$ref": "#/$defs/p01"}, "reliability_label": {"enum": ["high", "medium", "low", "unknown"]},
+        "observed_frames": {"type": "integer", "minimum": 1}, "visible_fraction": {"$ref": "#/$defs/p01"},
+        "ambiguous_links": {"type": "integer", "minimum": 0},
+        "first_seen_sec": {"type": "number", "minimum": 0}, "last_seen_sec": {"type": "number", "minimum": 0},
+        "initial_posture": {"$ref": "#/$defs/posture"}, "final_posture": {"$ref": "#/$defs/posture"},
+        "posture_distribution": {
+          "type": "object", "additionalProperties": false, "required": ["standing", "crouched", "low_posture", "horizontal", "unknown"],
+          "properties": {"standing": {"$ref": "#/$defs/p01"}, "crouched": {"$ref": "#/$defs/p01"}, "low_posture": {"$ref": "#/$defs/p01"}, "horizontal": {"$ref": "#/$defs/p01"}, "unknown": {"$ref": "#/$defs/p01"}}
+        },
+        "strongest_vertical_transition": {
+          "type": "object", "additionalProperties": false, "required": ["observed"],
+          "properties": {
+            "observed": {"type": ["boolean", "null"]}, "from": {"$ref": "#/$defs/posture"}, "to": {"$ref": "#/$defs/posture"},
+            "start_sec": {"$ref": "#/$defs/nnum"}, "end_sec": {"$ref": "#/$defs/nnum"}, "duration_sec": {"$ref": "#/$defs/nnum"},
+            "downward_change_bh": {"$ref": "#/$defs/valued"}, "confidence": {"$ref": "#/$defs/p01"}
+          }
+        },
+        "longest_low_posture_run_sec": {"$ref": "#/$defs/nnum"},
+        "post_transition_low_posture_sec": {"$ref": "#/$defs/nnum"},
+        "motion": {
+          "type": "object", "additionalProperties": false,
+          "required": ["mean_speed_bh_per_sec", "max_speed_bh_per_sec", "net_displacement_fh", "direction_change_count", "stationary_fraction", "low_motion_fraction", "longest_low_motion_interval_sec", "large_spatial_transition"],
+          "properties": {
+            "mean_speed_bh_per_sec": {"$ref": "#/$defs/nnum"}, "max_speed_bh_per_sec": {"$ref": "#/$defs/nnum"},
+            "net_displacement_fh": {"$ref": "#/$defs/nnum"}, "direction_change_count": {"type": ["integer", "null"], "minimum": 0},
+            "stationary_fraction": {"$ref": "#/$defs/p01"}, "low_motion_fraction": {"$ref": "#/$defs/p01"},
+            "longest_low_motion_interval_sec": {"$ref": "#/$defs/nnum"}, "large_spatial_transition": {"type": "boolean"}
+          }
+        },
+        "appearance": {
+          "type": "object", "additionalProperties": false, "required": ["entry", "exit", "entered_frame", "exited_frame"],
+          "properties": {
+            "entry": {"enum": ["present_at_clip_start", "edge_entry", "appears_mid_frame", null]},
+            "exit": {"enum": ["present_at_clip_end", "edge_exit", "disappears_mid_frame", null]},
+            "entered_frame": {"type": "boolean"}, "exited_frame": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "interaction": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tracks", "reliability", "co_observed_frames", "co_observed_start_sec", "co_observed_end_sec", "minimum_distance_bh", "mean_distance_bh", "close_fraction", "close_duration_sec", "first_close_sec", "last_close_sec", "approach_rate_bh_per_sec", "approach_events", "relative_motion_when_close_bh_per_sec", "bbox_overlap_fraction", "contact_proxy", "arm_extension_score", "rapid_limb_motion_score"],
+      "properties": {
+        "tracks": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/ref"}},
+        "reliability": {"$ref": "#/$defs/p01"}, "co_observed_frames": {"type": "integer", "minimum": 1},
+        "co_observed_start_sec": {"$ref": "#/$defs/nnum"}, "co_observed_end_sec": {"$ref": "#/$defs/nnum"},
+        "minimum_distance_bh": {"$ref": "#/$defs/nnum"}, "mean_distance_bh": {"$ref": "#/$defs/nnum"},
+        "close_fraction": {"$ref": "#/$defs/p01"}, "close_duration_sec": {"$ref": "#/$defs/nnum"},
+        "first_close_sec": {"$ref": "#/$defs/nnum"}, "last_close_sec": {"$ref": "#/$defs/nnum"},
+        "approach_rate_bh_per_sec": {"$ref": "#/$defs/num"}, "approach_events": {"type": "integer", "minimum": 0},
+        "relative_motion_when_close_bh_per_sec": {"$ref": "#/$defs/nnum"}, "bbox_overlap_fraction": {"$ref": "#/$defs/p01"},
+        "contact_proxy": {"$ref": "#/$defs/limited"}, "arm_extension_score": {"$ref": "#/$defs/limited"},
+        "rapid_limb_motion_score": {"$ref": "#/$defs/limited"}
+      }
+    },
+    "scene": {
+      "type": "object", "additionalProperties": false,
+      "required": ["person_entry_observed", "person_exit_observed", "large_spatial_transition_observed", "occlusion_candidate_count", "fragment_links", "boundary_semantics_available", "boundary_crossing", "authorization_known"],
+      "properties": {
+        "person_entry_observed": {"type": "boolean"}, "person_exit_observed": {"type": "boolean"},
+        "large_spatial_transition_observed": {"type": "boolean"}, "occlusion_candidate_count": {"type": "integer", "minimum": 0},
+        "fragment_links": {"type": "array", "maxItems": 4, "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["from_track", "to_track", "gap_sec", "distance_bh", "same_person_confirmed", "posture_change"],
+          "properties": {
+            "from_track": {"$ref": "#/$defs/ref"}, "to_track": {"$ref": "#/$defs/ref"}, "gap_sec": {"$ref": "#/$defs/nnum"},
+            "distance_bh": {"$ref": "#/$defs/nnum"}, "same_person_confirmed": {"const": false},
+            "posture_change": {"oneOf": [{"type": "null"}, {
+              "type": "object", "additionalProperties": false, "required": ["from", "to", "confidence", "downward_change_bh"],
+              "properties": {"from": {"$ref": "#/$defs/posture"}, "to": {"$ref": "#/$defs/posture"}, "confidence": {"$ref": "#/$defs/p01"}, "downward_change_bh": {"$ref": "#/$defs/valued"}}}]}
+          }}},
+        "boundary_semantics_available": {"const": false},
+        "boundary_crossing": {"type": "null"},
+        "authorization_known": {"const": false}
+      }
+    },
+    "cross": {
+      "type": "object", "additionalProperties": false,
+      "required": ["camera_a", "camera_b", "sync_confirmed", "identity_link_confirmed", "alignment", "person_count_similarity", "temporal_pattern_similarity", "motion_peak_similarity", "posture_transition_similarity", "visibility_complementarity", "camera_a_visibility_drop_observed", "camera_b_visibility_drop_observed", "camera_b_has_observations_during_a_low_visibility_phase", "camera_a_has_observations_during_b_low_visibility_phase", "camera_a_low_visibility_phases", "camera_b_low_visibility_phases"],
+      "properties": {
+        "camera_a": {"$ref": "#/$defs/cam"}, "camera_b": {"$ref": "#/$defs/cam"},
+        "sync_confirmed": {"const": false}, "identity_link_confirmed": {"const": false}, "alignment": {"type": "string"},
+        "person_count_similarity": {"$ref": "#/$defs/limited"}, "temporal_pattern_similarity": {"$ref": "#/$defs/limited"},
+        "motion_peak_similarity": {"$ref": "#/$defs/limited"}, "posture_transition_similarity": {"$ref": "#/$defs/limited"},
+        "visibility_complementarity": {"$ref": "#/$defs/p01"},
+        "camera_a_visibility_drop_observed": {"type": "boolean"}, "camera_b_visibility_drop_observed": {"type": "boolean"},
+        "camera_b_has_observations_during_a_low_visibility_phase": {"type": "boolean"},
+        "camera_a_has_observations_during_b_low_visibility_phase": {"type": "boolean"},
+        "camera_a_low_visibility_phases": {"type": "array", "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}},
+        "camera_b_low_visibility_phases": {"type": "array", "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}},
+        "person_count_by_phase": {"type": "object", "propertyNames": {"$ref": "#/$defs/cam"}, "additionalProperties": {"type": "array", "items": {"type": ["number", "null"]}}}
+      }
+    }
+  }
+}

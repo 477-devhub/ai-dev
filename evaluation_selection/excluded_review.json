@@ -1,0 +1,58 @@
+[
+  {
+    "candidate_id": "S07",
+    "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-3\\710-3_cam01_swoon01_place01_day_summer.mp4",
+    "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-3\\710-3_cam01_swoon01_place01_day_summer.xml",
+    "reason": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S07.jpg",
+    "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S07_temporal.jpg"
+  },
+  {
+    "candidate_id": "S08",
+    "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-2\\710-2_cam02_swoon01_place01_day_spring.mp4",
+    "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-2\\710-2_cam02_swoon01_place01_day_spring.xml",
+    "reason": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S08.jpg",
+    "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S08_temporal.jpg"
+  },
+  {
+    "candidate_id": "S09",
+    "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-3\\710-3_cam02_swoon01_place01_day_spring.mp4",
+    "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-3\\710-3_cam02_swoon01_place01_day_spring.xml",
+    "reason": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S09.jpg",
+    "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S09_temporal.jpg"
+  },
+  {
+    "candidate_id": "S10",
+    "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-4\\710-4_cam02_swoon01_place01_day_spring.mp4",
+    "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-4\\710-4_cam02_swoon01_place01_day_spring.xml",
+    "reason": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S10.jpg",
+    "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S10_temporal.jpg"
+  },
+  {
+    "candidate_id": "S11",
+    "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-5\\710-5_cam02_swoon01_place01_day_spring.mp4",
+    "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-5\\710-5_cam02_swoon01_place01_day_spring.xml",
+    "reason": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S11.jpg",
+    "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S11_temporal.jpg"
+  },
+  {
+    "candidate_id": "S12",
+    "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-6\\710-6_cam02_swoon01_place01_day_spring.mp4",
+    "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-6\\710-6_cam02_swoon01_place01_day_spring.xml",
+    "reason": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S12.jpg",
+    "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S12_temporal.jpg"
+  },
+  {
+    "candidate_id": "S13",
+    "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-2\\710-2_cam02_swoon01_place01_day_summer.mp4",
+    "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-2\\710-2_cam02_swoon01_place01_day_summer.xml",
+    "reason": "XML/filename day but sampled video is night; annotated interval does not establish a matching swoon. Pairing/content mismatch suspected, not a valid uncertainty benchmark.",
+    "contact_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S13.jpg",
+    "temporal_sheet_path": "D:\\projects\\477\\evaluation_selection\\contact_sheets\\S13_temporal.jpg"
+  }
+]

@@ -1,0 +1,1917 @@
+{
+  "data/download.log": [
+    30557,
+    1791122326794701100,
+    null
+  ],
+  "data/download.pid": [
+    4,
+    1791121946063296000,
+    null
+  ],
+  "data/download_20261004_225133.tar": [
+    37209672192,
+    1791119649339409200,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip": [
+    10968921745,
+    1791305866929045400,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part0": [
+    1073741824,
+    1791116905000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part1073741824": [
+    1073741824,
+    1791117170000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part10737418240": [
+    231503505,
+    1791119605000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part2147483648": [
+    1073741824,
+    1791117446000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part3221225472": [
+    1073741824,
+    1791117741000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part4294967296": [
+    1073741824,
+    1791118079000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part5368709120": [
+    1073741824,
+    1791118420000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part6442450944": [
+    1073741824,
+    1791118634000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part7516192768": [
+    1073741824,
+    1791118855000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part8589934592": [
+    1073741824,
+    1791119125000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/outsidedoor_11.zip.part9663676416": [
+    1073741824,
+    1791119326000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam01_swoon01_place01_day_spring.mp4": [
+    755464317,
+    1578477688000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam01_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690199000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam01_swoon01_place01_day_summer.mp4": [
+    750327693,
+    1578477694000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam01_swoon01_place01_day_summer.xml": [
+    1663,
+    1577690259000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam02_swoon01_place01_day_spring.mp4": [
+    375832549,
+    1578477596000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam02_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690111000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam02_swoon01_place01_day_summer.mp4": [
+    375806548,
+    1578477631000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam02_swoon01_place01_day_summer.xml": [
+    1663,
+    1577690163000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam01_swoon01_place01_day_spring.mp4": [
+    762132477,
+    1578477823000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam01_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690379000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam01_swoon01_place01_day_summer.mp4": [
+    375923562,
+    1578477783000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam01_swoon01_place01_day_summer.xml": [
+    1468,
+    1577690259000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam02_swoon01_place01_day_spring.mp4": [
+    375821087,
+    1578477741000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam02_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690289000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam02_swoon01_place01_day_summer.mp4": [
+    375789487,
+    1578477726000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam02_swoon01_place01_day_summer.xml": [
+    1468,
+    1577690356000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam01_swoon01_place01_day_spring.mp4": [
+    749494010,
+    1578477915000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam01_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690558000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam01_swoon01_place01_day_summer.mp4": [
+    796299451,
+    1578477923000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam01_swoon01_place01_day_summer.xml": [
+    1663,
+    1577690629000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam02_swoon01_place01_day_spring.mp4": [
+    375807909,
+    1578477826000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam02_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690470000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam02_swoon01_place01_day_summer.mp4": [
+    375831624,
+    1578477855000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam02_swoon01_place01_day_summer.xml": [
+    1663,
+    1577690541000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam01_swoon01_place01_day_spring.mp4": [
+    743191866,
+    1578478061000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam01_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690748000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam01_swoon01_place01_day_summer.mp4": [
+    765257230,
+    1578478015000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam01_swoon01_place01_day_summer.xml": [
+    1775,
+    1577690813000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam02_swoon01_place01_day_spring.mp4": [
+    377032010,
+    1578477954000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam02_swoon01_place01_day_spring.xml": [
+    1776,
+    1577690646000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam02_swoon01_place01_day_summer.mp4": [
+    375783067,
+    1578478000000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam02_swoon01_place01_day_summer.xml": [
+    1663,
+    1577690720000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_spring.mp4": [
+    743817452,
+    1578478195000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690941000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_summer.mp4": [
+    767794438,
+    1578478105000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_summer.xml": [
+    1468,
+    1577690813000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam02_swoon01_place01_day_spring.mp4": [
+    375798338,
+    1578478093000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam02_swoon01_place01_day_spring.xml": [
+    1663,
+    1577690851000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam02_swoon01_place01_day_summer.mp4": [
+    375864350,
+    1578478124000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam02_swoon01_place01_day_summer.xml": [
+    1663,
+    1577690906000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip": [
+    26240730208,
+    1791307846634865400,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part0": [
+    1073741824,
+    1791110341000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part1073741824": [
+    1073741824,
+    1791110590000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part10737418240": [
+    1073741824,
+    1791112851000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part11811160064": [
+    1073741824,
+    1791113193000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part12884901888": [
+    1073741824,
+    1791113465000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part13958643712": [
+    1073741824,
+    1791113738000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part15032385536": [
+    1073741824,
+    1791114028000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part16106127360": [
+    1073741824,
+    1791114320000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part17179869184": [
+    1073741824,
+    1791114605000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part18253611008": [
+    1073741824,
+    1791114863000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part19327352832": [
+    1073741824,
+    1791115154000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part20401094656": [
+    1073741824,
+    1791115407000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part2147483648": [
+    1073741824,
+    1791110783000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part21474836480": [
+    1073741824,
+    1791115690000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part22548578304": [
+    1073741824,
+    1791115959000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part23622320128": [
+    1073741824,
+    1791116245000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part24696061952": [
+    1073741824,
+    1791116515000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part25769803776": [
+    470926432,
+    1791116790000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part3221225472": [
+    1073741824,
+    1791110971000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part4294967296": [
+    1073741824,
+    1791111170000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part5368709120": [
+    1073741824,
+    1791111394000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part6442450944": [
+    1073741824,
+    1791111657000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part7516192768": [
+    1073741824,
+    1791111955000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part8589934592": [
+    1073741824,
+    1791112238000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/outsidedoor_01.zip.part9663676416": [
+    1073741824,
+    1791112508000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam01_trespass01_place01_day_spring.mp4": [
+    434160154,
+    1577646336000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam01_trespass01_place01_day_spring.xml": [
+    1366,
+    1577646315000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam01_trespass01_place01_day_summer.mp4": [
+    453154969,
+    1577646348000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam01_trespass01_place01_day_summer.xml": [
+    1366,
+    1577646337000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam02_trespass01_place01_day_spring.mp4": [
+    762755431,
+    1577646300000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam02_trespass01_place01_day_spring.xml": [
+    1364,
+    1577646260000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam02_trespass01_place01_day_summer.mp4": [
+    772168731,
+    1577646315000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam02_trespass01_place01_day_summer.xml": [
+    1365,
+    1577646300000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_spring.mp4": [
+    440515486,
+    1577646379000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_spring.xml": [
+    1366,
+    1577646379000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_summer.mp4": [
+    776811020,
+    1577646435000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_summer.xml": [
+    1366,
+    1577646404000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam02_trespass01_place01_day_spring.mp4": [
+    756106489,
+    1577646469000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam02_trespass01_place01_day_spring.xml": [
+    1364,
+    1577646337000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam02_trespass01_place01_day_summer.mp4": [
+    762683253,
+    1577646404000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam02_trespass01_place01_day_summer.xml": [
+    1365,
+    1577646348000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam01_trespass01_place01_day_spring.mp4": [
+    813282514,
+    1577646540000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam01_trespass01_place01_day_spring.xml": [
+    1366,
+    1577646491000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam01_trespass01_place01_day_summer.mp4": [
+    750502566,
+    1577646544000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam01_trespass01_place01_day_summer.xml": [
+    1366,
+    1577646540000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam02_trespass01_place01_day_spring.mp4": [
+    818720109,
+    1577646613000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam02_trespass01_place01_day_spring.xml": [
+    1364,
+    1577646435000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam02_trespass01_place01_day_summer.mp4": [
+    757607616,
+    1577646491000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam02_trespass01_place01_day_summer.xml": [
+    1365,
+    1577646469000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam01_trespass01_place01_day_spring.mp4": [
+    443850422,
+    1577646652000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam01_trespass01_place01_day_spring.xml": [
+    1562,
+    1577646651000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam01_trespass01_place01_day_summer.mp4": [
+    787661631,
+    1577646706000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam01_trespass01_place01_day_summer.xml": [
+    1562,
+    1577646652000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam02_trespass01_place01_day_spring.mp4": [
+    755685827,
+    1577646597000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam02_trespass01_place01_day_spring.xml": [
+    1364,
+    1577646597000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam02_trespass01_place01_day_summer.mp4": [
+    782453451,
+    1577646651000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam02_trespass01_place01_day_summer.xml": [
+    1364,
+    1577646613000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam01_trespass01_place01_day_spring.mp4": [
+    763586659,
+    1577646791000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam01_trespass01_place01_day_spring.xml": [
+    1366,
+    1577646761000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam01_trespass01_place01_day_summer.mp4": [
+    769453547,
+    1577646814000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam01_trespass01_place01_day_summer.xml": [
+    1367,
+    1577646652000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam02_trespass01_place01_day_spring.mp4": [
+    778021022,
+    1577646723000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam02_trespass01_place01_day_spring.xml": [
+    1563,
+    1577646706000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam02_trespass01_place01_day_summer.mp4": [
+    776661012,
+    1577646760000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam02_trespass01_place01_day_summer.xml": [
+    1364,
+    1577646723000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam01_trespass01_place01_day_spring.mp4": [
+    768115480,
+    1577646925000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam01_trespass01_place01_day_spring.xml": [
+    1366,
+    1577646869000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam01_trespass01_place01_day_summer.mp4": [
+    762367083,
+    1577646923000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam01_trespass01_place01_day_summer.xml": [
+    1366,
+    1577646791000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam02_trespass01_place01_day_spring.mp4": [
+    770311525,
+    1577646858000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam02_trespass01_place01_day_spring.xml": [
+    1364,
+    1577646814000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam02_trespass01_place01_day_summer.mp4": [
+    759693747,
+    1577646869000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam02_trespass01_place01_day_summer.xml": [
+    1364,
+    1577646858000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_spring.mp4": [
+    444008449,
+    1577646984000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_spring.xml": [
+    1672,
+    1577646965000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_summer.mp4": [
+    446919152,
+    1577647003000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_summer.xml": [
+    1672,
+    1577646984000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_spring.mp4": [
+    454582190,
+    1577646954000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_spring.xml": [
+    1673,
+    1577646925000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_summer.mp4": [
+    447243016,
+    1577646965000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_summer.xml": [
+    1673,
+    1577646954000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam01_trespass03_place01_day_spring.mp4": [
+    456315657,
+    1577647049000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam01_trespass03_place01_day_spring.xml": [
+    1672,
+    1577647044000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam01_trespass03_place01_day_summer.mp4": [
+    460861195,
+    1577647086000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam01_trespass03_place01_day_summer.xml": [
+    1672,
+    1577647049000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam02_trespass03_place01_day_spring.mp4": [
+    458771448,
+    1577647017000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam02_trespass03_place01_day_spring.xml": [
+    1672,
+    1577647003000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam02_trespass03_place01_day_summer.mp4": [
+    462294237,
+    1577647044000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam02_trespass03_place01_day_summer.xml": [
+    1675,
+    1577647017000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam01_trespass03_place01_day_spring.mp4": [
+    456328354,
+    1577647126000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam01_trespass03_place01_day_spring.xml": [
+    1673,
+    1577647114000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam01_trespass03_place01_day_summer.mp4": [
+    448971899,
+    1577647145000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam01_trespass03_place01_day_summer.xml": [
+    1672,
+    1577647126000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam02_trespass03_place01_day_spring.mp4": [
+    459002371,
+    1577647082000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam02_trespass03_place01_day_spring.xml": [
+    1675,
+    1577647082000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam02_trespass03_place01_day_summer.mp4": [
+    450481738,
+    1577647114000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam02_trespass03_place01_day_summer.xml": [
+    1673,
+    1577647086000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam01_trespass03_place01_day_spring.mp4": [
+    446481986,
+    1577647206000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam01_trespass03_place01_day_spring.xml": [
+    1672,
+    1577647176000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam01_trespass03_place01_day_summer.mp4": [
+    439709932,
+    1577647206000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam01_trespass03_place01_day_summer.xml": [
+    1672,
+    1577647206000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam02_trespass03_place01_day_spring.mp4": [
+    450182983,
+    1577647166000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam02_trespass03_place01_day_spring.xml": [
+    1673,
+    1577647145000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam02_trespass03_place01_day_summer.mp4": [
+    438572108,
+    1577647176000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam02_trespass03_place01_day_summer.xml": [
+    1673,
+    1577647166000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam01_trespass03_place01_day_spring.mp4": [
+    446883018,
+    1577647268000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam01_trespass03_place01_day_spring.xml": [
+    1559,
+    1577647245000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam01_trespass03_place01_day_summer.mp4": [
+    445568775,
+    1577647284000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam01_trespass03_place01_day_summer.xml": [
+    1559,
+    1577647206000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam02_trespass03_place01_day_spring.mp4": [
+    457535801,
+    1577647245000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam02_trespass03_place01_day_spring.xml": [
+    1560,
+    1577647206000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam02_trespass03_place01_day_summer.mp4": [
+    454458066,
+    1577647237000000000,
+    null
+  ],
+  "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam02_trespass03_place01_day_summer.xml": [
+    1560,
+    1577647237000000000,
+    null
+  ],
+  "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip": [
+    20261214446,
+    1791315623536892600,
+    null
+  ],
+  "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip": [
+    731642461,
+    1791343301531113800,
+    null
+  ],
+  "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/02.라벨링데이터/VL_싸움_신체적충돌을동반한싸움.zip": [
+    6167,
+    1791343301792941600,
+    null
+  ],
+  "evaluation_selection/alternate_views.json": [
+    88560,
+    1791340408718920100,
+    null
+  ],
+  "evaluation_selection/candidates.csv": [
+    34216,
+    1791340408754933900,
+    null
+  ],
+  "evaluation_selection/candidates.json": [
+    357017,
+    1791340408752930800,
+    null
+  ],
+  "evaluation_selection/candidate_report.md": [
+    86723,
+    1791340408775964700,
+    null
+  ],
+  "evaluation_selection/capacity_check.json": [
+    204,
+    1791339775786421600,
+    null
+  ],
+  "evaluation_selection/dataset_inventory.csv": [
+    85079,
+    1791340408741939800,
+    null
+  ],
+  "evaluation_selection/dataset_structure.md": [
+    3862,
+    1791340408790962700,
+    null
+  ],
+  "evaluation_selection/data_issues.json": [
+    966,
+    1791339712951172000,
+    null
+  ],
+  "evaluation_selection/excluded_review.json": [
+    5358,
+    1791340408775964700,
+    null
+  ],
+  "evaluation_selection/inventory_details.json": [
+    730622,
+    1791340408734937400,
+    null
+  ],
+  "evaluation_selection/ranking_combinations.json": [
+    12512,
+    1791340408773953600,
+    null
+  ],
+  "evaluation_selection/README.md": [
+    8444,
+    1791340372334541300,
+    null
+  ],
+  "evaluation_selection/reviewed_videos.json": [
+    326929,
+    1791340408661377300,
+    null
+  ],
+  "evaluation_selection/review_decisions.json": [
+    41035,
+    1791340204430879100,
+    null
+  ],
+  "evaluation_selection/review_shortlist.json": [
+    238372,
+    1791340408681377300,
+    null
+  ],
+  "evaluation_selection/selection_summary.json": [
+    618,
+    1791340408776963400,
+    null
+  ],
+  "evaluation_selection/source_annotation_facts.json": [
+    663175,
+    1791340408771934300,
+    null
+  ],
+  "evaluation_selection/storage_summary.json": [
+    242,
+    1791340412229407600,
+    null
+  ],
+  "evaluation_selection/temporary_files.json": [
+    1829,
+    1791340122009867500,
+    null
+  ],
+  "evaluation_selection/validation_result.json": [
+    373,
+    1791340412220898000,
+    null
+  ],
+  "evaluation_selection/zip_listing.json": [
+    16849,
+    1791339712944174300,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F01.jpg": [
+    157701,
+    1791339779559402600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F01_temporal.jpg": [
+    335730,
+    1791339785034823800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F02.jpg": [
+    163200,
+    1791339788619773200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F02_temporal.jpg": [
+    343529,
+    1791339793930690000,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F03.jpg": [
+    154741,
+    1791339797739811800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F03_temporal.jpg": [
+    328644,
+    1791340292837852500,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F04.jpg": [
+    152682,
+    1791339806473887200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F04_temporal.jpg": [
+    327473,
+    1791340292986489500,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F05.jpg": [
+    148731,
+    1791339815452684700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F05_temporal.jpg": [
+    323550,
+    1791339820552069000,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F06.jpg": [
+    142892,
+    1791339823932105200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/F06_temporal.jpg": [
+    302983,
+    1791339829054164500,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S01.jpg": [
+    350679,
+    1791339832777924200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S01_temporal.jpg": [
+    695562,
+    1791339846878894400,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S02.jpg": [
+    362266,
+    1791339852489284600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S02_temporal.jpg": [
+    716707,
+    1791339866617536300,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S03.jpg": [
+    355217,
+    1791339872816004800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S03_temporal.jpg": [
+    705839,
+    1791339886794828000,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S04.jpg": [
+    355680,
+    1791339893602220600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S04_temporal.jpg": [
+    702790,
+    1791339907162123000,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S05.jpg": [
+    349647,
+    1791339913568628300,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S05_temporal.jpg": [
+    694698,
+    1791339927334922600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S06.jpg": [
+    344792,
+    1791339933484198300,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S06_temporal.jpg": [
+    684832,
+    1791339948767678600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S07.jpg": [
+    274940,
+    1791339953528160700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S07_temporal.jpg": [
+    554432,
+    1791340293163283700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S08.jpg": [
+    289909,
+    1791339927486742000,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S08_temporal.jpg": [
+    594882,
+    1791339937995411200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S09.jpg": [
+    275006,
+    1791339942508002400,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S09_temporal.jpg": [
+    566777,
+    1791339953658718600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S10.jpg": [
+    263409,
+    1791339958216753700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S10_temporal.jpg": [
+    546166,
+    1791339968460746800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S11.jpg": [
+    266506,
+    1791339972383509200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S11_temporal.jpg": [
+    550876,
+    1791339982399303600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S12.jpg": [
+    267331,
+    1791339986490849800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S12_temporal.jpg": [
+    552304,
+    1791339996397545100,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S13.jpg": [
+    275153,
+    1791340000443670700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S13_temporal.jpg": [
+    565665,
+    1791340010722306600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S14.jpg": [
+    365412,
+    1791340033802656100,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S14_temporal.jpg": [
+    726842,
+    1791340048736994800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S15.jpg": [
+    355354,
+    1791340055382205400,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S15_temporal.jpg": [
+    706563,
+    1791340070895954500,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S16.jpg": [
+    356810,
+    1791340077408554200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/S16_temporal.jpg": [
+    708174,
+    1791340092182130700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T01.jpg": [
+    452102,
+    1791339968989724800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T01_temporal.jpg": [
+    883650,
+    1791339982896517700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T02.jpg": [
+    446939,
+    1791339988946661200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T02_temporal.jpg": [
+    876632,
+    1791340003719213700,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T03.jpg": [
+    449033,
+    1791340009978611300,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T03_temporal.jpg": [
+    880876,
+    1791340023838431300,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T04.jpg": [
+    449305,
+    1791340028675898200,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T04_temporal.jpg": [
+    879974,
+    1791340042484991600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T05.jpg": [
+    449495,
+    1791340047727332600,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T05_temporal.jpg": [
+    880047,
+    1791340061043301400,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T06.jpg": [
+    519604,
+    1791340067823112100,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T06_temporal.jpg": [
+    997300,
+    1791340082860816900,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T07.jpg": [
+    468484,
+    1791340089681428900,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T07_temporal.jpg": [
+    908885,
+    1791340104345712800,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T08.jpg": [
+    518512,
+    1791340109570988400,
+    null
+  ],
+  "evaluation_selection/contact_sheets/T08_temporal.jpg": [
+    996649,
+    1791340121998314700,
+    null
+  ],
+  "evaluation_selection/multiview/annotation_shortlist_private.json": [
+    52521,
+    1791344352133609300,
+    null
+  ],
+  "evaluation_selection/multiview/capacity_check.json": [
+    214,
+    1791344352970172600,
+    null
+  ],
+  "evaluation_selection/multiview/dataset_structure.md": [
+    3592,
+    1791345051800686200,
+    null
+  ],
+  "evaluation_selection/multiview/existing_result_snapshot.json": [
+    371,
+    1791344280482354700,
+    null
+  ],
+  "evaluation_selection/multiview/integration_recommendation.md": [
+    3111,
+    1791344998628920900,
+    null
+  ],
+  "evaluation_selection/multiview/model_input_only.json": [
+    5658,
+    1791345049285258400,
+    null
+  ],
+  "evaluation_selection/multiview/multiview_candidates.csv": [
+    22981,
+    1791345049238307800,
+    null
+  ],
+  "evaluation_selection/multiview/multiview_candidates.json": [
+    104041,
+    1791345049275272700,
+    null
+  ],
+  "evaluation_selection/multiview/multiview_candidate_report.md": [
+    27972,
+    1791345049288206400,
+    null
+  ],
+  "evaluation_selection/multiview/multiview_eval_manifest.json": [
+    48638,
+    1791345049283208400,
+    null
+  ],
+  "evaluation_selection/multiview/multiview_inventory.csv": [
+    9254,
+    1791345049281252900,
+    null
+  ],
+  "evaluation_selection/multiview/multiview_inventory.json": [
+    118637,
+    1791345049280255300,
+    null
+  ],
+  "evaluation_selection/multiview/README.md": [
+    6901,
+    1791344998628920900,
+    null
+  ],
+  "evaluation_selection/multiview/reviewed_pairs_private.json": [
+    115297,
+    1791344541822610300,
+    null
+  ],
+  "evaluation_selection/multiview/review_decisions_private.json": [
+    12380,
+    1791344759252958200,
+    null
+  ],
+  "evaluation_selection/multiview/source_zip_snapshot.json": [
+    2989,
+    1791344280460353300,
+    null
+  ],
+  "evaluation_selection/multiview/structure_issues.json": [
+    163,
+    1791344280462354800,
+    null
+  ],
+  "evaluation_selection/multiview/temporary_files.json": [
+    2061,
+    1791344541823715700,
+    null
+  ],
+  "evaluation_selection/multiview/validation_summary.json": [
+    562,
+    1791345051776526100,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV01_cam_a.jpg": [
+    444465,
+    1791344356276891500,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV01_cam_a_temporal.jpg": [
+    758946,
+    1791344369700415700,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV01_cam_b.jpg": [
+    528344,
+    1791344374446266800,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV01_cam_b_temporal.jpg": [
+    894423,
+    1791344389924801200,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV01_pair.jpg": [
+    494442,
+    1791344390310905600,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV02_cam_a.jpg": [
+    466450,
+    1791344394707914000,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV02_cam_a_temporal.jpg": [
+    799405,
+    1791344407915104800,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV02_cam_b.jpg": [
+    529706,
+    1791344412770453300,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV02_cam_b_temporal.jpg": [
+    898455,
+    1791344428153027700,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV02_pair.jpg": [
+    505334,
+    1791344428593525200,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV03_cam_a.jpg": [
+    415821,
+    1791344432586207800,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV03_cam_a_temporal.jpg": [
+    723001,
+    1791344444451051400,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV03_cam_b.jpg": [
+    426941,
+    1791344448710807500,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV03_cam_b_temporal.jpg": [
+    736146,
+    1791344461309893400,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV03_pair.jpg": [
+    435896,
+    1791344461740521000,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV04_cam_a.jpg": [
+    446988,
+    1791344466509425400,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV04_cam_a_temporal.jpg": [
+    807227,
+    1791344481756433100,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV04_cam_b.jpg": [
+    363625,
+    1791344486149950600,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV04_cam_b_temporal.jpg": [
+    745305,
+    1791344500670520600,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV04_pair.jpg": [
+    409120,
+    1791344501052644000,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV05_cam_a.jpg": [
+    503300,
+    1791344506151265100,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV05_cam_a_temporal.jpg": [
+    885036,
+    1791344522575878000,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV05_cam_b.jpg": [
+    404349,
+    1791344527173147200,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV05_cam_b_temporal.jpg": [
+    775036,
+    1791344541416905700,
+    null
+  ],
+  "evaluation_selection/multiview/contact_sheets/MV05_pair.jpg": [
+    444507,
+    1791344541818569200,
+    null
+  ],
+  "evaluation_selection/multiview/scripts/build_multiview_inventory.py": [
+    7590,
+    1791344705946370700,
+    null
+  ],
+  "evaluation_selection/multiview/scripts/build_multiview_report.py": [
+    13726,
+    1791344929497999700,
+    null
+  ],
+  "evaluation_selection/multiview/scripts/extract_multiview_contact_sheets.py": [
+    5773,
+    1791344351895872300,
+    null
+  ],
+  "evaluation_selection/multiview/scripts/inspect_multiview_dataset.py": [
+    76,
+    1791344279239275400,
+    null
+  ],
+  "evaluation_selection/multiview/scripts/load_model_input.py": [
+    1058,
+    1791344998629905300,
+    null
+  ],
+  "evaluation_selection/multiview/scripts/select_multiview_candidates.py": [
+    833,
+    1791344351895872300,
+    null
+  ],
+  "evaluation_selection/multiview/scripts/__pycache__/build_multiview_inventory.cpython-313.pyc": [
+    16208,
+    1791344929625916600,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2038/ph_e2038_c1.mp4": [
+    72261694,
+    1791344353138919000,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2038/ph_e2038_c2.mp4": [
+    73156545,
+    1791344369954283000,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2044/ph_e2044_c1.mp4": [
+    72442413,
+    1791344390523305000,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2044/ph_e2044_c2.mp4": [
+    73151531,
+    1791344408136012800,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2047/ph_e2047_c1.mp4": [
+    77831245,
+    1791344428855070100,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2047/ph_e2047_c2.mp4": [
+    78353565,
+    1791344444740087700,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2058/ph_e2058_c1.mp4": [
+    73210703,
+    1791344461974181900,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2058/ph_e2058_c2.mp4": [
+    72400336,
+    1791344481961136700,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2069/ph_e2069_c1.mp4": [
+    74834701,
+    1791344501248994900,
+    null
+  ],
+  "evaluation_selection/multiview/tmp/ph_e2069/ph_e2069_c2.mp4": [
+    75412559,
+    1791344522804522200,
+    null
+  ],
+  "evaluation_selection/scripts/build_inventory.py": [
+    7385,
+    1791339694744977500,
+    null
+  ],
+  "evaluation_selection/scripts/build_report.py": [
+    13822,
+    1791340407785496700,
+    null
+  ],
+  "evaluation_selection/scripts/extract_contact_sheets.py": [
+    4472,
+    1791340291943833300,
+    null
+  ],
+  "evaluation_selection/scripts/inspect_dataset.py": [
+    79,
+    1791339694745482500,
+    null
+  ],
+  "evaluation_selection/scripts/review_alternate_views.py": [
+    1301,
+    1791340372336540500,
+    null
+  ],
+  "evaluation_selection/scripts/select_candidates.py": [
+    1492,
+    1791339772154079900,
+    null
+  ],
+  "evaluation_selection/scripts/validate_outputs.py": [
+    3717,
+    1791340407787043200,
+    null
+  ],
+  "evaluation_selection/scripts/__pycache__/build_inventory.cpython-313.pyc": [
+    18273,
+    1791339772259337100,
+    null
+  ],
+  "evaluation_selection/scripts/__pycache__/build_report.cpython-313.pyc": [
+    22929,
+    1791340408003174300,
+    null
+  ],
+  "evaluation_selection/scripts/__pycache__/extract_contact_sheets.cpython-313.pyc": [
+    11142,
+    1791340408028321000,
+    null
+  ],
+  "evaluation_selection/scripts/__pycache__/inspect_dataset.cpython-313.pyc": [
+    275,
+    1791340408041349200,
+    null
+  ],
+  "evaluation_selection/scripts/__pycache__/review_alternate_views.cpython-313.pyc": [
+    3344,
+    1791340408060090000,
+    null
+  ],
+  "evaluation_selection/scripts/__pycache__/select_candidates.cpython-313.pyc": [
+    2645,
+    1791340408063148100,
+    null
+  ],
+  "evaluation_selection/scripts/__pycache__/validate_outputs.cpython-313.pyc": [
+    9074,
+    1791340408081155800,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-2/435-2_cam01_fight01_place09_night_spring.mp4": [
+    382316090,
+    1791339776830639100,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-2/435-2_cam01_fight01_place09_night_spring.xml": [
+    3960,
+    1791339776831547400,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-3/435-3_cam02_fight01_place09_night_summer.mp4": [
+    378675871,
+    1791339786324780500,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-3/435-3_cam02_fight01_place09_night_summer.xml": [
+    4073,
+    1791339786325787900,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-4/435-4_cam03_fight01_place09_night_winter.mp4": [
+    366330899,
+    1791339795540218500,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-4/435-4_cam03_fight01_place09_night_winter.xml": [
+    4720,
+    1791339795541219800,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-5/435-5_cam01_fight01_place09_night_spring.mp4": [
+    394462992,
+    1791339804014057400,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-5/435-5_cam01_fight01_place09_night_spring.xml": [
+    4805,
+    1791339804014960800,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-6/435-6_cam02_fight01_place09_night_winter.mp4": [
+    377634785,
+    1791339813209886800,
+    null
+  ],
+  "evaluation_selection/tmp/fight/435-6/435-6_cam02_fight01_place09_night_winter.xml": [
+    5227,
+    1791339813211887500,
+    null
+  ],
+  "evaluation_selection/tmp/fight/439-1/439-1_cam01_fight01_place03_day_spring.mp4": [
+    359710289,
+    1791339821550336200,
+    null
+  ],
+  "evaluation_selection/tmp/fight/439-1/439-1_cam01_fight01_place03_day_spring.xml": [
+    3498,
+    1791339821551340000,
+    null
+  ],
+  "benchmark_v1/BENCHMARK_LOCK.json": [
+    11298,
+    1791356760278258500,
+    "bc1082329f07d905e66b8171457b0b2af339c64dc9496ff4a14d0b0dc1dca8d6"
+  ],
+  "benchmark_v1/public_manifest.json": [
+    1672,
+    1791356499946951200,
+    "c4ebe96d3df4c73a333cbd2668497eec36affc61bcbb6fec3dd50110390fe7e3"
+  ],
+  "benchmark_v1/README.md": [
+    10793,
+    1791356506808988900,
+    "c4b4b74bfb5145d8ef7a767ba2f9ecba05a240d491a5e71456c7c782c70c73d2"
+  ],
+  "benchmark_v1/media/asset_01.mp4": [
+    30978851,
+    1791356061854336300,
+    "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea"
+  ],
+  "benchmark_v1/media/asset_02.mp4": [
+    43066807,
+    1791356070069924700,
+    "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99"
+  ],
+  "benchmark_v1/media/asset_03.mp4": [
+    40371361,
+    1791356123812725000,
+    "7b5f3939800135521bee7c1b8ebd546d438bad3026fddc8f2c6146c7478a6ebb"
+  ],
+  "benchmark_v1/media/asset_04.mp4": [
+    21996195,
+    1791356160978021400,
+    "3728911198b69e07d17cf39e98ce08970b0111c03e04967355b7a133c71f003b"
+  ],
+  "benchmark_v1/media/asset_05.mp4": [
+    22807119,
+    1791356154077156700,
+    "5e07a830faa3e535e8ebaeacb008b646dd410fbd195e21a9ca31941d6a7318bc"
+  ],
+  "benchmark_v1/media/asset_06.mp4": [
+    15631783,
+    1791356185801501700,
+    "58e36d22315878479422e9161dd8ce63ddd167fb08bedde340d9da480e0f3eaf"
+  ],
+  "benchmark_v1/media/set01_swoon.mp4": [
+    30978851,
+    1791356061854336300,
+    "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea"
+  ],
+  "benchmark_v1/media/set02_trespass.mp4": [
+    43066807,
+    1791356070069924700,
+    "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99"
+  ],
+  "benchmark_v1/media/set03_ambiguous.mp4": [
+    40371361,
+    1791356123812725000,
+    "7b5f3939800135521bee7c1b8ebd546d438bad3026fddc8f2c6146c7478a6ebb"
+  ],
+  "benchmark_v1/media/set04_cam_a_swoon.mp4": [
+    30978851,
+    1791356061854336300,
+    "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea"
+  ],
+  "benchmark_v1/media/set04_cam_b_fight.mp4": [
+    21996195,
+    1791356160978021400,
+    "3728911198b69e07d17cf39e98ce08970b0111c03e04967355b7a133c71f003b"
+  ],
+  "benchmark_v1/media/set04_cam_c_trespass.mp4": [
+    43066807,
+    1791356070069924700,
+    "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99"
+  ],
+  "benchmark_v1/media/set05_cam_a.mp4": [
+    22807119,
+    1791356154077156700,
+    "5e07a830faa3e535e8ebaeacb008b646dd410fbd195e21a9ca31941d6a7318bc"
+  ],
+  "benchmark_v1/media/set05_cam_b.mp4": [
+    15631783,
+    1791356185801501700,
+    "58e36d22315878479422e9161dd8ce63ddd167fb08bedde340d9da480e0f3eaf"
+  ],
+  "benchmark_v1/model_input/prompt_v1.txt": [
+    1382,
+    1791356034072453500,
+    "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146"
+  ],
+  "benchmark_v1/model_input/scenarios.json": [
+    2244,
+    1791356499948584000,
+    "cb2029d420d3ff2a3e42d1cef1f72efa20c871777c36c67fc7c28f4547bb4516"
+  ],
+  "benchmark_v1/private_ground_truth/build_plan.json": [
+    26988,
+    1791355879294348800,
+    "4957f4ad96f2cc346ae83dfef336f0d07ea48bb84366661502eeb4b257cc4dd9"
+  ],
+  "benchmark_v1/private_ground_truth/capacity_check.json": [
+    173,
+    1791355725102830400,
+    "cf5dd7545fa587acf803d7ba0bab87b82358ac463c50e01a4309a2bf99bfb39b"
+  ],
+  "benchmark_v1/private_ground_truth/initial_protection_snapshot.json": [
+    842,
+    1791355725101739700,
+    "c9e27594e99dd1a18fd22aa7f72c6647d229c8a88366a755c837514e4ae7a66c"
+  ],
+  "benchmark_v1/private_ground_truth/media_build_records.json": [
+    14275,
+    1791356497919929700,
+    "780208fc157180695a2b8e74fd424453b7407db2af976d0a5c243722323c8533"
+  ],
+  "benchmark_v1/private_ground_truth/set01.json": [
+    4338,
+    1791356500070325300,
+    "d7afaa5f3711ed32f0e3f50276bf384fdd5c423a91bf58f334537b56c73ae667"
+  ],
+  "benchmark_v1/private_ground_truth/set02.json": [
+    3930,
+    1791356500072219600,
+    "0b7acc44cffb1102b413c86162673a3688c94ea4872b623d2124bb676f6957b8"
+  ],
+  "benchmark_v1/private_ground_truth/set03.json": [
+    5643,
+    1791356500073336400,
+    "3871a5252eddb609308a06951037f723fd82e0a2312cde107d55dda9680c0487"
+  ],
+  "benchmark_v1/private_ground_truth/set04.json": [
+    12485,
+    1791356500075959700,
+    "f7abceca2f4f00042c57c1aeb84ed47dd62630c28bdd8038bb170d5c32331741"
+  ],
+  "benchmark_v1/private_ground_truth/set05.json": [
+    7999,
+    1791356500078057200,
+    "bfb98d9fb4d03a4d7bbc35f52f75896be1ac6ab7c141edfe31d1b42c983c1fc7"
+  ],
+  "benchmark_v1/private_ground_truth/source_candidate_records.json": [
+    54655,
+    1791355725053793000,
+    "6e55b0693066d1c90079c1a77533701622404fc8961c0e8cff615f255c7523b2"
+  ],
+  "benchmark_v1/private_ground_truth/source_preservation_validation.json": [
+    2037,
+    1791356504482675900,
+    "691605bde6a921caaecf30383a11a9274c2d5d8725cf2f41d1e244caccdec78a"
+  ],
+  "benchmark_v1/private_ground_truth/t03_clip_selection.json": [
+    1053,
+    1791355879293400200,
+    "52daa62d2efb3573f93f070808a99cde41c54cfb933a9d8c68352d36b76cd3bd"
+  ],
+  "benchmark_v1/private_ground_truth/review/T03_250_272.jpg": [
+    1609527,
+    1791355763195886300,
+    "891b9b44adbdc5479e14f2ddf95c4e6e18ad22e5be388f857925f688261066dc"
+  ],
+  "benchmark_v1/private_ground_truth/review/T03_273_290.jpg": [
+    2367007,
+    1791355771228356400,
+    "968308fbdf6731ed91dc8152f04483b672b5568ed40b76b782df4e6c6b885e5a"
+  ],
+  "benchmark_v1/private_ground_truth/review/T03_overview.jpg": [
+    1604320,
+    1791355725050667700,
+    "42adb751d57b02d62278ba7a441997d06323bb6f5596488ad54894deee275cc7"
+  ],
+  "benchmark_v1/schemas/prediction.schema.json": [
+    10043,
+    1791356034070449500,
+    "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d"
+  ],
+  "benchmark_v1/schemas/result.schema.json": [
+    5433,
+    1791356034071452600,
+    "57081270d6f5cd011a70413ab49dd9bc2c361ff88fe006b3569eeaa9e6857875"
+  ],
+  "benchmark_v1/scripts/benchmark_common.py": [
+    1596,
+    1791356760229946400,
+    "d8300c8a7e9bf04f7d08e24f1caa073d01fd61f5486e666c8ea94532f2847343"
+  ],
+  "benchmark_v1/scripts/build_benchmark.py": [
+    20919,
+    1791356495705507600,
+    "1de9d3817abef3dbf8cef692888a514639d5a5c8cb7f3e9b41c9ed21bc550339"
+  ],
+  "benchmark_v1/scripts/build_media.py": [
+    3108,
+    1791355939608969100,
+    "49de32231b9b458941da1fed218e400b8bc1b7e05ad74c662912e26d604434a1"
+  ],
+  "benchmark_v1/scripts/load_model_input.py": [
+    4271,
+    1791356760230946200,
+    "888e880d22178695292b033ee41d0aafa0e7cb38fb5296c7388e74d06fe024a9"
+  ],
+  "benchmark_v1/scripts/score_results.py": [
+    5560,
+    1791356160322831000,
+    "f427d1be31e31e587b1c369ff356a9876f470c10cd4649a909c95173fd82aaf4"
+  ],
+  "benchmark_v1/scripts/validate_benchmark.py": [
+    5190,
+    1791356333909452300,
+    "4a163034fe8c014f7163a369e18c46af0e2fca9004963d4ec82f7bce017efa18"
+  ],
+  "benchmark_v1/scripts/validate_prediction.py": [
+    2819,
+    1791356760230946200,
+    "c981bc27e4adbce84686025842f1726d934b3e7dbb7dba0dfefc058a6297e3f6"
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "benchmark_version": "477-reasoning-v1",
+  "pipeline": "cv_llm",
+  "run_id": "p1_decisions-v1+common-adapter-v2",
+  "item_id": "ITEM_03",
+  "model_id": "p1_decisions:gpt-6-luna@v1-decisions",
+  "runtime_config": {
+    "pipeline_actual": "p1_openai_decisions",
+    "pipeline_schema_value_note": "result.schema.json enum allows only vlm_only/cv_llm; this is the P1 Decisions-API pipeline.",
+    "decision_model": "gpt-6-luna",
+    "decision_model_returned": "gpt-6-luna",
+    "decision_endpoint": "/v1/decisions",
+    "input_modality": "text only (compact CV state); no images",
+    "compact_state_version": "compact-decision-state-v1",
+    "compact_state_sha256": "0cad333c34224f9f27abb59bf7cffc42fe65825dcec89e0b635e3802c111b51b",
+    "decision_questions_version": "decisions-v1",
+    "question_count": 7,
+    "source_cv_state": "experiments/p0_cv_only/states/ITEM_03.json (cv-state-v1, P0 cached; CV not re-run)",
+    "requests_for_item": 1,
+    "usage": {
+      "input_tokens": 2834,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_tokens": 2834,
+      "compute_units": null
+    },
+    "external_api_cost_usd": 0.0002834,
+    "pricing": {
+      "model": "gpt-6-luna",
+      "endpoint": "/v1/decisions",
+      "service_tier": "standard (default; no tier parameter sent)",
+      "input_usd_per_1m_tokens": 0.1,
+      "billing_rule": "Decisions API: input tokens only; no cache-read, cache-write or output-token charges",
+      "long_context_threshold_tokens": 272000,
+      "long_context_input_multiplier": 2.0,
+      "pricing_source": "https://developers.openai.com/api/docs/guides/decisions (pricing paragraph: \"input costs $0.10 per 1M tokens. You pay only for input tokens\")",
+      "pricing_cross_check": "https://developers.openai.com/api/docs/models/gpt-6-luna lists Standard text rates input $0.10, cached $0.01, cache write $0.125, output $0.50 per 1M (chat endpoints); the Decisions-specific rule above was applied.",
+      "pricing_checked_date": "2026-10-07",
+      "regional_processing_premium_applied": false
+    },
+    "latency": {
+      "definition": "cached-state timing only (P0 CV state reused); NOT full end-to-end; result latency_ms left null",
+      "serializer_latency_ms": 0.339,
+      "decision_api_latency_ms": 225.22,
+      "decision_api_total_including_retries_ms": 225.59,
+      "openai_processing_ms_header": "158",
+      "adapter_latency_ms": 0.098,
+      "cached_state_pipeline_latency_ms": 226.03
+    },
+    "retry_count": 0,
+    "refusal_count": 0,
+    "request_id": "req_d85cce7d88fa4feaac0de3c999cbd0cd",
+    "decision_summary": {
+      "p_incident": 0.3,
+      "is_incident": false,
+      "category": "possible_fall_or_person_down",
+      "category_confidence": 0.71,
+      "risk": {
+        "severity": 0.3075,
+        "imminence": 0.3575,
+        "exposure": 0.275,
+        "persistence": 0.4825
+      },
+      "priority_score": 0.3422,
+      "confidence": 0.705,
+      "p_human_review": 0.82,
+      "human_review_required": true,
+      "refused_questions": []
+    },
+    "raw_api_file": "experiments/p1_decisions/raw_api/ITEM_03.json",
+    "llm_free_text_generation": false,
+    "access_audit": {
+      "files_opened": 1,
+      "forbidden_paths_opened": [],
+      "pass": true
+    },
+    "common_adapter_v2": {
+      "adapter_version": "common-adapter-v2",
+      "incident_threshold": 0.5,
+      "event_type_changes": 1,
+      "assessments": [
+        {
+          "raw_decision": {
+            "incident_probability": 0.3,
+            "incident_category": "possible_fall_or_person_down",
+            "incident_category_confidence": 0.71
+          },
+          "normalized_decision": {
+            "is_incident": false,
+            "event_type": "no clear incident"
+          },
+          "rule": "R1",
+          "assessment": "single",
+          "v1_event_type": "possible fall or person-down event",
+          "event_type_changed": true
+        }
+      ],
+      "source_v1_result": "benchmark_v1/results/p1_decisions/run_ITEM_03.json",
+      "source_v1_result_sha256": "f26291978674f3c4c59e218f7130c1ce9c725a244c0fc8f2acbbbf52c3b202c1",
+      "source_raw_api": "experiments/p1_decisions/raw_api/ITEM_03.json",
+      "source_raw_api_sha256": "a4462023502abfe506ed6f37f3ccf24c25e94e92ee9387ed66e97fe48794feab",
+      "offline_rebuild_equals_v1": true,
+      "api_calls": 0,
+      "note": "v1 result is the official raw experiment record; this file is the normalized common-adapter-v2 presentation"
+    }
+  },
+  "input_fingerprint": {
+    "prompt_sha256": "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146",
+    "prediction_schema_sha256": "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d",
+    "media_sha256": {
+      "CAM_01": "7b5f3939800135521bee7c1b8ebd546d438bad3026fddc8f2c6146c7478a6ebb"
+    },
+    "sampling_protocol_id": "uniform_total64_v1",
+    "frame_numbers": {
+      "CAM_01": [
+        0,
+        17,
+        33,
+        50,
+        67,
+        83,
+        100,
+        117,
+        133,
+        150,
+        167,
+        183,
+        200,
+        216,
+        233,
+        250,
+        266,
+        283,
+        300,
+        316,
+        333,
+        350,
+        366,
+        383,
+        400,
+        416,
+        433,
+        450,
+        466,
+        483,
+        500,
+        516,
+        533,
+        549,
+        566,
+        583,
+        599,
+        616,
+        633,
+        649,
+        666,
+        683,
+        699,
+        716,
+        733,
+        749,
+        766,
+        783,
+        799,
+        816,
+        833,
+        849,
+        866,
+        882,
+        899,
+        916,
+        932,
+        949,
+        966,
+        982,
+        999,
+        1016,
+        1032,
+        1049
+      ]
+    }
+  },
+  "prediction": {
+    "event_type": "no clear incident",
+    "is_incident": false,
+    "observations": [
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 0.0,
+        "description": "0-2 person(s) detected per sampled frame (median 1); persons present in 92% of 64 samples about 0.57s apart; CV reliability 0.77."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 22.77,
+        "description": "T3 first appears away from the frame edge at 22.8s."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 29.4,
+        "description": "T3: standing posture proxy at 29.4s and low posture posture proxy at 30.0s (transition confidence 0.40; downward change -0.10 body heights, reliability limited)."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 29.97,
+        "description": "T3: low/horizontal posture proxy persisted for about 3.9s after the transition."
+      }
+    ],
+    "temporal_summary": "CAM_01: 64 samples over 35.0s; up to 2 person(s). T1 observed 0.0-22.8s (standing -> standing). T3 observed 22.8-33.9s (standing -> low_posture), standing-to-low posture change 29.4-30.0s.",
+    "risk": {
+      "severity": 0.3075,
+      "imminence": 0.3575,
+      "exposure": 0.275,
+      "persistence": 0.4825
+    },
+    "confidence": 0.705,
+    "uncertainties": [
+      "Sparse sampling (about 0.57s between frames); brief actions between samples may be missed.",
+      "Boundary semantics (gates, walls, restricted areas) are unavailable; authorization cannot be determined.",
+      "Track association reliability is limited (fragmented or ambiguous tracks).",
+      "Posture labels are automatic proxies; the cause of a posture change and any medical condition cannot be determined."
+    ],
+    "reason": "OpenAI Decisions API (gpt-6-luna) typed answers over the compact CV observation state (text only, no images): incident probability 0.30; category 'possible_fall_or_person_down' (confidence 0.71); severity 0.31, imminence 0.36, exposure 0.28, persistence 0.48 (0-1); human-review probability 0.82. Observation texts are generated deterministically from CV features, not by the model.",
+    "human_review_required": true
+  },
+  "human_grading": null,
+  "latency_ms": null,
+  "estimated_cost_usd": null,
+  "input_tokens": 2834,
+  "output_tokens": 0
+}

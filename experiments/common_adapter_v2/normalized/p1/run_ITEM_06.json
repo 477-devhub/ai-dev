@@ -1,0 +1,254 @@
+{
+  "benchmark_version": "477-reasoning-v1",
+  "pipeline": "cv_llm",
+  "run_id": "p1_decisions-v1+common-adapter-v2",
+  "item_id": "ITEM_06",
+  "model_id": "p1_decisions:gpt-6-luna@v1-decisions",
+  "runtime_config": {
+    "pipeline_actual": "p1_openai_decisions",
+    "pipeline_schema_value_note": "result.schema.json enum allows only vlm_only/cv_llm; this is the P1 Decisions-API pipeline.",
+    "decision_model": "gpt-6-luna",
+    "decision_model_returned": "gpt-6-luna",
+    "decision_endpoint": "/v1/decisions",
+    "input_modality": "text only (compact CV state); no images",
+    "compact_state_version": "compact-decision-state-v1",
+    "compact_state_sha256": "6961df13b1fbbe696a70b93fbde1e1460236aad27559db838aff34da137daf90",
+    "decision_questions_version": "decisions-v1",
+    "question_count": 7,
+    "source_cv_state": "experiments/p0_cv_only/states/ITEM_06.json (cv-state-v1, P0 cached; CV not re-run)",
+    "requests_for_item": 1,
+    "usage": {
+      "input_tokens": 4521,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_tokens": 4521,
+      "compute_units": null
+    },
+    "external_api_cost_usd": 0.0004521,
+    "pricing": {
+      "model": "gpt-6-luna",
+      "endpoint": "/v1/decisions",
+      "service_tier": "standard (default; no tier parameter sent)",
+      "input_usd_per_1m_tokens": 0.1,
+      "billing_rule": "Decisions API: input tokens only; no cache-read, cache-write or output-token charges",
+      "long_context_threshold_tokens": 272000,
+      "long_context_input_multiplier": 2.0,
+      "pricing_source": "https://developers.openai.com/api/docs/guides/decisions (pricing paragraph: \"input costs $0.10 per 1M tokens. You pay only for input tokens\")",
+      "pricing_cross_check": "https://developers.openai.com/api/docs/models/gpt-6-luna lists Standard text rates input $0.10, cached $0.01, cache write $0.125, output $0.50 per 1M (chat endpoints); the Decisions-specific rule above was applied.",
+      "pricing_checked_date": "2026-10-07",
+      "regional_processing_premium_applied": false
+    },
+    "latency": {
+      "definition": "cached-state timing only (P0 CV state reused); NOT full end-to-end; result latency_ms left null",
+      "serializer_latency_ms": 2.236,
+      "decision_api_latency_ms": 1597.63,
+      "decision_api_total_including_retries_ms": 1598.68,
+      "openai_processing_ms_header": "1474",
+      "adapter_latency_ms": 0.345,
+      "cached_state_pipeline_latency_ms": 1601.26
+    },
+    "retry_count": 0,
+    "refusal_count": 0,
+    "request_id": "req_9b2920f9c9874212ad23610c13f2705b",
+    "decision_summary": {
+      "p_incident": 0.72,
+      "is_incident": true,
+      "category": "possible_fall_or_person_down",
+      "category_confidence": 0.53,
+      "risk": {
+        "severity": 0.4725,
+        "imminence": 0.53,
+        "exposure": 0.61,
+        "persistence": 0.515
+      },
+      "priority_score": 0.5236,
+      "confidence": 0.625,
+      "p_human_review": 0.92,
+      "human_review_required": true,
+      "refused_questions": []
+    },
+    "raw_api_file": "experiments/p1_decisions/raw_api/ITEM_06.json",
+    "llm_free_text_generation": false,
+    "access_audit": {
+      "files_opened": 1,
+      "forbidden_paths_opened": [],
+      "pass": true
+    },
+    "common_adapter_v2": {
+      "adapter_version": "common-adapter-v2",
+      "incident_threshold": 0.5,
+      "event_type_changes": 0,
+      "assessments": [
+        {
+          "raw_decision": {
+            "incident_probability": 0.72,
+            "incident_category": "possible_fall_or_person_down",
+            "incident_category_confidence": 0.53
+          },
+          "normalized_decision": {
+            "is_incident": true,
+            "event_type": "possible fall or person-down event"
+          },
+          "rule": "R2",
+          "assessment": "single",
+          "v1_event_type": "possible fall or person-down event",
+          "event_type_changed": false
+        }
+      ],
+      "source_v1_result": "benchmark_v1/results/p1_decisions/run_ITEM_06.json",
+      "source_v1_result_sha256": "9399149b9ee7541eb1854bc1a983763d59782949d6b1e97fe9da555cd48e7ca1",
+      "source_raw_api": "experiments/p1_decisions/raw_api/ITEM_06.json",
+      "source_raw_api_sha256": "882784b0db18e5384b7325ca2b0abfe5c8cb6182d018835fe63be6f10e1fe566",
+      "offline_rebuild_equals_v1": true,
+      "api_calls": 0,
+      "note": "v1 result is the official raw experiment record; this file is the normalized common-adapter-v2 presentation"
+    }
+  },
+  "input_fingerprint": {
+    "prompt_sha256": "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146",
+    "prediction_schema_sha256": "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d",
+    "media_sha256": {
+      "CAM_02": "58e36d22315878479422e9161dd8ce63ddd167fb08bedde340d9da480e0f3eaf"
+    },
+    "sampling_protocol_id": "uniform_total64_v1",
+    "frame_numbers": {
+      "CAM_02": [
+        0,
+        15,
+        30,
+        45,
+        61,
+        76,
+        91,
+        106,
+        121,
+        136,
+        151,
+        167,
+        182,
+        197,
+        212,
+        227,
+        242,
+        257,
+        273,
+        288,
+        303,
+        318,
+        333,
+        348,
+        363,
+        379,
+        394,
+        409,
+        424,
+        439,
+        454,
+        469,
+        485,
+        500,
+        515,
+        530,
+        545,
+        560,
+        575,
+        591,
+        606,
+        621,
+        636,
+        651,
+        666,
+        681,
+        697,
+        712,
+        727,
+        742,
+        757,
+        772,
+        787,
+        803,
+        818,
+        833,
+        848,
+        863,
+        878,
+        893,
+        909,
+        924,
+        939,
+        954
+      ]
+    }
+  },
+  "prediction": {
+    "event_type": "possible fall or person-down event",
+    "is_incident": true,
+    "observations": [
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 0.0,
+        "description": "0-3 person(s) detected per sampled frame (median 2); persons present in 98% of 64 samples about 0.50s apart; CV reliability 0.78."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 0.0,
+        "description": "T1 moves about 0.57 frame heights across the image between 0.0s and 30.8s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 0.0,
+        "description": "T2 moves about 0.45 frame heights across the image between 0.0s and 15.6s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 0.0,
+        "description": "T3 moves about 0.60 frame heights across the image between 0.0s and 4.5s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 2.53,
+        "description": "T1 and T2: minimum distance 0.22 body heights; close in 86% of 29 co-observed samples (about 12.1s); relative motion when close 0.28 bh/s; contact proxy 0.32 (heuristic visual proxy, not confirmed contact)."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 14.63,
+        "description": "T1 and T4: minimum distance 0.00 body heights; close in 71% of 7 co-observed samples (about 2.5s); relative motion when close 0.47 bh/s; contact proxy 0.43 (heuristic visual proxy, not confirmed contact)."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 14.63,
+        "description": "T4 first appears away from the frame edge at 14.6s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 14.63,
+        "description": "T4 moves about 0.53 frame heights across the image between 14.6s and 19.2s."
+      }
+    ],
+    "temporal_summary": "CAM_02: 64 samples over 31.8s; up to 3 person(s). T1 observed 0.0-30.8s (low_posture -> standing), standing-to-horizontal change 21.7-24.7s. T2 observed 0.0-15.6s (low_posture -> standing). T3 observed 0.0-4.5s (standing -> standing). T4 observed 14.6-19.2s (standing -> crouched), standing-to-crouched change 16.2-19.2s.",
+    "risk": {
+      "severity": 0.4725,
+      "imminence": 0.53,
+      "exposure": 0.61,
+      "persistence": 0.515
+    },
+    "confidence": 0.625,
+    "uncertainties": [
+      "Sparse sampling (about 0.50s between frames); brief actions between samples may be missed.",
+      "Boundary semantics (gates, walls, restricted areas) are unavailable; authorization cannot be determined.",
+      "Track association reliability is limited (fragmented or ambiguous tracks).",
+      "Contact, arm-extension and limb-motion values are heuristic 2D proxies, not confirmed physical contact or actions.",
+      "Posture labels are automatic proxies; the cause of a posture change and any medical condition cannot be determined.",
+      "Some sampled frames are very dark."
+    ],
+    "reason": "OpenAI Decisions API (gpt-6-luna) typed answers over the compact CV observation state (text only, no images): incident probability 0.72; category 'possible_fall_or_person_down' (confidence 0.53); severity 0.47, imminence 0.53, exposure 0.61, persistence 0.52 (0-1); human-review probability 0.92. Observation texts are generated deterministically from CV features, not by the model.",
+    "human_review_required": true
+  },
+  "human_grading": null,
+  "latency_ms": null,
+  "estimated_cost_usd": null,
+  "input_tokens": 4521,
+  "output_tokens": 0
+}

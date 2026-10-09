@@ -1,0 +1,2847 @@
+{
+  "clips": {
+    "CAND_0001": {
+      "candidate_id": "CAND_0001",
+      "source_video_id": "145-1_cam01_trespass01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam01_trespass01_place01_day_spring.mp4",
+      "source_sha256": "755ae59e58db9cee329fa51c55a03c7998061134dfb86666ec58e205df1183a2",
+      "requested_window_sec": [
+        252.8,
+        287.8
+      ],
+      "actual_start_sec": 252.552,
+      "actual_end_sec": 288.822,
+      "start_shift_to_keyframe_sec": 0.248,
+      "clip_sha256": "a65ca2ff3fe10a4e725b14e2744c8a92540d90e1fe060e5a562e9db6a0563a61",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1087,
+        "duration": 36.269567
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0002": {
+      "candidate_id": "CAND_0002",
+      "source_video_id": "145-2_cam01_trespass01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_spring.mp4",
+      "source_sha256": "646101284ab52fe25fc7040271047d7f5e94a51215d92722386a1ffb8f53452c",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "25cc11fd4e6aec604b35c0d2df80cd012af13788d76d1df1eee7546ff8d387bf",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0003": {
+      "candidate_id": "CAND_0003",
+      "source_video_id": "145-2_cam01_trespass01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_spring.mp4",
+      "source_sha256": "646101284ab52fe25fc7040271047d7f5e94a51215d92722386a1ffb8f53452c",
+      "requested_window_sec": [
+        140.0,
+        175.0
+      ],
+      "actual_start_sec": 139.339,
+      "actual_end_sec": 176.009,
+      "start_shift_to_keyframe_sec": 0.661,
+      "clip_sha256": "ecd74e84bbb5221483ccd5b7e9503735ce7d1d34467ff08499541694e7c5e203",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1099,
+        "duration": 36.669967
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0004": {
+      "candidate_id": "CAND_0004",
+      "source_video_id": "145-2_cam01_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_summer.mp4",
+      "source_sha256": "d5d2d59631703f7772c873dbb8291ccf83515a3743f5315c8ebeb427814c5981",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "003bf827e1964a1646f11c7a3ef081ffa496efc202e9d57a89fbd6d7438663bf",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0005": {
+      "candidate_id": "CAND_0005",
+      "source_video_id": "145-3_cam01_trespass01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam01_trespass01_place01_day_spring.mp4",
+      "source_sha256": "f73251aa0ce251d235d66fdcdd5e359a5ec93d3c6d46fd020a912b82ddf78c30",
+      "requested_window_sec": [
+        210.0,
+        245.0
+      ],
+      "actual_start_sec": 209.976,
+      "actual_end_sec": 246.012,
+      "start_shift_to_keyframe_sec": 0.024,
+      "clip_sha256": "9289fad6adc085d7c598c5af67a1b3c34bccd295be10bcd7a85f1e2b0a60eef4",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1080,
+        "duration": 36.036
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0006": {
+      "candidate_id": "CAND_0006",
+      "source_video_id": "145-4_cam01_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam01_trespass01_place01_day_summer.mp4",
+      "source_sha256": "9bef1848da0e47484b4b28f36a34ecab7f3a4d0de4323871a402af6923aae43b",
+      "requested_window_sec": [
+        175.0,
+        210.0
+      ],
+      "actual_start_sec": 174.174,
+      "actual_end_sec": 210.043,
+      "start_shift_to_keyframe_sec": 0.826,
+      "clip_sha256": "bb3f810523fdcb10b6ec33990da1056291a243dec5f2ce5e946b00d468cf20e4",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1075,
+        "duration": 35.869167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0007": {
+      "candidate_id": "CAND_0007",
+      "source_video_id": "145-5_cam01_trespass01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam01_trespass01_place01_day_spring.mp4",
+      "source_sha256": "0eeb90556846e8004053ad3958d18b22e97d589ec48596627aae9138e26979a9",
+      "requested_window_sec": [
+        175.0,
+        210.0
+      ],
+      "actual_start_sec": 174.174,
+      "actual_end_sec": 210.043,
+      "start_shift_to_keyframe_sec": 0.826,
+      "clip_sha256": "88700b7be64e0cb1ac4b9dc2a6c332c5c879f1a9c8e5f5125ba1b9f97c914c08",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1075,
+        "duration": 35.869167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0008": {
+      "candidate_id": "CAND_0008",
+      "source_video_id": "145-5_cam01_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam01_trespass01_place01_day_summer.mp4",
+      "source_sha256": "6b37fe7e25a30e74ec75369561db5a41255f7ba85cd616ffbf52e5f33b34b236",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "34bce756ae8f6dc360361494db1a6ffbf21fbf5271f7ef1817866e6f53fc87e7",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0009": {
+      "candidate_id": "CAND_0009",
+      "source_video_id": "145-2_cam01_trespass01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam01_trespass01_place01_day_spring.mp4",
+      "source_sha256": "646101284ab52fe25fc7040271047d7f5e94a51215d92722386a1ffb8f53452c",
+      "requested_window_sec": [
+        249.5,
+        284.5
+      ],
+      "actual_start_sec": 248.682,
+      "actual_end_sec": 284.551,
+      "start_shift_to_keyframe_sec": 0.818,
+      "clip_sha256": "ffa06cdded4df081107a3ff5a29e0e293dd88ed210fee8136a1959821ddfa20f",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1075,
+        "duration": 35.869167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0010": {
+      "candidate_id": "CAND_0010",
+      "source_video_id": "145-5_cam01_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam01_trespass01_place01_day_summer.mp4",
+      "source_sha256": "6b37fe7e25a30e74ec75369561db5a41255f7ba85cd616ffbf52e5f33b34b236",
+      "requested_window_sec": [
+        256.1,
+        291.1
+      ],
+      "actual_start_sec": 255.455,
+      "actual_end_sec": 292.125,
+      "start_shift_to_keyframe_sec": 0.645,
+      "clip_sha256": "d0d524f28597b2cb3b692a83e105907a071a96157ff453c9a4971000dfee7c07",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1099,
+        "duration": 36.669967
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0011": {
+      "candidate_id": "CAND_0011",
+      "source_video_id": "145-6_cam01_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam01_trespass01_place01_day_summer.mp4",
+      "source_sha256": "cdf89c30cd5d2f6e20d6a850e89131dd78d20c917c7568bdbf95cb231c4565d6",
+      "requested_window_sec": [
+        251.867,
+        286.867
+      ],
+      "actual_start_sec": 251.585,
+      "actual_end_sec": 286.92,
+      "start_shift_to_keyframe_sec": 0.282,
+      "clip_sha256": "e53ba9beb7b93fc3bd13185266eebb96d33276f20389a3ab635c71e1ca6e61c1",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1059,
+        "duration": 35.3353
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0012": {
+      "candidate_id": "CAND_0012",
+      "source_video_id": "145-1_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "d9351f61bec552f5cdedf0120cc792c7b9e7789743514d73934beeee65a83f66",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "e02a7f4bbc60c51ec0f69e3302a409a4649156e79b772e34612352a405e6dd0d",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0013": {
+      "candidate_id": "CAND_0013",
+      "source_video_id": "145-1_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "d9351f61bec552f5cdedf0120cc792c7b9e7789743514d73934beeee65a83f66",
+      "requested_window_sec": [
+        269.8,
+        304.8
+      ],
+      "actual_start_sec": 269.002,
+      "actual_end_sec": 305.805,
+      "start_shift_to_keyframe_sec": 0.798,
+      "clip_sha256": "f00cfbc643a21ec0ee02c0c2131d0839f8389c5d691ae05f887f4309cd1e544f",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1103,
+        "duration": 36.803433
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0014": {
+      "candidate_id": "CAND_0014",
+      "source_video_id": "145-2_cam02_trespass01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam02_trespass01_place01_day_spring.mp4",
+      "source_sha256": "b870bbc9dea2319a11e057b344a2c6e7218c7e6e081ec6b39bc4f6295c4ae89e",
+      "requested_window_sec": [
+        140.0,
+        175.0
+      ],
+      "actual_start_sec": 139.339,
+      "actual_end_sec": 176.009,
+      "start_shift_to_keyframe_sec": 0.661,
+      "clip_sha256": "1bb33ca9f9f503aa005acda55e994e5b78675feb335779c3086f780f572d3c25",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1099,
+        "duration": 36.669967
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0015": {
+      "candidate_id": "CAND_0015",
+      "source_video_id": "145-2_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-2/145-2_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "97d6bd14d2e1790fc0f1d0ccd070a243aa7f31f14fe02d48c204d1785eaa23f4",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "58ee6406b0248003f1d49190b3cab4bad6ea0bf5bb6179dc23a8f9bea6075c2e",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0016": {
+      "candidate_id": "CAND_0016",
+      "source_video_id": "145-3_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "6e89073129d0ff9da7a933fe409597dbd4d32e7ece194a05a0ea447bea65ef2b",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "8f21216560462424433599f7768c66c02fe8205812b64a0c2fc4d98d5ca8fe30",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0017": {
+      "candidate_id": "CAND_0017",
+      "source_video_id": "145-3_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-3/145-3_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "6e89073129d0ff9da7a933fe409597dbd4d32e7ece194a05a0ea447bea65ef2b",
+      "requested_window_sec": [
+        265.3,
+        300.3
+      ],
+      "actual_start_sec": 265.132,
+      "actual_end_sec": 300.334,
+      "start_shift_to_keyframe_sec": 0.168,
+      "clip_sha256": "744222aca376b7039d1e13ca749921ba33e1fe70c7d78192d11619086e5c3910",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0018": {
+      "candidate_id": "CAND_0018",
+      "source_video_id": "145-4_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "f8f41103866ffc74b4f611cb71ab43e8b70a2605f0aa0656e388f6e5fec69285",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "3f7bf4d702c271dc1e29915f0c4706228a63776a366c791f728a7541f9470090",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0019": {
+      "candidate_id": "CAND_0019",
+      "source_video_id": "145-4_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-4/145-4_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "f8f41103866ffc74b4f611cb71ab43e8b70a2605f0aa0656e388f6e5fec69285",
+      "requested_window_sec": [
+        175.0,
+        210.0
+      ],
+      "actual_start_sec": 174.174,
+      "actual_end_sec": 210.043,
+      "start_shift_to_keyframe_sec": 0.826,
+      "clip_sha256": "f80468b3603f97646f36edbc04570dbebb8aadc32487c5a20920ae62acb8b958",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1075,
+        "duration": 35.869167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0020": {
+      "candidate_id": "CAND_0020",
+      "source_video_id": "145-1_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-1/145-1_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "d9351f61bec552f5cdedf0120cc792c7b9e7789743514d73934beeee65a83f66",
+      "requested_window_sec": [
+        246.367,
+        281.367
+      ],
+      "actual_start_sec": 245.779,
+      "actual_end_sec": 281.415,
+      "start_shift_to_keyframe_sec": 0.588,
+      "clip_sha256": "b37b6d386c99778194e6d5163612dd7134a11961491be86bd821d7439a67ad09",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1068,
+        "duration": 35.6356
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0021": {
+      "candidate_id": "CAND_0021",
+      "source_video_id": "145-5_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-5/145-5_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "0ac0be850d8d45cac9efc4998a2217fcee0043fa6a8b6578134f00c3d7243109",
+      "requested_window_sec": [
+        253.767,
+        288.767
+      ],
+      "actual_start_sec": 253.52,
+      "actual_end_sec": 288.822,
+      "start_shift_to_keyframe_sec": 0.247,
+      "clip_sha256": "ad0b6eee83a84f772112f7cecfb227127e61629f2dd9099d0644383c0ad080c9",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1058,
+        "duration": 35.301933
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0022": {
+      "candidate_id": "CAND_0022",
+      "source_video_id": "145-6_cam02_trespass01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/145-6/145-6_cam02_trespass01_place01_day_summer.mp4",
+      "source_sha256": "03a3978fa6e6d22c87d1a086511713e49656a0f11d5615bb92fa0eeda275133a",
+      "requested_window_sec": [
+        245.4,
+        280.4
+      ],
+      "actual_start_sec": 244.811,
+      "actual_end_sec": 281.414,
+      "start_shift_to_keyframe_sec": 0.589,
+      "clip_sha256": "7b5d00ab0d56d3c8ac96534427ee3a8d42deae25809fb525036c6ad08d3be3a6",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1097,
+        "duration": 36.603233
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0023": {
+      "candidate_id": "CAND_0023",
+      "source_video_id": "146-1_cam01_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_spring.mp4",
+      "source_sha256": "07c36352e288d0f77ac123e1b8412628a2653b78352d7175876cdeba4264f69f",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "2759274afded42841db4ef2a5c76e0ebf541ce27f5559b5b73a3de2d4e87cc17",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0024": {
+      "candidate_id": "CAND_0024",
+      "source_video_id": "146-1_cam01_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_spring.mp4",
+      "source_sha256": "07c36352e288d0f77ac123e1b8412628a2653b78352d7175876cdeba4264f69f",
+      "requested_window_sec": [
+        175.0,
+        210.0
+      ],
+      "actual_start_sec": 174.174,
+      "actual_end_sec": 210.043,
+      "start_shift_to_keyframe_sec": 0.826,
+      "clip_sha256": "1edda7cce7a8e5b9b2d0ffe78ddef2312a51f213fe38c4db1f7e42e83568b5f4",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1075,
+        "duration": 35.869167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0025": {
+      "candidate_id": "CAND_0025",
+      "source_video_id": "146-1_cam01_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_summer.mp4",
+      "source_sha256": "40fb924b7e934fe0e7e6242c1d36d5cbef04735657297f2000d9d5406127fe25",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "503aba334d5737c29aa1ae0611174a1953156a927cad85aa7e6d1ce2ae1e7e69",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0026": {
+      "candidate_id": "CAND_0026",
+      "source_video_id": "146-2_cam01_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam01_trespass03_place01_day_summer.mp4",
+      "source_sha256": "71e44d4fdf8047afc2a81f178f68fb9db5f85471c036551949e5c9b7148df336",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "23f75f26b70c4a1e9885ea323963762d1a467be8810cee438e968be2e4f457f1",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0027": {
+      "candidate_id": "CAND_0027",
+      "source_video_id": "146-4_cam01_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam01_trespass03_place01_day_spring.mp4",
+      "source_sha256": "fe6946b569e9e234cb5eda8066655b1c8457a03950cb19cf19c07f347a1e689e",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "5b5f0277ac0f79436365446e8c4829d98bad75b2e8a1fba6f6aa8a3ab16bf47e",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0028": {
+      "candidate_id": "CAND_0028",
+      "source_video_id": "146-4_cam01_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam01_trespass03_place01_day_summer.mp4",
+      "source_sha256": "1c844248bcd90624d72c99b2f6c61f48550d4ebe3c2fcf4246f227be8d2acbe0",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "0f641c0a35a85212a35c96fe2c04a1e81eafb093c9bf78e2f1e4538659909b3f",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0029": {
+      "candidate_id": "CAND_0029",
+      "source_video_id": "146-5_cam01_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam01_trespass03_place01_day_spring.mp4",
+      "source_sha256": "9c506db42d866deb442653d87a1c047b21124526f0e8f22bcdfe5e7155e4f49b",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "853f4df8f6df6c903d445ecca74a288bae3877f32b1a6988c142513c1010adf2",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0030": {
+      "candidate_id": "CAND_0030",
+      "source_video_id": "146-5_cam01_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam01_trespass03_place01_day_summer.mp4",
+      "source_sha256": "a8ca03322a658e7ca415eb17ae3dedf1866df5907fd9ee4b7e94512d276fd399",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "f36e0a0e6ce955ce5ad5a517c1677ecd1719bfc99162153d5be7ac47cc133f1c",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0031": {
+      "candidate_id": "CAND_0031",
+      "source_video_id": "146-1_cam01_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam01_trespass03_place01_day_spring.mp4",
+      "source_sha256": "07c36352e288d0f77ac123e1b8412628a2653b78352d7175876cdeba4264f69f",
+      "requested_window_sec": [
+        235.5,
+        270.5
+      ],
+      "actual_start_sec": 235.135,
+      "actual_end_sec": 270.537,
+      "start_shift_to_keyframe_sec": 0.365,
+      "clip_sha256": "a8aaa22182a6960f22d2e70871bfc199f961851936c2d1f808b9f1c9c9041ad4",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1061,
+        "duration": 35.402033
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0032": {
+      "candidate_id": "CAND_0032",
+      "source_video_id": "146-4_cam01_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam01_trespass03_place01_day_spring.mp4",
+      "source_sha256": "fe6946b569e9e234cb5eda8066655b1c8457a03950cb19cf19c07f347a1e689e",
+      "requested_window_sec": [
+        202.9,
+        237.9
+      ],
+      "actual_start_sec": 202.235,
+      "actual_end_sec": 238.905,
+      "start_shift_to_keyframe_sec": 0.665,
+      "clip_sha256": "b227355f7650a97b15f3c4264a01e5cf9dcf7dafd0d49b29c724cfe458bda68d",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1099,
+        "duration": 36.669967
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0033": {
+      "candidate_id": "CAND_0033",
+      "source_video_id": "146-5_cam01_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam01_trespass03_place01_day_spring.mp4",
+      "source_sha256": "9c506db42d866deb442653d87a1c047b21124526f0e8f22bcdfe5e7155e4f49b",
+      "requested_window_sec": [
+        267.803,
+        302.803
+      ],
+      "actual_start_sec": 267.067,
+      "actual_end_sec": 302.803,
+      "start_shift_to_keyframe_sec": 0.736,
+      "clip_sha256": "25993be3ff046397622b37cf2681fc847188be136d68ef4da467f3e0e95ff790",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1071,
+        "duration": 35.7357
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0034": {
+      "candidate_id": "CAND_0034",
+      "source_video_id": "146-1_cam02_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_spring.mp4",
+      "source_sha256": "6ba79f9cb0b45408341abe3c81de385e5bb92ef0acfe2e3adf20438130730ed6",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "5ebb666cb77ea10e65b48e0589fb1af6df0844c4aa914b431058c6690a821258",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0035": {
+      "candidate_id": "CAND_0035",
+      "source_video_id": "146-1_cam02_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_spring.mp4",
+      "source_sha256": "6ba79f9cb0b45408341abe3c81de385e5bb92ef0acfe2e3adf20438130730ed6",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "59ee7ff92846a78e65e85846e68e2dcd3ffbfb531e4703613f15422964b50102",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0036": {
+      "candidate_id": "CAND_0036",
+      "source_video_id": "146-1_cam02_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_summer.mp4",
+      "source_sha256": "e4376f4c85c3c34a3f6ff5cae1941f4164095546c4cdf2f85a3023f6fd8bbd5f",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "a78708ce3586e47ce624059ff0681621b9f9bf13db500fce4db19be9defcc42e",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0037": {
+      "candidate_id": "CAND_0037",
+      "source_video_id": "146-2_cam02_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam02_trespass03_place01_day_spring.mp4",
+      "source_sha256": "7d84c2f59f9d7a416135aebb38baef14c8463e26c47cf0a998faeaaeed3bd01b",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "3187e7d43f5611de470a3491e3f75f9b7f67e2c433ae2344adf37cdd316fb838",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0038": {
+      "candidate_id": "CAND_0038",
+      "source_video_id": "146-2_cam02_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-2/146-2_cam02_trespass03_place01_day_summer.mp4",
+      "source_sha256": "a6daf4ca2e1b7e8eec81d08760bada644e29a3fb031c35a793f16b9a01241ddc",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "d97712399abe3b8a25855d924faf7c46e65f36d1c6efb14a1e4c8a8f28c1fbe1",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0039": {
+      "candidate_id": "CAND_0039",
+      "source_video_id": "146-4_cam02_trespass03_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam02_trespass03_place01_day_spring.mp4",
+      "source_sha256": "71c50aeae2fc3606f94d03c586c725aecbc1be26e6e5d8cce92f3af2539e2db6",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "95749c38afaddb74fb051dec518b1c3388b6c22dfb5bc8b912728518bdb1b927",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0040": {
+      "candidate_id": "CAND_0040",
+      "source_video_id": "146-4_cam02_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-4/146-4_cam02_trespass03_place01_day_summer.mp4",
+      "source_sha256": "025c8ddb4cd0f1fab3a5d9b35fae8abfec2ab60eab7541c4872ce7251e8f3bce",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "91ac959d80eeb9c0abd991e11126c8d4ee251cdacf184ff1475ee8a9a3e330ec",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0041": {
+      "candidate_id": "CAND_0041",
+      "source_video_id": "146-5_cam02_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam02_trespass03_place01_day_summer.mp4",
+      "source_sha256": "5bd807ea7f2626474edf1b980e09acc3b415cb6c5af86eff312ae2b0d2c942b7",
+      "requested_window_sec": [
+        210.0,
+        245.0
+      ],
+      "actual_start_sec": 209.976,
+      "actual_end_sec": 246.012,
+      "start_shift_to_keyframe_sec": 0.024,
+      "clip_sha256": "01ec4796d86c9f15b4ad5debc0bc98d240989fa5e27850e0dfb43b5c85069142",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1080,
+        "duration": 36.036
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0042": {
+      "candidate_id": "CAND_0042",
+      "source_video_id": "146-1_cam02_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-1/146-1_cam02_trespass03_place01_day_summer.mp4",
+      "source_sha256": "e4376f4c85c3c34a3f6ff5cae1941f4164095546c4cdf2f85a3023f6fd8bbd5f",
+      "requested_window_sec": [
+        226.067,
+        261.067
+      ],
+      "actual_start_sec": 225.459,
+      "actual_end_sec": 261.128,
+      "start_shift_to_keyframe_sec": 0.608,
+      "clip_sha256": "7ab7b3696f2e00d1691f132591e26f02e5bcfbe5efc4d7c761835607bdd862d0",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1069,
+        "duration": 35.668967
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0043": {
+      "candidate_id": "CAND_0043",
+      "source_video_id": "146-3_cam02_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-3/146-3_cam02_trespass03_place01_day_summer.mp4",
+      "source_sha256": "619d36c083c0b4b83a3d2bd485576a694a611ca3fe6402d1491326aab58ef4ad",
+      "requested_window_sec": [
+        203.9,
+        238.9
+      ],
+      "actual_start_sec": 203.203,
+      "actual_end_sec": 238.939,
+      "start_shift_to_keyframe_sec": 0.697,
+      "clip_sha256": "42877af702c226583eeb1fc2c1275108e65da5e2111e62b8364ce2dd6e030c60",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1071,
+        "duration": 35.7357
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0044": {
+      "candidate_id": "CAND_0044",
+      "source_video_id": "146-5_cam02_trespass03_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/07.침입(trespass)/실외/extracted/146-5/146-5_cam02_trespass03_place01_day_summer.mp4",
+      "source_sha256": "5bd807ea7f2626474edf1b980e09acc3b415cb6c5af86eff312ae2b0d2c942b7",
+      "requested_window_sec": [
+        266.968,
+        301.968
+      ],
+      "actual_start_sec": 266.099,
+      "actual_end_sec": 302.936,
+      "start_shift_to_keyframe_sec": 0.869,
+      "clip_sha256": "e595964860125244c66d4cebb9e4f099aa78f0f9d7c5efbdf67d73f250ec742f",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1104,
+        "duration": 36.8368
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0045": {
+      "candidate_id": "CAND_0045",
+      "source_video_id": "435-2_cam01_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-2/435-2_cam01_fight01_place09_night_winter.mp4",
+      "source_sha256": "2b80f4a5c3d88f7d716db1f93213b605a6f742fa256a9a89f99da8e356b975df",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "3469215fc17a41e254da9dedad6ae86c4dd9375720b0a6224d0fd3b5d3fd343a",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0046": {
+      "candidate_id": "CAND_0046",
+      "source_video_id": "435-3_cam01_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam01_fight01_place09_night_summer.mp4",
+      "source_sha256": "7540a22e190b1da1bad5580387258d6ff846b3fe98d84a43a4646215784d9010",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "ec091566d59445a183733f24b06ebd77156c2ed0a0bab191d93337c8057e984a",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0047": {
+      "candidate_id": "CAND_0047",
+      "source_video_id": "435-3_cam01_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam01_fight01_place09_night_summer.mp4",
+      "source_sha256": "7540a22e190b1da1bad5580387258d6ff846b3fe98d84a43a4646215784d9010",
+      "requested_window_sec": [
+        252.0,
+        287.0
+      ],
+      "actual_start_sec": 251.585,
+      "actual_end_sec": 287.054,
+      "start_shift_to_keyframe_sec": 0.415,
+      "clip_sha256": "3abb9b63b0de6a89cf87390cc8bb6a42488fac53cc0c472859aefb92a95ab97a",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1063,
+        "duration": 35.468767
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0048": {
+      "candidate_id": "CAND_0048",
+      "source_video_id": "435-4_cam01_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-4/435-4_cam01_fight01_place09_night_spring.mp4",
+      "source_sha256": "0226856f1ea982b108d97560652efd2bfcdc669eecd59522810411a79fb44906",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "159b80eebbad6a639d84360d89806424588189502d411bf860a6b4d587609422",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0049": {
+      "candidate_id": "CAND_0049",
+      "source_video_id": "435-5_cam01_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-5/435-5_cam01_fight01_place09_night_winter.mp4",
+      "source_sha256": "b352c632f0ee11cbf5dfb04e8761ae5a58550b9279756786486a7c781567a2c5",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "3cd8d96e76ed8b7abd4bb86356e0b9035b74879fe1a73847e1acabaaacd337f2",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0050": {
+      "candidate_id": "CAND_0050",
+      "source_video_id": "435-6_cam01_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-6/435-6_cam01_fight01_place09_night_spring.mp4",
+      "source_sha256": "96f500f6af98dc6a23a8b3761cfed0007567d996674daa0d8da7c030a510607a",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "70be15bb4b22920b7bca1f0e40415964f121031f42f08fe26476bd1bd230501f",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0051": {
+      "candidate_id": "CAND_0051",
+      "source_video_id": "435-6_cam01_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-6/435-6_cam01_fight01_place09_night_summer.mp4",
+      "source_sha256": "903cdc0cf0c83942c34b149de8bdc2c5e4c4f2fe663ddc3577a263f960062dc0",
+      "requested_window_sec": [
+        251.6,
+        286.6
+      ],
+      "actual_start_sec": 251.585,
+      "actual_end_sec": 286.653,
+      "start_shift_to_keyframe_sec": 0.015,
+      "clip_sha256": "526e0b991f34ae92d2ce75c1245f03f20cc9876593d25453292b0c43b779adfe",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1051,
+        "duration": 35.068367
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0052": {
+      "candidate_id": "CAND_0052",
+      "source_video_id": "435-6_cam01_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-6/435-6_cam01_fight01_place09_night_winter.mp4",
+      "source_sha256": "6d998e9a76b58d242c34755d85345317863eb2608a53efd46072f1f70ca61096",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "9864455e3135c56f7855c171e6ba43edebec1fdb66a879200ec1ced9779939b5",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0053": {
+      "candidate_id": "CAND_0053",
+      "source_video_id": "435-3_cam01_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam01_fight01_place09_night_summer.mp4",
+      "source_sha256": "7540a22e190b1da1bad5580387258d6ff846b3fe98d84a43a4646215784d9010",
+      "requested_window_sec": [
+        127.2,
+        162.2
+      ],
+      "actual_start_sec": 126.76,
+      "actual_end_sec": 162.262,
+      "start_shift_to_keyframe_sec": 0.44,
+      "clip_sha256": "44fa26156171bfd108fb4ce06b35ed23f198c1859dc238e8928f8a348fdd54e3",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1064,
+        "duration": 35.502133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0054": {
+      "candidate_id": "CAND_0054",
+      "source_video_id": "435-4_cam01_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-4/435-4_cam01_fight01_place09_night_winter.mp4",
+      "source_sha256": "433d433e592c7244618096bf9e00f40cfb1a738801de6343dfeab3f12095d1d2",
+      "requested_window_sec": [
+        131.6,
+        166.6
+      ],
+      "actual_start_sec": 131.598,
+      "actual_end_sec": 167.634,
+      "start_shift_to_keyframe_sec": 0.002,
+      "clip_sha256": "4a075e006070fdc009307f11dec2e51e048687d95f639a1f00b000e583620737",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1080,
+        "duration": 36.036
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0055": {
+      "candidate_id": "CAND_0055",
+      "source_video_id": "435-6_cam01_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-6/435-6_cam01_fight01_place09_night_summer.mp4",
+      "source_sha256": "903cdc0cf0c83942c34b149de8bdc2c5e4c4f2fe663ddc3577a263f960062dc0",
+      "requested_window_sec": [
+        32.4,
+        67.4
+      ],
+      "actual_start_sec": 31.932,
+      "actual_end_sec": 67.434,
+      "start_shift_to_keyframe_sec": 0.468,
+      "clip_sha256": "c8f873767279cf4c6a048a4dac4f28a29bc1d5b4ce88518ebd9813d1bc50e557",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1064,
+        "duration": 35.502133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0056": {
+      "candidate_id": "CAND_0056",
+      "source_video_id": "435-3_cam02_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam02_fight01_place09_night_spring.mp4",
+      "source_sha256": "834bead430b1e1adb304ce1fbb9980850ec1eae4ad20ba87867aa11bd6f705e5",
+      "requested_window_sec": [
+        245.833,
+        280.833
+      ],
+      "actual_start_sec": 245.779,
+      "actual_end_sec": 280.881,
+      "start_shift_to_keyframe_sec": 0.054,
+      "clip_sha256": "fd38e0961f5b69035bf51cbb7b199a63d6e1a559ff7edc29f83700c899f2add4",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1052,
+        "duration": 35.101733
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0057": {
+      "candidate_id": "CAND_0057",
+      "source_video_id": "435-3_cam02_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam02_fight01_place09_night_summer.mp4",
+      "source_sha256": "17b7671a075f4170120d27113be0dc96ef399b6c0f569de810862589d346f966",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "ca6faa7c516d4832906c40695e74d6e6be813fdf761c4f3d116b24bc7ed3978e",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0058": {
+      "candidate_id": "CAND_0058",
+      "source_video_id": "435-3_cam02_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam02_fight01_place09_night_summer.mp4",
+      "source_sha256": "17b7671a075f4170120d27113be0dc96ef399b6c0f569de810862589d346f966",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "881917b1e793af1e79899adc4e70bcf5a8fd11bb3db4c2cd8564751335b42fbd",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0059": {
+      "candidate_id": "CAND_0059",
+      "source_video_id": "435-3_cam02_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam02_fight01_place09_night_winter.mp4",
+      "source_sha256": "35eafc568781507c1ce70af437f8339ece1cf7c65097eb96b27cf4144bb2e4ce",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "d5462f26e6150bce66aa3faa0fea683b82d482f212a67b69bb8d8f62dc287697",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0060": {
+      "candidate_id": "CAND_0060",
+      "source_video_id": "435-4_cam02_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-4/435-4_cam02_fight01_place09_night_spring.mp4",
+      "source_sha256": "25ca3097971bde2927318d252bc2a93f6c8e9720bfa8e1a58c8089536f627acf",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "262b94ea3ee5594208e326ab3cecb9d3bd16af1b24a53322a6ea83ad92e36a7f",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0061": {
+      "candidate_id": "CAND_0061",
+      "source_video_id": "435-4_cam02_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-4/435-4_cam02_fight01_place09_night_summer.mp4",
+      "source_sha256": "620a0a5ab1abe8421504912750a2cb724c539f06943706f595e17ab4df933978",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "77330fde6aeb5549dee4c58c96499c148127bb5c0479c43ae3267c50dfe524af",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0062": {
+      "candidate_id": "CAND_0062",
+      "source_video_id": "435-5_cam02_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-5/435-5_cam02_fight01_place09_night_winter.mp4",
+      "source_sha256": "fdcbde2a03c08ca0008e4a42d57513c9ba2c6d9d653afc66697f3365d35e4605",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "3aad265f297f4b0400d32e5840b8b0ab9ab88489e75652aeecc1a007ff28de9b",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0063": {
+      "candidate_id": "CAND_0063",
+      "source_video_id": "435-6_cam02_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-6/435-6_cam02_fight01_place09_night_spring.mp4",
+      "source_sha256": "e65b4baaf92c94a2a9e31ada8826792435f9e29420a44a1c4a84fd98c76bc905",
+      "requested_window_sec": [
+        269.9,
+        304.9
+      ],
+      "actual_start_sec": 269.002,
+      "actual_end_sec": 305.906,
+      "start_shift_to_keyframe_sec": 0.898,
+      "clip_sha256": "edc701619ad56122b663fc81b4a302503fa69f2704454f5db472f7102443232e",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1106,
+        "duration": 36.903533
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0064": {
+      "candidate_id": "CAND_0064",
+      "source_video_id": "435-2_cam02_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-2/435-2_cam02_fight01_place09_night_summer.mp4",
+      "source_sha256": "7111768cb1534cc63c1c28288b19e1076542615604ca2c583daa9d1c0d20cee9",
+      "requested_window_sec": [
+        112.6,
+        147.6
+      ],
+      "actual_start_sec": 112.245,
+      "actual_end_sec": 148.615,
+      "start_shift_to_keyframe_sec": 0.355,
+      "clip_sha256": "8b8e7ffc538aa2c05540f800f11ed2f335a93a7453b4c9bf1e4ff99f5be1019d",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1090,
+        "duration": 36.369667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0065": {
+      "candidate_id": "CAND_0065",
+      "source_video_id": "435-3_cam02_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam02_fight01_place09_night_summer.mp4",
+      "source_sha256": "17b7671a075f4170120d27113be0dc96ef399b6c0f569de810862589d346f966",
+      "requested_window_sec": [
+        126.9,
+        161.9
+      ],
+      "actual_start_sec": 126.76,
+      "actual_end_sec": 161.962,
+      "start_shift_to_keyframe_sec": 0.14,
+      "clip_sha256": "b50331c02def21c31f559df51fdec957bc9443a3c16adfe71ca0ec7c5fe8343e",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0066": {
+      "candidate_id": "CAND_0066",
+      "source_video_id": "435-5_cam02_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-5/435-5_cam02_fight01_place09_night_spring.mp4",
+      "source_sha256": "de18c167a165ea199be6536fa6f069c45efe2905ad489d55e870b0b4770e2526",
+      "requested_window_sec": [
+        134.4,
+        169.4
+      ],
+      "actual_start_sec": 133.533,
+      "actual_end_sec": 170.403,
+      "start_shift_to_keyframe_sec": 0.867,
+      "clip_sha256": "d6b5ea4c2df1df9280c015fbe8f2fbb3e5095c865fc6305255d0dec44c4d35c1",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1105,
+        "duration": 36.870167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0067": {
+      "candidate_id": "CAND_0067",
+      "source_video_id": "435-2_cam03_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-2/435-2_cam03_fight01_place09_night_spring.mp4",
+      "source_sha256": "dd64abc78ee3a8fa6644eb41fd99912251fe5065cf5c121e15575d45423d66a7",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "5aaf5c8d136f680e2e635901119f85fda6ea6391640ff55ba3e8f285c5c22d1b",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0068": {
+      "candidate_id": "CAND_0068",
+      "source_video_id": "435-2_cam03_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-2/435-2_cam03_fight01_place09_night_summer.mp4",
+      "source_sha256": "ddf9858ed8025a860169c2153ba9e632ea2fbe45d3a151b07eadfdd64274181f",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "dbc6ac0cf2fb884aebfa1f6fc8f87e7a6cc77972c6ba857e3bd909e0ab595632",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0069": {
+      "candidate_id": "CAND_0069",
+      "source_video_id": "435-3_cam03_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam03_fight01_place09_night_spring.mp4",
+      "source_sha256": "f047e4d8155cf3666a56dc778d492a5303422a9cb928d52a886a6ff0af8b2a8c",
+      "requested_window_sec": [
+        35.0,
+        70.0
+      ],
+      "actual_start_sec": 34.835,
+      "actual_end_sec": 70.037,
+      "start_shift_to_keyframe_sec": 0.165,
+      "clip_sha256": "102d94239f34db473912a36901f7b5776250f63d5983f6c110c0a1eeb77caa1a",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0070": {
+      "candidate_id": "CAND_0070",
+      "source_video_id": "435-3_cam03_fight01_place09_night_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam03_fight01_place09_night_summer.mp4",
+      "source_sha256": "25c2a3bb4ed4607b780dbc6d82666a255b807f04c848afea9f24fffca6329667",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "be690a6942625ea3b5008aa8779d77058ac1af7022c61b2b8d54e80d64e2efc0",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0071": {
+      "candidate_id": "CAND_0071",
+      "source_video_id": "435-3_cam03_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam03_fight01_place09_night_winter.mp4",
+      "source_sha256": "d1a525a47a71f29457b849c996e7db1c2952284f4105944c7319eb3187fb01cb",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "4b8d799f8f4feef885ed85aea11710414c703e5f26acbb36d8c7a61d360a6e50",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0072": {
+      "candidate_id": "CAND_0072",
+      "source_video_id": "435-3_cam03_fight01_place09_night_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-3/435-3_cam03_fight01_place09_night_winter.mp4",
+      "source_sha256": "d1a525a47a71f29457b849c996e7db1c2952284f4105944c7319eb3187fb01cb",
+      "requested_window_sec": [
+        260.4,
+        295.4
+      ],
+      "actual_start_sec": 260.293,
+      "actual_end_sec": 296.429,
+      "start_shift_to_keyframe_sec": 0.107,
+      "clip_sha256": "dbff0381cb2726ce4a70c844e488932c7945947dc2e9906421f3921e4717212c",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1083,
+        "duration": 36.1361
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0073": {
+      "candidate_id": "CAND_0073",
+      "source_video_id": "435-4_cam03_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-4/435-4_cam03_fight01_place09_night_spring.mp4",
+      "source_sha256": "9c47021b745f41c863c67d00f779a9026807b1644419c44519c288310bfce715",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "4b6ee539de16f213b89d85e5f9e756bb14650f93a9448dfb09bf9b9707af426a",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0074": {
+      "candidate_id": "CAND_0074",
+      "source_video_id": "435-4_cam03_fight01_place09_night_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::435-4/435-4_cam03_fight01_place09_night_spring.mp4",
+      "source_sha256": "9c47021b745f41c863c67d00f779a9026807b1644419c44519c288310bfce715",
+      "requested_window_sec": [
+        284.1,
+        319.1
+      ],
+      "actual_start_sec": 283.517,
+      "actual_end_sec": 319.153,
+      "start_shift_to_keyframe_sec": 0.583,
+      "clip_sha256": "57e7bd211564ee26d121033630ab33cdcc623807809458b9ab7619eaaa4aab71",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1068,
+        "duration": 35.6356
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0075": {
+      "candidate_id": "CAND_0075",
+      "source_video_id": "439-1_cam01_fight01_place03_day_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam01_fight01_place03_day_winter.mp4",
+      "source_sha256": "3e3cf649344357b82e9036c789493c10276b7980267a16f3add0d6684db6cf17",
+      "requested_window_sec": [
+        271.633,
+        306.633
+      ],
+      "actual_start_sec": 270.937,
+      "actual_end_sec": 307.64,
+      "start_shift_to_keyframe_sec": 0.696,
+      "clip_sha256": "83f8900d50b85e6fde4adafca8eb346fc5637929eb3c82871c1e8799e6c5ac7e",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1100,
+        "duration": 36.703333
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0076": {
+      "candidate_id": "CAND_0076",
+      "source_video_id": "439-1_cam01_fight01_place03_day_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam01_fight01_place03_day_spring.mp4",
+      "source_sha256": "3416a4058a1060d72785be8e766ca302c5ea63d43db43e0ba50fb127358a2149",
+      "requested_window_sec": [
+        6.1,
+        41.1
+      ],
+      "actual_start_sec": 5.806,
+      "actual_end_sec": 41.141,
+      "start_shift_to_keyframe_sec": 0.294,
+      "clip_sha256": "21f672a1a0b66a58b7a0a77c847ec3019d13ec457306d41a597850330e021db5",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1059,
+        "duration": 35.3353
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0077": {
+      "candidate_id": "CAND_0077",
+      "source_video_id": "439-1_cam01_fight01_place03_day_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam01_fight01_place03_day_summer.mp4",
+      "source_sha256": "dd6920fef481b8cc2e16badf0905ea3cb91f01aa74f994ddd456df1462834d8d",
+      "requested_window_sec": [
+        8.867,
+        43.867
+      ],
+      "actual_start_sec": 8.709,
+      "actual_end_sec": 43.911,
+      "start_shift_to_keyframe_sec": 0.158,
+      "clip_sha256": "0c27fa69937f2ea35c4c8790ff0ceec081c1bee9efaac190e2759bb036ad9764",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1055,
+        "duration": 35.201833
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0078": {
+      "candidate_id": "CAND_0078",
+      "source_video_id": "439-1_cam01_fight01_place03_day_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam01_fight01_place03_day_winter.mp4",
+      "source_sha256": "3e3cf649344357b82e9036c789493c10276b7980267a16f3add0d6684db6cf17",
+      "requested_window_sec": [
+        8.8,
+        43.8
+      ],
+      "actual_start_sec": 8.709,
+      "actual_end_sec": 43.844,
+      "start_shift_to_keyframe_sec": 0.091,
+      "clip_sha256": "e069d5b460cbc1d9df57c639ed68b6986d50c2214e1eb7f540eede74b5e22ead",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1053,
+        "duration": 35.1351
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0079": {
+      "candidate_id": "CAND_0079",
+      "source_video_id": "439-1_cam02_fight01_place03_day_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam02_fight01_place03_day_spring.mp4",
+      "source_sha256": "296f73f33af7496583bb0d0ddac88d3082f43ce16886d3e18e1dcca91d3cd0f5",
+      "requested_window_sec": [
+        259.2,
+        294.2
+      ],
+      "actual_start_sec": 258.358,
+      "actual_end_sec": 295.228,
+      "start_shift_to_keyframe_sec": 0.842,
+      "clip_sha256": "30b52a64b34d6f797f1d93eb2284f3bfe5b13b32e71f637fdfbe60208cacbce1",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1105,
+        "duration": 36.870167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0080": {
+      "candidate_id": "CAND_0080",
+      "source_video_id": "439-1_cam02_fight01_place03_day_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam02_fight01_place03_day_winter.mp4",
+      "source_sha256": "80d578ef71131d361887bdc79135e50b41657f49bbb1c9ded9297e8e29681ce6",
+      "requested_window_sec": [
+        258.2,
+        293.2
+      ],
+      "actual_start_sec": 257.39,
+      "actual_end_sec": 294.227,
+      "start_shift_to_keyframe_sec": 0.81,
+      "clip_sha256": "aa67f913157726f73deb55cfc6f56818b3254fad2ce73eaecdd92c88bd589034",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1104,
+        "duration": 36.8368
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0081": {
+      "candidate_id": "CAND_0081",
+      "source_video_id": "439-1_cam02_fight01_place03_day_spring",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam02_fight01_place03_day_spring.mp4",
+      "source_sha256": "296f73f33af7496583bb0d0ddac88d3082f43ce16886d3e18e1dcca91d3cd0f5",
+      "requested_window_sec": [
+        6.6,
+        41.6
+      ],
+      "actual_start_sec": 5.806,
+      "actual_end_sec": 41.642,
+      "start_shift_to_keyframe_sec": 0.794,
+      "clip_sha256": "7ae807db83ebfbce9c4d31be5fdf240b6db6ff743fc7f9eff0a664a1c429a469",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1074,
+        "duration": 35.8358
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0082": {
+      "candidate_id": "CAND_0082",
+      "source_video_id": "439-1_cam02_fight01_place03_day_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam02_fight01_place03_day_summer.mp4",
+      "source_sha256": "6f285e9a4d193cd8a0bb9ad7603e00a804ea45a56d7cc5f99c9e82409d6ee4f0",
+      "requested_window_sec": [
+        9.233,
+        44.233
+      ],
+      "actual_start_sec": 8.709,
+      "actual_end_sec": 44.278,
+      "start_shift_to_keyframe_sec": 0.524,
+      "clip_sha256": "e754bbe3e6869c4b6f06c3ce12479285fd2c1d082140ab1dff15fc55a8f23f76",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1066,
+        "duration": 35.568867
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0083": {
+      "candidate_id": "CAND_0083",
+      "source_video_id": "439-1_cam02_fight01_place03_day_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam02_fight01_place03_day_winter.mp4",
+      "source_sha256": "80d578ef71131d361887bdc79135e50b41657f49bbb1c9ded9297e8e29681ce6",
+      "requested_window_sec": [
+        9.1,
+        44.1
+      ],
+      "actual_start_sec": 8.709,
+      "actual_end_sec": 44.144,
+      "start_shift_to_keyframe_sec": 0.391,
+      "clip_sha256": "5b6c2c7859b8d6903bb2cd7146734b3ac5273409c7ddf3d22042beac187ea1b0",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1062,
+        "duration": 35.4354
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0084": {
+      "candidate_id": "CAND_0084",
+      "source_video_id": "439-1_cam03_fight01_place03_day_summer",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam03_fight01_place03_day_summer.mp4",
+      "source_sha256": "2cca8835b021cb3ee1bb0d27cb76ee24469cb6fb8735e33feadbd308dc5a00c5",
+      "requested_window_sec": [
+        267.1,
+        302.1
+      ],
+      "actual_start_sec": 267.067,
+      "actual_end_sec": 302.135,
+      "start_shift_to_keyframe_sec": 0.033,
+      "clip_sha256": "1a4d8af956229fa60e084ef693e6b7d6fecc3cb7171e35c8bf0c3df00bb16090",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1051,
+        "duration": 35.068367
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0085": {
+      "candidate_id": "CAND_0085",
+      "source_video_id": "439-1_cam03_fight01_place03_day_winter",
+      "source_path": "downloads/fight/19.이상행동CCTV/02.싸움(fight)/실내(원본)/insidedoor_04.zip::439-1/439-1_cam03_fight01_place03_day_winter.mp4",
+      "source_sha256": "e1af41772678f8453c328129d7c34657981030cd8ca44dd7d63d0deb5c94c49f",
+      "requested_window_sec": [
+        256.633,
+        291.633
+      ],
+      "actual_start_sec": 256.423,
+      "actual_end_sec": 291.692,
+      "start_shift_to_keyframe_sec": 0.21,
+      "clip_sha256": "f2dcb3c29b9a15b8e6af42773935f36c44a5266eb3ac4c02000e4346bbe01d2f",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1057,
+        "duration": 35.268567
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0086": {
+      "candidate_id": "CAND_0086",
+      "source_video_id": "710-2_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "3ef54c900f64b1507cf17f3e5819542b4e3062abe7730938118437851223d25a",
+      "requested_window_sec": [
+        175.0,
+        210.0
+      ],
+      "actual_start_sec": 174.174,
+      "actual_end_sec": 210.043,
+      "start_shift_to_keyframe_sec": 0.826,
+      "clip_sha256": "4389c1e5a6fda1689dc2d9a60fd6f9f88da6728c22485269051426259affdc22",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1075,
+        "duration": 35.869167
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0087": {
+      "candidate_id": "CAND_0087",
+      "source_video_id": "710-2_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "3ef54c900f64b1507cf17f3e5819542b4e3062abe7730938118437851223d25a",
+      "requested_window_sec": [
+        260.6,
+        295.6
+      ],
+      "actual_start_sec": 260.293,
+      "actual_end_sec": 296.629,
+      "start_shift_to_keyframe_sec": 0.307,
+      "clip_sha256": "cfd7fa1fc0f1d75fb9bdec909f2e664371535dda3883cb064d2902378bf870f3",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1089,
+        "duration": 36.3363
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0088": {
+      "candidate_id": "CAND_0088",
+      "source_video_id": "710-3_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "bec9d1e85cf6298aea0a3205378b072ce1c699b63c5cce583bfd3f1afa806212",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "917a0a5f3cc1843426d8d0a2329d6bbc7969d064c36c50b6b0f68189e8923012",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0089": {
+      "candidate_id": "CAND_0089",
+      "source_video_id": "710-4_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "aaa3c2e1296fc8783a70afb3055de2f4e534daf95b62258aff1a2ae983fe0a30",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "eed5cda6d206117e830897741809e497db807da4eff9630bb1bb28d5fee4edac",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0090": {
+      "candidate_id": "CAND_0090",
+      "source_video_id": "710-6_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "50881505122ccbc65c4e617cfc95da36a78ff2bd29c8cd22ec6e54c87648615a",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "eba4bb7ff71ac71dcc3515b83b4e662970115d2530e07c2f558bfd854719ae5a",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0091": {
+      "candidate_id": "CAND_0091",
+      "source_video_id": "710-6_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "50881505122ccbc65c4e617cfc95da36a78ff2bd29c8cd22ec6e54c87648615a",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "aaba1a62ccfb33fa2d92310473d82ec9434c5c3525f5f1d284165bd5f8b9c2e7",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0092": {
+      "candidate_id": "CAND_0092",
+      "source_video_id": "710-6_cam01_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_summer.mp4",
+      "source_sha256": "588e00d2c54daba2c2db7dc49ce97c60039edf17b9f7e5a0622729d4a00a5f8e",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "b1f20b5dd9277030c29c6a206800d0ea278cee2cdbbfe39e79c676d0dac920af",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0093": {
+      "candidate_id": "CAND_0093",
+      "source_video_id": "710-6_cam01_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam01_swoon01_place01_day_summer.mp4",
+      "source_sha256": "588e00d2c54daba2c2db7dc49ce97c60039edf17b9f7e5a0622729d4a00a5f8e",
+      "requested_window_sec": [
+        263.9,
+        298.9
+      ],
+      "actual_start_sec": 263.196,
+      "actual_end_sec": 299.933,
+      "start_shift_to_keyframe_sec": 0.704,
+      "clip_sha256": "359e7ffaadb960b43d3e0c1007bb7d68c4ba61103959e643d0964abddb427c57",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1101,
+        "duration": 36.7367
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0094": {
+      "candidate_id": "CAND_0094",
+      "source_video_id": "710-3_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "bec9d1e85cf6298aea0a3205378b072ce1c699b63c5cce583bfd3f1afa806212",
+      "requested_window_sec": [
+        257.0,
+        292.0
+      ],
+      "actual_start_sec": 256.423,
+      "actual_end_sec": 292.059,
+      "start_shift_to_keyframe_sec": 0.577,
+      "clip_sha256": "b7977132c3e3491b8ca5af7f7b3762a8ed50fe49c4b0e83dfaa4512550bdbfa3",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1068,
+        "duration": 35.6356
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0095": {
+      "candidate_id": "CAND_0095",
+      "source_video_id": "710-4_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "aaa3c2e1296fc8783a70afb3055de2f4e534daf95b62258aff1a2ae983fe0a30",
+      "requested_window_sec": [
+        231.4,
+        266.4
+      ],
+      "actual_start_sec": 231.264,
+      "actual_end_sec": 267.433,
+      "start_shift_to_keyframe_sec": 0.136,
+      "clip_sha256": "dbde02aeee23f7c2c416b4e3963cb5c0643229ef3015de8b8712a12d2619fbb1",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1084,
+        "duration": 36.169467
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0096": {
+      "candidate_id": "CAND_0096",
+      "source_video_id": "710-5_cam01_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam01_swoon01_place01_day_spring.mp4",
+      "source_sha256": "7ead4799c7d3df9031fb455ca881400ffe61ec26fabbb81adc5233a9222f56d5",
+      "requested_window_sec": [
+        240.8,
+        275.8
+      ],
+      "actual_start_sec": 239.973,
+      "actual_end_sec": 276.81,
+      "start_shift_to_keyframe_sec": 0.827,
+      "clip_sha256": "3ee618588d2a82197cebfad26383c05edcc6722b1a9d5ba860a674c483fb4388",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1104,
+        "duration": 36.8368
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0097": {
+      "candidate_id": "CAND_0097",
+      "source_video_id": "710-2_cam02_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam02_swoon01_place01_day_spring.mp4",
+      "source_sha256": "20d6e1afa5969e1f237a6c8ba5a421fb6ac924e44bb25df56c8372c5f7fcb72f",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "8c7e1c8c4adc872683fca2f30510048ff873849beba4ca7dabd66610639245ac",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0098": {
+      "candidate_id": "CAND_0098",
+      "source_video_id": "710-2_cam02_swoon01_place01_day_spring",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-2/710-2_cam02_swoon01_place01_day_spring.mp4",
+      "source_sha256": "20d6e1afa5969e1f237a6c8ba5a421fb6ac924e44bb25df56c8372c5f7fcb72f",
+      "requested_window_sec": [
+        260.4,
+        295.4
+      ],
+      "actual_start_sec": 260.293,
+      "actual_end_sec": 296.429,
+      "start_shift_to_keyframe_sec": 0.107,
+      "clip_sha256": "746372f49cee68d621a1b9540a5e7142360791f4e9a924d4d82955281773c812",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1083,
+        "duration": 36.1361
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0099": {
+      "candidate_id": "CAND_0099",
+      "source_video_id": "710-3_cam01_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam01_swoon01_place01_day_summer.mp4",
+      "source_sha256": "7461c26514be8269a65d12f373215b0dbeae0ad8805420a3ce9ccf1426fb71f1",
+      "requested_window_sec": [
+        140.0,
+        175.0
+      ],
+      "actual_start_sec": 139.339,
+      "actual_end_sec": 176.009,
+      "start_shift_to_keyframe_sec": 0.661,
+      "clip_sha256": "9bfcb5e8fef0f661e23c587c9672c0e1d9ff072b3507ae99ff4d70122c31412b",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1099,
+        "duration": 36.669967
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0100": {
+      "candidate_id": "CAND_0100",
+      "source_video_id": "710-3_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "79775bca91a46a61aa8472f7f1b5038190f464747351a411db1cf14a03e49194",
+      "requested_window_sec": [
+        251.8,
+        286.8
+      ],
+      "actual_start_sec": 251.585,
+      "actual_end_sec": 286.854,
+      "start_shift_to_keyframe_sec": 0.215,
+      "clip_sha256": "d28fa3315cedbe2f451bb267fe18d8585780a66554c8dcb9c13783189037fde5",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1057,
+        "duration": 35.268567
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0101": {
+      "candidate_id": "CAND_0101",
+      "source_video_id": "710-4_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-4/710-4_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "1d1890c49ca8169e05e160492047d725dbfe5f42d22dc3463fe789edae3209fe",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "a1f6345a1c202558115ac3683f8be4f7f64ac51809298bd8d4a2934ddae33586",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0102": {
+      "candidate_id": "CAND_0102",
+      "source_video_id": "710-5_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "656b16b0604c6b78e0f87280c1b809e581347925e6ed612167b0909a01dbccd5",
+      "requested_window_sec": [
+        105.0,
+        140.0
+      ],
+      "actual_start_sec": 104.504,
+      "actual_end_sec": 141.007,
+      "start_shift_to_keyframe_sec": 0.496,
+      "clip_sha256": "d345a84f5bbbe7e99f97967767a8712819fb12b55ab9ede4b812d0b507119097",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1094,
+        "duration": 36.503133
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0103": {
+      "candidate_id": "CAND_0103",
+      "source_video_id": "710-6_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "c8f4add32c628c691f732122f73c9211042b591d63be70b15ddce94f8f334adb",
+      "requested_window_sec": [
+        0.0,
+        35.0
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 35.035,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "adf7934fa6d3be1c133bd4737fdb15789eab1b855b3b19204c44edeab16ae7e4",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1050,
+        "duration": 35.035
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0104": {
+      "candidate_id": "CAND_0104",
+      "source_video_id": "710-6_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "c8f4add32c628c691f732122f73c9211042b591d63be70b15ddce94f8f334adb",
+      "requested_window_sec": [
+        70.0,
+        105.0
+      ],
+      "actual_start_sec": 69.67,
+      "actual_end_sec": 105.039,
+      "start_shift_to_keyframe_sec": 0.33,
+      "clip_sha256": "ce4eeb55a9b04ed71cfdc0b8cde8095056e3861240ca66f0bec20df7af1b3f0d",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1060,
+        "duration": 35.368667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0105": {
+      "candidate_id": "CAND_0105",
+      "source_video_id": "710-3_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-3/710-3_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "79775bca91a46a61aa8472f7f1b5038190f464747351a411db1cf14a03e49194",
+      "requested_window_sec": [
+        224.3,
+        259.3
+      ],
+      "actual_start_sec": 223.523,
+      "actual_end_sec": 260.326,
+      "start_shift_to_keyframe_sec": 0.777,
+      "clip_sha256": "a175b56b8073df4ff117352d2da1903633102ca86ef859e105f79ae3ffee9168",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1103,
+        "duration": 36.803433
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0106": {
+      "candidate_id": "CAND_0106",
+      "source_video_id": "710-5_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-5/710-5_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "656b16b0604c6b78e0f87280c1b809e581347925e6ed612167b0909a01dbccd5",
+      "requested_window_sec": [
+        252.1,
+        287.1
+      ],
+      "actual_start_sec": 251.585,
+      "actual_end_sec": 287.154,
+      "start_shift_to_keyframe_sec": 0.515,
+      "clip_sha256": "291d411c88c36a3a88b6d69e76139901d3f6b11a7adec952b1545dcb09e0ee6a",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1066,
+        "duration": 35.568867
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0107": {
+      "candidate_id": "CAND_0107",
+      "source_video_id": "710-6_cam02_swoon01_place01_day_summer",
+      "source_path": "data/recovered/19.이상행동CCTV/05.실신(swoon)/실외/extracted/710-6/710-6_cam02_swoon01_place01_day_summer.mp4",
+      "source_sha256": "c8f4add32c628c691f732122f73c9211042b591d63be70b15ddce94f8f334adb",
+      "requested_window_sec": [
+        224.2,
+        259.2
+      ],
+      "actual_start_sec": 223.523,
+      "actual_end_sec": 260.226,
+      "start_shift_to_keyframe_sec": 0.677,
+      "clip_sha256": "ba1f8bc48b1983120580f9e47594a27b4a4d9917cffbd0b6772099eff566cb5b",
+      "clip_meta": {
+        "width": 3840,
+        "height": 2160,
+        "fps": 29.97002997002997,
+        "codec": "h264",
+        "frames": 1100,
+        "duration": 36.703333
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": null
+    },
+    "CAND_0108": {
+      "candidate_id": "CAND_0108",
+      "source_video_id": "ph_e2038_c1",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2038/ph_e2038_c1.mp4",
+      "source_sha256": "068139d24807274532dfac9abf1efcc77b4ce0c0ac72e2e8207d89c5f6ddb92e",
+      "requested_window_sec": [
+        0.0,
+        30.6
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.6,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "db50befe43a0f2573ac01f78da02d80dbcf71806b6b427fd62ccf697e85b47d9",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 918,
+        "duration": 30.6
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    },
+    "CAND_0109": {
+      "candidate_id": "CAND_0109",
+      "source_video_id": "ph_e2044_c1",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2044/ph_e2044_c1.mp4",
+      "source_sha256": "6cca4c6a8fc830e2d49e81890ecb9e4e07f72b938397a7dca049a645ba9d1e3d",
+      "requested_window_sec": [
+        0.0,
+        30.633
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.633,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "0d0127b0f41731c4f8174a7eef7fa832be70dd4d9f877244b52ae30fa0c899a4",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 919,
+        "duration": 30.633333
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    },
+    "CAND_0110": {
+      "candidate_id": "CAND_0110",
+      "source_video_id": "ph_e2038_c2",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2038/ph_e2038_c2.mp4",
+      "source_sha256": "51e921cd5f5d2ffe066bcefa26885d859247271e735ae63df7d1a2cd143a8813",
+      "requested_window_sec": [
+        0.0,
+        30.967
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.967,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "149614713d6486fb4cebb07418205c5d2102462e8a7047247585f75ded53247b",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 929,
+        "duration": 30.966667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    },
+    "CAND_0111": {
+      "candidate_id": "CAND_0111",
+      "source_video_id": "ph_e2044_c2",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2044/ph_e2044_c2.mp4",
+      "source_sha256": "41a01ca36f904fea839df7ee68c2d9d6dc13dec9824cd448aef65b9158284cf8",
+      "requested_window_sec": [
+        0.0,
+        30.967
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.967,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "e69b4bde4e0fa208db3cdc07d7c2de0932058e75de0404ed6c1393730c582fdb",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 929,
+        "duration": 30.966667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    },
+    "CAND_0112": {
+      "candidate_id": "CAND_0112",
+      "source_video_id": "ph_e2047_c1",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2047/ph_e2047_c1.mp4",
+      "source_sha256": "d8ae0bfea7655a62852b73c4c03e0653896b978f02ab4b256fcb0f824c0d584a",
+      "requested_window_sec": [
+        0.0,
+        30.967
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.967,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "d6576d848b6459e5b21ad5d48708786e5bcacea317cc2c1940e78a8659c0d886",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 929,
+        "duration": 30.966667
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    },
+    "CAND_0113": {
+      "candidate_id": "CAND_0113",
+      "source_video_id": "ph_e2047_c2",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2047/ph_e2047_c2.mp4",
+      "source_sha256": "49c77275c19b7b2fecf3d225f869ae9a250ee5c8ec3e93b01e82a0887fc7c970",
+      "requested_window_sec": [
+        0.0,
+        30.9
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.9,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "2affe619c4c928607f29bc43f484ea66975d6489963f643f082bccf56935f883",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 927,
+        "duration": 30.9
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    },
+    "CAND_0114": {
+      "candidate_id": "CAND_0114",
+      "source_video_id": "ph_e2058_c1",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2058/ph_e2058_c1.mp4",
+      "source_sha256": "89fe5557aa9904d8512e92fba00d22f7f81270d47aa8db39f2cf074ea72a53f5",
+      "requested_window_sec": [
+        0.0,
+        30.4
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.4,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "49f83042ef2abd9311b6bf4cba4d55c4a38384b93c705185f30a0679e397be3d",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 912,
+        "duration": 30.4
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    },
+    "CAND_0115": {
+      "candidate_id": "CAND_0115",
+      "source_video_id": "ph_e2058_c2",
+      "source_path": "downloads/multiview_fight/21.다각도_CCTV_생활안전_데이터/3.개방데이터/2.데이터(NIA)/Validation/01.원천데이터/VS_싸움_신체적충돌을동반한싸움.zip::ph_e2058/ph_e2058_c2.mp4",
+      "source_sha256": "d8842390002cf4a7459f62ce229a04fb2e84b6c5bbcac0143b6fef8dd451d3bd",
+      "requested_window_sec": [
+        0.0,
+        30.633
+      ],
+      "actual_start_sec": 0.0,
+      "actual_end_sec": 30.633,
+      "start_shift_to_keyframe_sec": 0.0,
+      "clip_sha256": "d664c2f04fe030452fae896b39c658f069cfc58fdb5bfc492fd8106f2503cbbc",
+      "clip_meta": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "codec": "h264",
+        "frames": 919,
+        "duration": 30.633333
+      },
+      "method": "stream copy (-c:v copy) from keyframe; no re-encode; audio removed; metadata stripped",
+      "window_exception": "source clip shorter than 35s; whole clip used"
+    }
+  },
+  "source_sha256": {
+    "145-1_cam01_trespass01_place01_day_spring": "755ae59e58db9cee329fa51c55a03c7998061134dfb86666ec58e205df1183a2",
+    "145-2_cam01_trespass01_place01_day_spring": "646101284ab52fe25fc7040271047d7f5e94a51215d92722386a1ffb8f53452c",
+    "145-2_cam01_trespass01_place01_day_summer": "d5d2d59631703f7772c873dbb8291ccf83515a3743f5315c8ebeb427814c5981",
+    "145-3_cam01_trespass01_place01_day_spring": "f73251aa0ce251d235d66fdcdd5e359a5ec93d3c6d46fd020a912b82ddf78c30",
+    "145-4_cam01_trespass01_place01_day_summer": "9bef1848da0e47484b4b28f36a34ecab7f3a4d0de4323871a402af6923aae43b",
+    "145-5_cam01_trespass01_place01_day_spring": "0eeb90556846e8004053ad3958d18b22e97d589ec48596627aae9138e26979a9",
+    "145-5_cam01_trespass01_place01_day_summer": "6b37fe7e25a30e74ec75369561db5a41255f7ba85cd616ffbf52e5f33b34b236",
+    "145-6_cam01_trespass01_place01_day_summer": "cdf89c30cd5d2f6e20d6a850e89131dd78d20c917c7568bdbf95cb231c4565d6",
+    "145-1_cam02_trespass01_place01_day_summer": "d9351f61bec552f5cdedf0120cc792c7b9e7789743514d73934beeee65a83f66",
+    "145-2_cam02_trespass01_place01_day_spring": "b870bbc9dea2319a11e057b344a2c6e7218c7e6e081ec6b39bc4f6295c4ae89e",
+    "145-2_cam02_trespass01_place01_day_summer": "97d6bd14d2e1790fc0f1d0ccd070a243aa7f31f14fe02d48c204d1785eaa23f4",
+    "145-3_cam02_trespass01_place01_day_summer": "6e89073129d0ff9da7a933fe409597dbd4d32e7ece194a05a0ea447bea65ef2b",
+    "145-4_cam02_trespass01_place01_day_summer": "f8f41103866ffc74b4f611cb71ab43e8b70a2605f0aa0656e388f6e5fec69285",
+    "145-5_cam02_trespass01_place01_day_summer": "0ac0be850d8d45cac9efc4998a2217fcee0043fa6a8b6578134f00c3d7243109",
+    "145-6_cam02_trespass01_place01_day_summer": "03a3978fa6e6d22c87d1a086511713e49656a0f11d5615bb92fa0eeda275133a",
+    "146-1_cam01_trespass03_place01_day_spring": "07c36352e288d0f77ac123e1b8412628a2653b78352d7175876cdeba4264f69f",
+    "146-1_cam01_trespass03_place01_day_summer": "40fb924b7e934fe0e7e6242c1d36d5cbef04735657297f2000d9d5406127fe25",
+    "146-2_cam01_trespass03_place01_day_summer": "71e44d4fdf8047afc2a81f178f68fb9db5f85471c036551949e5c9b7148df336",
+    "146-4_cam01_trespass03_place01_day_spring": "fe6946b569e9e234cb5eda8066655b1c8457a03950cb19cf19c07f347a1e689e",
+    "146-4_cam01_trespass03_place01_day_summer": "1c844248bcd90624d72c99b2f6c61f48550d4ebe3c2fcf4246f227be8d2acbe0",
+    "146-5_cam01_trespass03_place01_day_spring": "9c506db42d866deb442653d87a1c047b21124526f0e8f22bcdfe5e7155e4f49b",
+    "146-5_cam01_trespass03_place01_day_summer": "a8ca03322a658e7ca415eb17ae3dedf1866df5907fd9ee4b7e94512d276fd399",
+    "146-1_cam02_trespass03_place01_day_spring": "6ba79f9cb0b45408341abe3c81de385e5bb92ef0acfe2e3adf20438130730ed6",
+    "146-1_cam02_trespass03_place01_day_summer": "e4376f4c85c3c34a3f6ff5cae1941f4164095546c4cdf2f85a3023f6fd8bbd5f",
+    "146-2_cam02_trespass03_place01_day_spring": "7d84c2f59f9d7a416135aebb38baef14c8463e26c47cf0a998faeaaeed3bd01b",
+    "146-2_cam02_trespass03_place01_day_summer": "a6daf4ca2e1b7e8eec81d08760bada644e29a3fb031c35a793f16b9a01241ddc",
+    "146-4_cam02_trespass03_place01_day_spring": "71c50aeae2fc3606f94d03c586c725aecbc1be26e6e5d8cce92f3af2539e2db6",
+    "146-4_cam02_trespass03_place01_day_summer": "025c8ddb4cd0f1fab3a5d9b35fae8abfec2ab60eab7541c4872ce7251e8f3bce",
+    "146-5_cam02_trespass03_place01_day_summer": "5bd807ea7f2626474edf1b980e09acc3b415cb6c5af86eff312ae2b0d2c942b7",
+    "146-3_cam02_trespass03_place01_day_summer": "619d36c083c0b4b83a3d2bd485576a694a611ca3fe6402d1491326aab58ef4ad",
+    "435-2_cam01_fight01_place09_night_winter": "2b80f4a5c3d88f7d716db1f93213b605a6f742fa256a9a89f99da8e356b975df",
+    "435-3_cam01_fight01_place09_night_summer": "7540a22e190b1da1bad5580387258d6ff846b3fe98d84a43a4646215784d9010",
+    "435-4_cam01_fight01_place09_night_spring": "0226856f1ea982b108d97560652efd2bfcdc669eecd59522810411a79fb44906",
+    "435-5_cam01_fight01_place09_night_winter": "b352c632f0ee11cbf5dfb04e8761ae5a58550b9279756786486a7c781567a2c5",
+    "435-6_cam01_fight01_place09_night_spring": "96f500f6af98dc6a23a8b3761cfed0007567d996674daa0d8da7c030a510607a",
+    "435-6_cam01_fight01_place09_night_summer": "903cdc0cf0c83942c34b149de8bdc2c5e4c4f2fe663ddc3577a263f960062dc0",
+    "435-6_cam01_fight01_place09_night_winter": "6d998e9a76b58d242c34755d85345317863eb2608a53efd46072f1f70ca61096",
+    "435-4_cam01_fight01_place09_night_winter": "433d433e592c7244618096bf9e00f40cfb1a738801de6343dfeab3f12095d1d2",
+    "435-3_cam02_fight01_place09_night_spring": "834bead430b1e1adb304ce1fbb9980850ec1eae4ad20ba87867aa11bd6f705e5",
+    "435-3_cam02_fight01_place09_night_summer": "17b7671a075f4170120d27113be0dc96ef399b6c0f569de810862589d346f966",
+    "435-3_cam02_fight01_place09_night_winter": "35eafc568781507c1ce70af437f8339ece1cf7c65097eb96b27cf4144bb2e4ce",
+    "435-4_cam02_fight01_place09_night_spring": "25ca3097971bde2927318d252bc2a93f6c8e9720bfa8e1a58c8089536f627acf",
+    "435-4_cam02_fight01_place09_night_summer": "620a0a5ab1abe8421504912750a2cb724c539f06943706f595e17ab4df933978",
+    "435-5_cam02_fight01_place09_night_winter": "fdcbde2a03c08ca0008e4a42d57513c9ba2c6d9d653afc66697f3365d35e4605",
+    "435-6_cam02_fight01_place09_night_spring": "e65b4baaf92c94a2a9e31ada8826792435f9e29420a44a1c4a84fd98c76bc905",
+    "435-2_cam02_fight01_place09_night_summer": "7111768cb1534cc63c1c28288b19e1076542615604ca2c583daa9d1c0d20cee9",
+    "435-5_cam02_fight01_place09_night_spring": "de18c167a165ea199be6536fa6f069c45efe2905ad489d55e870b0b4770e2526",
+    "435-2_cam03_fight01_place09_night_spring": "dd64abc78ee3a8fa6644eb41fd99912251fe5065cf5c121e15575d45423d66a7",
+    "435-2_cam03_fight01_place09_night_summer": "ddf9858ed8025a860169c2153ba9e632ea2fbe45d3a151b07eadfdd64274181f",
+    "435-3_cam03_fight01_place09_night_spring": "f047e4d8155cf3666a56dc778d492a5303422a9cb928d52a886a6ff0af8b2a8c",
+    "435-3_cam03_fight01_place09_night_summer": "25c2a3bb4ed4607b780dbc6d82666a255b807f04c848afea9f24fffca6329667",
+    "435-3_cam03_fight01_place09_night_winter": "d1a525a47a71f29457b849c996e7db1c2952284f4105944c7319eb3187fb01cb",
+    "435-4_cam03_fight01_place09_night_spring": "9c47021b745f41c863c67d00f779a9026807b1644419c44519c288310bfce715",
+    "439-1_cam01_fight01_place03_day_winter": "3e3cf649344357b82e9036c789493c10276b7980267a16f3add0d6684db6cf17",
+    "439-1_cam01_fight01_place03_day_spring": "3416a4058a1060d72785be8e766ca302c5ea63d43db43e0ba50fb127358a2149",
+    "439-1_cam01_fight01_place03_day_summer": "dd6920fef481b8cc2e16badf0905ea3cb91f01aa74f994ddd456df1462834d8d",
+    "439-1_cam02_fight01_place03_day_spring": "296f73f33af7496583bb0d0ddac88d3082f43ce16886d3e18e1dcca91d3cd0f5",
+    "439-1_cam02_fight01_place03_day_winter": "80d578ef71131d361887bdc79135e50b41657f49bbb1c9ded9297e8e29681ce6",
+    "439-1_cam02_fight01_place03_day_summer": "6f285e9a4d193cd8a0bb9ad7603e00a804ea45a56d7cc5f99c9e82409d6ee4f0",
+    "439-1_cam03_fight01_place03_day_summer": "2cca8835b021cb3ee1bb0d27cb76ee24469cb6fb8735e33feadbd308dc5a00c5",
+    "439-1_cam03_fight01_place03_day_winter": "e1af41772678f8453c328129d7c34657981030cd8ca44dd7d63d0deb5c94c49f",
+    "710-2_cam01_swoon01_place01_day_spring": "3ef54c900f64b1507cf17f3e5819542b4e3062abe7730938118437851223d25a",
+    "710-3_cam01_swoon01_place01_day_spring": "bec9d1e85cf6298aea0a3205378b072ce1c699b63c5cce583bfd3f1afa806212",
+    "710-4_cam01_swoon01_place01_day_spring": "aaa3c2e1296fc8783a70afb3055de2f4e534daf95b62258aff1a2ae983fe0a30",
+    "710-6_cam01_swoon01_place01_day_spring": "50881505122ccbc65c4e617cfc95da36a78ff2bd29c8cd22ec6e54c87648615a",
+    "710-6_cam01_swoon01_place01_day_summer": "588e00d2c54daba2c2db7dc49ce97c60039edf17b9f7e5a0622729d4a00a5f8e",
+    "710-5_cam01_swoon01_place01_day_spring": "7ead4799c7d3df9031fb455ca881400ffe61ec26fabbb81adc5233a9222f56d5",
+    "710-2_cam02_swoon01_place01_day_spring": "20d6e1afa5969e1f237a6c8ba5a421fb6ac924e44bb25df56c8372c5f7fcb72f",
+    "710-3_cam01_swoon01_place01_day_summer": "7461c26514be8269a65d12f373215b0dbeae0ad8805420a3ce9ccf1426fb71f1",
+    "710-3_cam02_swoon01_place01_day_summer": "79775bca91a46a61aa8472f7f1b5038190f464747351a411db1cf14a03e49194",
+    "710-4_cam02_swoon01_place01_day_summer": "1d1890c49ca8169e05e160492047d725dbfe5f42d22dc3463fe789edae3209fe",
+    "710-5_cam02_swoon01_place01_day_summer": "656b16b0604c6b78e0f87280c1b809e581347925e6ed612167b0909a01dbccd5",
+    "710-6_cam02_swoon01_place01_day_summer": "c8f4add32c628c691f732122f73c9211042b591d63be70b15ddce94f8f334adb",
+    "ph_e2038_c1": "068139d24807274532dfac9abf1efcc77b4ce0c0ac72e2e8207d89c5f6ddb92e",
+    "ph_e2044_c1": "6cca4c6a8fc830e2d49e81890ecb9e4e07f72b938397a7dca049a645ba9d1e3d",
+    "ph_e2038_c2": "51e921cd5f5d2ffe066bcefa26885d859247271e735ae63df7d1a2cd143a8813",
+    "ph_e2044_c2": "41a01ca36f904fea839df7ee68c2d9d6dc13dec9824cd448aef65b9158284cf8",
+    "ph_e2047_c1": "d8ae0bfea7655a62852b73c4c03e0653896b978f02ab4b256fcb0f824c0d584a",
+    "ph_e2047_c2": "49c77275c19b7b2fecf3d225f869ae9a250ee5c8ec3e93b01e82a0887fc7c970",
+    "ph_e2058_c1": "89fe5557aa9904d8512e92fba00d22f7f81270d47aa8db39f2cf074ea72a53f5",
+    "ph_e2058_c2": "d8842390002cf4a7459f62ce229a04fb2e84b6c5bbcac0143b6fef8dd451d3bd"
+  }
+}

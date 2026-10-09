@@ -1,0 +1,15 @@
+# Isolated venv (experiments/p0_cv_only/.venv, Python 3.12.6). Global Anaconda env was not modified.
+# torch/torchvision from https://download.pytorch.org/whl/cu126
+torch==2.14.1+cu126
+torchvision==0.29.1+cu126
+ultralytics==8.4.52
+opencv-python==5.0.0.93
+numpy==2.5.2
+scipy==1.18.1
+jsonschema==4.26.0
+referencing==0.37.0
+pyyaml==6.0.3
+psutil==7.2.2
+nvidia-ml-py==13.615.71
+# External tool: ffmpeg 8.0 (on PATH) - used only through benchmark_v1/scripts/load_model_input.py
+# Model weights: models/yolo26n-pose.pt (Ultralytics assets v8.4.0, SHA256 eb3bb8268828aeaf515cec23a4bfafd793944a86fe9af94ba7823609c14522a9)

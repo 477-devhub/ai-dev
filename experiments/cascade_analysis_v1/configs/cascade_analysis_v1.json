@@ -1,0 +1,111 @@
+{
+  "analysis_version": "cascade-analysis-v1",
+  "benchmark_version": "477-reasoning-v1",
+  "mode": "retrospective simulation over frozen artifacts; 0 API calls; nothing outside cascade_analysis_v1/ is written",
+  "disclosure": "Routing rules, flag definitions and reference tiers were written by an implementer who had already seen P0-P4 outputs and GT. Flags use only generic conditions listed in the analysis brief (section 8) and fixed round-number defaults; they were not tuned per item. Because nothing is blind, every threshold result here is in-sample and descriptive.",
+
+  "inputs": {
+    "p1_raw_dir": "experiments/p1_decisions/raw_api",
+    "p1_normalized_dir": "experiments/common_adapter_v2/normalized/p1",
+    "p1_compact_state_dir": "experiments/p1_decisions/compact_states",
+    "p1_question_config": "experiments/p1_decisions/configs/decisions_questions_v1.json",
+    "run_summaries": {
+      "P1": "experiments/p1_decisions/logs/run_summary.json",
+      "P2": "experiments/p2_clef_flash/logs/run_summary.json",
+      "P3": "experiments/p3_gpt61_sol_state/logs/run_summary.json",
+      "P4": "experiments/p4_gpt61_sol_vision/logs/run_summary.json"
+    },
+    "ground_truth": "experiments/p2_clef_flash/evaluation/normalized_ground_truth_v1.json",
+    "scenarios": "benchmark_v1/model_input/scenarios.json",
+    "human_grading_summary": "human_grading/p0_vs_p1_v1/output/summary.csv",
+    "dataset_inventory": "evaluation_selection/dataset_inventory.csv",
+    "frozen_result_manifests": {
+      "P3": "experiments/p3_gpt61_sol_state/freeze/p3_results_manifest.json",
+      "P4": "experiments/p4_gpt61_sol_vision/freeze/p4_results_manifest.json"
+    }
+  },
+
+  "reference_tiers": {
+    "_note": "Danger reference is NOT the AI Hub source label. Tiers come from normalized_ground_truth_v1 human-verified fields.",
+    "anchored_danger": {
+      "definition": "incident_presence_anchor.value == true (human-verified observation)",
+      "scored_for_primary_danger_miss": true
+    },
+    "hv_event_unanchored": {
+      "definition": "human_verified_observation confirms the observable event (e.g. wall crossing) but incident_presence_anchor is not_scored",
+      "scored_for_primary_danger_miss": false
+    },
+    "ambiguous": {
+      "definition": "ambiguous_case == true",
+      "scored_for_primary_danger_miss": false
+    },
+    "diagnostic_source_label_only": {
+      "definition": "only a source-positive label plus selection approval; no human verification of incident presence",
+      "scored_for_primary_danger_miss": false
+    },
+    "clear_normal_negative": {"definition": "human-verified no-incident clip", "count_in_benchmark": "computed"},
+    "hard_normal_negative": {"definition": "human-verified benign clip with confusable motion", "count_in_benchmark": "computed"}
+  },
+  "danger_sets": {
+    "_note": "D_anchor is the only human-anchored set. D_conservative treats every non-ambiguous source-positive assessment as must-surface. It is used only as a conservative safety CONSTRAINT (it can only add escalation), never as an accuracy truth.",
+    "D_anchor": ["anchored_danger"],
+    "D_hv": ["anchored_danger", "hv_event_unanchored"],
+    "D_conservative": ["anchored_danger", "hv_event_unanchored", "diagnostic_source_label_only"]
+  },
+
+  "representation_sensitive_flags": {
+    "F_boundary": "any camera: scene.boundary_semantics_available == false AND (scene.person_entry_observed OR scene.large_spatial_transition_observed OR scene.boundary_crossing truthy)",
+    "F_multicam": "task == multi_camera (synchronization and cross-camera identity unconfirmed by construction)",
+    "F_interaction_lowconf": "camera has >= 1 interaction record AND P1 category_confidence < 0.70",
+    "F_disagree": "(p_incident < 0.5 AND category not in {no_clear_incident}) OR (p_incident >= 0.5 AND category == no_clear_incident) OR category == uncertain",
+    "F_lowconf": "P1 adapter confidence < 0.60 OR P1 category_confidence < 0.50",
+    "F_refusal": "any refused question",
+    "human_review_field": "recorded and analysed, NOT used as a router (9/9 true in P1)"
+  },
+
+  "policies": {
+    "P1_prob": "NORMAL if p <= T_normal; DANGER if p >= T_danger; else SUSPICIOUS",
+    "P2_prob_conf": "NORMAL if p <= T_normal AND adapter confidence >= C_normal; DANGER if p >= T_danger; else SUSPICIOUS",
+    "P3_safety_full": "if any of {F_boundary, F_multicam, F_interaction_lowconf, F_disagree, F_lowconf, F_refusal}: not NORMAL (DANGER still allowed when p >= T_danger, else SUSPICIOUS); otherwise P1_prob",
+    "P3_safety_noboundary": "same as P3_safety_full without F_boundary"
+  },
+  "grid": {
+    "T_normal": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45],
+    "T_danger": [0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.01],
+    "C_normal": [0.5, 0.6, 0.7, 0.8],
+    "_note": "T_normal 0.0 = never suppress; T_danger 1.01 = never direct-alert (everything non-NORMAL goes to P4). Probabilities are uncalibrated routing variables within this dataset only."
+  },
+
+  "stage2": {
+    "model": "P4 GPT-6.1 Sol Vision (frozen p4-v1 outputs reused as if called)",
+    "danger_rule": "P4 is_incident == true (frozen adapter, p >= 0.5)",
+    "human_fallback_rule": "P4 refusal / error / missing -> HUMAN (none occurred)",
+    "not_an_oracle": true,
+    "call_unit": "one P4 request per benchmark item (as actually run). Multi-camera items were one joint request; if any assessment of an item needs P4 the whole observed item cost is charged."
+  },
+  "cost_policy": {
+    "A": "DANGER -> human immediately, no P4",
+    "B": "DANGER -> human immediately AND P4 background verification",
+    "formula_A": "N*P1 + N*suspicious_rate*P4",
+    "formula_B": "N*P1 + N*(suspicious_rate + danger_rate)*P4 (union per item, counted once)"
+  },
+  "lexicographic_objective": [
+    "danger_to_normal_anchor",
+    "danger_to_normal_conservative",
+    "final_miss_conservative",
+    "p4_calls_policyA",
+    "human_queue",
+    "cost_per_candidate_policyA"
+  ],
+  "cost_scenarios": {
+    "candidates_per_day": [100, 500, 1000, 5000],
+    "escalation_rates": [0.01, 0.05, 0.10, 0.20, 0.50, 1.00],
+    "days_per_month": 30,
+    "label": "scenario analysis — not a measured arrival rate"
+  },
+  "normal_source_scan": {
+    "pre_event_guard_sec": 10.0,
+    "window_sec": 35.0,
+    "note": "Pre-event portions of AI Hub abnormal-scenario videos are only CANDIDATE benign windows; they are staged, unverified and must be human-checked before use."
+  }
+}

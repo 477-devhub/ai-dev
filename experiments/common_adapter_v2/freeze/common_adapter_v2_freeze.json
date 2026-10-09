@@ -1,0 +1,19 @@
+{
+  "adapter_version": "common-adapter-v2",
+  "frozen": true,
+  "frozen_at": "2026-10-08T00:11:30+09:00",
+  "hashes": {
+    "config/adapter_v2.json": "dd04161724a92874f242a93560877dd3ea44485773a35815c67dec81fcb1f8e9",
+    "src/common_adapter_v2.py": "4f274d6d91d178083a2c7c7bf78f507cb8112bba085d78f971d7137e7c1a11de"
+  },
+  "supporting_scripts_sha256": {
+    "scripts/normalize_p1_p2.py": "6266cfa244ef524ec865b98e7d732948cedb1b2470f0a5058bb95ae31d91e5a6",
+    "scripts/validate_normalized.py": "792acece32c9755ce931e78bfc0793a9282e993a0b9af03b5c906f3f5b4bc144"
+  },
+  "validated_on": "P1-v1 and P2-v1 stored outputs (14 results, offline, 0 API calls)",
+  "event_type_changes": {
+    "p1": 2,
+    "p2": 5
+  },
+  "applies_to": "P1, P2 (normalized offline), P3 and P4 (in-pipeline), unchanged"
+}

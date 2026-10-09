@@ -1,0 +1,69 @@
+{
+  "frozen_at": "2026-10-08T01:06:36+09:00",
+  "p4_version": "p4-v1",
+  "ground_truth_accessed_before_freeze": false,
+  "prediction_validation": {
+    "ITEM_01": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_02": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_03": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_04": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_05": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_06": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    },
+    "ITEM_07": {
+      "pass": true,
+      "output": "Schema and context validation: PASS"
+    }
+  },
+  "sha256": {
+    "results/p4_gpt61_sol_vision/run_ITEM_01.json": "09fdbe4ed05325dc092732109769536a24e4b7dd20788435d54b66ca01f1561f",
+    "results/p4_gpt61_sol_vision/run_ITEM_02.json": "ced53e219e9c24a6eae82e08d272c53202a123bc17a296f6386aa626a7d69110",
+    "results/p4_gpt61_sol_vision/run_ITEM_03.json": "9c85868b7d18325ea4b2367a6c3e266baa066047ead1ad5cf7bf70fd584b12d0",
+    "results/p4_gpt61_sol_vision/run_ITEM_04.json": "f600eb835221d5ca8af31fcc8b0fecd42db18ecf0a57766f662fdcf61c979f89",
+    "results/p4_gpt61_sol_vision/run_ITEM_05.json": "26d78dd49f832254bb354a478e0039957471f73e6180ef8a6cf985c047b6d4b1",
+    "results/p4_gpt61_sol_vision/run_ITEM_06.json": "6716242ddd8e442d0b18991be0a51600f338dbe413f5ed9445fa2156600e957a",
+    "results/p4_gpt61_sol_vision/run_ITEM_07.json": "da7bd97353a90e1b14ae2b3d746dc494dd90d558ab6310b9f824850eef7a5a44",
+    "raw_api/ITEM_01.json": "4824364e8af8cb26eb2e82e31f21c35d12a77fc65e47c6f3fc1055f9470e7be7",
+    "raw_api/ITEM_02.json": "80316fc98daff09248c5517b28987b4ede870abd5df73ca5e16dcc989dce95d3",
+    "raw_api/ITEM_03.json": "b50de40d87302782bb9d3e35a662c22a9a8e8869bfd16b96dce1ef73d5ac1407",
+    "raw_api/ITEM_04.json": "4203d4872e60b9a5146d35a434f3bd1b53ca4068714ff0ced5a5d3493b7b84b6",
+    "raw_api/ITEM_05.json": "47d109d4e9e20d605f9531a271bc671498ddcfb5f8e43fae060b7ef31fd24a20",
+    "raw_api/ITEM_06.json": "033469f9d72077cf90164bab7e80b7a71601af5348d8a219a948f934c5030e63",
+    "raw_api/ITEM_07.json": "09d4b5550fa29a678f4ef7e93a8e191eae0e557769139611476b6dc98ab09d46",
+    "logs/frame_manifest_ITEM_01.json": "a844b44b0969367f05bc912b12e79e8f1342a33cae64621969fe0e3999ac96dc",
+    "logs/frame_manifest_ITEM_02.json": "e5272016b42052df4538261755246db1a1cf205d5916294c84d4aac76f2c13ea",
+    "logs/frame_manifest_ITEM_03.json": "8ca299ff1ed9c168a006dc3cb881189fc5111db06fcd57d38ed6bd0a0792b9b0",
+    "logs/frame_manifest_ITEM_04.json": "5b3bffddd201e8074d15a4136d1d1a6056f78a777950cec486fc4b1a9e4dfa68",
+    "logs/frame_manifest_ITEM_05.json": "7b4bd0773a5131c3f8583fef3bc4448ba11144c3f355475d43261a85b1a9018d",
+    "logs/frame_manifest_ITEM_06.json": "813785a749401f244a6d32645171a3be962a78b788f4ccc2f609af2355d875a7",
+    "logs/frame_manifest_ITEM_07.json": "9ca680248ca469398bc1cb70b36b979dd431e38783b63026e3ac3505614f22f4",
+    "logs/request_text_ITEM_01.txt": "7ef57de988f9c1b4c3b2585ac56b7b825b4e5ceafd57022ea386fbf09c6c08ac",
+    "logs/request_text_ITEM_02.txt": "7ef57de988f9c1b4c3b2585ac56b7b825b4e5ceafd57022ea386fbf09c6c08ac",
+    "logs/request_text_ITEM_03.txt": "7ef57de988f9c1b4c3b2585ac56b7b825b4e5ceafd57022ea386fbf09c6c08ac",
+    "logs/request_text_ITEM_04.txt": "d3aa50ef3624f6a803c09b6bc1f105eb5d5c9094b24f5bdedf5a8039a5431148",
+    "logs/request_text_ITEM_05.txt": "c35c89dc9a29b344fdaa76c71629d10931ab777ee1840a6326fc011b7934e903",
+    "logs/request_text_ITEM_06.txt": "74a58fc71c86974892b88420fb72340bda0cf6671aeda2ac674255c68d107e6d",
+    "logs/request_text_ITEM_07.txt": "723d485f6f77cc7be662b03ce782e00e94f352aa020e2cd6325e88cae4973bb0",
+    "logs/run_summary.json": "5147afa5e89f64402d7ec2edb66794dbe6666322bb496a2c9af16e9dd0fa81be",
+    "logs/leakage_audit.json": "32834d14c374ec7b7357ef030dcaec62c963bf85f9ea982f5c883c953fe3239c",
+    "runtime_config.json": "3ea2a4f9a7c21d7a145b97e8e809d1b5b0fb4932f139dd052bf23b20fe3b4685",
+    "freeze/p4_freeze.json": "4194e2f227a47ddd9ced51d2f6392555dfbaad29d9c0d3325ff3d8191a6ba607"
+  }
+}

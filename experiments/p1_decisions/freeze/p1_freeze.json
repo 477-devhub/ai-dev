@@ -1,0 +1,52 @@
+{
+  "state_version": "compact-decision-state-v1",
+  "decision_questions_version": "decisions-v1",
+  "model": "gpt-6-luna",
+  "endpoint": "/v1/decisions",
+  "frozen": true,
+  "frozen_at": "2026-10-07T18:15:39+09:00",
+  "hashes": {
+    "schemas/compact_decision_state.schema.json": "2e408fd80f6a0eba9725d97b6b87a02cca9b3dc308b01a24946117c118a31774",
+    "configs/compact_state_v1.yaml": "137dbf6375975f8f9d5f55cac8fe00772bdd43b44347802a1c489ea88ec47f44",
+    "configs/decisions_questions_v1.json": "2e8f9967d83ae500acc07055648a913a0454789a9fa9d4d6ee956dd9cc3b47d4",
+    "src/compact_serializer.py": "b667538b6d81d3530489b0b2287877dcdf1fe26b0ebb9eaeca692ff593a14533",
+    "src/decision_adapter.py": "c6d951fa1689787d00e1a1a2f8a9cf38b4895baad273379f7a4d5c23161b712e",
+    "src/prediction_adapter.py": "e222cc878b6f7f33b9b431c73a002f5dc896cea5567fdf55df36e9c9a80f3ead",
+    "src/decisions_client.py": "e77d66ea957136a7a67a02461ee50629603e62a894740f560083754660659496",
+    "src/p1_pipeline.py": "6164c44ce2493fdc7af5c63070dde6941466d13a9073bd17c5f21b04787d2ca7",
+    "src/cost.py": "4ffeeb75c2de747e1940de21dfe84dae4f93a22878df62149fb2928a7bcd3b19",
+    "src/state_loader.py": "ebefde7b7f0c1b4a5484461b4df41e77295f71a17c3279b3d062445fa7bcd7bb",
+    "src/utils.py": "e5e9473a7182038b43fb751eb9e835c120f66aab80d4523f5fae4570d79005a0"
+  },
+  "compact_state_sha256": {
+    "ITEM_01": "37d36bcfa9fd617aea3653b7a97799015b6120a3e51ddd722489f5bf0f90248a",
+    "ITEM_02": "d5fa17f4a4049cc449f8edb519e737de74e7baf65d7a343b042eb9f83be0d702",
+    "ITEM_03": "0cad333c34224f9f27abb59bf7cffc42fe65825dcec89e0b635e3802c111b51b",
+    "ITEM_04": "585f6a8b0b7294324536d5bb11613e42adaf54d3cffee62d7cf6b08302d5799f",
+    "ITEM_05": "34923012335eeb00c7b77fe07c9c4081abada9efacaecaf8dbec098c2353d243",
+    "ITEM_06": "6961df13b1fbbe696a70b93fbde1e1460236aad27559db838aff34da137daf90",
+    "ITEM_07": "845a79314d701a5f5fa2ed851c4c645d3610caf4258ebb067a421f75b973fd17"
+  },
+  "p0_5_smoke": {
+    "passed": true,
+    "item": "ITEM_01",
+    "model_returned": "gpt-6-luna",
+    "usage": {
+      "input_tokens": 2589,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2589
+    }
+  },
+  "semantic_changes_after_smoke_result": [],
+  "integration_fixes_during_p0_5": [
+    "scripts/smoke_test_decisions.py: benchmark validator subprocess used bare \"python\" (resolved to an interpreter without jsonschema); switched to sys.executable. Harness only; no serializer/question/adapter change. First attempt preserved as raw_api/p0_5_ITEM_01_attempt1_harness_validator_bug.json."
+  ],
+  "note": "Smoke-test answers were stored but their content was not inspected or used for any change before this freeze."
+}

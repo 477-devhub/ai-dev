@@ -1,0 +1,5 @@
+# Isolated venv experiments/p2_clef_flash/.venv (CPython 3.12). P0/P1 venvs untouched.
+httpx==0.28.1         # direct Workers AI REST calls (no Cloudflare SDK, no AI Gateway)
+jsonschema==4.26.0
+referencing==0.37.0
+pyyaml==6.0.3

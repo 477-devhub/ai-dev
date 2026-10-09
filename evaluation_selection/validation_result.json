@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "errors": [],
+  "inventory_rows": 118,
+  "candidate_rows": 25,
+  "ranking_combinations": 3,
+  "source_annotation_hashes_checked": 118,
+  "temporary_zip_crc_checked": 12,
+  "checks": "CSV/JSON candidate rows, image decoding, chronological frame timestamps, scores/reasons, source XML hashes and sizes, extracted CRC, ranking playback bounds"
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triage Review</title>
+<style>
+  :root { --bg:#f7f6f2; --panel:#ffffff; --ink:#1f1f1e; --muted:#6b6a63; --line:#e1e0d8; --accent:#2a78d6; --ok:#1baf7a; --warn:#c98500; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1a1a19; --panel:#242423; --ink:#f2f1ec; --muted:#a8a79f; --line:#3a3a38; --accent:#3987e5; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); }
+  header { display:flex; gap:16px; align-items:center; padding:10px 16px; border-bottom:1px solid var(--line); background:var(--panel); position:sticky; top:0; z-index:2; }
+  header b { font-size:15px; } header .muted { color:var(--muted); }
+  .wrap { display:grid; grid-template-columns:230px 1fr 380px; height:calc(100vh - 49px); }
+  #list { overflow:auto; border-right:1px solid var(--line); background:var(--panel); }
+  #list div { padding:6px 10px; cursor:pointer; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; }
+  #list div.sel { background:color-mix(in srgb, var(--accent) 15%, transparent); }
+  #list .tag { font-size:11px; color:var(--muted); }
+  #list .done .tag { color:var(--ok); }
+  main { overflow:auto; padding:12px; }
+  main img { width:100%; border:1px solid var(--line); border-radius:6px; }
+  main video { width:100%; max-height:48vh; background:#000; border-radius:6px; margin-top:8px; }
+  aside { overflow:auto; padding:12px 14px; border-left:1px solid var(--line); background:var(--panel); }
+  label { display:block; font-weight:600; margin:10px 0 3px; }
+  select, input, textarea { width:100%; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--ink); font:inherit; }
+  textarea { min-height:80px; }
+  .hn { display:grid; grid-template-columns:1fr; gap:2px; font-weight:400; }
+  .hn label { font-weight:400; margin:0; display:flex; gap:6px; align-items:center; }
+  .hn input { width:auto; }
+  .row { display:flex; gap:8px; margin-top:14px; }
+  button { padding:7px 12px; border-radius:6px; border:1px solid var(--line); background:var(--bg); color:var(--ink); cursor:pointer; font:inherit; }
+  button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .note { color:var(--muted); font-size:12px; }
+  .hint { color:var(--warn); font-size:12px; }
+  #msg { font-size:12px; color:var(--ok); }
+  @media (max-width: 900px) { .wrap { grid-template-columns:1fr; height:auto; } #list { max-height:30vh; } }
+</style>
+</head>
+<body>
+<header><b>477-triage-normal-v1 review</b><span class="muted" id="file"></span><span class="muted" id="progress"></span><span id="msg"></span></header>
+<div class="wrap">
+  <div id="list"></div>
+  <main>
+    <div class="note" id="ctx"></div>
+    <img id="sheet" alt="contact sheet">
+    <video id="vid" controls preload="metadata"></video>
+    <p class="note">Contact sheet가 부족하면 전체 영상을 보세요. 넘어짐·충돌·짧은 접촉·경계 넘기는 반드시 영상으로 확인합니다.</p>
+  </main>
+  <aside>
+    <label>reviewer</label><input id="reviewer" placeholder="reviewer_01">
+    <label>review_label</label>
+    <select id="review_label"><option value=""></option><option>CLEAR_NORMAL</option><option>HARD_NEGATIVE_NORMAL</option><option>ANCHORED_DANGER</option><option>AMBIGUOUS</option><option>EXCLUDE</option></select>
+    <label>review_confidence</label>
+    <select id="review_confidence"><option value=""></option><option>HIGH</option><option>MEDIUM</option><option>LOW</option></select>
+    <label>observable_summary <span class="note">(observable facts + clip times only)</span></label>
+    <textarea id="observable_summary"></textarea>
+    <div id="forbid" class="hint"></div>
+    <div id="f_normal"><label>normal_subtype</label>
+      <select id="normal_subtype"><option value=""></option><option>walking</option><option>standing</option><option>sitting</option><option>entering_or_leaving</option><option>passing_each_other</option><option>conversation</option><option>vehicle_only</option><option>empty_scene</option><option>other</option></select></div>
+    <div id="f_hn"><label>hard_negative_type_if_any</label><div class="hn" id="hnbox"></div></div>
+    <div id="f_danger"><label>danger_type_if_any</label>
+      <select id="danger_type_if_any"><option value=""></option><option>possible_fall_or_person_down</option><option>possible_physical_conflict</option><option>clear_boundary_crossing</option><option>other_visual_safety_incident</option></select></div>
+    <div id="f_amb"><label>ambiguous_reason</label><input id="ambiguous_reason"></div>
+    <div id="f_exc"><label>exclude_reason</label>
+      <input id="exclude_reason" list="excl" placeholder="event_leakage / bad_quality / duplicate_of:CAND_XXXX / not_usable_other:..."><datalist id="excl"><option>event_leakage</option><option>bad_quality</option><option>not_usable_other:</option></datalist></div>
+    <div class="row"><button id="prev">◀ Prev</button><button class="primary" id="save">Save &amp; next ▶</button></div>
+    <p class="note">Saved directly into the queue CSV (previous version kept in review/backups/). Suggested types are hidden on purpose.</p>
+  </aside>
+</div>
+<script>
+const HN = ["HN01_crouch_then_recover","HN02_sit_or_lie_normally","HN03_normal_running","HN04_normal_doorway_entry","HN05_normal_gate_entry","HN06_close_pair","HN07_brief_physical_contact","HN08_object_pickup","HN09_bending","HN10_occlusion","HN11_darkness_or_low_visibility","HN12_crowd_flow","HN13_rapid_arm_motion_non_conflict","HN14_person_temporarily_on_ground_non_incident","HN15_camera_motion_or_visual_noise"];
+const FORBID = /\b(criminal|illegal|trespass\w*|intruder|burglar|thief|attacker|victim|assault\w*|fainted|unconscious|medical emergency|seizure|drunk|suspicious person)\b/i;
+const F = ["review_label","review_confidence","observable_summary","danger_type_if_any","normal_subtype","ambiguous_reason","exclude_reason"];
+let rows = [], i = 0;
+const $ = id => document.getElementById(id);
+$("hnbox").innerHTML = HN.map(h => `<label><input type="checkbox" value="${h}">${h}</label>`).join("");
+try { $("reviewer").value = localStorage.getItem("triage_reviewer") || ""; } catch (e) {}
+
+function vis() {
+  const l = $("review_label").value;
+  $("f_normal").style.display = l === "CLEAR_NORMAL" ? "" : "none";
+  $("f_hn").style.display = l === "HARD_NEGATIVE_NORMAL" ? "" : "none";
+  $("f_danger").style.display = l === "ANCHORED_DANGER" ? "" : "none";
+  $("f_amb").style.display = l === "AMBIGUOUS" ? "" : "none";
+  $("f_exc").style.display = l === "EXCLUDE" ? "" : "none";
+  const m = $("observable_summary").value.match(FORBID);
+  $("forbid").textContent = m ? `금지 표현: "${m[0]}" — 관찰 사실로 바꿔 주세요` : "";
+}
+function list() {
+  const done = rows.filter(r => r.review_label).length;
+  $("progress").textContent = `${done} / ${rows.length} labelled`;
+  $("list").innerHTML = rows.map((r, k) => `<div class="${k === i ? "sel" : ""} ${r.review_label ? "done" : ""}" data-k="${k}"><span>${r.candidate_id}</span><span class="tag">${r.review_label ? r.review_label.replace("_NORMAL","").replace("ANCHORED_","") : "—"}</span></div>`).join("");
+  document.querySelectorAll("#list div").forEach(d => d.onclick = () => { i = +d.dataset.k; show(); });
+}
+function show() {
+  const r = rows[i];
+  $("sheet").src = "/" + r.contact_sheet;
+  $("vid").src = "/" + r.review_clip;
+  $("ctx").textContent = `${r.candidate_id} · source window ${(+r.start_sec).toFixed(1)}–${(+r.end_sec).toFixed(1)} s · source scenario label (context only, NOT the answer): ${r.source_label || "—"}`;
+  F.forEach(k => $(k).value = r[k] || "");
+  const hs = (r.hard_negative_type_if_any || "").split("|");
+  document.querySelectorAll("#hnbox input").forEach(c => c.checked = hs.includes(c.value));
+  vis(); list();
+  document.querySelector("#list .sel")?.scrollIntoView({block:"nearest"});
+}
+async function save(next) {
+  const r = rows[i];
+  const body = { candidate_id: r.candidate_id, reviewer: $("reviewer").value.trim() };
+  try { localStorage.setItem("triage_reviewer", body.reviewer); } catch (e) {}
+  F.forEach(k => body[k] = $(k).value);
+  body.hard_negative_type_if_any = [...document.querySelectorAll("#hnbox input:checked")].map(c => c.value).join("|");
+  const l = body.review_label;
+  if (l !== "CLEAR_NORMAL") body.normal_subtype = "";
+  if (l !== "HARD_NEGATIVE_NORMAL") body.hard_negative_type_if_any = "";
+  if (l !== "ANCHORED_DANGER") body.danger_type_if_any = "";
+  if (l !== "AMBIGUOUS") body.ambiguous_reason = "";
+  if (l !== "EXCLUDE") body.exclude_reason = "";
+  body.reviewed_at = l ? new Date().toISOString().slice(0, 16) : "";
+  const res = await fetch("/api/save", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify(body) });
+  if (!res.ok) { $("msg").textContent = "save failed"; return; }
+  Object.assign(r, body);
+  $("msg").textContent = `saved ${r.candidate_id}`;
+  if (next && i < rows.length - 1) i++;
+  show();
+}
+["review_label","observable_summary"].forEach(k => $(k).addEventListener("input", vis));
+$("save").onclick = () => save(true);
+$("prev").onclick = () => { if (i > 0) { i--; show(); } };
+fetch("/api/queue").then(r => r.json()).then(d => {
+  rows = d.rows; $("file").textContent = d.file;
+  const first = rows.findIndex(r => !r.review_label); i = first < 0 ? 0 : first; show();
+});
+</script>
+</body>
+</html>

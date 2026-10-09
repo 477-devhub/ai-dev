@@ -1,0 +1,66 @@
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+credentials.json
+
+# Python environments and generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.uv_cache/
+.cache/
+
+# Downloaded datasets, videos, and derived media
+/data/
+/downloads/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.jpg
+*.jpeg
+*.png
+
+# Private evaluation labels and local run artifacts
+477 AI Cost–Accuracy Experiment Plan — P0 to P4.md
+**/private_ground_truth/
+**/results/
+**/grades/
+**/cases/
+**/output/
+**/logs/
+**/states/
+**/cv_states/
+**/raw_api/
+**/attempts/
+**/frame_manifests/
+**/blind_manifest.json
+**/reveal_map_private.json
+*.pt
+**/*.log
+**/workflow_status.json
+
+# Editor and OS files
+.claude/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+organized_data/01_source_datasets/
+organized_data/02_selection_artifacts/
+organized_data/03_benchmark/
+**/_work/
+**/cv_logs/
+experiments/triage_frozen_v1/analysis/
+experiments/triage_frozen_v1/external_api_authorization.json
+human_grading/**/grading_reference.md
+human_grading/**/case_guides.yaml

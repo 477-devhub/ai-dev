@@ -1,0 +1,376 @@
+{
+  "benchmark_version": "477-reasoning-v1",
+  "pipeline": "cv_llm",
+  "run_id": "p1_decisions-v1+common-adapter-v2",
+  "item_id": "ITEM_07",
+  "model_id": "p1_decisions:gpt-6-luna@v1-decisions",
+  "runtime_config": {
+    "pipeline_actual": "p1_openai_decisions",
+    "pipeline_schema_value_note": "result.schema.json enum allows only vlm_only/cv_llm; this is the P1 Decisions-API pipeline.",
+    "decision_model": "gpt-6-luna",
+    "decision_model_returned": "gpt-6-luna",
+    "decision_endpoint": "/v1/decisions",
+    "input_modality": "text only (compact CV state); no images",
+    "compact_state_version": "compact-decision-state-v1",
+    "compact_state_sha256": "845a79314d701a5f5fa2ed851c4c645d3610caf4258ebb067a421f75b973fd17",
+    "decision_questions_version": "decisions-v1",
+    "question_count": 10,
+    "source_cv_state": "experiments/p0_cv_only/states/ITEM_07.json (cv-state-v1, P0 cached; CV not re-run)",
+    "requests_for_item": 1,
+    "usage": {
+      "input_tokens": 7521,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_tokens": 7521,
+      "compute_units": null
+    },
+    "external_api_cost_usd": 0.0007521,
+    "pricing": {
+      "model": "gpt-6-luna",
+      "endpoint": "/v1/decisions",
+      "service_tier": "standard (default; no tier parameter sent)",
+      "input_usd_per_1m_tokens": 0.1,
+      "billing_rule": "Decisions API: input tokens only; no cache-read, cache-write or output-token charges",
+      "long_context_threshold_tokens": 272000,
+      "long_context_input_multiplier": 2.0,
+      "pricing_source": "https://developers.openai.com/api/docs/guides/decisions (pricing paragraph: \"input costs $0.10 per 1M tokens. You pay only for input tokens\")",
+      "pricing_cross_check": "https://developers.openai.com/api/docs/models/gpt-6-luna lists Standard text rates input $0.10, cached $0.01, cache write $0.125, output $0.50 per 1M (chat endpoints); the Decisions-specific rule above was applied.",
+      "pricing_checked_date": "2026-10-07",
+      "regional_processing_premium_applied": false
+    },
+    "latency": {
+      "definition": "cached-state timing only (P0 CV state reused); NOT full end-to-end; result latency_ms left null",
+      "serializer_latency_ms": 4.047,
+      "decision_api_latency_ms": 1847.94,
+      "decision_api_total_including_retries_ms": 1850.31,
+      "openai_processing_ms_header": "1777",
+      "adapter_latency_ms": 1.505,
+      "cached_state_pipeline_latency_ms": 1855.86
+    },
+    "retry_count": 0,
+    "refusal_count": 0,
+    "request_id": "req_2e5643fb8df744a09e2b2c5999d63e21",
+    "decision_summary": {
+      "p_incident": 0.79,
+      "is_incident": true,
+      "category": "possible_fall_or_person_down",
+      "category_confidence": 0.82,
+      "risk": {
+        "severity": 0.53,
+        "imminence": 0.6575,
+        "exposure": 0.5925,
+        "persistence": 0.5275
+      },
+      "priority_score": 0.5804,
+      "confidence": 0.805,
+      "p_human_review": 0.94,
+      "human_review_required": true,
+      "refused_questions": [],
+      "p_same_incident": 0.71,
+      "same_incident": true,
+      "p_second_view_adds": 0.85,
+      "second_view_adds": true,
+      "multiview_value": 0.2625
+    },
+    "raw_api_file": "experiments/p1_decisions/raw_api/ITEM_07.json",
+    "llm_free_text_generation": false,
+    "access_audit": {
+      "files_opened": 1,
+      "forbidden_paths_opened": [],
+      "pass": true
+    },
+    "common_adapter_v2": {
+      "adapter_version": "common-adapter-v2",
+      "incident_threshold": 0.5,
+      "event_type_changes": 0,
+      "assessments": [
+        {
+          "raw_decision": {
+            "incident_probability": 0.79,
+            "incident_category": "possible_fall_or_person_down",
+            "incident_category_confidence": 0.82
+          },
+          "normalized_decision": {
+            "is_incident": true,
+            "event_type": "possible fall or person-down event"
+          },
+          "rule": "R2",
+          "assessment": "multi_camera",
+          "v1_event_type": "possible fall or person-down event",
+          "event_type_changed": false
+        }
+      ],
+      "source_v1_result": "benchmark_v1/results/p1_decisions/run_ITEM_07.json",
+      "source_v1_result_sha256": "1a213a47be6560b4b5a059201f95b5de946a4deea16631451034762875773c2a",
+      "source_raw_api": "experiments/p1_decisions/raw_api/ITEM_07.json",
+      "source_raw_api_sha256": "ba58171dd7cd233470a1568304cf5c5597c64e93e70a9b4f832966878d3095fc",
+      "offline_rebuild_equals_v1": true,
+      "api_calls": 0,
+      "note": "v1 result is the official raw experiment record; this file is the normalized common-adapter-v2 presentation"
+    }
+  },
+  "input_fingerprint": {
+    "prompt_sha256": "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146",
+    "prediction_schema_sha256": "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d",
+    "media_sha256": {
+      "CAM_01": "5e07a830faa3e535e8ebaeacb008b646dd410fbd195e21a9ca31941d6a7318bc",
+      "CAM_02": "58e36d22315878479422e9161dd8ce63ddd167fb08bedde340d9da480e0f3eaf"
+    },
+    "sampling_protocol_id": "uniform_total64_v1",
+    "frame_numbers": {
+      "CAM_01": [
+        0,
+        30,
+        59,
+        89,
+        118,
+        148,
+        178,
+        207,
+        237,
+        267,
+        296,
+        326,
+        355,
+        385,
+        415,
+        444,
+        474,
+        503,
+        533,
+        563,
+        592,
+        622,
+        651,
+        681,
+        711,
+        740,
+        770,
+        800,
+        829,
+        859,
+        888,
+        918
+      ],
+      "CAM_02": [
+        0,
+        31,
+        62,
+        92,
+        123,
+        154,
+        185,
+        215,
+        246,
+        277,
+        308,
+        339,
+        369,
+        400,
+        431,
+        462,
+        492,
+        523,
+        554,
+        585,
+        615,
+        646,
+        677,
+        708,
+        739,
+        769,
+        800,
+        831,
+        862,
+        892,
+        923,
+        954
+      ]
+    }
+  },
+  "prediction": {
+    "event_type": "possible fall or person-down event",
+    "is_incident": true,
+    "observations": [
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 0.0,
+        "description": "0-3 person(s) detected per sampled frame (median 0); persons present in 41% of 32 samples about 1.00s apart; CV reliability 0.53."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 0.0,
+        "description": "T2 and T3: minimum distance 0.24 body heights; close in 100% of 3 co-observed samples (about 3.9s); relative motion when close 0.18 bh/s; contact proxy 0.45 (heuristic visual proxy, not confirmed contact)."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 1.97,
+        "description": "T3: standing posture proxy at 2.0s and low posture posture proxy at 3.0s (transition confidence 0.72; downward change -0.17 body heights, reliability limited)."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 2.97,
+        "description": "T3: low/horizontal posture proxy persisted for about 1.0s after the transition."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 3.93,
+        "description": "T4 first appears away from the frame edge at 3.9s."
+      },
+      {
+        "camera": "CAM_01",
+        "timestamp_sec": 16.77,
+        "description": "T6 first appears away from the frame edge at 16.8s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 0.0,
+        "description": "0-4 person(s) detected per sampled frame (median 2); persons present in 97% of 32 samples about 1.03s apart; CV reliability 0.74."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 0.0,
+        "description": "T3 moves about 0.51 frame heights across the image between 0.0s and 4.1s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 1.03,
+        "description": "T2 and T4: minimum distance 0.00 body heights; close in 94% of 18 co-observed samples (about 16.4s); relative motion when close 0.26 bh/s; contact proxy 0.34 (heuristic visual proxy, not confirmed contact)."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 1.03,
+        "description": "T4 first appears away from the frame edge at 1.0s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 1.03,
+        "description": "T4 moves about 0.83 frame heights across the image between 1.0s and 19.5s."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 16.4,
+        "description": "T4: standing posture proxy at 16.4s and crouched posture proxy at 18.5s (transition confidence 0.62; downward change 0.78 body heights, reliability limited)."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 18.47,
+        "description": "T4: low/horizontal posture proxy persisted for about 1.0s after the transition."
+      },
+      {
+        "camera": "CAM_02",
+        "timestamp_sec": 21.53,
+        "description": "T2: standing posture proxy at 21.5s and low posture posture proxy at 23.6s (transition confidence 0.59; downward change 0.13 body heights, reliability limited)."
+      }
+    ],
+    "temporal_summary": "CAM_01: 32 samples over 30.6s; up to 3 person(s). T3 observed 0.0-3.9s (standing -> low_posture), standing-to-low posture change 2.0-3.0s. T4 observed 3.9-9.9s (standing -> standing). T6 observed 16.8-17.8s (low_posture -> standing). T2 observed 0.0-3.9s (standing -> standing). CAM_02: 32 samples over 31.8s; up to 4 person(s). T2 observed 0.0-30.8s (low_posture -> standing), standing-to-low posture change 21.5-23.6s. T4 observed 1.0-19.5s (standing -> horizontal), standing-to-crouched change 16.4-18.5s. T3 observed 0.0-4.1s (standing -> standing). T5 observed 27.7-30.8s (crouched -> standing).",
+    "risk": {
+      "severity": 0.53,
+      "imminence": 0.6575,
+      "exposure": 0.5925,
+      "persistence": 0.5275
+    },
+    "confidence": 0.805,
+    "uncertainties": [
+      "Sparse sampling (about 1.00, 1.03s between frames); brief actions between samples may be missed.",
+      "Boundary semantics (gates, walls, restricted areas) are unavailable; authorization cannot be determined.",
+      "Track association reliability is limited (fragmented or ambiguous tracks).",
+      "Contact, arm-extension and limb-motion values are heuristic 2D proxies, not confirmed physical contact or actions.",
+      "Posture labels are automatic proxies; the cause of a posture change and any medical condition cannot be determined.",
+      "Some sampled frames are very dark.",
+      "Camera synchronization is not confirmed; only normalized clip phases are compared.",
+      "Cross-camera identity is not confirmed."
+    ],
+    "reason": "OpenAI Decisions API (gpt-6-luna) typed answers over the compact CV observation state (text only, no images): incident probability 0.79; category 'possible_fall_or_person_down' (confidence 0.82); severity 0.53, imminence 0.66, exposure 0.59, persistence 0.53 (0-1); human-review probability 0.94. Observation texts are generated deterministically from CV features, not by the model.",
+    "human_review_required": true,
+    "same_incident": true,
+    "camera_evidence": {
+      "CAM_01": [
+        {
+          "camera": "CAM_01",
+          "timestamp_sec": 0.0,
+          "description": "0-3 person(s) detected per sampled frame (median 0); persons present in 41% of 32 samples about 1.00s apart; CV reliability 0.53."
+        },
+        {
+          "camera": "CAM_01",
+          "timestamp_sec": 0.0,
+          "description": "T2 and T3: minimum distance 0.24 body heights; close in 100% of 3 co-observed samples (about 3.9s); relative motion when close 0.18 bh/s; contact proxy 0.45 (heuristic visual proxy, not confirmed contact)."
+        },
+        {
+          "camera": "CAM_01",
+          "timestamp_sec": 1.97,
+          "description": "T3: standing posture proxy at 2.0s and low posture posture proxy at 3.0s (transition confidence 0.72; downward change -0.17 body heights, reliability limited)."
+        },
+        {
+          "camera": "CAM_01",
+          "timestamp_sec": 2.97,
+          "description": "T3: low/horizontal posture proxy persisted for about 1.0s after the transition."
+        },
+        {
+          "camera": "CAM_01",
+          "timestamp_sec": 3.93,
+          "description": "T4 first appears away from the frame edge at 3.9s."
+        },
+        {
+          "camera": "CAM_01",
+          "timestamp_sec": 16.77,
+          "description": "T6 first appears away from the frame edge at 16.8s."
+        }
+      ],
+      "CAM_02": [
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 0.0,
+          "description": "0-4 person(s) detected per sampled frame (median 2); persons present in 97% of 32 samples about 1.03s apart; CV reliability 0.74."
+        },
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 0.0,
+          "description": "T3 moves about 0.51 frame heights across the image between 0.0s and 4.1s."
+        },
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 1.03,
+          "description": "T2 and T4: minimum distance 0.00 body heights; close in 94% of 18 co-observed samples (about 16.4s); relative motion when close 0.26 bh/s; contact proxy 0.34 (heuristic visual proxy, not confirmed contact)."
+        },
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 1.03,
+          "description": "T4 first appears away from the frame edge at 1.0s."
+        },
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 1.03,
+          "description": "T4 moves about 0.83 frame heights across the image between 1.0s and 19.5s."
+        },
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 16.4,
+          "description": "T4: standing posture proxy at 16.4s and crouched posture proxy at 18.5s (transition confidence 0.62; downward change 0.78 body heights, reliability limited)."
+        },
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 18.47,
+          "description": "T4: low/horizontal posture proxy persisted for about 1.0s after the transition."
+        },
+        {
+          "camera": "CAM_02",
+          "timestamp_sec": 21.53,
+          "description": "T2: standing posture proxy at 21.5s and low posture posture proxy at 23.6s (transition confidence 0.59; downward change 0.13 body heights, reliability limited)."
+        }
+      ]
+    },
+    "cross_camera_summary": "Decisions API same-incident probability 0.71 (threshold 0.5) -> same_incident=true. Base CV cross-camera observations: temporal pattern similarity 0.92, motion peak similarity 0.39, posture transition similarity 0.55, person count similarity 0.00 (all limited-reliability, normalized-phase comparisons); visibility complementarity 1.00. Camera synchronization is not confirmed. Cross-camera identity is not confirmed.",
+    "additional_information_from_second_view": [
+      "Decisions API: second view adds useful evidence with probability 0.85; multi-view evidence value 0.26 (0-1).",
+      "CAM_02 has person observations during normalized phases where CAM_01 person visibility is low: 0.44-0.50, 0.62-0.69, 0.69-0.75, 0.75-0.81, 0.81-0.88, 0.88-0.94 ...."
+    ]
+  },
+  "human_grading": null,
+  "latency_ms": null,
+  "estimated_cost_usd": null,
+  "input_tokens": 7521,
+  "output_tokens": 0
+}

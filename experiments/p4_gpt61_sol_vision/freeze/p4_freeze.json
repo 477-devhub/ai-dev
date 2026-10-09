@@ -1,0 +1,53 @@
+{
+  "p4_version": "p4-v1",
+  "model": "gpt-6.1-sol",
+  "endpoint": "/v1/responses",
+  "reasoning_effort": "high",
+  "service_tier": "default",
+  "tools": [],
+  "store": false,
+  "image_detail": "high",
+  "transport": "lossless_webp q50 m2",
+  "frame_protocol": "uniform_total64_v1",
+  "frozen": true,
+  "frozen_at": "2026-10-08T00:54:59+09:00",
+  "gates": {
+    "smoke": true,
+    "transport": true,
+    "preflight": true
+  },
+  "hashes": {
+    "configs/p4_v1.json": "589aef81fedd91693057fcbfcd41599edb544881a324c6f07ca6a18d9606928c",
+    "configs/visual_prompt_v1.txt": "c6624b759317cdeca064b0dda93f489696611303b50d26e2fd9c34e8534f7237",
+    "schemas/visual_single.schema.json": "a2297b691dfedee2c0c7b9b8eb10188bdd63afa05f61422730740e8626a36e3b",
+    "schemas/visual_attention.schema.json": "f89d76fbf43ea04909c16ec5f664fa7121e1339d45cd1458b11fda8b9b1b37a8",
+    "schemas/visual_multi.schema.json": "e1eeb37c7819b653f3230f207c5e4923746430d76edf455b8616359db36aa61b",
+    "src/image_encoder.py": "578e1882ee1dd5ea068d027bbf6fae95361d16a364313feb24c0d153a00f5f8d",
+    "src/visual_prompt_builder.py": "66252280aed00e28156d0644a937be705918cc412275056c2851d5bdb5039b57",
+    "src/raw_visual_adapter.py": "1c5e1f329d251b969f8eb1cb10795c64bc08a3e1e050e82123a9824bbbed602a",
+    "src/prediction_adapter.py": "80a127bc8386bfb31493b98539b1750176fe81df7a9125bb95b509dc6008e7b6",
+    "src/frame_loader.py": "aae0d0a0392925f20fa7c043b9f1856d1b0821cf7a1fa9f0b5dbadc2d05985c1",
+    "src/openai_client.py": "a9fabd7e629f030017c9444d9c79a3cd91172827d526ee542a25206bc3969278",
+    "src/p4_pipeline.py": "2117dbc90fa651734c3004209973ced8e93bf41438fcd45df24ac2169cb9884a",
+    "src/common_adapter_bridge.py": "797bbc79e656fdfbe4a2c460f0e18913071c6f252140e0665d0404e8e9e6260a",
+    "src/cost.py": "cf06f24a117b866129d70c23961c890f5f0584b9a26b3c4ebf7a1f32292debe8",
+    "src/utils.py": "f6570c284d8b9eebfdde58eff7c6a5175fff8cf9a2f32942eddc8aa1a39585fb",
+    "src/access_audit.py": "ff08152ae7f565f59168fedb5da195df5b877610034746da50a27dc2bd20aeba"
+  },
+  "transport_verification_sha256": "aa6d81f1ffbf437a5b15a2dcca74b8ed3dc7654982423f685f3937c76dba5fc7",
+  "preflight_sha256": "8760a5c8343d052cdce689e81b9e2e09bc95b6285edf479b98744d92d9610061",
+  "common_adapter_v2_freeze": {
+    "freeze_frozen_at": "2026-10-08T00:11:30+09:00",
+    "hashes": {
+      "config/adapter_v2.json": "dd04161724a92874f242a93560877dd3ea44485773a35815c67dec81fcb1f8e9",
+      "src/common_adapter_v2.py": "4f274d6d91d178083a2c7c7bf78f507cb8112bba085d78f971d7137e7c1a11de"
+    }
+  },
+  "benchmark_responses_seen_before_freeze": false,
+  "benchmark_frames_sent_to_api_before_freeze": false,
+  "semantic_changes_after_benchmark_output": [],
+  "pre_freeze_integration_fixes": [
+    "src/access_audit.py: shell heredoc dropped a backslash (SyntaxError); restored before any API call"
+  ],
+  "note": "Any change to prompt/detail/transport/category/effort/sampling/frame count/evidence limit/threshold/adapter after benchmark output is P4-v2."
+}

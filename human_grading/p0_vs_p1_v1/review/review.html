@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>477 Blind Grading</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">477 Blind Human Grading <span class="muted">System A / System B</span></div>
+  <div id="reviewerBox"></div>
+  <div id="progressBox"></div>
+  <div class="actions">
+    <button id="btnGuide" type="button">채점 기준 전체 보기</button>
+    <button id="btnExport" type="button">Export grading JSON</button>
+    <button id="btnSave" type="button">Save to server</button>
+    <label class="filebtn">Import JSON<input id="fileImport" type="file" accept="application/json"></label>
+  </div>
+</header>
+<div id="layout">
+  <nav id="nav"></nav>
+  <main id="main"><p class="muted">Loading…</p></main>
+</div>
+<div id="modal" hidden><div class="modal-inner"><button id="modalClose" type="button" class="close">닫기 ✕</button><div id="modalBody"></div></div></div>
+<div id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

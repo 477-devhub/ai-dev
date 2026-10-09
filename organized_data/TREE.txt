@@ -1,0 +1,57 @@
+organized_data/
+01_source_datasets/
+    aihub_171_abnormal_cctv/
+        fight/
+            insidedoor_04.zip -> \\?\D:\projects\477\downloads\fight\19.이상행동CCTV\02.싸움(fight)\실내(원본)\insidedoor_04.zip
+            original -> \\?\D:\projects\477\downloads\fight\19.이상행동CCTV\02.싸움(fight)
+        swoon/
+            archive_recovery_artifacts/
+                실외/
+                    outsidedoor_11.zip -> \\?\D:\projects\477\data\recovered\19.이상행동CCTV\05.실신(swoon)\실외\outsidedoor_11.zip
+            extracted -> \\?\D:\projects\477\data\recovered\19.이상행동CCTV\05.실신(swoon)\실외\extracted
+        trespass/
+            archive_recovery_artifacts/
+                실외/
+                    outsidedoor_01.zip -> \\?\D:\projects\477\data\recovered\19.이상행동CCTV\07.침입(trespass)\실외\outsidedoor_01.zip
+            extracted -> \\?\D:\projects\477\data\recovered\19.이상행동CCTV\07.침입(trespass)\실외\extracted
+    aihub_71953_multiview_cctv/
+        fight/
+            labels/
+                VL_싸움_신체적충돌을동반한싸움.zip -> \\?\D:\projects\477\downloads\multiview_fight\21.다각도_CCTV_생활안전_데이터\3.개방데이터\2.데이터(NIA)\Validation\02.라벨링데이터\VL_싸움_신체적충돌을동반한싸움.zip
+            source_video/
+                VS_싸움_신체적충돌을동반한싸움.zip -> \\?\D:\projects\477\downloads\multiview_fight\21.다각도_CCTV_생활안전_데이터\3.개방데이터\2.데이터(NIA)\Validation\01.원천데이터\VS_싸움_신체적충돌을동반한싸움.zip
+02_selection_artifacts/
+    multiview/
+        contact_sheets -> \\?\D:\projects\477\evaluation_selection\multiview\contact_sheets
+        integration_recommendation.md -> \\?\D:\projects\477\evaluation_selection\multiview\integration_recommendation.md
+        multiview_candidate_report.md -> \\?\D:\projects\477\evaluation_selection\multiview\multiview_candidate_report.md
+        multiview_candidates.csv -> \\?\D:\projects\477\evaluation_selection\multiview\multiview_candidates.csv
+        multiview_candidates.json -> \\?\D:\projects\477\evaluation_selection\multiview\multiview_candidates.json
+    singleview/
+        candidate_report.md -> \\?\D:\projects\477\evaluation_selection\candidate_report.md
+        candidates.csv -> \\?\D:\projects\477\evaluation_selection\candidates.csv
+        candidates.json -> \\?\D:\projects\477\evaluation_selection\candidates.json
+        contact_sheets -> \\?\D:\projects\477\evaluation_selection\contact_sheets
+03_benchmark/
+    benchmark_v1 -> \\?\D:\projects\477\benchmark_v1
+04_team_share/
+    477_final_candidates_v1.zip
+    final_candidates_v1/
+        CHECKSUMS.sha256
+        README.md
+        clips/
+            01_swoon_fall.mp4
+            02_clear_wall_crossing.mp4
+            03_ambiguous_gate_entry.mp4
+            04_fight.mp4
+            05_multiview_fight_cam_a.mp4
+            06_multiview_fight_cam_b.mp4
+CLEANUP_MANIFEST.json
+CLEANUP_REPORT.md
+DATA_MANIFEST.csv
+DATA_MANIFEST.json
+README.md
+TREE.txt
+original_state_before.json
+storage_report.md
+verification_report.json

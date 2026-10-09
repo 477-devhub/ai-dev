@@ -1,0 +1,5 @@
+# Isolated venv experiments/p3_gpt61_sol_state/.venv (CPython 3.12). Also used to run experiments/common_adapter_v2 scripts.
+openai==3.26.0        # official SDK (same version as P1); client.responses.create (Responses API)
+jsonschema==4.26.0
+referencing==0.37.0
+pyyaml==6.0.3

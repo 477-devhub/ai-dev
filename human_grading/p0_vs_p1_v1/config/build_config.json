@@ -1,0 +1,25 @@
+{
+  "pack_version": "p0_vs_p1_v1",
+  "ab_randomization": {
+    "seed": 4772026,
+    "algorithm": "random.Random(seed); for item_id in ITEM_01..ITEM_07 (in order): order = ['p0','p1']; rng.shuffle(order); System_A = order[0], System_B = order[1]",
+    "independent_of_prediction_content": true
+  },
+  "systems": {
+    "p0": "results/p0_cv_only",
+    "p1": "results/p1_decisions"
+  },
+  "items": ["ITEM_01", "ITEM_02", "ITEM_03", "ITEM_04", "ITEM_05", "ITEM_06", "ITEM_07"],
+  "main_five_cases": ["ITEM_01", "ITEM_02", "ITEM_03", "ITEM_04", "ITEM_07"],
+  "set05": {"A": "ITEM_05", "B": "ITEM_06", "AB": "ITEM_07"},
+  "metrics": ["event_understanding", "temporal_understanding", "evidence_grounding", "uncertainty_handling"],
+  "redactions": [
+    {"find": "P0 deterministic CV rules (no LLM). ", "replace": "[system description redacted] "},
+    {"find": "OpenAI Decisions API (gpt-6-luna)", "replace": "[system description redacted]"},
+    {"find": "(highest P0 priority)", "replace": "(highest [system] priority)"},
+    {"find": "P0 pattern:", "replace": "[system] pattern:"},
+    {"find": "Decisions API", "replace": "[system]"}
+  ],
+  "forbidden_tokens_after_sanitization": ["P0", "P1", "cv_only", "decisions", "Decisions", "gpt-6", "luna", "OpenAI", "openai", "YOLO", "yolo", "model_id", "run_id", "pipeline_actual", "\"pipeline\"", "LLM", "p0_cv_only", "p1_decisions"],
+  "port": 4770
+}

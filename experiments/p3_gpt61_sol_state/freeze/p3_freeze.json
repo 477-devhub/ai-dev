@@ -1,0 +1,56 @@
+{
+  "p3_version": "p3-v1",
+  "model": "gpt-6.1-sol",
+  "endpoint": "/v1/responses",
+  "reasoning_effort": "high",
+  "tools": [],
+  "structured_outputs": "json_schema strict",
+  "compact_state_version": "compact-decision-state-v1",
+  "frozen": true,
+  "frozen_at": "2026-10-08T00:16:47+09:00",
+  "hashes": {
+    "configs/p3_v1.json": "e6114d26207285c9e65454cd213f303145e3a43b5a37e34edb6ce4076d10a20b",
+    "configs/p3_prompt_v1.txt": "d65b7f89921b26ba9c858918ecaa3cec662adfe1fd5931460511ecb28196e733",
+    "schemas/p3_decision_output.schema.json": "d73ff0cebdf3390e9092ccadf4540f8028d26e5ae3cfea0da6c25caf7132d5c0",
+    "src/prompt_builder.py": "b9e9ad0972d65ee5429bf72d2d134252a1d9c94c7110c3538bb4fd593f1a2cfd",
+    "src/raw_decision_adapter.py": "2a365cf5f6ac3665fa3ecb77aba3f05a6537da6d88672c0941b76174d89cb180",
+    "src/prediction_adapter.py": "1114095e00d4e0f75040636d884d5f6f9381b5f4f67e2a97e5531efaa9f7c303",
+    "src/openai_client.py": "ff31ae83b504615237d025a4d36ef5f0e47ddb17ef84652c7d1fdfcb5a2cecd7",
+    "src/p3_pipeline.py": "9a4560c70f2056e3a5d71ee30cc481a71f540b83aec3edee7c7c293636a3c040",
+    "src/common_adapter_bridge.py": "797bbc79e656fdfbe4a2c460f0e18913071c6f252140e0665d0404e8e9e6260a",
+    "src/state_loader.py": "e312315ceec7f89b6a72fa71a2e268774644caadec6efb04361cc5bc5d5edc27",
+    "src/cost.py": "09e965c74233571cde76b889250104a04a8d563ff922dd84d2bb4ce639ecf68c",
+    "src/utils.py": "7b8bb6d08388c21667222e6597830018bc9ed19f7fbef387d18feead76fb20aa",
+    "src/access_audit.py": "61778b8be06e7ecf8e8f2e27d0a7e038ce1d2e0c9dc15968dacab64d9b3203b3"
+  },
+  "p1_freeze_verified": {
+    "p1_frozen_at": "2026-10-07T18:15:39+09:00",
+    "compact_state_sha256": {
+      "ITEM_01": "37d36bcfa9fd617aea3653b7a97799015b6120a3e51ddd722489f5bf0f90248a",
+      "ITEM_02": "d5fa17f4a4049cc449f8edb519e737de74e7baf65d7a343b042eb9f83be0d702",
+      "ITEM_03": "0cad333c34224f9f27abb59bf7cffc42fe65825dcec89e0b635e3802c111b51b",
+      "ITEM_04": "585f6a8b0b7294324536d5bb11613e42adaf54d3cffee62d7cf6b08302d5799f",
+      "ITEM_05": "34923012335eeb00c7b77fe07c9c4081abada9efacaecaf8dbec098c2353d243",
+      "ITEM_06": "6961df13b1fbbe696a70b93fbde1e1460236aad27559db838aff34da137daf90",
+      "ITEM_07": "845a79314d701a5f5fa2ed851c4c645d3610caf4258ebb067a421f75b973fd17"
+    }
+  },
+  "common_adapter_v2_freeze": {
+    "freeze_frozen_at": "2026-10-08T00:11:30+09:00",
+    "hashes": {
+      "config/adapter_v2.json": "dd04161724a92874f242a93560877dd3ea44485773a35815c67dec81fcb1f8e9",
+      "src/common_adapter_v2.py": "4f274d6d91d178083a2c7c7bf78f507cb8112bba085d78f971d7137e7c1a11de"
+    }
+  },
+  "smoke_test": {
+    "passed": true,
+    "at": "2026-10-08T00:16:27+09:00",
+    "benchmark_items_used": []
+  },
+  "benchmark_responses_seen_before_freeze": false,
+  "semantic_changes_after_benchmark_output": [],
+  "pre_freeze_integration_fixes": [
+    "src/common_adapter_bridge.py: set module __file__ before exec (NameError in offline test); no semantic change"
+  ],
+  "note": "Frozen before any benchmark item was sent to gpt-6.1-sol. Prompt/schema/threshold/state changes after benchmark output must be p3-v2."
+}

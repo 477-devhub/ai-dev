@@ -1,0 +1,57 @@
+{
+  "pipeline_actual": "p4_gpt61_sol_vision",
+  "pipeline_schema_value": "vlm_only",
+  "run_id": "p4_gpt61_sol_vision-v1",
+  "model_id": "p4_gpt61_sol_vision:gpt-6.1-sol@v1-responses-high-vision",
+  "model": "gpt-6.1-sol",
+  "endpoint": "/v1/responses",
+  "reasoning_effort": "high",
+  "service_tier": "default (not sent)",
+  "tools": [],
+  "store": false,
+  "input_modality": "vision",
+  "frame_protocol": "uniform_total64_v1",
+  "image_detail": "high",
+  "transport": "lossless_webp",
+  "total_images": 64,
+  "common_adapter": "v2",
+  "probability_source": "model_generated_estimate",
+  "python": "3.12.6",
+  "openai_sdk": "3.26.0",
+  "timeouts_sec": {
+    "connect": 10.0,
+    "read_write": 900.0
+  },
+  "max_output_tokens": 32000,
+  "max_retries": 2,
+  "retry_policy": "network/timeout errors, HTTP 429, HTTP 5xx only; exponential backoff 1s*2^n + U(0,0.25)s jitter; 4xx and schema failures never retried",
+  "failure_policy": {
+    "refusal": "recorded as FAILED (no result file): a schema-valid prediction requires >=1 visual evidence item and a refusal supplies none; nothing is fabricated",
+    "incomplete": "FAILED, no retry",
+    "schema_or_frame_ref_failure": "FAILED, no retry",
+    "transport": "network / 429 / 5xx after 2 retries -> FAILED",
+    "preflight_or_roundtrip_failure": "item not sent; FAILED; a new transport protocol would be P4-v2"
+  },
+  "pricing": {
+    "model": "gpt-6.1-sol",
+    "service_tier": "standard",
+    "input_usd_per_1m_tokens": 2.0,
+    "cached_input_usd_per_1m_tokens": 0.1,
+    "cache_write_usd_per_1m_tokens": 2.5,
+    "output_usd_per_1m_tokens": 10.0,
+    "reasoning_tokens_billing": "included in output_tokens",
+    "image_tokens_billing": "included in provider input_tokens",
+    "long_context_threshold_tokens": 272000,
+    "long_context_multipliers": {
+      "input_and_cache": 2.0,
+      "output": 1.5
+    },
+    "regional_processing_premium_applied": false,
+    "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol (Standard: Input $2, Cached input $0.1, Cache writes $2.5, Output $10 per 1M)",
+    "pricing_checked_at": "2026-10-08",
+    "pricing_unit": "USD per 1M tokens"
+  },
+  "freeze_file": "freeze/p4_freeze.json",
+  "requests_per_item": 1,
+  "latency_note": "result latency_ms = full P4 visual path (frames -> validated prediction); P1/P2/P3 primary latencies are cached-state decision paths; fair comparison pending controlled_latency_v1"
+}

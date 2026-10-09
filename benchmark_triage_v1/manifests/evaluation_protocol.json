@@ -1,0 +1,16 @@
+{
+  "protocol_version": "triage-calibration-only-v1",
+  "primary_count": 37,
+  "calibration_count": 15,
+  "test_count": 22,
+  "challenge_count": 6,
+  "routing_policy_selection_split": "calibration",
+  "threshold_selection_split": "calibration",
+  "test_policy": "One final evaluation after routing policy and thresholds are locked; no post-test threshold adjustment",
+  "calibration_danger_count": 3,
+  "T_danger_policy": "Conservative predeclared range; do not finely optimize against only three calibration dangers",
+  "model_execution": "Frozen P1-v1 and frozen P4-v1; one inference run per model/item, resumable from completed outputs; no judgment-based retries",
+  "challenge_policy": "Separate exploratory ambiguous set; excluded from primary metrics and threshold fitting",
+  "human_gt_policy": "Immutable manually assigned labels; model outputs cannot change sample membership or GT",
+  "user_authorization": "Explicit freeze and frozen P1/P4 execution approval in this chat"
+}

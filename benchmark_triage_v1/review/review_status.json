@@ -1,0 +1,33 @@
+{
+  "scope": "priority_minimal_v1",
+  "queue_size": 43,
+  "labelled": 43,
+  "source_queue_size": 115,
+  "unreviewed": 72,
+  "pending": 0,
+  "label_counts": {
+    "HARD_NEGATIVE_NORMAL": 11,
+    "ANCHORED_DANGER": 13,
+    "CLEAR_NORMAL": 13,
+    "AMBIGUOUS": 6
+  },
+  "problems": [],
+  "invalid_labels": 0,
+  "duplicate_ids": 0,
+  "auxiliary_missing": {
+    "review_confidence": 1,
+    "observable_summary": 21,
+    "normal_subtype": 30,
+    "hard_negative_type_if_any": 32,
+    "danger_type_if_any": 30,
+    "ambiguous_reason": 40,
+    "reviewed_at": 0,
+    "applicable_subtype_missing": 3
+  },
+  "warnings_only": true,
+  "primary_usable": 37,
+  "ambiguous_challenge": 6,
+  "human_review_complete": true,
+  "additional_human_review_required": false,
+  "status": "PRIORITY HUMAN REVIEW — PASS"
+}

@@ -1,0 +1,185 @@
+{
+  "model_load_ms": 549.1,
+  "warmup_ms": 19777.1,
+  "runner_init_ms": 44231.3,
+  "power_plugged": false,
+  "device": "NVIDIA GeForce RTX 3050 4GB Laptop GPU",
+  "precision": "fp16",
+  "items": {
+    "ITEM_01": {
+      "steady_state_latency_ms": {
+        "median": 5665.4,
+        "min": 4713.5,
+        "max": 7878.7,
+        "n": 3
+      },
+      "stage_medians_ms": {
+        "decode_ms": 1794.29,
+        "cv_inference_ms": 3742.17,
+        "tracking_ms": 26.32,
+        "feature_extraction_ms": 51.1,
+        "cross_camera_ms": 0.0,
+        "state_assembly_ms": 0.09,
+        "rule_engine_ms": 0.67,
+        "serialization_ms": 0.11,
+        "total_ms": 5665.36
+      },
+      "vram_peak_mb": 470.5,
+      "frames_per_sec_median": 11.3,
+      "process_cpu_utilization_pct_of_all_cores_median": 4.7,
+      "gpu_utilization_pct_mean": 12.5,
+      "gpu_utilization_pct_max": 66
+    },
+    "ITEM_02": {
+      "steady_state_latency_ms": {
+        "median": 7522.1,
+        "min": 7488.6,
+        "max": 7698.9,
+        "n": 3
+      },
+      "stage_medians_ms": {
+        "decode_ms": 2325.28,
+        "cv_inference_ms": 5028.14,
+        "tracking_ms": 16.63,
+        "feature_extraction_ms": 35.07,
+        "cross_camera_ms": 0.0,
+        "state_assembly_ms": 0.07,
+        "rule_engine_ms": 0.5,
+        "serialization_ms": 0.11,
+        "total_ms": 7522.1
+      },
+      "vram_peak_mb": 470.5,
+      "frames_per_sec_median": 8.51,
+      "process_cpu_utilization_pct_of_all_cores_median": 4.5,
+      "gpu_utilization_pct_mean": 15.5,
+      "gpu_utilization_pct_max": 100
+    },
+    "ITEM_03": {
+      "steady_state_latency_ms": {
+        "median": 4544.4,
+        "min": 4219.5,
+        "max": 7635.4,
+        "n": 3
+      },
+      "stage_medians_ms": {
+        "decode_ms": 2009.96,
+        "cv_inference_ms": 2333.17,
+        "tracking_ms": 7.55,
+        "feature_extraction_ms": 14.89,
+        "cross_camera_ms": 0.0,
+        "state_assembly_ms": 0.03,
+        "rule_engine_ms": 0.27,
+        "serialization_ms": 0.04,
+        "total_ms": 4544.41
+      },
+      "vram_peak_mb": 470.5,
+      "frames_per_sec_median": 14.08,
+      "process_cpu_utilization_pct_of_all_cores_median": 4.2,
+      "gpu_utilization_pct_mean": 13.5,
+      "gpu_utilization_pct_max": 82
+    },
+    "ITEM_04": {
+      "steady_state_latency_ms": {
+        "median": 11457.8,
+        "min": 10584.1,
+        "max": 21401.4,
+        "n": 3
+      },
+      "stage_medians_ms": {
+        "decode_ms": 5154.22,
+        "cv_inference_ms": 5895.74,
+        "tracking_ms": 137.09,
+        "feature_extraction_ms": 124.61,
+        "cross_camera_ms": 0.0,
+        "state_assembly_ms": 0.08,
+        "rule_engine_ms": 1.11,
+        "serialization_ms": 0.36,
+        "total_ms": 11457.75
+      },
+      "vram_peak_mb": 470.5,
+      "frames_per_sec_median": 5.59,
+      "process_cpu_utilization_pct_of_all_cores_median": 3.6,
+      "gpu_utilization_pct_mean": 7.5,
+      "gpu_utilization_pct_max": 97
+    },
+    "ITEM_05": {
+      "steady_state_latency_ms": {
+        "median": 6325.1,
+        "min": 6155.3,
+        "max": 6373.1,
+        "n": 3
+      },
+      "stage_medians_ms": {
+        "decode_ms": 1608.68,
+        "cv_inference_ms": 4609.52,
+        "tracking_ms": 25.45,
+        "feature_extraction_ms": 34.28,
+        "cross_camera_ms": 0.0,
+        "state_assembly_ms": 0.07,
+        "rule_engine_ms": 0.58,
+        "serialization_ms": 0.07,
+        "total_ms": 6325.06
+      },
+      "vram_peak_mb": 470.5,
+      "frames_per_sec_median": 10.12,
+      "process_cpu_utilization_pct_of_all_cores_median": 5.2,
+      "gpu_utilization_pct_mean": 19.4,
+      "gpu_utilization_pct_max": 100
+    },
+    "ITEM_06": {
+      "steady_state_latency_ms": {
+        "median": 6644.8,
+        "min": 6333.7,
+        "max": 7207.4,
+        "n": 3
+      },
+      "stage_medians_ms": {
+        "decode_ms": 1431.2,
+        "cv_inference_ms": 4862.71,
+        "tracking_ms": 110.92,
+        "feature_extraction_ms": 123.83,
+        "cross_camera_ms": 0.0,
+        "state_assembly_ms": 0.08,
+        "rule_engine_ms": 0.71,
+        "serialization_ms": 0.14,
+        "total_ms": 6644.8
+      },
+      "vram_peak_mb": 470.5,
+      "frames_per_sec_median": 9.63,
+      "process_cpu_utilization_pct_of_all_cores_median": 5.3,
+      "gpu_utilization_pct_mean": 5.1,
+      "gpu_utilization_pct_max": 60
+    },
+    "ITEM_07": {
+      "steady_state_latency_ms": {
+        "median": 8091.0,
+        "min": 8028.7,
+        "max": 8235.7,
+        "n": 3
+      },
+      "stage_medians_ms": {
+        "decode_ms": 2749.99,
+        "cv_inference_ms": 5160.75,
+        "tracking_ms": 63.14,
+        "feature_extraction_ms": 73.93,
+        "cross_camera_ms": 2.29,
+        "state_assembly_ms": 0.06,
+        "rule_engine_ms": 0.97,
+        "serialization_ms": 0.19,
+        "total_ms": 8090.97
+      },
+      "vram_peak_mb": 470.5,
+      "frames_per_sec_median": 7.91,
+      "process_cpu_utilization_pct_of_all_cores_median": 4.6,
+      "gpu_utilization_pct_mean": 3.1,
+      "gpu_utilization_pct_max": 30
+    }
+  },
+  "cold_start_total_ms": 48874.9,
+  "cold_first_item_ms": 4621.7,
+  "across_items": {
+    "median_of_item_medians_ms": 6644.8,
+    "min_ms": 4219.5,
+    "max_ms": 21401.4
+  }
+}

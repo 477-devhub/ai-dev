@@ -1,0 +1,476 @@
+{
+  "benchmark_version": "477-reasoning-v1",
+  "pipeline": "cv_llm",
+  "run_id": "p2_clef_flash-v1+common-adapter-v2",
+  "item_id": "ITEM_04",
+  "model_id": "p2_clef_flash:@cf/cloudflare/clef-flash@v1",
+  "runtime_config": {
+    "pipeline_actual": "p2_clef_flash",
+    "pipeline_schema_value_note": "result.schema.json enum allows only vlm_only/cv_llm; this is the P2 Clef-Flash pipeline.",
+    "provider": "cloudflare_workers_ai",
+    "decision_model": "@cf/cloudflare/clef-flash",
+    "model_input_selector": "clef-flash",
+    "decision_model_returned": "clef-flash",
+    "decision_endpoint": "POST https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/cloudflare/clef-flash",
+    "ai_gateway": false,
+    "input_modality": "text only (compact CV state string); no images",
+    "compact_state_version": "compact-decision-state-v1",
+    "compact_state_sha256": "585f6a8b0b7294324536d5bb11613e42adaf54d3cffee62d7cf6b08302d5799f",
+    "state_text_sha256": "eac00c92b60db4d63d89cb161abe96428931abc89e41d92d47961cd1f26af81d",
+    "compact_state_source": "experiments/p1_decisions/compact_states/ITEM_04.json (P1 frozen bytes, read-only; CV not re-run)",
+    "decision_questions_version": "decisions-v1",
+    "clef_questions_version": "clef-questions-v1",
+    "question_count": 22,
+    "requests_for_item": 1,
+    "usage": {
+      "input_tokens": 9778,
+      "output_tokens": 0,
+      "raw_usage_object": {
+        "input_tokens": 9778,
+        "output_tokens": 0
+      }
+    },
+    "neurons_derived_from_published_rate": 80.0036,
+    "external_api_cost_usd": 0.00088002,
+    "theoretical_unit_cost_usd": 0.00088002,
+    "actual_billed_cost_usd": null,
+    "actual_billed_cost_note": "not observable per request (Workers AI daily free Neuron allocation / account plan); not mixed with theoretical cost",
+    "pricing": {
+      "model": "@cf/cloudflare/clef-flash",
+      "input_usd_per_1m_tokens": 0.09,
+      "output_usd_per_1m_tokens": 0.0,
+      "neurons_per_1m_input_tokens": 8182,
+      "usd_per_1000_neurons_beyond_free": 0.011,
+      "free_allocation_neurons_per_day": 10000,
+      "billing_rule": "input tokens only (no output-token price listed for Clef models)",
+      "pricing_source": "https://developers.cloudflare.com/workers-ai/platform/pricing/ ('Other model pricing': @cf/cloudflare/clef-flash $0.090 per M input tokens / 8182 neurons per M input tokens); live cross-check: GET /accounts/{ACCOUNT_ID}/ai/models/search catalog property price=0.09 USD per M input tokens (logs/cloudflare_schema_snapshot.json)",
+      "pricing_checked_at": "2026-10-07",
+      "pricing_unit": "USD per 1M input tokens"
+    },
+    "latency": {
+      "definition": "cached-state timing only (frozen compact state reused); NOT full end-to-end; result latency_ms left null",
+      "state_load_ms": 15.643,
+      "request_total_ms": 620.6,
+      "decision_api_latency_ms": 620.6,
+      "decision_api_total_including_retries_ms": 621.03,
+      "provider_timing": null,
+      "adapter_ms": 0.783,
+      "cached_state_pipeline_ms": 637.46
+    },
+    "retry_count": 0,
+    "invalid_or_missing_answer_count": 0,
+    "answer_issues": [],
+    "response_schema_issues": [],
+    "cf_ray": "a46dae983b14308b-ICN",
+    "adapter_provenance": {
+      "decision_adapter": "experiments/p1_decisions/src/decision_adapter.py (frozen bytes)",
+      "decision_adapter_sha256": "c6d951fa1689787d00e1a1a2f8a9cf38b4895baad273379f7a4d5c23161b712e",
+      "templates": {
+        "p1_source_sha256": "e222cc878b6f7f33b9b431c73a002f5dc896cea5567fdf55df36e9c9a80f3ead",
+        "substituted_source_sha256": "c3006ce72ca51d4832a03cf2c52ff1551ad19d6f2a8d7d15e31b8aae9331356b",
+        "substitutions": [
+          [
+            "was refused by the Decisions API and treated as unknown",
+            "was missing or invalid in the Clef-Flash response and treated as unknown"
+          ],
+          [
+            "OpenAI Decisions API ({model}) typed answers",
+            "Cloudflare Workers AI Clef-Flash ({model}) typed answers"
+          ],
+          [
+            "(Decisions API scores)",
+            "(Clef-Flash scores)"
+          ],
+          [
+            "Decisions API same-incident probability",
+            "Clef-Flash same-incident probability"
+          ],
+          [
+            "Decisions API: second view adds",
+            "Clef-Flash: second view adds"
+          ]
+        ]
+      },
+      "category_reconciliation": "none (P1-v1 behaviour preserved)"
+    },
+    "decision_summary": {
+      "per_camera": {
+        "CAM_01": {
+          "p_incident": 0.4431,
+          "is_incident": false,
+          "category": "possible_fall_or_person_down",
+          "category_confidence": 0.8358,
+          "risk": {
+            "severity": 0.425,
+            "imminence": 0.4933,
+            "exposure": 0.251,
+            "persistence": 0.8048
+          },
+          "priority_score": 0.4677,
+          "confidence": 0.6964,
+          "p_human_review": 0.7585,
+          "human_review_required": true,
+          "refused_questions": []
+        },
+        "CAM_02": {
+          "p_incident": 0.2605,
+          "is_incident": false,
+          "category": "possible_physical_conflict",
+          "category_confidence": 0.1514,
+          "risk": {
+            "severity": 0.2535,
+            "imminence": 0.395,
+            "exposure": 0.6723,
+            "persistence": 0.7861
+          },
+          "priority_score": 0.4596,
+          "confidence": 0.4455,
+          "p_human_review": 0.3426,
+          "human_review_required": false,
+          "refused_questions": []
+        },
+        "CAM_03": {
+          "p_incident": 0.2694,
+          "is_incident": false,
+          "category": "no_clear_incident",
+          "category_confidence": 0.1774,
+          "risk": {
+            "severity": 0.1916,
+            "imminence": 0.2435,
+            "exposure": 0.2463,
+            "persistence": 0.3552
+          },
+          "priority_score": 0.2426,
+          "confidence": 0.454,
+          "p_human_review": 0.1825,
+          "human_review_required": false,
+          "refused_questions": []
+        }
+      },
+      "order": [
+        "CAM_01",
+        "CAM_02",
+        "CAM_03"
+      ],
+      "attention_first_supplementary": {
+        "choice": "CAM_01",
+        "confidence": 0.2598,
+        "probabilities": [
+          {
+            "value": "CAM_01",
+            "probability": 0.6259
+          },
+          {
+            "value": "CAM_02",
+            "probability": 0.1868
+          },
+          {
+            "value": "CAM_03",
+            "probability": 0.0758
+          },
+          {
+            "value": "no_clear_priority",
+            "probability": 0.1115
+          }
+        ]
+      }
+    },
+    "raw_api_file": "experiments/p2_clef_flash/raw_api/ITEM_04.json",
+    "llm_free_text_generation": false,
+    "access_audit": {
+      "files_opened": 3,
+      "forbidden_paths_opened": [],
+      "pass": true
+    },
+    "common_adapter_v2": {
+      "adapter_version": "common-adapter-v2",
+      "incident_threshold": 0.5,
+      "event_type_changes": 2,
+      "assessments": [
+        {
+          "raw_decision": {
+            "incident_probability": 0.4431,
+            "incident_category": "possible_fall_or_person_down",
+            "incident_category_confidence": 0.8358
+          },
+          "normalized_decision": {
+            "is_incident": false,
+            "event_type": "no clear incident"
+          },
+          "rule": "R1",
+          "assessment": "CAM_01",
+          "v1_event_type": "possible fall or person-down event",
+          "event_type_changed": true
+        },
+        {
+          "raw_decision": {
+            "incident_probability": 0.2605,
+            "incident_category": "possible_physical_conflict",
+            "incident_category_confidence": 0.1514
+          },
+          "normalized_decision": {
+            "is_incident": false,
+            "event_type": "no clear incident"
+          },
+          "rule": "R1",
+          "assessment": "CAM_02",
+          "v1_event_type": "possible physical conflict",
+          "event_type_changed": true
+        },
+        {
+          "raw_decision": {
+            "incident_probability": 0.2694,
+            "incident_category": "no_clear_incident",
+            "incident_category_confidence": 0.1774
+          },
+          "normalized_decision": {
+            "is_incident": false,
+            "event_type": "no clear incident"
+          },
+          "rule": "R1",
+          "assessment": "CAM_03",
+          "v1_event_type": "no clear incident",
+          "event_type_changed": false
+        }
+      ],
+      "source_v1_result": "benchmark_v1/results/p2_clef_flash/run_ITEM_04.json",
+      "source_v1_result_sha256": "82774db284018772cdfac01e375c0f9891f3fd61076a7ae9df86294c57362401",
+      "source_raw_api": "experiments/p2_clef_flash/raw_api/ITEM_04.json",
+      "source_raw_api_sha256": "2af2f37cd50444d2e4f172af6faefd6c41fea0a597de4c7faf54292abc50dff0",
+      "offline_rebuild_equals_v1": true,
+      "api_calls": 0,
+      "note": "v1 result is the official raw experiment record; this file is the normalized common-adapter-v2 presentation"
+    }
+  },
+  "input_fingerprint": {
+    "prompt_sha256": "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146",
+    "prediction_schema_sha256": "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d",
+    "media_sha256": {
+      "CAM_01": "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea",
+      "CAM_02": "3728911198b69e07d17cf39e98ce08970b0111c03e04967355b7a133c71f003b",
+      "CAM_03": "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99"
+    },
+    "sampling_protocol_id": "uniform_total64_v1",
+    "frame_numbers": {
+      "CAM_01": [
+        0,
+        50,
+        100,
+        150,
+        200,
+        250,
+        300,
+        350,
+        400,
+        450,
+        500,
+        549,
+        599,
+        649,
+        699,
+        749,
+        799,
+        849,
+        899,
+        949,
+        999,
+        1049
+      ],
+      "CAM_02": [
+        0,
+        52,
+        105,
+        157,
+        210,
+        262,
+        315,
+        367,
+        420,
+        472,
+        525,
+        577,
+        629,
+        682,
+        734,
+        787,
+        839,
+        892,
+        944,
+        997,
+        1049
+      ],
+      "CAM_03": [
+        0,
+        52,
+        105,
+        157,
+        210,
+        262,
+        315,
+        367,
+        420,
+        472,
+        525,
+        577,
+        629,
+        682,
+        734,
+        787,
+        839,
+        892,
+        944,
+        997,
+        1049
+      ]
+    }
+  },
+  "prediction": {
+    "assessments": [
+      {
+        "camera": "CAM_01",
+        "assessment": {
+          "event_type": "no clear incident",
+          "is_incident": false,
+          "observations": [
+            {
+              "camera": "CAM_01",
+              "timestamp_sec": 5.0,
+              "description": "0-1 person(s) detected per sampled frame (median 1); persons present in 86% of 22 samples about 1.67s apart; CV reliability 0.94."
+            },
+            {
+              "camera": "CAM_01",
+              "timestamp_sec": 5.0,
+              "description": "T1 first appears away from the frame edge at 5.0s."
+            },
+            {
+              "camera": "CAM_01",
+              "timestamp_sec": 6.67,
+              "description": "T1: standing posture proxy at 6.7s and horizontal posture proxy at 8.3s (transition confidence 0.43; downward change 0.34 body heights, reliability limited)."
+            },
+            {
+              "camera": "CAM_01",
+              "timestamp_sec": 8.33,
+              "description": "T1: low/horizontal posture proxy persisted for about 26.6s after the transition."
+            }
+          ],
+          "temporal_summary": "CAM_01: 22 samples over 35.0s; up to 1 person(s). T1 observed 5.0-35.0s (standing -> horizontal), standing-to-horizontal change 6.7-8.3s.",
+          "risk": {
+            "severity": 0.425,
+            "imminence": 0.4933,
+            "exposure": 0.251,
+            "persistence": 0.8048
+          },
+          "confidence": 0.6964,
+          "uncertainties": [
+            "Sparse sampling (about 1.67s between frames); brief actions between samples may be missed.",
+            "Boundary semantics (gates, walls, restricted areas) are unavailable; authorization cannot be determined.",
+            "Posture labels are automatic proxies; the cause of a posture change and any medical condition cannot be determined."
+          ],
+          "reason": "Cloudflare Workers AI Clef-Flash (clef-flash) typed answers over the compact CV observation state (text only, no images): incident probability 0.44; category 'possible_fall_or_person_down' (confidence 0.84); severity 0.42, imminence 0.49, exposure 0.25, persistence 0.80 (0-1); human-review probability 0.76. Observation texts are generated deterministically from CV features, not by the model.",
+          "human_review_required": true
+        }
+      },
+      {
+        "camera": "CAM_02",
+        "assessment": {
+          "event_type": "no clear incident",
+          "is_incident": false,
+          "observations": [
+            {
+              "camera": "CAM_02",
+              "timestamp_sec": 0.0,
+              "description": "2-5 person(s) detected per sampled frame (median 4); persons present in 100% of 21 samples about 1.73s apart; CV reliability 0.85."
+            },
+            {
+              "camera": "CAM_02",
+              "timestamp_sec": 0.0,
+              "description": "T1 and T2: minimum distance 0.28 body heights; close in 100% of 18 co-observed samples (about 29.7s); relative motion when close 0.09 bh/s; contact proxy 0.34 (heuristic visual proxy, not confirmed contact)."
+            },
+            {
+              "camera": "CAM_02",
+              "timestamp_sec": 0.0,
+              "description": "T3 and T4: minimum distance 0.25 body heights; close in 100% of 18 co-observed samples (about 29.7s); relative motion when close 0.02 bh/s; contact proxy 0.64 (heuristic visual proxy, not confirmed contact)."
+            }
+          ],
+          "temporal_summary": "CAM_02: 21 samples over 35.0s; up to 5 person(s). T4 observed 0.0-35.0s (standing -> standing). T3 observed 0.0-29.7s (standing -> standing). T1 observed 0.0-35.0s (standing -> standing). T2 observed 0.0-29.7s (standing -> standing).",
+          "risk": {
+            "severity": 0.2535,
+            "imminence": 0.395,
+            "exposure": 0.6723,
+            "persistence": 0.7861
+          },
+          "confidence": 0.4455,
+          "uncertainties": [
+            "Sparse sampling (about 1.73s between frames); brief actions between samples may be missed.",
+            "Boundary semantics (gates, walls, restricted areas) are unavailable; authorization cannot be determined.",
+            "Track association reliability is limited (fragmented or ambiguous tracks).",
+            "Contact, arm-extension and limb-motion values are heuristic 2D proxies, not confirmed physical contact or actions."
+          ],
+          "reason": "Cloudflare Workers AI Clef-Flash (clef-flash) typed answers over the compact CV observation state (text only, no images): incident probability 0.26; category 'possible_physical_conflict' (confidence 0.15); severity 0.25, imminence 0.40, exposure 0.67, persistence 0.79 (0-1); human-review probability 0.34. Observation texts are generated deterministically from CV features, not by the model.",
+          "human_review_required": false
+        }
+      },
+      {
+        "camera": "CAM_03",
+        "assessment": {
+          "event_type": "no clear incident",
+          "is_incident": false,
+          "observations": [
+            {
+              "camera": "CAM_03",
+              "timestamp_sec": 0.0,
+              "description": "0-1 person(s) detected per sampled frame (median 0); persons present in 38% of 21 samples about 1.73s apart; CV reliability 0.92."
+            },
+            {
+              "camera": "CAM_03",
+              "timestamp_sec": 0.0,
+              "description": "T1 moves about 0.65 frame heights across the image between 0.0s and 12.2s."
+            },
+            {
+              "camera": "CAM_03",
+              "timestamp_sec": 5.23,
+              "description": "T1: standing posture proxy at 5.2s and low posture posture proxy at 8.7s (transition confidence 0.55; downward change 0.06 body heights, reliability limited)."
+            }
+          ],
+          "temporal_summary": "CAM_03: 21 samples over 35.0s; up to 1 person(s). T1 observed 0.0-12.2s (standing -> standing), standing-to-low posture change 5.2-8.7s.",
+          "risk": {
+            "severity": 0.1916,
+            "imminence": 0.2435,
+            "exposure": 0.2463,
+            "persistence": 0.3552
+          },
+          "confidence": 0.454,
+          "uncertainties": [
+            "Sparse sampling (about 1.73s between frames); brief actions between samples may be missed.",
+            "Boundary semantics (gates, walls, restricted areas) are unavailable; authorization cannot be determined.",
+            "Posture labels are automatic proxies; the cause of a posture change and any medical condition cannot be determined."
+          ],
+          "reason": "Cloudflare Workers AI Clef-Flash (clef-flash) typed answers over the compact CV observation state (text only, no images): incident probability 0.27; category 'no_clear_incident' (confidence 0.18); severity 0.19, imminence 0.24, exposure 0.25, persistence 0.36 (0-1); human-review probability 0.18. Observation texts are generated deterministically from CV features, not by the model.",
+          "human_review_required": false
+        }
+      }
+    ],
+    "attention_queue": [
+      {
+        "camera": "CAM_01",
+        "rank": 1,
+        "reason": "Priority 0.468 = 0.35*severity 0.42 + 0.3*imminence 0.49 + 0.2*exposure 0.25 + 0.15*persistence 0.80 (Clef-Flash scores); category 'possible_fall_or_person_down', confidence 0.70 (not used in ranking). Supplementary attention_first answer: CAM_01 (confidence 0.26); not used for the rank."
+      },
+      {
+        "camera": "CAM_02",
+        "rank": 2,
+        "reason": "Priority 0.460 = 0.35*severity 0.25 + 0.3*imminence 0.40 + 0.2*exposure 0.67 + 0.15*persistence 0.79 (Clef-Flash scores); category 'possible_physical_conflict', confidence 0.45 (not used in ranking)."
+      },
+      {
+        "camera": "CAM_03",
+        "rank": 3,
+        "reason": "Priority 0.243 = 0.35*severity 0.19 + 0.3*imminence 0.24 + 0.2*exposure 0.25 + 0.15*persistence 0.36 (Clef-Flash scores); category 'no_clear_incident', confidence 0.45 (not used in ranking)."
+      }
+    ]
+  },
+  "human_grading": null,
+  "latency_ms": null,
+  "estimated_cost_usd": null,
+  "input_tokens": 9778,
+  "output_tokens": 0
+}

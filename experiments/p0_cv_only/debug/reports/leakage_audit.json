@@ -1,0 +1,76 @@
+{
+  "files_scanned": 21,
+  "term_mentions": [
+    {
+      "where": "src/access_audit.py:3",
+      "line": "Used by smoke_test / run_p0 to prove that the pipeline never touches private_ground_truth,"
+    },
+    {
+      "where": "src/access_audit.py:5",
+      "line": "and never reads annotation/label sources."
+    },
+    {
+      "where": "src/access_audit.py:9",
+      "line": "FORBIDDEN_PATH_PARTS = ('private_ground_truth', 'candidate_report', 'annotation', '.xml', 'README', 'BENCHMARK_LOCK')"
+    },
+    {
+      "where": "src/debug_overlay.py:2",
+      "line": "Never draws ground truth, expected events, annotations or private references.\"\"\""
+    },
+    {
+      "where": "src/feature_extractor.py:5",
+      "line": "No event semantics (fall / fight / trespass ...) are produced in this module."
+    },
+    {
+      "where": "src/validation.py:8",
+      "line": "FORBIDDEN_STATE_KEYS = ('fight_detected', 'swoon_detected', 'trespass_detected', 'criminal_detected', 'dangerous_person',"
+    }
+  ],
+  "conditional_leakage": [],
+  "runtime_access_audit": {
+    "ITEM_01": {
+      "pass": true,
+      "private_or_label_paths_opened": [],
+      "mp4_opened_directly_by_python": [],
+      "ffmpeg_decode_processes": 3
+    },
+    "ITEM_02": {
+      "pass": true,
+      "private_or_label_paths_opened": [],
+      "mp4_opened_directly_by_python": [],
+      "ffmpeg_decode_processes": 3
+    },
+    "ITEM_03": {
+      "pass": true,
+      "private_or_label_paths_opened": [],
+      "mp4_opened_directly_by_python": [],
+      "ffmpeg_decode_processes": 3
+    },
+    "ITEM_04": {
+      "pass": true,
+      "private_or_label_paths_opened": [],
+      "mp4_opened_directly_by_python": [],
+      "ffmpeg_decode_processes": 9
+    },
+    "ITEM_05": {
+      "pass": true,
+      "private_or_label_paths_opened": [],
+      "mp4_opened_directly_by_python": [],
+      "ffmpeg_decode_processes": 3
+    },
+    "ITEM_06": {
+      "pass": true,
+      "private_or_label_paths_opened": [],
+      "mp4_opened_directly_by_python": [],
+      "ffmpeg_decode_processes": 3
+    },
+    "ITEM_07": {
+      "pass": true,
+      "private_or_label_paths_opened": [],
+      "mp4_opened_directly_by_python": [],
+      "ffmpeg_decode_processes": 6
+    }
+  },
+  "verdict": "PASS",
+  "note": "Term mentions are deny-lists, comments or a CLI default; none is used as a decision input."
+}

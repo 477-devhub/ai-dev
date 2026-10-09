@@ -1,0 +1,17 @@
+{
+  "original_files_deleted": 0,
+  "original_files_moved": 0,
+  "original_files_modified": 0,
+  "original_files_added": 0,
+  "benchmark_modified_files": 0,
+  "broken_symlinks": 0,
+  "missing_team_share_videos": 0,
+  "shared_video_hash_mismatch": 0,
+  "benchmark_validation": "PASS",
+  "benchmark_validation_output": "{\"annotation_leakage\": \"PASS\", \"missing_files\": 0, \"hash_mismatch\": 0, \"schema_validation\": \"PASS\", \"media_files\": 14, \"conditions\": 7, \"frozen\": true}\nFailed to find real location of D:\\Users\\suncastle\\anaconda3\\python.exe\n",
+  "zip_size_bytes": 174857540,
+  "zip_sha256": "1e535afa6ee8dad73709cf258693217c9172135411f7d4fbc94247ebb645ff11",
+  "symbolic_link_count": 54,
+  "copied_video_bytes": 174852116,
+  "original_project_size_bytes": 173311873857
+}

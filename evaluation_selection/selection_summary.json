@@ -1,0 +1,44 @@
+{
+  "dataset_counts": {
+    "fight": 54,
+    "swoon": 20,
+    "trespass": 44
+  },
+  "candidate_counts": {
+    "A": 6,
+    "B": 6,
+    "C": 7,
+    "D": 6
+  },
+  "ranking_combinations": 3,
+  "unique_candidate_videos": 22,
+  "reviewed_videos": 30,
+  "excluded_pairing_suspects": 7,
+  "top3": {
+    "A": [
+      "F01",
+      "F02",
+      "F05"
+    ],
+    "B": [
+      "S14",
+      "S16",
+      "S06"
+    ],
+    "C": [
+      "T05",
+      "T02",
+      "T01"
+    ],
+    "D": [
+      "T03",
+      "S03",
+      "T07"
+    ],
+    "E": [
+      "R01",
+      "R02",
+      "R03"
+    ]
+  }
+}

@@ -1,0 +1,650 @@
+[
+  {
+    "member": "435-2/435-2_cam01_fight01_place09_night_spring.mp4",
+    "size": 382316090,
+    "compressed_size": 382305084,
+    "crc": 1176163033
+  },
+  {
+    "member": "435-2/435-2_cam01_fight01_place09_night_spring.xml",
+    "size": 3960,
+    "compressed_size": 748,
+    "crc": 3110037746
+  },
+  {
+    "member": "435-2/435-2_cam01_fight01_place09_night_summer.mp4",
+    "size": 383167038,
+    "compressed_size": 383157635,
+    "crc": 2507328949
+  },
+  {
+    "member": "435-2/435-2_cam01_fight01_place09_night_summer.xml",
+    "size": 4186,
+    "compressed_size": 763,
+    "crc": 2249319486
+  },
+  {
+    "member": "435-2/435-2_cam01_fight01_place09_night_winter.mp4",
+    "size": 379877428,
+    "compressed_size": 379867249,
+    "crc": 3628155891
+  },
+  {
+    "member": "435-2/435-2_cam01_fight01_place09_night_winter.xml",
+    "size": 4525,
+    "compressed_size": 777,
+    "crc": 3759555531
+  },
+  {
+    "member": "435-2/435-2_cam02_fight01_place09_night_spring.mp4",
+    "size": 370730016,
+    "compressed_size": 370643966,
+    "crc": 2589300221
+  },
+  {
+    "member": "435-2/435-2_cam02_fight01_place09_night_spring.xml",
+    "size": 3960,
+    "compressed_size": 749,
+    "crc": 4123349338
+  },
+  {
+    "member": "435-2/435-2_cam02_fight01_place09_night_summer.mp4",
+    "size": 384625842,
+    "compressed_size": 384561742,
+    "crc": 2388090751
+  },
+  {
+    "member": "435-2/435-2_cam02_fight01_place09_night_summer.xml",
+    "size": 4412,
+    "compressed_size": 791,
+    "crc": 581926156
+  },
+  {
+    "member": "435-2/435-2_cam02_fight01_place09_night_winter.mp4",
+    "size": 370682883,
+    "compressed_size": 370607526,
+    "crc": 1441840531
+  },
+  {
+    "member": "435-2/435-2_cam02_fight01_place09_night_winter.xml",
+    "size": 4977,
+    "compressed_size": 816,
+    "crc": 2376092484
+  },
+  {
+    "member": "435-2/435-2_cam03_fight01_place09_night_spring.mp4",
+    "size": 357313224,
+    "compressed_size": 357075880,
+    "crc": 138055047
+  },
+  {
+    "member": "435-2/435-2_cam03_fight01_place09_night_spring.xml",
+    "size": 4299,
+    "compressed_size": 765,
+    "crc": 115036089
+  },
+  {
+    "member": "435-2/435-2_cam03_fight01_place09_night_summer.mp4",
+    "size": 382149792,
+    "compressed_size": 381947224,
+    "crc": 981795423
+  },
+  {
+    "member": "435-2/435-2_cam03_fight01_place09_night_summer.xml",
+    "size": 4751,
+    "compressed_size": 791,
+    "crc": 2143086583
+  },
+  {
+    "member": "435-2/435-2_cam03_fight01_place09_night_winter.mp4",
+    "size": 349616584,
+    "compressed_size": 349394619,
+    "crc": 1337350881
+  },
+  {
+    "member": "435-2/435-2_cam03_fight01_place09_night_winter.xml",
+    "size": 4638,
+    "compressed_size": 791,
+    "crc": 1401062009
+  },
+  {
+    "member": "435-3/435-3_cam01_fight01_place09_night_spring.mp4",
+    "size": 384566084,
+    "compressed_size": 384556219,
+    "crc": 2883711466
+  },
+  {
+    "member": "435-3/435-3_cam01_fight01_place09_night_spring.xml",
+    "size": 5231,
+    "compressed_size": 836,
+    "crc": 3141394116
+  },
+  {
+    "member": "435-3/435-3_cam01_fight01_place09_night_summer.mp4",
+    "size": 380338400,
+    "compressed_size": 380329048,
+    "crc": 1123270075
+  },
+  {
+    "member": "435-3/435-3_cam01_fight01_place09_night_summer.xml",
+    "size": 3960,
+    "compressed_size": 731,
+    "crc": 4195700344
+  },
+  {
+    "member": "435-3/435-3_cam01_fight01_place09_night_winter.mp4",
+    "size": 382804167,
+    "compressed_size": 382794403,
+    "crc": 3513334896
+  },
+  {
+    "member": "435-3/435-3_cam01_fight01_place09_night_winter.xml",
+    "size": 5203,
+    "compressed_size": 848,
+    "crc": 4062101001
+  },
+  {
+    "member": "435-3/435-3_cam02_fight01_place09_night_spring.mp4",
+    "size": 372547189,
+    "compressed_size": 372472317,
+    "crc": 2053703168
+  },
+  {
+    "member": "435-3/435-3_cam02_fight01_place09_night_spring.xml",
+    "size": 5230,
+    "compressed_size": 835,
+    "crc": 3463371912
+  },
+  {
+    "member": "435-3/435-3_cam02_fight01_place09_night_summer.mp4",
+    "size": 378675871,
+    "compressed_size": 378608188,
+    "crc": 1180312194
+  },
+  {
+    "member": "435-3/435-3_cam02_fight01_place09_night_summer.xml",
+    "size": 4073,
+    "compressed_size": 739,
+    "crc": 3767382462
+  },
+  {
+    "member": "435-3/435-3_cam02_fight01_place09_night_winter.mp4",
+    "size": 381590051,
+    "compressed_size": 381522016,
+    "crc": 3039091333
+  },
+  {
+    "member": "435-3/435-3_cam02_fight01_place09_night_winter.xml",
+    "size": 5429,
+    "compressed_size": 852,
+    "crc": 3021923236
+  },
+  {
+    "member": "435-3/435-3_cam03_fight01_place09_night_spring.mp4",
+    "size": 352107658,
+    "compressed_size": 351880700,
+    "crc": 56163874
+  },
+  {
+    "member": "435-3/435-3_cam03_fight01_place09_night_spring.xml",
+    "size": 5232,
+    "compressed_size": 834,
+    "crc": 1319563589
+  },
+  {
+    "member": "435-3/435-3_cam03_fight01_place09_night_summer.mp4",
+    "size": 379581289,
+    "compressed_size": 379386939,
+    "crc": 2605127690
+  },
+  {
+    "member": "435-3/435-3_cam03_fight01_place09_night_summer.xml",
+    "size": 3508,
+    "compressed_size": 702,
+    "crc": 898269092
+  },
+  {
+    "member": "435-3/435-3_cam03_fight01_place09_night_winter.mp4",
+    "size": 360110854,
+    "compressed_size": 359900946,
+    "crc": 3743001745
+  },
+  {
+    "member": "435-3/435-3_cam03_fight01_place09_night_winter.xml",
+    "size": 5316,
+    "compressed_size": 847,
+    "crc": 3290532629
+  },
+  {
+    "member": "435-4/435-4_cam01_fight01_place09_night_spring.mp4",
+    "size": 388765451,
+    "compressed_size": 388754160,
+    "crc": 3684297979
+  },
+  {
+    "member": "435-4/435-4_cam01_fight01_place09_night_spring.xml",
+    "size": 5512,
+    "compressed_size": 866,
+    "crc": 2023473866
+  },
+  {
+    "member": "435-4/435-4_cam01_fight01_place09_night_summer.mp4",
+    "size": 389821701,
+    "compressed_size": 389812494,
+    "crc": 3298134951
+  },
+  {
+    "member": "435-4/435-4_cam01_fight01_place09_night_summer.xml",
+    "size": 6249,
+    "compressed_size": 916,
+    "crc": 3581991140
+  },
+  {
+    "member": "435-4/435-4_cam01_fight01_place09_night_winter.mp4",
+    "size": 377644170,
+    "compressed_size": 377633081,
+    "crc": 965821953
+  },
+  {
+    "member": "435-4/435-4_cam01_fight01_place09_night_winter.xml",
+    "size": 4608,
+    "compressed_size": 780,
+    "crc": 2279132905
+  },
+  {
+    "member": "435-4/435-4_cam02_fight01_place09_night_spring.mp4",
+    "size": 385311366,
+    "compressed_size": 385231593,
+    "crc": 2959143244
+  },
+  {
+    "member": "435-4/435-4_cam02_fight01_place09_night_spring.xml",
+    "size": 5399,
+    "compressed_size": 854,
+    "crc": 3128073831
+  },
+  {
+    "member": "435-4/435-4_cam02_fight01_place09_night_summer.mp4",
+    "size": 392737193,
+    "compressed_size": 392670721,
+    "crc": 4156555885
+  },
+  {
+    "member": "435-4/435-4_cam02_fight01_place09_night_summer.xml",
+    "size": 6672,
+    "compressed_size": 950,
+    "crc": 3130183187
+  },
+  {
+    "member": "435-4/435-4_cam02_fight01_place09_night_winter.mp4",
+    "size": 379697910,
+    "compressed_size": 379624546,
+    "crc": 2793840952
+  },
+  {
+    "member": "435-4/435-4_cam02_fight01_place09_night_winter.xml",
+    "size": 4608,
+    "compressed_size": 793,
+    "crc": 3592043959
+  },
+  {
+    "member": "435-4/435-4_cam03_fight01_place09_night_spring.mp4",
+    "size": 371574089,
+    "compressed_size": 371348917,
+    "crc": 2451433227
+  },
+  {
+    "member": "435-4/435-4_cam03_fight01_place09_night_spring.xml",
+    "size": 5399,
+    "compressed_size": 857,
+    "crc": 4057506482
+  },
+  {
+    "member": "435-4/435-4_cam03_fight01_place09_night_summer.mp4",
+    "size": 392021332,
+    "compressed_size": 391830545,
+    "crc": 667156725
+  },
+  {
+    "member": "435-4/435-4_cam03_fight01_place09_night_summer.xml",
+    "size": 6107,
+    "compressed_size": 915,
+    "crc": 2521407308
+  },
+  {
+    "member": "435-4/435-4_cam03_fight01_place09_night_winter.mp4",
+    "size": 366330899,
+    "compressed_size": 366119498,
+    "crc": 1876315197
+  },
+  {
+    "member": "435-4/435-4_cam03_fight01_place09_night_winter.xml",
+    "size": 4720,
+    "compressed_size": 807,
+    "crc": 4202984681
+  },
+  {
+    "member": "435-5/435-5_cam01_fight01_place09_night_spring.mp4",
+    "size": 394462992,
+    "compressed_size": 394454073,
+    "crc": 3976907277
+  },
+  {
+    "member": "435-5/435-5_cam01_fight01_place09_night_spring.xml",
+    "size": 4805,
+    "compressed_size": 788,
+    "crc": 4091694567
+  },
+  {
+    "member": "435-5/435-5_cam01_fight01_place09_night_summer.mp4",
+    "size": 403335091,
+    "compressed_size": 403326062,
+    "crc": 2027913840
+  },
+  {
+    "member": "435-5/435-5_cam01_fight01_place09_night_summer.xml",
+    "size": 4269,
+    "compressed_size": 766,
+    "crc": 1470486104
+  },
+  {
+    "member": "435-5/435-5_cam01_fight01_place09_night_winter.mp4",
+    "size": 389336753,
+    "compressed_size": 389327817,
+    "crc": 3369688324
+  },
+  {
+    "member": "435-5/435-5_cam01_fight01_place09_night_winter.xml",
+    "size": 6500,
+    "compressed_size": 939,
+    "crc": 3982877979
+  },
+  {
+    "member": "435-5/435-5_cam02_fight01_place09_night_spring.mp4",
+    "size": 392863343,
+    "compressed_size": 392798327,
+    "crc": 2875192304
+  },
+  {
+    "member": "435-5/435-5_cam02_fight01_place09_night_spring.xml",
+    "size": 4918,
+    "compressed_size": 804,
+    "crc": 2400390544
+  },
+  {
+    "member": "435-5/435-5_cam02_fight01_place09_night_summer.mp4",
+    "size": 402973653,
+    "compressed_size": 402901111,
+    "crc": 2054178494
+  },
+  {
+    "member": "435-5/435-5_cam02_fight01_place09_night_summer.xml",
+    "size": 4382,
+    "compressed_size": 780,
+    "crc": 4137318310
+  },
+  {
+    "member": "435-5/435-5_cam02_fight01_place09_night_winter.mp4",
+    "size": 387273979,
+    "compressed_size": 387207113,
+    "crc": 1837440173
+  },
+  {
+    "member": "435-5/435-5_cam02_fight01_place09_night_winter.xml",
+    "size": 4014,
+    "compressed_size": 745,
+    "crc": 1687588682
+  },
+  {
+    "member": "435-5/435-5_cam03_fight01_place09_night_spring.mp4",
+    "size": 366924224,
+    "compressed_size": 366705423,
+    "crc": 243820190
+  },
+  {
+    "member": "435-5/435-5_cam03_fight01_place09_night_spring.xml",
+    "size": 5030,
+    "compressed_size": 814,
+    "crc": 2332064543
+  },
+  {
+    "member": "435-5/435-5_cam03_fight01_place09_night_summer.mp4",
+    "size": 402737020,
+    "compressed_size": 402528380,
+    "crc": 27464184
+  },
+  {
+    "member": "435-5/435-5_cam03_fight01_place09_night_summer.xml",
+    "size": 4156,
+    "compressed_size": 761,
+    "crc": 990689449
+  },
+  {
+    "member": "435-5/435-5_cam03_fight01_place09_night_winter.mp4",
+    "size": 374348967,
+    "compressed_size": 374149079,
+    "crc": 2266458880
+  },
+  {
+    "member": "435-5/435-5_cam03_fight01_place09_night_winter.xml",
+    "size": 3902,
+    "compressed_size": 751,
+    "crc": 849565002
+  },
+  {
+    "member": "435-6/435-6_cam01_fight01_place09_night_spring.mp4",
+    "size": 385196877,
+    "compressed_size": 385187573,
+    "crc": 3283187962
+  },
+  {
+    "member": "435-6/435-6_cam01_fight01_place09_night_spring.xml",
+    "size": 5173,
+    "compressed_size": 833,
+    "crc": 2368973851
+  },
+  {
+    "member": "435-6/435-6_cam01_fight01_place09_night_summer.mp4",
+    "size": 376471336,
+    "compressed_size": 376461494,
+    "crc": 757843580
+  },
+  {
+    "member": "435-6/435-6_cam01_fight01_place09_night_summer.xml",
+    "size": 4918,
+    "compressed_size": 802,
+    "crc": 2821973501
+  },
+  {
+    "member": "435-6/435-6_cam01_fight01_place09_night_winter.mp4",
+    "size": 378483129,
+    "compressed_size": 378473372,
+    "crc": 269831718
+  },
+  {
+    "member": "435-6/435-6_cam01_fight01_place09_night_winter.xml",
+    "size": 5227,
+    "compressed_size": 837,
+    "crc": 3118142576
+  },
+  {
+    "member": "435-6/435-6_cam02_fight01_place09_night_spring.mp4",
+    "size": 385883021,
+    "compressed_size": 385810649,
+    "crc": 4259987712
+  },
+  {
+    "member": "435-6/435-6_cam02_fight01_place09_night_spring.xml",
+    "size": 5399,
+    "compressed_size": 858,
+    "crc": 4163832762
+  },
+  {
+    "member": "435-6/435-6_cam02_fight01_place09_night_summer.mp4",
+    "size": 375470516,
+    "compressed_size": 375401849,
+    "crc": 1430884259
+  },
+  {
+    "member": "435-6/435-6_cam02_fight01_place09_night_summer.xml",
+    "size": 5582,
+    "compressed_size": 861,
+    "crc": 3453755601
+  },
+  {
+    "member": "435-6/435-6_cam02_fight01_place09_night_winter.mp4",
+    "size": 377634785,
+    "compressed_size": 377565934,
+    "crc": 538932928
+  },
+  {
+    "member": "435-6/435-6_cam02_fight01_place09_night_winter.xml",
+    "size": 5227,
+    "compressed_size": 837,
+    "crc": 3179341514
+  },
+  {
+    "member": "435-6/435-6_cam03_fight01_place09_night_spring.mp4",
+    "size": 364441699,
+    "compressed_size": 364220936,
+    "crc": 3174696977
+  },
+  {
+    "member": "435-6/435-6_cam03_fight01_place09_night_spring.xml",
+    "size": 5285,
+    "compressed_size": 842,
+    "crc": 273267911
+  },
+  {
+    "member": "435-6/435-6_cam03_fight01_place09_night_summer.mp4",
+    "size": 375916777,
+    "compressed_size": 375714193,
+    "crc": 4228552949
+  },
+  {
+    "member": "435-6/435-6_cam03_fight01_place09_night_summer.xml",
+    "size": 5239,
+    "compressed_size": 839,
+    "crc": 1736846854
+  },
+  {
+    "member": "435-6/435-6_cam03_fight01_place09_night_winter.mp4",
+    "size": 363219862,
+    "compressed_size": 363015253,
+    "crc": 3974709999
+  },
+  {
+    "member": "435-6/435-6_cam03_fight01_place09_night_winter.xml",
+    "size": 4834,
+    "compressed_size": 806,
+    "crc": 1025035762
+  },
+  {
+    "member": "439-1/439-1_cam01_fight01_place03_day_spring.mp4",
+    "size": 359710289,
+    "compressed_size": 359691651,
+    "crc": 330966809
+  },
+  {
+    "member": "439-1/439-1_cam01_fight01_place03_day_spring.xml",
+    "size": 3498,
+    "compressed_size": 708,
+    "crc": 2719773772
+  },
+  {
+    "member": "439-1/439-1_cam01_fight01_place03_day_summer.mp4",
+    "size": 353741043,
+    "compressed_size": 353722859,
+    "crc": 2737875151
+  },
+  {
+    "member": "439-1/439-1_cam01_fight01_place03_day_summer.xml",
+    "size": 3333,
+    "compressed_size": 696,
+    "crc": 2291250117
+  },
+  {
+    "member": "439-1/439-1_cam01_fight01_place03_day_winter.mp4",
+    "size": 353388677,
+    "compressed_size": 353370597,
+    "crc": 4153382538
+  },
+  {
+    "member": "439-1/439-1_cam01_fight01_place03_day_winter.xml",
+    "size": 3104,
+    "compressed_size": 678,
+    "crc": 1447165783
+  },
+  {
+    "member": "439-1/439-1_cam02_fight01_place03_day_spring.mp4",
+    "size": 358831628,
+    "compressed_size": 358649843,
+    "crc": 3472847966
+  },
+  {
+    "member": "439-1/439-1_cam02_fight01_place03_day_spring.xml",
+    "size": 4171,
+    "compressed_size": 761,
+    "crc": 2429748497
+  },
+  {
+    "member": "439-1/439-1_cam02_fight01_place03_day_summer.mp4",
+    "size": 352922733,
+    "compressed_size": 352753737,
+    "crc": 700690900
+  },
+  {
+    "member": "439-1/439-1_cam02_fight01_place03_day_summer.xml",
+    "size": 2881,
+    "compressed_size": 657,
+    "crc": 1351250369
+  },
+  {
+    "member": "439-1/439-1_cam02_fight01_place03_day_winter.mp4",
+    "size": 351446109,
+    "compressed_size": 351261506,
+    "crc": 2722301283
+  },
+  {
+    "member": "439-1/439-1_cam02_fight01_place03_day_winter.xml",
+    "size": 3866,
+    "compressed_size": 746,
+    "crc": 2926125128
+  },
+  {
+    "member": "439-1/439-1_cam03_fight01_place03_day_spring.mp4",
+    "size": 359019378,
+    "compressed_size": 358766366,
+    "crc": 3296659675
+  },
+  {
+    "member": "439-1/439-1_cam03_fight01_place03_day_spring.xml",
+    "size": 3303,
+    "compressed_size": 696,
+    "crc": 3143193179
+  },
+  {
+    "member": "439-1/439-1_cam03_fight01_place03_day_summer.mp4",
+    "size": 353535446,
+    "compressed_size": 353286193,
+    "crc": 1764925864
+  },
+  {
+    "member": "439-1/439-1_cam03_fight01_place03_day_summer.xml",
+    "size": 2994,
+    "compressed_size": 664,
+    "crc": 3016495493
+  },
+  {
+    "member": "439-1/439-1_cam03_fight01_place03_day_winter.mp4",
+    "size": 350613003,
+    "compressed_size": 350356291,
+    "crc": 2950183225
+  },
+  {
+    "member": "439-1/439-1_cam03_fight01_place03_day_winter.xml",
+    "size": 3613,
+    "compressed_size": 717,
+    "crc": 2631543533
+  }
+]

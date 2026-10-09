@@ -1,0 +1,6 @@
+# Isolated venv experiments/p4_gpt61_sol_vision/.venv (CPython 3.12). Same pinned SDK as P3 (P3 venv left untouched).
+openai==3.26.0        # official SDK; client.responses.create (Responses API), identical version to P3
+jsonschema==4.26.0
+referencing==0.37.0
+pyyaml==6.0.3
+pillow==11.3.0        # in-memory lossless WebP encode/decode for canonical RGB frames

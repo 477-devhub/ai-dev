@@ -1,0 +1,39 @@
+{
+  "pipeline_actual": "p2_clef_flash",
+  "pipeline_schema_value": "cv_llm",
+  "run_id": "p2_clef_flash-v1",
+  "model_id": "p2_clef_flash:@cf/cloudflare/clef-flash@v1",
+  "provider": "cloudflare_workers_ai",
+  "decision_model": "@cf/cloudflare/clef-flash",
+  "model_input_selector": "clef-flash",
+  "endpoint": "POST https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/cloudflare/clef-flash",
+  "ai_gateway": false,
+  "input_modality": "text only (state string); no images",
+  "compact_state_version": "compact-decision-state-v1",
+  "decision_questions_version": "decisions-v1",
+  "clef_questions_version": "clef-questions-v1",
+  "python": "3.12.6",
+  "http_client": "httpx 0.28.1",
+  "timeouts_sec": {
+    "connect": 10.0,
+    "read": 120.0
+  },
+  "max_retries": 2,
+  "retry_policy": "network/timeout errors, HTTP 429, HTTP 5xx, and Cloudflare temporary-capacity errors only; exponential backoff 1s*2^n + U(0,0.25)s jitter; 400/401/403/404/422 and invalid request schema never retried",
+  "pricing": {
+    "model": "@cf/cloudflare/clef-flash",
+    "input_usd_per_1m_tokens": 0.09,
+    "output_usd_per_1m_tokens": 0.0,
+    "neurons_per_1m_input_tokens": 8182,
+    "usd_per_1000_neurons_beyond_free": 0.011,
+    "free_allocation_neurons_per_day": 10000,
+    "billing_rule": "input tokens only (no output-token price listed for Clef models)",
+    "pricing_source": "https://developers.cloudflare.com/workers-ai/platform/pricing/ ('Other model pricing': @cf/cloudflare/clef-flash $0.090 per M input tokens / 8182 neurons per M input tokens); live cross-check: GET /accounts/{ACCOUNT_ID}/ai/models/search catalog property price=0.09 USD per M input tokens (logs/cloudflare_schema_snapshot.json)",
+    "pricing_checked_at": "2026-10-07",
+    "pricing_unit": "USD per 1M input tokens"
+  },
+  "freeze_file": "freeze/p2_freeze.json",
+  "requests_per_item": 1,
+  "latency_note": "frozen compact state reused; decision API + adapter timings only; result latency_ms = null (not full E2E)",
+  "estimated_cost_usd_note": "null in results: local CV compute cost not measured; external_api_cost_usd (theoretical) recorded separately"
+}

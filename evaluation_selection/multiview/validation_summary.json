@@ -1,0 +1,24 @@
+{
+  "source_video_count": 10,
+  "annotation_count": 5,
+  "valid_pair_count": 5,
+  "visual_review_pair_count": 5,
+  "candidate_pair_count": 5,
+  "top3": [
+    "MV05",
+    "MV02",
+    "MV01"
+  ],
+  "highest_gain": {
+    "pair_id": "MV05",
+    "gain": 4.8
+  },
+  "extracted_bytes": 743055292,
+  "multiview_bytes": 758478832,
+  "old_results_sha256_unchanged": true,
+  "source_zips_sha256_unchanged": true,
+  "extracted_members_crc_match": true,
+  "contact_sheets_verified": 25,
+  "no_model_api_called": true,
+  "no_final_pair_selected": true
+}

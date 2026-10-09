@@ -1,0 +1,68 @@
+{
+  "schema_version": "compact-decision-state-v1",
+  "items": {
+    "ITEM_01": {
+      "compact_sha256": "37d36bcfa9fd617aea3653b7a97799015b6120a3e51ddd722489f5bf0f90248a",
+      "compact_bytes": 1964,
+      "original_state_bytes": 226814,
+      "reduction_pct": 99.13,
+      "model_input_bytes": 2808,
+      "model_input_tokens_estimate_o200k": 720,
+      "serializer_latency_ms": 0.208
+    },
+    "ITEM_02": {
+      "compact_sha256": "d5fa17f4a4049cc449f8edb519e737de74e7baf65d7a343b042eb9f83be0d702",
+      "compact_bytes": 2782,
+      "original_state_bytes": 116132,
+      "reduction_pct": 97.6,
+      "model_input_bytes": 3626,
+      "model_input_tokens_estimate_o200k": 959,
+      "serializer_latency_ms": 0.471
+    },
+    "ITEM_03": {
+      "compact_sha256": "0cad333c34224f9f27abb59bf7cffc42fe65825dcec89e0b635e3802c111b51b",
+      "compact_bytes": 2805,
+      "original_state_bytes": 247172,
+      "reduction_pct": 98.87,
+      "model_input_bytes": 3649,
+      "model_input_tokens_estimate_o200k": 965,
+      "serializer_latency_ms": 0.307
+    },
+    "ITEM_04": {
+      "compact_sha256": "585f6a8b0b7294324536d5bb11613e42adaf54d3cffee62d7cf6b08302d5799f",
+      "compact_bytes": 11832,
+      "original_state_bytes": 462185,
+      "reduction_pct": 97.44,
+      "model_input_bytes": 12676,
+      "model_input_tokens_estimate_o200k": 3529,
+      "serializer_latency_ms": 2.915
+    },
+    "ITEM_05": {
+      "compact_sha256": "34923012335eeb00c7b77fe07c9c4081abada9efacaecaf8dbec098c2353d243",
+      "compact_bytes": 4390,
+      "original_state_bytes": 155803,
+      "reduction_pct": 97.18,
+      "model_input_bytes": 5234,
+      "model_input_tokens_estimate_o200k": 1428,
+      "serializer_latency_ms": 0.712
+    },
+    "ITEM_06": {
+      "compact_sha256": "6961df13b1fbbe696a70b93fbde1e1460236aad27559db838aff34da137daf90",
+      "compact_bytes": 8666,
+      "original_state_bytes": 471395,
+      "reduction_pct": 98.16,
+      "model_input_bytes": 9510,
+      "model_input_tokens_estimate_o200k": 2652,
+      "serializer_latency_ms": 1.245
+    },
+    "ITEM_07": {
+      "compact_sha256": "845a79314d701a5f5fa2ed851c4c645d3610caf4258ebb067a421f75b973fd17",
+      "compact_bytes": 15713,
+      "original_state_bytes": 358727,
+      "reduction_pct": 95.62,
+      "model_input_bytes": 16557,
+      "model_input_tokens_estimate_o200k": 4749,
+      "serializer_latency_ms": 3.101
+    }
+  }
+}

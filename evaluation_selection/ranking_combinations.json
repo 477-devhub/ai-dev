@@ -1,0 +1,233 @@
+[
+  {
+    "combination_id": "R01",
+    "cameras": {
+      "CAM A": {
+        "candidate_id": "S14",
+        "event_type": "swoon",
+        "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-4\\710-4_cam01_swoon01_place01_day_summer.mp4",
+        "local_video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-4\\710-4_cam01_swoon01_place01_day_summer.mp4",
+        "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-4\\710-4_cam01_swoon01_place01_day_summer.xml",
+        "duration": 315.7821333333333,
+        "event_duration": 16.8,
+        "event_start": 230.6,
+        "event_end": 247.4,
+        "suggested_playback_start": 225.6,
+        "suggested_playback_end": 260.6,
+        "suggested_playback_duration": 35.00000000000003,
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": true,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      },
+      "CAM B": {
+        "candidate_id": "F01",
+        "event_type": "fight",
+        "video_path": "D:\\projects\\477\\downloads\\fight\\19.이상행동CCTV\\02.싸움(fight)\\실내(원본)\\insidedoor_04.zip::435-2/435-2_cam01_fight01_place09_night_spring.mp4",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\tmp\\fight\\435-2\\435-2_cam01_fight01_place09_night_spring.mp4",
+        "annotation_path": "D:\\projects\\477\\downloads\\fight\\19.이상행동CCTV\\02.싸움(fight)\\실내(원본)\\insidedoor_04.zip::435-2/435-2_cam01_fight01_place09_night_spring.xml",
+        "duration": 312.6123,
+        "event_duration": 127.2,
+        "event_start": 121.5,
+        "event_end": 248.7,
+        "suggested_playback_start": 116.5,
+        "suggested_playback_end": 151.5,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          4,
+          4
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      },
+      "CAM C": {
+        "candidate_id": "T06",
+        "event_type": "trespass",
+        "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-3\\145-3_cam01_trespass01_place01_day_summer.mp4",
+        "local_video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-3\\145-3_cam01_trespass01_place01_day_summer.mp4",
+        "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-3\\145-3_cam01_trespass01_place01_day_summer.xml",
+        "duration": 297.56393333333335,
+        "event_duration": 5.2,
+        "event_start": 257.8,
+        "event_end": 263.0,
+        "suggested_playback_start": 252.8,
+        "suggested_playback_end": 287.8,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          2
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": true,
+        "restricted_area_status": "not_provided_by_annotation",
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "reason": "쓰러진 뒤 자세 지속, 여러 인물의 접촉, 담장 통과를 비교하며 서로 다른 관찰 근거로 우선 확인을 설명할 수 있다.",
+    "priority_ground_truth": null,
+    "simultaneity": "evaluation_assumption_only"
+  },
+  {
+    "combination_id": "R02",
+    "cameras": {
+      "CAM A": {
+        "candidate_id": "S06",
+        "event_type": "swoon",
+        "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-2\\710-2_cam01_swoon01_place01_day_summer.mp4",
+        "local_video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-2\\710-2_cam01_swoon01_place01_day_summer.mp4",
+        "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-2\\710-2_cam01_swoon01_place01_day_summer.xml",
+        "duration": 297.5973,
+        "event_duration": 16.3,
+        "event_start": 248.3,
+        "event_end": 264.6,
+        "suggested_playback_start": 243.3,
+        "suggested_playback_end": 278.3,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": true,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      },
+      "CAM B": {
+        "candidate_id": "F02",
+        "event_type": "fight",
+        "video_path": "D:\\projects\\477\\downloads\\fight\\19.이상행동CCTV\\02.싸움(fight)\\실내(원본)\\insidedoor_04.zip::435-3/435-3_cam02_fight01_place09_night_summer.mp4",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\tmp\\fight\\435-3\\435-3_cam02_fight01_place09_night_summer.mp4",
+        "annotation_path": "D:\\projects\\477\\downloads\\fight\\19.이상행동CCTV\\02.싸움(fight)\\실내(원본)\\insidedoor_04.zip::435-3/435-3_cam02_fight01_place09_night_summer.xml",
+        "duration": 302.9359666666667,
+        "event_duration": 114.4,
+        "event_start": 131.9,
+        "event_end": 246.3,
+        "suggested_playback_start": 126.9,
+        "suggested_playback_end": 161.9,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          4,
+          4
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      },
+      "CAM C": {
+        "candidate_id": "T08",
+        "event_type": "trespass",
+        "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-4\\145-4_cam01_trespass01_place01_day_spring.mp4",
+        "local_video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-4\\145-4_cam01_trespass01_place01_day_spring.mp4",
+        "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-4\\145-4_cam01_trespass01_place01_day_spring.xml",
+        "duration": 295.7955,
+        "event_duration": 2.8,
+        "event_start": 261.3,
+        "event_end": 264.1,
+        "suggested_playback_start": 256.3,
+        "suggested_playback_end": 291.3,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          3
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": true,
+        "restricted_area_status": "not_provided_by_annotation",
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "reason": "짧은 담장 통과와 반복 신체 접촉, 바닥 자세 지속의 서로 다른 시간 특성을 비교한다.",
+    "priority_ground_truth": null,
+    "simultaneity": "evaluation_assumption_only"
+  },
+  {
+    "combination_id": "R03",
+    "cameras": {
+      "CAM A": {
+        "candidate_id": "S16",
+        "event_type": "swoon",
+        "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-6\\710-6_cam01_swoon01_place01_day_summer.mp4",
+        "local_video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-6\\710-6_cam01_swoon01_place01_day_summer.mp4",
+        "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\05.실신(swoon)\\실외\\extracted\\710-6\\710-6_cam01_swoon01_place01_day_summer.xml",
+        "duration": 304.5042,
+        "event_duration": 15.9,
+        "event_start": 243.0,
+        "event_end": 258.9,
+        "suggested_playback_start": 238.0,
+        "suggested_playback_end": 273.0,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          1
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": true,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      },
+      "CAM B": {
+        "candidate_id": "F05",
+        "event_type": "fight",
+        "video_path": "D:\\projects\\477\\downloads\\fight\\19.이상행동CCTV\\02.싸움(fight)\\실내(원본)\\insidedoor_04.zip::435-6/435-6_cam02_fight01_place09_night_winter.mp4",
+        "local_video_path": "D:\\projects\\477\\evaluation_selection\\tmp\\fight\\435-6\\435-6_cam02_fight01_place09_night_winter.mp4",
+        "annotation_path": "D:\\projects\\477\\downloads\\fight\\19.이상행동CCTV\\02.싸움(fight)\\실내(원본)\\insidedoor_04.zip::435-6/435-6_cam02_fight01_place09_night_winter.xml",
+        "duration": 302.5355666666667,
+        "event_duration": 195.1,
+        "event_start": 54.2,
+        "event_end": 249.3,
+        "suggested_playback_start": 49.2,
+        "suggested_playback_end": 84.2,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          2,
+          4
+        ],
+        "physical_contact_observed": true,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": null,
+        "restricted_area_status": null,
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      },
+      "CAM C": {
+        "candidate_id": "T06",
+        "event_type": "trespass",
+        "video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-3\\145-3_cam01_trespass01_place01_day_summer.mp4",
+        "local_video_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-3\\145-3_cam01_trespass01_place01_day_summer.mp4",
+        "annotation_path": "D:\\projects\\477\\data\\recovered\\19.이상행동CCTV\\07.침입(trespass)\\실외\\extracted\\145-3\\145-3_cam01_trespass01_place01_day_summer.xml",
+        "duration": 297.56393333333335,
+        "event_duration": 5.2,
+        "event_start": 257.8,
+        "event_end": 263.0,
+        "suggested_playback_start": 252.8,
+        "suggested_playback_end": 287.8,
+        "suggested_playback_duration": 35.0,
+        "visible_persons_range_in_sampled_frames": [
+          1,
+          2
+        ],
+        "physical_contact_observed": false,
+        "remains_motionless_in_sampled_frames": false,
+        "boundary_entry_visible": true,
+        "restricted_area_status": "not_provided_by_annotation",
+        "basis": "9-frame event sheet and 24-frame ordered temporal sheet; observations are not continuous measurements"
+      }
+    },
+    "reason": "초기 두 사람 충돌과 이후 확대 가능성을 쓰러짐 및 담장 통과와 비교하며 R01과 일부 영상을 공유하는 대안이다.",
+    "priority_ground_truth": null,
+    "simultaneity": "evaluation_assumption_only"
+  }
+]

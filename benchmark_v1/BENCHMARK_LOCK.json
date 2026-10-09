@@ -1,0 +1,312 @@
+{
+  "benchmark_version": "477-reasoning-v1",
+  "frozen": true,
+  "scope": "Stage 2 — AI Reasoning / Attention Orchestration Benchmark",
+  "created_at": "2026-10-07T16:01:46.809775+09:00",
+  "duration_tolerance_sec": 0.04,
+  "media": {
+    "media/asset_01.mp4": {
+      "sha256": "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/asset_02.mp4": {
+      "sha256": "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/asset_03.mp4": {
+      "sha256": "7b5f3939800135521bee7c1b8ebd546d438bad3026fddc8f2c6146c7478a6ebb",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/asset_04.mp4": {
+      "sha256": "3728911198b69e07d17cf39e98ce08970b0111c03e04967355b7a133c71f003b",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/asset_05.mp4": {
+      "sha256": "5e07a830faa3e535e8ebaeacb008b646dd410fbd195e21a9ca31941d6a7318bc",
+      "duration": 30.633008,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 919,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/asset_06.mp4": {
+      "sha256": "58e36d22315878479422e9161dd8ce63ddd167fb08bedde340d9da480e0f3eaf",
+      "duration": 31.833333,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 955,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set01_swoon.mp4": {
+      "sha256": "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set02_trespass.mp4": {
+      "sha256": "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set03_ambiguous.mp4": {
+      "sha256": "7b5f3939800135521bee7c1b8ebd546d438bad3026fddc8f2c6146c7478a6ebb",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set04_cam_a_swoon.mp4": {
+      "sha256": "7dd478629b16e9c869e273151a1233f3c60cd63eca5d801074736c8f3ce178ea",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set04_cam_b_fight.mp4": {
+      "sha256": "3728911198b69e07d17cf39e98ce08970b0111c03e04967355b7a133c71f003b",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set04_cam_c_trespass.mp4": {
+      "sha256": "30868d30f0002b837f33a2bdb48dc013a4be690a5c5ca7e980ad65b2d2428d99",
+      "duration": 35.0,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 1050,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set05_cam_a.mp4": {
+      "sha256": "5e07a830faa3e535e8ebaeacb008b646dd410fbd195e21a9ca31941d6a7318bc",
+      "duration": 30.633008,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 919,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    },
+    "media/set05_cam_b.mp4": {
+      "sha256": "58e36d22315878479422e9161dd8ce63ddd167fb08bedde340d9da480e0f3eaf",
+      "duration": 31.833333,
+      "fps": 30.0,
+      "width": 1920,
+      "height": 1080,
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "frame_count": 955,
+      "audio_streams": 0,
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    }
+  },
+  "identical_content_pairs": [
+    [
+      "media/set01_swoon.mp4",
+      "media/set04_cam_a_swoon.mp4"
+    ],
+    [
+      "media/set02_trespass.mp4",
+      "media/set04_cam_c_trespass.mp4"
+    ],
+    [
+      "media/asset_01.mp4",
+      "media/set01_swoon.mp4"
+    ],
+    [
+      "media/asset_02.mp4",
+      "media/set02_trespass.mp4"
+    ],
+    [
+      "media/asset_03.mp4",
+      "media/set03_ambiguous.mp4"
+    ],
+    [
+      "media/asset_04.mp4",
+      "media/set04_cam_b_fight.mp4"
+    ],
+    [
+      "media/asset_05.mp4",
+      "media/set05_cam_a.mp4"
+    ],
+    [
+      "media/asset_06.mp4",
+      "media/set05_cam_b.mp4"
+    ]
+  ],
+  "private_files_model_input_policy": "never loaded by model-input loader",
+  "artifacts_sha256": {
+    "model_input/prompt_v1.txt": "4041047cf14f4df46dc040871d7f272cb25446a36c580c9c79055e56096e4146",
+    "model_input/scenarios.json": "cb2029d420d3ff2a3e42d1cef1f72efa20c871777c36c67fc7c28f4547bb4516",
+    "private_ground_truth/build_plan.json": "4957f4ad96f2cc346ae83dfef336f0d07ea48bb84366661502eeb4b257cc4dd9",
+    "private_ground_truth/capacity_check.json": "cf5dd7545fa587acf803d7ba0bab87b82358ac463c50e01a4309a2bf99bfb39b",
+    "private_ground_truth/initial_protection_snapshot.json": "c9e27594e99dd1a18fd22aa7f72c6647d229c8a88366a755c837514e4ae7a66c",
+    "private_ground_truth/media_build_records.json": "780208fc157180695a2b8e74fd424453b7407db2af976d0a5c243722323c8533",
+    "private_ground_truth/review/T03_250_272.jpg": "891b9b44adbdc5479e14f2ddf95c4e6e18ad22e5be388f857925f688261066dc",
+    "private_ground_truth/review/T03_273_290.jpg": "968308fbdf6731ed91dc8152f04483b672b5568ed40b76b782df4e6c6b885e5a",
+    "private_ground_truth/review/T03_overview.jpg": "42adb751d57b02d62278ba7a441997d06323bb6f5596488ad54894deee275cc7",
+    "private_ground_truth/set01.json": "d7afaa5f3711ed32f0e3f50276bf384fdd5c423a91bf58f334537b56c73ae667",
+    "private_ground_truth/set02.json": "0b7acc44cffb1102b413c86162673a3688c94ea4872b623d2124bb676f6957b8",
+    "private_ground_truth/set03.json": "3871a5252eddb609308a06951037f723fd82e0a2312cde107d55dda9680c0487",
+    "private_ground_truth/set04.json": "f7abceca2f4f00042c57c1aeb84ed47dd62630c28bdd8038bb170d5c32331741",
+    "private_ground_truth/set05.json": "bfb98d9fb4d03a4d7bbc35f52f75896be1ac6ab7c141edfe31d1b42c983c1fc7",
+    "private_ground_truth/source_candidate_records.json": "6e55b0693066d1c90079c1a77533701622404fc8961c0e8cff615f255c7523b2",
+    "private_ground_truth/source_preservation_validation.json": "691605bde6a921caaecf30383a11a9274c2d5d8725cf2f41d1e244caccdec78a",
+    "private_ground_truth/t03_clip_selection.json": "52daa62d2efb3573f93f070808a99cde41c54cfb933a9d8c68352d36b76cd3bd",
+    "public_manifest.json": "c4ebe96d3df4c73a333cbd2668497eec36affc61bcbb6fec3dd50110390fe7e3",
+    "README.md": "c4b4b74bfb5145d8ef7a767ba2f9ecba05a240d491a5e71456c7c782c70c73d2",
+    "schemas/prediction.schema.json": "68e068dd5bb42cfdbc5db25be4988c9d466e67410414e8b813c360c2c566df6d",
+    "schemas/result.schema.json": "57081270d6f5cd011a70413ab49dd9bc2c361ff88fe006b3569eeaa9e6857875",
+    "scripts/benchmark_common.py": "d8300c8a7e9bf04f7d08e24f1caa073d01fd61f5486e666c8ea94532f2847343",
+    "scripts/build_benchmark.py": "1de9d3817abef3dbf8cef692888a514639d5a5c8cb7f3e9b41c9ed21bc550339",
+    "scripts/build_media.py": "49de32231b9b458941da1fed218e400b8bc1b7e05ad74c662912e26d604434a1",
+    "scripts/load_model_input.py": "888e880d22178695292b033ee41d0aafa0e7cb38fb5296c7388e74d06fe024a9",
+    "scripts/score_results.py": "f427d1be31e31e587b1c369ff356a9876f470c10cd4649a909c95173fd82aaf4",
+    "scripts/validate_benchmark.py": "4a163034fe8c014f7163a369e18c46af0e2fca9004963d4ec82f7bce017efa18",
+    "scripts/validate_prediction.py": "c981bc27e4adbce84686025842f1726d934b3e7dbb7dba0dfefc058a6297e3f6"
+  }
+}

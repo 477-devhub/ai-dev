@@ -1,0 +1,107 @@
+{
+  "scope": "priority_minimal_v1",
+  "checks": {
+    "priority_labels_valid": {
+      "pass": true,
+      "detail": []
+    },
+    "benchmark_built": {
+      "pass": true,
+      "detail": ""
+    },
+    "no_duplicate_candidate_ids": {
+      "pass": true,
+      "detail": ""
+    },
+    "no_unreviewed_items_in_benchmark": {
+      "pass": true,
+      "detail": ""
+    },
+    "all_eligible_human_labels_preserved": {
+      "pass": true,
+      "detail": ""
+    },
+    "registered_binary_mapping_matches_protocol": {
+      "pass": true,
+      "detail": ""
+    },
+    "deterministic_binary_mapping_valid": {
+      "pass": true,
+      "detail": ""
+    },
+    "every_primary_sample_has_human_label": {
+      "pass": true,
+      "detail": ""
+    },
+    "ambiguous_excluded_from_primary_metrics": {
+      "pass": true,
+      "detail": ""
+    },
+    "scene_group_split_leakage_zero": {
+      "pass": true,
+      "detail": []
+    },
+    "split_manifest_matches_gt": {
+      "pass": true,
+      "detail": ""
+    },
+    "max_3_clips_per_scene": {
+      "pass": true,
+      "detail": {
+        "SCN_07": 3,
+        "SCN_09": 3,
+        "SCN_11": 3,
+        "SCN_12": 3,
+        "SCN_14": 2,
+        "SCN_01": 3,
+        "SCN_13": 2,
+        "SCN_08": 3,
+        "SCN_05": 3,
+        "SCN_10": 2,
+        "SCN_04": 3,
+        "SCN_03": 3,
+        "SCN_16": 1,
+        "SCN_02": 3,
+        "SCN_17": 1,
+        "SCN_15": 1,
+        "SCN_06": 3,
+        "SCN_18": 1
+      }
+    },
+    "no_private_gt_in_public_manifest": {
+      "pass": true,
+      "detail": ""
+    },
+    "public_and_private_item_sets_match": {
+      "pass": true,
+      "detail": ""
+    },
+    "media_sha256_matches": {
+      "pass": true,
+      "detail": []
+    },
+    "no_duplicate_exact_media": {
+      "pass": true,
+      "detail": ""
+    },
+    "frame_schedules_valid": {
+      "pass": true,
+      "detail": []
+    },
+    "review_no_reasoning_v1_source_video": {
+      "pass": true,
+      "detail": ""
+    },
+    "review_clip_sha256": {
+      "pass": true,
+      "detail": []
+    },
+    "benchmark_lock_hashes_valid": {
+      "pass": true,
+      "detail": []
+    }
+  },
+  "all_pass": true,
+  "ready_to_freeze": true,
+  "additional_human_review_required": false
+}

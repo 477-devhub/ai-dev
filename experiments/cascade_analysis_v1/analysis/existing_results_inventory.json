@@ -1,0 +1,270 @@
+{
+  "analysis_version": "cascade-analysis-v1",
+  "api_calls_made": 0,
+  "assessments": [
+    {
+      "assessment": "ITEM_01",
+      "item": "ITEM_01",
+      "task": "single",
+      "decision_key": "_",
+      "asset": "ASSET_01",
+      "tier": "anchored_danger",
+      "tier_provenance": "human_verified_observation: normal_movement_then_fall + remains_in_ground_posture_afterward"
+    },
+    {
+      "assessment": "ITEM_02",
+      "item": "ITEM_02",
+      "task": "single",
+      "decision_key": "_",
+      "asset": "ASSET_02",
+      "tier": "hv_event_unanchored",
+      "tier_provenance": "human_verified_observation: starts_outside_wall, crosses_over_wall, moves_inside"
+    },
+    {
+      "assessment": "ITEM_03",
+      "item": "ITEM_03",
+      "task": "single",
+      "decision_key": "_",
+      "asset": "ASSET_03",
+      "tier": "ambiguous",
+      "tier_provenance": "ambiguous_case=true"
+    },
+    {
+      "assessment": "ITEM_04/CAM_01",
+      "item": "ITEM_04",
+      "task": "attention",
+      "decision_key": "CAM_01",
+      "asset": "ASSET_01",
+      "tier": "anchored_danger",
+      "tier_provenance": "human_verified_observation: normal_movement_then_fall + remains_in_ground_posture_afterward"
+    },
+    {
+      "assessment": "ITEM_04/CAM_02",
+      "item": "ITEM_04",
+      "task": "attention",
+      "decision_key": "CAM_02",
+      "asset": "ASSET_04",
+      "tier": "diagnostic_source_label_only",
+      "tier_provenance": "source label 'fight' only; anchor not_scored"
+    },
+    {
+      "assessment": "ITEM_04/CAM_03",
+      "item": "ITEM_04",
+      "task": "attention",
+      "decision_key": "CAM_03",
+      "asset": "ASSET_02",
+      "tier": "hv_event_unanchored",
+      "tier_provenance": "inherited: byte-identical asset ASSET_02 of ITEM_02 (GT itself marks not_scored)"
+    },
+    {
+      "assessment": "ITEM_05",
+      "item": "ITEM_05",
+      "task": "single",
+      "decision_key": "_",
+      "asset": "ASSET_05",
+      "tier": "diagnostic_source_label_only",
+      "tier_provenance": "source label '신체적 충돌을 동반한 싸움' only; anchor not_scored"
+    },
+    {
+      "assessment": "ITEM_06",
+      "item": "ITEM_06",
+      "task": "single",
+      "decision_key": "_",
+      "asset": "ASSET_06",
+      "tier": "diagnostic_source_label_only",
+      "tier_provenance": "source label '신체적 충돌을 동반한 싸움' only; anchor not_scored"
+    },
+    {
+      "assessment": "ITEM_07",
+      "item": "ITEM_07",
+      "task": "multi_camera",
+      "decision_key": "_",
+      "asset": "ASSET_05+ASSET_06",
+      "tier": "diagnostic_source_label_only",
+      "tier_provenance": "source label '신체적 충돌을 동반한 싸움' only; anchor not_scored"
+    }
+  ],
+  "assessment_count": 9,
+  "item_count": 7,
+  "tier_counts": {
+    "anchored_danger": 2,
+    "hv_event_unanchored": 2,
+    "ambiguous": 1,
+    "diagnostic_source_label_only": 4
+  },
+  "clear_normal_negatives": 0,
+  "hard_normal_negatives": 0,
+  "every_assessment_source_positive": true,
+  "unique_media_assets": [
+    "ASSET_01",
+    "ASSET_02",
+    "ASSET_03",
+    "ASSET_04",
+    "ASSET_05",
+    "ASSET_06"
+  ],
+  "anchored_danger_unique_assets": [
+    "ASSET_01"
+  ],
+  "independence_note": "ITEM_04/CAM_01 reuses ASSET_01 (ITEM_01) and ITEM_04/CAM_03 reuses ASSET_02 (ITEM_02); ITEM_05/06/07 are views of one SET05 incident. 9 assessments = 6 unique clips = 5 unique incidents; the 2 fall anchors are ONE video sampled two ways.",
+  "p1_signal_summary": {
+    "p_incident": {
+      "min": 0.21,
+      "max": 0.92,
+      "median": 0.59
+    },
+    "category_confidence": {
+      "min": 0.28,
+      "max": 1.0,
+      "median": 0.71
+    },
+    "confidence": {
+      "min": 0.44,
+      "max": 0.96,
+      "median": 0.685
+    },
+    "p_human_review": {
+      "min": 0.74,
+      "max": 0.95,
+      "median": 0.85
+    },
+    "human_review_required": {
+      "True": 9
+    },
+    "priority_score": {
+      "min": 0.3422,
+      "max": 0.724,
+      "median": 0.4709
+    },
+    "category": {
+      "possible_fall_or_person_down": 7,
+      "no_clear_incident": 2
+    },
+    "refused": {
+      "min": 0,
+      "max": 0,
+      "median": 0
+    }
+  },
+  "cost": {
+    "P1": {
+      "per_item": {
+        "ITEM_01": 0.0002589,
+        "ITEM_02": 0.0002828,
+        "ITEM_03": 0.0002834,
+        "ITEM_04": 0.0009571,
+        "ITEM_05": 0.0003297,
+        "ITEM_06": 0.0004521,
+        "ITEM_07": 0.0007521
+      },
+      "mean_per_candidate": 0.0004737285714285714,
+      "total": 0.0033160999999999998
+    },
+    "P2": {
+      "per_item": {
+        "ITEM_01": 0.00023643,
+        "ITEM_02": 0.00025902,
+        "ITEM_03": 0.00026001,
+        "ITEM_04": 0.00088002,
+        "ITEM_05": 0.00030231,
+        "ITEM_06": 0.00042579,
+        "ITEM_07": 0.0006903
+      },
+      "mean_per_candidate": 0.00043626857142857147,
+      "total": 0.00305388
+    },
+    "P3": {
+      "per_item": {
+        "ITEM_01": 0.0047455,
+        "ITEM_02": 0.007953,
+        "ITEM_03": 0.006988,
+        "ITEM_04": 0.0212289,
+        "ITEM_05": 0.0068855,
+        "ITEM_06": 0.0102655,
+        "ITEM_07": 0.018216
+      },
+      "mean_per_candidate": 0.010897485714285714,
+      "total": 0.0762824
+    },
+    "P4": {
+      "per_item": {
+        "ITEM_01": 0.406901,
+        "ITEM_02": 0.408111,
+        "ITEM_03": 0.409031,
+        "ITEM_04": 0.426541,
+        "ITEM_05": 0.414581,
+        "ITEM_06": 0.411361,
+        "ITEM_07": 0.419356
+      },
+      "mean_per_candidate": 0.41369742857142855,
+      "total": 2.895882
+    }
+  },
+  "latency": {
+    "P1": {
+      "median_ms": 1151.71,
+      "definition": "cached-state timing only (P0 CV state reused); NOT full end-to-end; result latency_ms left null"
+    },
+    "P2": {
+      "median_ms": 492.15,
+      "definition": "cached-state timing only (frozen compact state reused); NOT full end-to-end; result latency_ms left null"
+    },
+    "P3": {
+      "median_ms": 11027.25,
+      "definition": "cached-state timing only (frozen compact state reused): state -> GPT API -> adapter; NOT full end-to-end; result latency_ms left null"
+    },
+    "P4": {
+      "median_ms": 85094.43,
+      "definition": "full P4 visual path: iter_model_frames start -> final prediction validation (includes encode, round-trip check, base64, upload, provider processing, adapter)"
+    }
+  },
+  "frozen_result_integrity": {
+    "P3": {
+      "files_checked": 7,
+      "all_match": true,
+      "mismatch": []
+    },
+    "P4": {
+      "files_checked": 7,
+      "all_match": true,
+      "mismatch": []
+    }
+  },
+  "normal_data_scan": {
+    "explicit_normal_class_in_project": false,
+    "searched": [
+      "downloads/fight (AI Hub 171 fight)",
+      "data/recovered (AI Hub 171 swoon, trespass)",
+      "downloads/multiview_fight (AI Hub 71953 fight, 5 events x 2 views)",
+      "evaluation_selection/*",
+      "organized_data/*",
+      "benchmark_v1 (read only)"
+    ],
+    "finding": "All downloaded sources are abnormal-scenario categories (fight / swoon / trespass). No normal/benign class was downloaded.",
+    "pre_event_windows": {
+      "fight": {
+        "videos": 54,
+        "videos_with_window": 42,
+        "windows": 109,
+        "local_files": 0,
+        "unique_source_ids": 5
+      },
+      "swoon": {
+        "videos": 20,
+        "videos_with_window": 20,
+        "windows": 123,
+        "local_files": 20,
+        "unique_source_ids": 5
+      },
+      "trespass": {
+        "videos": 44,
+        "videos_with_window": 44,
+        "windows": 274,
+        "local_files": 44,
+        "unique_source_ids": 11
+      }
+    },
+    "pre_event_rule": "floor((event_start - 10.0s guard) / 35.0s) per video",
+    "caveat": "Pre-event portions of AI Hub abnormal-scenario videos are only CANDIDATE benign windows; they are staged, unverified and must be human-checked before use."
+  }
+}
